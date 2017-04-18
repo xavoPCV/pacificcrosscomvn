@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta name="mp-customizable-color" content="#eeeeee; Page Background Color">
+        <meta name="mp-customizable-color" content="#ffffff; Content Background Color">
+        <meta name="mp-customizable-color" content="#dddddd; Content Border Color"> 
+        <meta name="mp-customizable-color" content="#FFF7CF; Content Inside Background Color">
+        <meta name="mp-customizable-color" content="#fbe5a8; Content Inside Border Color">
+        <meta name="mp-customizable-color" content="#F20303; Headline Color">
+        <meta name="mp-customizable-color" content="#717171; Subheadline 1 Color">
+        <meta name="mp-customizable-color" content="#2696d9; Everything You Get Text Color">
+        <meta name="mp-customizable-color" content="#080808; Titles Color">
+        <meta name="mp-customizable-color" content="#0d0d0d; Paragraphs Color">
+        <meta name="mp-customizable-color" content="#2C2C2C; Button 1 Text Color">
+        <meta name="mp-customizable-color" content="#FBCD50; Button 1 Background Start">
+        <meta name="mp-customizable-color" content="#FBBD03; Button 1 Background End">
+        <meta name="mp-customizable-color" content="#b87500; Button 1 Border Color">
+        <meta name="mp-customizable-color" content="#2C2C2D; Button 2 Text Color">
+        <meta name="mp-customizable-color" content="#FBCD51; Button 2 Background Start">
+        <meta name="mp-customizable-color" content="#FBBD04; Button 2 Background End">
+        <meta name="mp-customizable-color" content="#b87501; Button 2 Border Color">
+        <meta name="mp-customizable-color" content="#888889; Total Value Color">
+         <meta name="mp-customizable-color" content="#2696d8; Today Price Color">
+         <meta name="mp-customizable-color" content="#858484; Footer Text">
+          <meta name="mp-customizable-color" content="#0036ff; Footer Links">
+        <style type="text/css">
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #eeeeee;
+				color:#0d0d0d;
+            }
+
+            .container
+            {
+                width: 1050px;
+                margin: 30px auto;
+                background: #ffffff;
+                border-radius: 15px;
+                -moz-border-radius: 15px;
+                -webkit-border-radius: 15px;
+                border: 1px solid #dddddd;
+            }
+
+            .content
+            {
+                padding: 20px;
+            }
+
+            .container h2
+            {
+                text-align: center;
+                font-size: 40px;
+                line-height: 1.4;
+                color: #F20303;
+				margin: 10px !important;
+            }
+
+            .container h4
+            {
+                text-align: center;
+                font-size: 24px;
+                color: #717171;
+				margin: 10px !important;
+            }
+
+            @media (max-width: 820px)
+            {
+                .container
+                {
+                    width: 100%;
+                }
+            }
+
+            #main_content
+            {
+                padding: 0 40px;
+            }
+
+            .social-comments
+            {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url(https://lh6.googleusercontent.com/-ncu_Zmjpeew/VJRf4N0G67I/AAAAAAAAAms/fT9JcZQuiXo/w909-h541-no/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 580px !important;
+            }
+
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 60%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 5%;
+                left: 3.5%;
+                width: 93%;
+                height: 85%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+            a.submit,a.submit2
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                background-color: #FBCD50;
+                border: 1px solid #b87500;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                font-weight: bold;
+                -moz-border-radius: 6px;
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                margin: 10px auto;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 38px;
+                padding: 20px 0;
+                color: #2C2C2C;
+                width: 100%;
+                text-align: center;
+            }
+
+            a.submit2
+            {
+                background: -moz-linear-gradient(center top,#FBCD51 5%, #FBBD04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD51),color-stop(1,#FBBD04));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD51',endColorstr='#FBBD04');
+                background-color: #FBCD51;
+                color: #2C2C2D;
+                border: 1px solid #b87501;
+            }
+
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+
+            a.submit2:hover 
+            {
+                background: -moz-linear-gradient(center top,#FBBD04 5%,#FBCD51 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD04), color-stop(1,#FBCD51));
+                background-color: #FBBD04;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD04',endColorstr='#FBCD51');
+            }
+
+            a.submit:after,a.submit2:after
+            {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('https://lh6.googleusercontent.com/-FSPREKZ0gbY/U4DnViDHQCI/AAAAAAAAABU/YBt10O4qGIQ/s31/arrow.png?gl=US') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            .bottom
+            {
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .bottom img
+            {
+                max-width: 100%;
+            }
+
+            .inside
+            {
+                background: #FFF7CF;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border: 1px solid #fbe5a8;
+                padding: 15px;
+            }
+
+            .inside h4
+            {
+                color: #2696d9;
+                font-size: 30px;
+                margin-top: 10px;
+            }
+
+
+            .inside ul
+            {
+                list-style: none;
+                padding: 0;
+            }
+
+            .inside ul li
+            {
+                float: left;
+                width: 40%;
+                position: relative;
+                padding-left: 42px;
+                font-size: 15px;
+                line-height: 1.4;
+                margin-bottom: 30px;
+            }
+
+            .inside ul li:nth-of-type(odd)
+            {
+                margin-right: 8%;
+            }
+
+            .inside ul li img.left_img
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 32px;
+            }
+
+            .inside ul li span
+            {
+                font-weight: bold;
+                margin: 0 0 5px;
+                text-align: left;
+                font-size: 15px;
+                color: #080808;
+                display: block;
+            }
+
+            .inside p
+            {
+                text-align: center;
+                font-size: 24px;
+                color: #888889;
+                margin-bottom: 0;
+            }
+
+            .inside ul li div
+            {
+                font-weight: normal;
+            }
+
+            .clear
+            {
+                clear: both;
+            }
+
+            #subline3
+            {
+                color:#2696d8;
+            }
+
+            #copyright
+            {
+                font-size: 14px;
+                text-align: center;
+                margin-top: 50px;
+				color: #858484;
+            }
+
+            #copyright a
+            {
+                text-decoration: none;
+				color: #0036ff;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h2 data-lb-id="headline"  data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Headline Text</h2>
+                <h4 data-lb-id="subline" data-lb="editable-rich-text editable-optional" data-lb-name="SubLine">Subheadline Text</h4>
+                <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=859 video-height=490" class="video-holder flex-video"> 
+                    <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                        <img data-lb-id="video-image" data-lb="editable-image" data-lb-name="Video Image" src="https://lh6.googleusercontent.com/-ncu_Zmjpeew/VJRf4N0G67I/AAAAAAAAAms/fT9JcZQuiXo/w909-h541-no/tablet-big.png"/>
+                    </a>
+                </div>
+                <a href="#" data-lb-id="submit-button" data-lb="editable-link editable-optional" data-lb-name="Submit Button" class="submit">Buy Now</a>
+                <div class="bottom">
+                    <a href="#" data-lb-id="guaranteed-image1-link" data-lb="editable-link editable-optional link-only" data-lb-name="Guaranteed Image 1">
+                        <img data-lb-comment="Recommended image width: 661px" data-lb-name="Guaranteed Image" data-lb-id="guaranteed-image" data-lb="editable-image editable-optional max-image-size=661" src="https://lh4.googleusercontent.com/-qVdx9TkItrc/VJHReaGrl4I/AAAAAAAAAmI/9--9oSUL9x4/w661-h64-no/guaranteed.png">
+                    </a>
+                </div>
+                <div class="inside">
+                    <h4 data-lb-id="subline2" data-lb="editable-rich-text editable-optional" data-lb-name="SubLine 2">So Here's Everything You Get...</h4>
+                    <ul>
+                        <li>
+                            <a href="#" data-lb-id="icon1-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 1" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 1" data-lb-id="icon1" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_4.png" />
+                            </a>
+                            <div data-lb-name="Content 1" data-lb="editable-rich-text editable-optional" data-lb-id="content1">
+                                <span>12 Untapped Traffic Driving Resources</span>
+                                This program will reveal 12 little known resources that drives 10’s of thousands views per week to our site. This program alone is responsible for over $250,000.00 in sales in the last 12 months.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon2-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 2" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 2" data-lb-id="icon2" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_7.png" />
+                            </a>
+                            <div data-lb-name="Content 2" data-lb="editable-rich-text editable-optional" data-lb-id="content2">
+                                <span>Live Interactive Coaching Calls and Webinars</span>
+                                Twice weekly live calls where we show you what strategies are woking best as well as help you break through your challenges and celebrate your successes.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon3-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 3" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 3" data-lb-id="icon3" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_6.png" />
+                            </a>
+                            <div data-lb-name="Content 3" data-lb="editable-rich-text editable-optional" data-lb-id="content3">
+                                <span>Recruiting Juggernaut</span>
+                                Recruit superstars into any network marketing business without tapping friends or family. These are the exact strategies and methods Vince Reed used to recruit and build organizations of over 1,800 members collectively.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon4-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 4" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 4" data-lb-id="icon4" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_8.png" />
+                            </a>
+                            <div data-lb-name="Content 4" data-lb="editable-rich-text editable-optional" data-lb-id="content4">
+                                <span>Twitter PPC Traffic Secrets of an Internet Traffic Master Ninja</span>
+                                Lead magnet strategies and how to drive massive traffic through Twitter.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon5-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 5" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 5" data-lb-id="icon5" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_1.png" />
+                            </a>
+                            <div data-lb-name="Content 5" data-lb="editable-rich-text editable-optional" data-lb-id="content5">
+                                <span>Follow-up Secrets of 7 Figure Earners</span>
+                                Maximize the value of every lead though the World Class engagement strategies of the top Network Marketers on the planet.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon6-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 6" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 6" data-lb-id="icon6" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_5.png" />
+                            </a>
+                            <div data-lb-name="Content 6" data-lb="editable-rich-text editable-optional" data-lb-id="content6">
+                                <span>1 on 1 Business Consultation</span>
+                                Start your path to success supercharged and lazer focused with a business consultation with one of our Certified MITS Coaches.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon7-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 7" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 7" data-lb-id="icon7" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_2.png" />
+                            </a>
+                            <div data-lb-name="Content 7" data-lb="editable-rich-text editable-optional" data-lb-id="content7">
+                                <span>Internet Marketing for Home Business Pros</span>
+                                This program reveals the strategies and methods that Vince Reed used to become a top producer in 2 different network marketing companies and create three different 7 figure businesses all from home.
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-lb-id="icon8-link" data-lb="editable-link editable-optional link-only" data-lb-name="Icon 8" style="cursor: pointer;display:block">
+                                <img class="left_img" data-lb-comment="Recommended image width: 32px" data-lb-name="Icon 8" data-lb-id="icon8" data-lb="editable-image editable-optional max-image-size=32" src="{LOCAL_URL}/06192014_3.png" />
+                            </a>
+                            <div data-lb-name="Content 8" data-lb="editable-rich-text editable-optional" data-lb-id="content8">
+                                <span>Mobile PPC Secrets</span>
+                                Mobile is the future and the future is NOW. Drive massive traffic from the one tool people cannot live without. This introductory course will be a game changer for you.
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <p data-lb-id="totalvalue"  data-lb="editable-rich-text editable-optional" data-lb-name="Total Value">Total Value: $1,289</p>
+                    <h4 id="subline3" data-lb-id="subline3"  data-lb="editable-rich-text editable-optional" data-lb-name="Today Just Test">Today Just $149</h4>
+                    <a href="#" data-lb-id="submit-button2" data-lb="editable-link editable-optional" data-lb-name="Submit Button 2" class="submit2">Buy Now</a>
+                    <div class="bottom">
+                        <a href="#" data-lb-id="guaranteed-image2-link" data-lb="editable-link editable-optional link-only" data-lb-name="Guaranteed Image 2" style="cursor: pointer;display:block">
+                            <img data-lb-comment="Recommended image width: 661px" data-lb-name="Guaranteed Image 2" data-lb-id="guaranteed-image2" data-lb="editable-image editable-optional max-image-size=661" src="https://lh4.googleusercontent.com/-qVdx9TkItrc/VJHReaGrl4I/AAAAAAAAAmI/9--9oSUL9x4/w661-h64-no/guaranteed.png" style="cursor: pointer;">
+                        </a>
+                    </div>
+                </div>
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text" style="cursor: pointer;">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text" style="cursor: pointer;">Terms &amp; Conditions |</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3" style="cursor: pointer;"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="fb-root"></div>
+    </body>
+</html>

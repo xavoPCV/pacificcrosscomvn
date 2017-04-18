@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta name="mp-customizable-color" content="#fffff8; Background Color" background_color="1">
+
+        <meta name="mp-customizable-color" content="#232323; Content Background Color">
+        <meta name="mp-customizable-color" content="#050505; Content Shadow Color">
+        <meta name="mp-customizable-color" content="#fe9244; Headline Color">
+        <meta name="mp-customizable-color" content="#fffffe; Subline Color">
+        <meta name="mp-customizable-color" content="#fffffd; General Text Color">
+        <meta name="mp-customizable-color" content="#fffffc; Video Border Color">
+
+        <meta name="mp-customizable-color" content="#FBCD50; Button Background Start Color" button_id="button">
+        <meta name="mp-customizable-color" content="#FBBD03; Button Background End Color" button_id="button">
+        <meta name="mp-customizable-color" content="#15b800; Button Border Top Color" button_id="button">
+        <meta name="mp-customizable-color" content="#15b801; Button Border Bottom Color" button_id="button">
+        <meta name="mp-customizable-color" content="#15b802; Button Border Left Color" button_id="button">
+        <meta name="mp-customizable-color" content="#15b803; Button Border Right Color" button_id="button">
+        <meta name="mp-customizable-color" content="#2c2c2c; Button Text Color" button_id="button">
+
+        <meta name="mp-customizable-color" content="#f6b33d; Popup Button Background Start Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#fbbd04; Popup Button Background End Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#ccccc1; Popup Button Border Top Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#ccccc2; Popup Button Border Bottom Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#ccccc3; Popup Button Border Left Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#ccccc4; Popup Button Border Right Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#2c2c2b; Popup Button Text Color" button_id="button-pop">
+
+        <meta name="mp-customizable-color" content="#fffff2; Footer Text">
+        <meta name="mp-customizable-color" content="#444445; Popup Text Color" >
+
+        <style type="text/css">
+
+            body,html
+            {
+                width: 100%;
+                height: 100%;
+            }
+
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #0081fa;
+                color: #fffffd;
+                overflow: hidden;
+                background: #fffff8;
+            }
+
+            .container
+            {
+                width: 480px;
+                background: #232323;
+                opacity: 0.97;
+                margin: 30px auto 60px;
+                padding: 10px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                box-shadow: 0 0 5px #000001;
+                -webkit-box-shadow: 0 0 5px #000001;
+                -moz-box-shadow: 0 0 5px #000001;
+            }
+
+            .content
+            {
+                padding: 30px 20px;
+                text-align: center;
+            }
+
+            .container h2
+            {
+                margin: 0 10px 20px;
+                text-align: center;
+                font-size: 36px;
+                line-height: 1.4;
+                color: #fe9244;
+                padding-bottom: 20px;
+                background: url({LOCAL_URL}/h1_back.jpg) no-repeat 50% 100%;
+            }
+
+            .container h4
+            {
+                text-align: center;
+                margin: 0 20px 20px;
+                font-size: 18px;
+                color: #fffffe;
+            }
+
+            #video-holder
+            {
+                border: 5px solid #fffffc;
+                margin: 0 8%;
+            }
+
+            #video-holder img
+            {
+                width: 100%;
+            }
+
+            #video-holder div
+            {
+                width: 99.5% !important;
+                height: 189px !important;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 50%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+            @media (max-width: 820px)
+            {
+                .container
+                {
+                    width: 90%;
+                }
+            }
+
+            #main_content
+            {
+                padding: 0 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .social-comments
+            {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            #copyright
+            {
+                margin-top: 50px;
+                color: #fffff2;
+                font-size: 12px;
+            }
+
+            #copyright a
+            {
+                color: #fffff2;
+                text-decoration: none;
+            }
+
+            .wrapper
+            {
+                position: absolute;
+                z-index: 5;
+                overflow: auto;
+                height: 100%;
+                width: 100%;
+            }
+
+            #bgimg
+            {
+                position: absolute;
+                z-index: -1;
+            }
+
+
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+
+            .clear{clear: both;}
+
+            button,input,select,textarea {
+                font-size:100%;
+                margin:0;
+                vertical-align:baseline;
+                *vertical-align:middle;
+                box-sizing:content-box;
+                outline:none;
+                border-radius:none;
+                box-shadow:none;
+            }
+            button,input {line-height:normal;}
+
+            .submit-button{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background: none;
+                text-decoration: none;
+                padding: 0 0 5px;
+                margin: 10px auto;
+                width: 100%;
+                text-align: center;
+            }
+
+            .submit-button > .click > span{
+                font-size: 26px;
+                width: 90%;
+                color: #2c2c2c;
+                padding: 3% 1%;
+                position: relative;
+                display: inline-block;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                font-weight: bold;
+                position: relative;
+                text-decoration: none;
+                transition: 0.5s all;
+
+                border: solid 1px;
+                border-top-color: #15b800;
+                border-bottom-color: #15b801;
+                border-left-color: #15b802;
+                border-right-color: #15b803;
+
+                background-color: #FBCD50;
+                background: -webkit-linear-gradient(#FBCD50,#FBBD03);
+                background: -moz-linear-gradient(#FBCD50,#FBBD03);
+                background: -o-linear-gradient(#FBCD50,#FBBD03);
+                background: linear-gradient(#FBCD50,#FBBD03);
+                background-size: 100%;
+            }
+
+            .submit-button > .click > span:hover{
+                background-size: 200%;
+            }
+
+            /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 192px;
+                max-height: 279px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                font-size:24px;
+                font-weight: bold;
+                padding: 10px 0;
+                width: 100%;
+                display: inline-block;
+                transition: 0.5s all;
+
+                background: #f6b33d;
+                border-radius: 0;
+                color: #2c2c2b;
+                border: solid 1px;
+                border-top-color: #ccccc1;
+                border-bottom-color: #ccccc2;
+                border-left-color: #ccccc3;
+                border-right-color: #ccccc4;
+
+                background: -webkit-linear-gradient(#f6b33d,#fbbd04);
+                background: -moz-linear-gradient(#f6b33d,#fbbd04);
+                background: -o-linear-gradient(#f6b33d,#fbbd04);
+                background: linear-gradient(#f6b33d,#fbbd04);
+                background-size: 100%;
+            }
+            .box-popup .btn > span:hover{
+                background-size: 200%;
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+            .ie7 .inp-fix .inp-text {margin-top:-1px;}
+            .btn > span{
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #f6b33d;
+                border: 1px solid #c79408;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                -moz-border-radius: 6px;
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                cursor: pointer;
+            }
+            .btn > span:hover{
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            .btn > span:active{
+                position: relative;
+                top: 1px;
+            }
+            .btn {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background: none;
+                text-decoration: none;
+                padding: 0 0 5px;
+            }
+            .subscribe_button span{padding: 10px;}
+            .bottom{margin-top: 20px;}
+            /* box popup end */
+        </style>
+        
+        <script>
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 900, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1440, height: 900, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+        <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image" data-lb-id="background" data-lb-comment="Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/iStock_000014908220_Large.jpg" style="height: 100%;"/>
+        <div class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <h2 data-lb-id="headline"  data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Discover These Lead Generating Secrets For Your Home Business!</h2>
+                    <h4 data-lb-id="subline" data-lb="editable-rich-text editable-optional" data-lb-name="SubLine">I Can't Believe The Top 1% Earners Keep These Traffic Generating Secrets From You! I'll Show You How It Works!</h4>
+                    <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=370 video-height=201" class="video flex-video" id="video-holder" style="cursor: pointer;"> 
+                        <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                            <img data-lb-id="video-image" data-lb="editable-image max-image-size=370" data-lb-name="Video Image" src="{LOCAL_URL}/video.png">
+                        </a>
+                    </div>
+                    <div id="main_content" data-lb-name="Main Content" data-lb="editable-rich-text" data-lb-id="main-content" >
+                        <p>Register Your Email Below To Receive Your Complimentary Videos And Discover A Whole New Traffic Source!</p>
+                    </div>
+                    <section data-lb-name="Download Button" data-lb="editable-fadein-box" data-lb-id="opt-in-box" class="submit-button">
+                        <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">
+                            <span data-lb-name="Download Button" data-lb="editable-button" data-lb-id="button">Click here to Subscribe &#187</span>
+                        </a>
+                    </section>
+                    <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Link 1" class="footer_text">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Link 2" class="footer_text">Earnings Disclaimer |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright  2014 <a href="#">AdvisorLead</a></span>
+                    </div>
+                </div>
+                <div style="display: none;" id="myModal" class="pop">
+                    <div class="box-popup">
+                        <div class="illust">
+                            <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-width=192 max-image-height=279 editable-optional">
+                        </div>
+                        <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                            <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                            <p class="inp-fix">
+                                <input onBlur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name">
+                            </p>
+                            <p class="inp-fix">
+                                <input onBlur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email">
+                            </p>
+                            <p class="inp-fix">
+                                <input type="text" class="inp-text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                            </p>
+                            <p>
+                                <button type="submit" class="btn subscribe_button">
+                                    <span data-lb-name="Popup Subscribe Button" data-lb="editable-button" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                                </button>
+                            </p>
+                            <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

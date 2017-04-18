@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>CreatedBy</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>CreatedBy field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="created_by_default" type="user"  label="COM_FLEXIMPORT_FIELD_CREATEDBY_DEFAULT" description="COM_FLEXIMPORT_FIELD_CREATEDBY_DEFAULT_DESC" />
+				<field name="created_by_alias_default" type="text" size="20" label="COM_FLEXIMPORT_FIELD_CREATEDBY_ALIAS" description="COM_FLEXIMPORT_FIELD_CREATEDBY_ALIAS_DESC" />
+				<field name="created_by_format" type="list" default="1" label="COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT" description="COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT_DESC" >
+					<option value="1">COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT_ID</option>
+					<option value="2">COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT_NAME</option>
+					<option value="3">COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT_USERNAME</option>
+					<option value="4">COM_FLEXIMPORT_FIELD_CREATEDBY_FORMAT_EMAIL</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

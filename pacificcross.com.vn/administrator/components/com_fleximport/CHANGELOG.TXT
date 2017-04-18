@@ -1,0 +1,196 @@
+------------------
+	CHANGELOG
+------------------
+* security
+- remove features
++ add features
+^ modified features
+# bug fixed
+
+version 3.x
+# add compatibility to FLEXIcontent 3.x
+
+version 2.1.8
+# correct a problem of encodage during export CSV file
+
+version 2.1.7
+# correct an anomaly who import only one data for the select field
+
+version 2.1.6
+# bug corrected
+
+version 2.1.5
+# add a compatiblity for Joomla 2.5.26
+
+version 2.1.4
+# add trashed state in the standard values for the state
+# change explode  "%% " by "%%" and add trim for some fields that manage specific value
+# resolve some problems of assets
+
+version 2.1.3
++ add the textselect plugin
++ add a new mulfield plugin
+
+version 2.1.2
+# correct some code error in the export
+# it was impossible to update by a title
+# add an update for PHP < 5.3
++ add a new option in the image field
+
+version 2.1.1
+^ update the relation field to manage the category id
++ add copy function for the fields (miss the action before)
+
+version 2.1.0
+^ remove the creation of fields 'groupmarker','fcpagenav','relation_reverse' and 'toolbar' during creating type
+# correct a problem to record specific params for each plugin
++ rebuild csv plugin
+^ improve performance to parse the file
+# code error to store the fleximport session
++ relation field is now finished
+# resolve a problem with cron task
+# fleximport system plugin updated
+^ modified the update of the database during install, joomla system cause some bugs
+
+version 2.0.5
+# correct the manual creation of a system field
+# correct a bad request for linked field
+
+Version 2.0.4
+# some minor bugs fixed
++ add option to manage export of item updated or added
+
+Version 2.0
+- stop support joomla 1.5
+^ improve performance in parsing
++ add support joomla 3.x
++ add json support
++ add field minigallery support
++ add field relation support
++ add Joomla ACL
++ add a debug mode to understand the problem during import or export
+^ all source re-building to improve compatibility and performance
+# various minor fixes
+
+Version 1.8.4
+# correct the default value for publish fields
+
+Version 1.8.3 24/06/2013
+# Update the default value, for multiple value
+^ Add a best usage of CDATA during export
+^ Remove a notice in the system plugin
+# record corretly the params to export files for the filters record
+# add the default path for export
+# Correct an anomaly in the publish field to export datas. The date 0000-00-00 was bad managed
+
+Version 1.8.2 10/06/2013
++ Add a possibilities to setup namespace for xml plugin
+# Correct a problem for publish_up update
+
+Version 1.8.1
+# Correct a bug on send log report by email
++ Add a new option to force default categories during the import
+# Correct a bug that set create date during an update
+# Doesn't force any more the publih up if the field is set
+
+Version 1.8
+# Correct bug when import file or image with specific character
++ Can use specific character to clean a string (instead of only empty)
+
+Version 1.7.9
+# Correct a bug to manage file with space in the name
+# Correct a bug to export the datas of the text field
+
+Version 1.7.8
+^ Set multiple values allowed by default
+# Correct some notices for Joomla 1.5
+# Update the field's attrib for Joomla 1.5
++ add 2 new plugin to manage the publication date
+# JFolder::MakeSafe function caused some bugs during export on some hosts
+
+Version 1.7.7 22/11/2012
++ add an option in the category field to manage a pathway of category
+# correct bug to get attached files by FTP
+# update the publish date of an item
++ update the weblink plugin to have a possibilities to explode values (and join after with link,title and hits)
+# correct an anomaly when import futher fields with value node
++ add option to trim value during import
++ add option to delete null value during import
+
+Version 1.7.6 22/10/2012
+# Correct a problem to show dates in the export
+^ add compatibility with the last email field
+^ add compatibility with the last image field
++ add possibility to store extra value for the image field
++ add default value for the xml type (root and key)
+# correct a bug ot import zipped attached files
+# correct the filename when exporting zip file.
++ possibily to integrate SQL request in corresponding value
+
+Version 1.7.5 19/07/2012
+# New system for import the datas to be compatible with the last release of FLEXIcontent
++ Add parameter to split datas
++ Add parameter to clean datas
+# change the comments for the language file # -> ;
+^ Possibility to choose a specific path for image and file field
++ Install automatically the flexIMPORT plugin for crontask
+
+Version 1.7.4
+^ update a new system plugin to manage the language of the items imported
+# notice on undefined language
+
+Version 1.7.3 11/04/2012
+# correct minor bug for logs
++ Add possibility to execute an import/export by a cron task
++ Add a system plugin to allow autoconnect
+
+Version 1.7.2 15/03/2012
+# correct a problem during the import of a csv file with format utf8
++ add a possibility to export filename with the fields "files"
+^ add features to the plugin weblink to import and export all the datas
+
+Version 1.7.1 14/02/2012
+# correct a problem during the import of a zip file
+^ Add parameter to force to no display errors in ajax mode
+^ Add parameter to force no time limit of execution
+
+Version 1.7 15/12/11
+^ Update Mootools function to add compatibilty
+^ Change the method to import, to have more performance. The datas are now recorded in the database instead of a variable
+^ Full ajax support to import
+^ add compatibility to FLEXIcontent 1.5.6
+^ add compatibility to FLEXIcontent 2.0
+^ add compatibility to Joomla 1.7
+# update export of CSV, remove line break
+
+Version 1.21 31/10/11
+# Manage correctly the search index when adding content
+# Date field plugin works updated to export correctly
++ For XML, You can separate your keys with the character '/' to find only the children that you want
++ For XML, you can use the query SimpleXML->xpath to cath yours datas
+# correct some errors to import local file automatically
+# error of compilation in the file plugin field
+# correct a notice of index in the attrib field plugin.
+# set no limit to the memory usage and display some information during the import
+^ Add information during the import to see the progress of the process
++ add an option the plugin maintext & textarea to convert line break in html code <br/>
+
+Version 1.2
++ add export function
++ add 6 parameters in the fields, they can be use during the execution of type's plugin
+^ Modify the way to show the submenu and load the css
+# Show the plugin icon on the title's line
+^ All the plugins classes optimized
+# remove the utf8_encode function to allow all the characters
+
+
+Version 1.1 - 28/07/11
++ Add the possibility to make an import with a zip file
++ Add a debug mode (enabled with joomla debug)
+# replace the depraciated function slit by explode
+# was impossible to attach further column of the field in one field of flexIMPORT
+# correct some php notice
+
+Version 1.01 - 21/07/11
+# remove some notices error (undefined variable)
+

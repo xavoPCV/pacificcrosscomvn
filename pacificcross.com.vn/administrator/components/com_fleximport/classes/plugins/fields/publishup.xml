@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>PublishUp</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Publish up field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="publishup_separator" type="text" size="3" default="/" label="COM_FLEXIMPORT_FIELD_PUBLISHUP_SEPARATOR" description="COM_FLEXIMPORT_FIELD_PUBLISHUP_SEPARATOR_DESC" />
+				<field name="publishup_day" type="list" default="2" label="COM_FLEXIMPORT_FIELD_PUBLISHUP_DAY" description="COM_FLEXIMPORT_FIELD_PUBLISHUP_DAY_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishup_month" type="list" default="1" label="COM_FLEXIMPORT_FIELD_PUBLISHUP_MONTH" description="COM_FLEXIMPORT_FIELD_PUBLISHUP_MONTH_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishup_year" type="list" default="0" label="COM_FLEXIMPORT_FIELD_PUBLISHUP_YEAR" description="COM_FLEXIMPORT_FIELD_PUBLISHUP_YEAR_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishup_hour" type="text" size="20" default="23:59:59" label="COM_FLEXIMPORT_FIELD_PUBLISHUP_HOUR" description="COM_FLEXIMPORT_FIELD_PUBLISHUP_HOUR_DESC" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>mod_ctareport</name>
+	<author>Advisorproducts</author>
+	<creationDate>Oct 2014</creationDate>
+	<description>mod_ctareport</description>
+	<version>1.2</version>
+	<files>
+		<filename module="mod_ctareport">mod_ctareport.php</filename>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_ctareport.xml</filename>
+	</files>
+	<config>
+		<fields name="params" addpath="/modules/mod_ctareport/elements" addfieldpath="/modules/mod_ctareport/elements">
+			<fieldset name="basic">
+				<field name="mod_type" type="radio" default="1" label="Module Type">
+					<option value="1">Reports</option>
+					<option value="2">Image Rotate</option>
+				</field>
+				<field name="loadjQuery" type="list" default="1" label="Load jQuery" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			<fieldset name="Report" label="Reports Options">
+				<field type="modcss" />
+				<field name="videos" type="videos" label="Selected Report" description="" />
+				<field name="lastest_limit_num" type="checkbox" value="1" label="or Latest Report" />
+				<field type="spacer" name="myspacer2" hr="true" />
+				
+				<field name="cusitems" type="cusitems" label="or Custom Item" description="" />
+				<field type="spacer" name="myspacer3" hr="true" />
+				
+				
+				<field name="font_size" type="text" maxlength="2" default="14" label="Font Size" />
+				<field name="font_weight" type="radio" default="bold" label="Font Weight">
+					<option value="bold">Bold</option>
+					<option value="normal">Unbold</option>
+				</field>
+				<field name="title_color" type="color" default="#FFFFFF" label="Top Color" />
+				<field name="title_bg" type="color" default="#000000" label="Top Background" />
+				<field name="main_color" type="color" default="#FFFFFF" label="Bottom Color" />
+				<field name="main_bg" type="color" default="#4169E1" label="Bottom Background" />
+				<field name="button_color" type="color" default="#FFFFFF" label="Button Color" />
+				<field name="button_bg" type="color" default="#000000" label="Button Background" />
+				<field name="forcompliance" type="hidden" />
+				
+				
+				<field name="custom_pic" type="media" label="Custom Image" />
+				<field name="popup_style" type="radio" default="0" label="Popup">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+			</fieldset>
+			<fieldset name="Rotate" label="Image Rotate Options">
+				<field name="num_rotate" type="text" maxlength="2" default="5" label="Lastest Video" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

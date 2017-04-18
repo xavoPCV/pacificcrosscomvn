@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details" addfieldpath="/administrator/components/com_fleximport/models/fields">
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"	readonly="true" />
+		<field name="name" type="text" label="COM_FLEXIMPORT_FIELD_NAME" description="COM_FLEXIMPORT_FIELD_DESC" size="40" class="inputbox" required="true" default="" />
+		<field name="label" type="text" label="COM_FLEXIMPORT_FIELD_LABEL" description="COM_FLEXIMPORT_LABEL_DESC" size="40" class="inputbox" required="true" default="" />
+		<field name="published" type="list"	label="JSTATUS" description="COM_FLEXIMPORT_PUBLISHED_DESC" class="inputbox" size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field name="isrequired" type="list" label="COM_FLEXIMPORT_FIELD_REQUIRED" description="COM_FLEXIMPORT_FIELD_REQUIRED_DESC" class="inputbox" size="1" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="field_type" type="fiplugins" label="COM_FLEXIMPORT_FIELD_TYPE" description="COM_FLEXIMPORT_FIELD_TYPE_DESC" required="true" folder="fields" default="text" />
+		<field name="type_id" type="fitype" label="COM_FLEXIMPORT_TYPES" description="COM_FLEXIMPORT_TYPES_DESC" required="true" />
+		<field name="flexi_field_id" type="fiflexifield" label="COM_FLEXIMPORT_FLEXI_FIELD" description="COM_FLEXIMPORT_FLEXI_FIELD_DESC" default="" />
+		<field name="ordering" type="fiordering" class="inputbox" table="fields" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
+		<field name="description" type="textarea" label="COM_FLEXIMPORT_DESCRIPTION" description="COM_FLEXIMPORT_DESCRIPTION_DESC" filter="safehtml" />
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+		<field name="iscore" type="hidden" filter="unset" />
+	</fieldset>
+	<fields name="params">
+		<fieldset name="standard" label="COM_FLEXIMPORT_STANDARD_FIELDS_PROPERTIES">
+			<field name="usefor" type="list" default="1" label="COM_FLEXIMPORT_FIELD_USEFOR" description="COM_FLEXIMPORT_FIELD_USEFOR_DESC">
+				<option value="1">COM_FLEXIMPORT_ALL</option>
+				<option value="2">COM_FLEXIMPORT_IMPORT</option>
+				<option value="3">COM_FLEXIMPORT_EXPORT</option>
+			</field>
+			<field name="value_default" type="text" default=""  label="COM_FLEXIMPORT_FIELD_VALUE_DEFAULT" description="COM_FLEXIMPORT_FIELD_VALUE_DEFAULT_DESC" />
+			<field name="value_null" type="text" default=""  label="COM_FLEXIMPORT_FIELD_VALUE_NULL" description="COM_FLEXIMPORT_FIELD_VALUE_NULL_DESC" />
+			<field name="value_multiple" type="list" default="1" label="COM_FLEXIMPORT_FIELD_VALUE_MULTIPLE" description="COM_FLEXIMPORT_FIELD_VALUE_MULTIPLE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="value_link" type="textarea" default="" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_VALUE_LINK" description="COM_FLEXIMPORT_FIELD_VALUE_LINK_DESC" />
+			<field name="spliter" type="text" default="" label="COM_FLEXIMPORT_FIELD_SPLITER" description="COM_FLEXIMPORT_FIELD_SPLITER_DESC" />
+			<field name="cleaner" type="textarea" default="" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_CLEANER" description="COM_FLEXIMPORT_FIELD_CLEANER_DESC" />
+			<field name="value_trim" type="list" default="0" label="COM_FLEXIMPORT_FIELD_VALUE_TRIM" description="COM_FLEXIMPORT_FIELD_VALUE_TRIM_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="value_null_delete" type="list" default="0" label="COM_FLEXIMPORT_FIELD_VALUE_NULL_DELETE" description="COM_FLEXIMPORT_FIELD_VALUE_NULL_DELETE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="param1" type="text" default=""  label="COM_FLEXIMPORT_FIELD_PARAM1" description="COM_FLEXIMPORT_FIELD_PARAM1_DESC" />
+			<!--<field name="param2" type="text" default=""  label="COM_FLEXIMPORT_FIELD_PARAM2" description="COM_FLEXIMPORT_FIELD_PARAM2_DESC" />
+			<field name="param3" type="textarea" default="" rows="3" cols="25" label="COM_FLEXIMPORT_FIELD_PARAM3" description="COM_FLEXIMPORT_FIELD_PARAM3_DESC" />
+			<field name="param4" type="textarea" default="" rows="3" cols="25" label="COM_FLEXIMPORT_FIELD_PARAM4" description="COM_FLEXIMPORT_FIELD_PARAM4_DESC" />-->
+			<field name="param5" type="list" default="0" label="COM_FLEXIMPORT_FIELD_PARAM5" description="COM_FLEXIMPORT_FIELD_PARAM5_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<!--
+			<field name="param6" type="list" default="0" label="COM_FLEXIMPORT_FIELD_PARAM6" description="COM_FLEXIMPORT_FIELD_PARAM6_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>-->
+		</fieldset>
+	</fields>
+</form>

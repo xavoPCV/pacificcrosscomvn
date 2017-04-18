@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+        <field name="id" type="text" default="0" label="COM_GNOSIS_FORM_LBL_WORD_ID"
+               readonly="true" class="readonly"
+               description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="word" type="text"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_WORD"
+               description="COM_GNOSIS_FORM_DESC_WORD_WORD"
+
+
+               required="true"
+               filter="safehtml"
+               size="50"
+               maxlength="200"/>
+
+        <field name="pronounciation" type="text"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_PRONOUNCIATION"
+               description="COM_GNOSIS_FORM_DESC_WORD_PRONOUNCIATION"
+
+
+               filter="safehtml"
+               size="50"
+               maxlength="100"/>
+
+        <field name="category" type="sql" class="inputbox"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_CATEGORY"
+               description="COM_GNOSIS_FORM_DESC_WORD_CATEGORY"
+
+
+               required="true"
+               query="SELECT 0 AS `id`, '- Please select -' AS `word` UNION SELECT `id`, `word` FROM `#__gnosis`"
+               key_field="id" value_field="word"
+                />
+
+        <field name="filter_category" type="sql" class="inputbox"
+               onchange="this.form.submit();"
+               query="SELECT 0 AS `id`, '- Please select category -' AS `word` UNION SELECT `id`, `word` FROM `#__gnosis`"
+               key_field="id" value_field="word"
+                />
+
+        <field name="definition" type="editor"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_DEFINITION"
+               description="COM_GNOSIS_FORM_DESC_WORD_DEFINITION"
+
+
+               cols="100%"
+               rows="10"
+               filter="safehtml"/>
+
+        <field name="examples" type="editor"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_EXAMPLES"
+               description="COM_GNOSIS_FORM_DESC_WORD_EXAMPLES"
+
+
+               cols="100%"
+               rows="10"
+               filter="safehtml"/>
+
+        <field name="etymology" type="editor"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_ETYMOLOGY"
+               description="COM_GNOSIS_FORM_DESC_WORD_ETYMOLOGY"
+
+
+               cols="100%"
+               rows="10"
+               filter="safehtml"/>
+
+        <field name="quiz" type="editor"
+
+               label="COM_GNOSIS_FORM_LBL_WORD_QUIZ"
+               description="COM_GNOSIS_FORM_DESC_WORD_QUIZ"
+
+
+               filter="safehtml"/>
+
+        <field name="created_by" type="createdby" default=""
+               label="COM_GNOSIS_FORM_LBL_WORD_CREATED_BY"
+               description="COM_GNOSIS_FORM_DESC_WORD_CREATED_BY"/>
+			   
+		<field name="creation_date" type="timecreated" default="" 
+            label="COM_GNOSIS_FORM_LBL_WORD_CREATION_DATE"
+            description="COM_GNOSIS_FORM_DESC_WORD_CREATION_DATE"  /> 
+
+       <field name="modified_date" type="timeupdated" default="" 
+            label="COM_GNOSIS_FORM_LBL_WORD_MODIFIED_DATE"
+            description="COM_GNOSIS_FORM_DESC_WORD_MODIFIED_DATE"  /> 
+
+ 
+		<field name="tags" type="tag" mode="ajax" label="Tags" description="" multiple="true" custom="allow"  /> 
+
+       <field name="source" type="text"
+                
+            label="COM_GNOSIS_FORM_LBL_WORD_SOURCE"
+            description="COM_GNOSIS_FORM_DESC_WORD_SOURCE" 
+                
+                
+                
+            filter="raw" /> 
+			   
+
+        <field
+                name="state"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="inputbox"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+    </fieldset>
+
+    <fieldset
+            name="accesscontrol">
+        <field name="asset_id" type="hidden" filter="unset"/>
+        <field name="rules"
+               type="rules"
+               label="JFIELD_RULES_LABEL"
+               translate_label="false"
+               filter="rules"
+               validate="rules"
+               class="inputbox"
+               component="com_gnosis"
+               section="word"
+                />
+
+    </fieldset>
+
+</form>

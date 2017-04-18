@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">  
+         <meta content="#FDFDFD; Page Background Color" name="mp-customizable-color">        
+         <meta content="#fefefe; Content Page Background Color" name="mp-customizable-color"> 
+         <meta content="#c72c31; Host Name Text" name="mp-customizable-color">
+        <meta content="#fffff7; Headline Text" name="mp-customizable-color">
+        <meta content="#47403a; Headline Background" name="mp-customizable-color">  
+        <meta content="#d9d4d0; Video Area Background" name="mp-customizable-color">    
+        <meta content="#fcf9f7; Privacy-Top" name="mp-customizable-color">      
+        <meta content="#fcf9f7; Register  Background" name="mp-customizable-color">
+        <meta content="#403a34; Register Background Top" name="mp-customizable-color">
+        <meta content="#1d1d1d; Register Today Text" name="mp-customizable-color">
+        <meta content="#e32633; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#c7242f; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#fffff0; Submit Button Text" name="mp-customizable-color">
+        <meta content="#030303; Will Learn Title" name="mp-customizable-color">
+        <meta content="#222222; Will Learn Content" name="mp-customizable-color">
+        <meta content="#fffff5; Month" name="mp-customizable-color">
+        <meta content="#000000; Day" name="mp-customizable-color">
+        <meta content="#fffff3; Spots Text" name="mp-customizable-color">
+        <meta content="#262320; Spots Background" name="mp-customizable-color">
+        <meta content="#faf7f5; Bottom Area Background" name="mp-customizable-color">   
+        <meta content="#2b2623; Bottom Border" name="mp-customizable-color">             
+        <meta content="#ccc; Footer Text" name="mp-customizable-color"> 
+        <meta content="#9abbd6; Footer Link Color" name="mp-customizable-color"> 
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;background-color:#FDFDFD}
+            .container {max-width: 1090px;margin: 0 auto;overflow: hidden;}
+			.container-bottom {background: #faf7f5;margin: 0 auto;overflow: hidden; border-bottom: solid 15px #2b2623;}
+			.main-content {background-color: #fefefe;}
+            .main-content h1.title{text-align: center;font-weight: normal;color: #c72c31;}
+            .head {background: #47403a}
+            .hn {color:#fffff2}
+            #more-learn{color:#fffff6 }
+            #limited{color: #000001}
+            .head h3{text-align: center;font-weight: bold;font-size: 30px;color: #fffff7;padding: 20px;margin-bottom: 0}
+            .content{padding: 30px 0 ;width: 100%}
+            .content.host-name{background: #d9d4d0;color: #fff;}
+			.hostname-content {padding-top:10px;}
+            .left{width: 50%;float: left;}
+			.left2{width: 50%;float: left; background-color: #f3efec;}
+            .host-name img{max-width: 100%}
+            .spots{ color: #fffff4; }
+            form{width: 95%;max-width: 450px;margin:0 auto;}
+            form p{color: #ccc}
+            input[type=text], input[type=email] {
+                width: 95%;
+                height: 50px;
+                border: 1px solid rgba(0,0,0,0.09);
+                text-align: left;
+                font-family: 'Arial',sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #4f4f4f;
+                font-style: italic;
+                margin: 10px 0;
+                background: #ffffff;
+                padding-left: 20px;
+            }
+            .btn {
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#e32633),color-stop(1,#c7242f));
+                background: -moz-linear-gradient(center top,#e32633 5%,#c7242f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e32633',endColorstr='#c7242f');
+                background-color: #f6b33d;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                border: 1px solid rgba(0,0,0,0.05);
+                display: inline-block;
+                color: #fffff0;
+                font-family: 'Arial',sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px 0;
+                text-decoration: none;
+                width: 100%;
+                text-align: center;
+                margin-top: 5px;
+            }
+            .btn:hover {
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#c7242f),color-stop(1,#e32633));
+                background: -moz-linear-gradient(center top,#c7242f 5%,#e32633 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7242f',endColorstr='#e32633');
+                background-color: #e32633;
+            }
+            span.arrow {
+                margin: 0;
+                padding: 0;
+                width: 20px;
+                height: 20px;
+                background: url('{LOCAL_URL}/arrow-button.png') 0 center no-repeat;
+            }
+            .right{width: 50%;float: right;}
+            .content.description h1{color: #030303}
+            .content.description p{color: #222222;padding-left:30px;padding-top: 10px}
+            .content.description .right p{color: #222222;padding-left:0px; font-size: 30px;padding-top: 10px}
+            .description .number{width: 50px;height:50px;
+                                 line-height: 50px;font-weight: bold;text-align: center;color: #fff;
+                                 border-radius: 50px;float: left;margin-right: 10px;
+                                 background: url('{LOCAL_URL}/circle-button.png') 0 center no-repeat;}
+            .content.limit{color: #fffff3;background: #262320;text-align: center}
+            .content.description .left img{float: left;margin-right: 10px}
+            .content.description .right {text-align: center;}
+            .content.description .right.time p {text-align: center;color: #000}
+            .limit .container{ width: 95% }
+            .limit b{font-weight: 400}
+            .footer{text-align: center;}
+            .footer #copyright {font-weight: normal;
+                                font-size: 18px;
+                                color: #ccc;
+                                margin: 20px 0;
+                                clear: both;
+								padding-bottom:10px;}
+            .footer #copyright .footer_text{color: #ccc;text-decoration: none;}
+            .footer #copyright .footer_link_copyright{ color: #9abbd6;}
+            .footer #copyright .footer_link_copyright:hover{color: #ea7110;text-decoration: none;}
+            .footer h3{font-size: 36px}
+            .privacy{text-align: center;font-size: 16px;color: #fcf9f7}
+            .footer .privacy{color: #ddd}
+            .spots-are-limited{color: #fffff3}
+            .clendar{
+                position: relative;
+                max-width:178px;min-height: 178px;   
+                font-weight: bold;
+                margin: 0 auto;
+            }
+            .month{position: absolute;left:20px;top: 40px;color: #fffff5}
+            .day{position: absolute;left:35px;bottom: 25px;font-size: 60px;color: #000000}
+            span.lock{
+                width: 12px;height: 15px;
+                background: url('{LOCAL_URL}/lock-icon.png') 0 center no-repeat; 
+            }
+            span.email-icon{
+                width: 12px;height: 15px;
+                background: url('{LOCAL_URL}/lock-icon.png') 0 center no-repeat; 
+            }
+            @media only screen and (max-width: 1023px) {
+                .container{width: 100%}
+            }
+            @media only screen and (max-width: 964px){
+                .main-content {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                .container,
+                .host-name .left,
+                .host-name .right,
+                .right,
+                .left
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                .host-name .btn{margin: 0 auto;display: block;}
+                .content.host-name{
+                    text-align: center;
+                }
+            }
+            @media only screen and (max-width: 767px) {
+                .host-name .left .avata,
+                .host-name .left .share
+                {width: 100%;margin: 0 auto}
+                .clendar{width:178px;}
+
+            }
+            @media only screen and (max-width: 600px){
+
+            }
+            @media only screen and (max-width: 420px){
+
+                .main-content{width: 100%;}
+                .host-name .btn{margin-left: 0}
+                form{
+                    width: 97%;
+                }
+                .host-name .right input{
+                    width: 92%;
+                }
+                .host-name .right .privacy{
+                    margin-left: -18px;
+                }
+                .content.limit{
+                    width: 95%;
+                }
+                .footer .share div{width: 100%}
+                .footer input{
+                    width: 92%;
+                }
+                #more-learn{
+                    padding-left: 6px;
+                }
+                .footer button{
+                    padding-left: 6px;
+                }
+                .footer .privacy{
+                    margin-left: -18px;
+                }
+            }
+
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 380px !important;
+            }
+            .video-holder img{
+                width: 100%;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 60%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            .setup-account{background: #fcf9f7;width: 90%; margin: 10px auto; padding-bottom:15px;}
+            #blue-top{height: 20px; background: #403a34}
+            form h1.title{
+                color: #1d1d1d !important;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+        </style>
+        
+        <script>
+            $(document).ready(function() {
+                var onclick = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;";
+                $('.facebook_share, .gplus_share, .twitter_share').attr('onclick', onclick);
+                $('.facebook_share').attr('href', facebook_share_url);
+                $('.gplus_share').attr('href', google_share_url);
+                $('.twitter_share').attr('href', twitter_share_url);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main-content" style="margin-bottom:45px;">
+        <div class="hostname-content">
+            <h1 class="title" data-lb-name="Pre-Headline" data-lb="editable-rich-text editable-optional"  data-lb-id="pre-headline">
+                <b>Live Webinar</b> with Host Name
+            </h1>
+</div>
+          <div class="head" >
+                <h3 data-lb-name="Headline" data-lb="editable-rich-text" data-lb-id="headline">"Discover These Traffic Generating Secrets <br>That Can Get You 25 Leads Per Day To Your Business"</h3>
+            </div>
+            <div class="content host-name">
+                <div class="container">
+                    <div class="left">
+                        <div class="video-holder flex-video" data-lb-name="Video" data-lb-id="avatar-image" data-lb="editable-video editable-optional video-width=545 video-height=349">
+                            <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                                <img data-lb-id="video-image" data-lb="editable-image max-image-size=545" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="setup-account">
+                            <div id="blue-top"></div>
+                            <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                                <h1 class="title" data-lb-name="Title Color" data-lb="editable-text" data-lb-id="title">Register Today!</h1>
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name" style="display:none">
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+                                <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                                <button data-lb-name="Submit Button" data-lb-id="submit-text" type="submit" data-lb="editable-text" class="btn" style="cursor: pointer;">REGISTER FOR WEBINAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content description">
+                <div class="container">
+                    <div class="left">
+                        <h1 data-lb-name="Will-learn-title" data-lb="editable-rich-text" data-lb-id="will-learn-title">During This FREE WEBINAR You Will Learn</h1>
+                        <a href="#" data-lb-id="circle-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 1" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 1" data-lb-id="cricel-image-1" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+
+                        <p data-lb-name="Will-learn-1" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                        <a href="#" data-lb-id="circle-image-2-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 2" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 2" data-lb-id="cricel-image-2" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-2" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                        <a href="#" data-lb-id="circle-iamge-3-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 3" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 3" data-lb-id="cricel-image-3" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-3" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                                             <a href="#" data-lb-id="circle-iamge-4-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 4" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 4" data-lb-id="cricel-image-4" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-4" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                        
+<a href="#" data-lb-id="circle-iamge-5-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 5" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 5" data-lb-id="cricel-image-5" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-5" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>                           
+
+                    </div>
+                    <div class="right time">
+                        <div class="clendar">
+                            <a href="#" data-lb-id="calendar-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Calendar Image" style="cursor: pointer;display:block">
+                                <img data-lb-comment="Recommended image width: 178px" data-lb-name="Calendar Image" data-lb-id="calendar-image" data-lb="editable-image max-image-size=178" src="{LOCAL_URL}/calendar-icon.png" style="cursor: pointer;">
+                            </a>
+                            <div class="month" data-lb-name="Month" data-lb="editable-text" data-lb-id="month">April</div>
+                            <div class="day" data-lb-name="Day" data-lb="editable-text" data-lb-id="day">26th</div>
+                        </div>
+                        <p data-lb-name="Time" data-lb="editable-rich-text" data-lb-id="time">Thurday, April 26th<br>
+                            6:00 PM Pacific<br>
+                            9:00 PM Eastern</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content limit">
+                <div class="container" data-lb-name="Spots" data-lb="editable-rich-text" data-lb-id="spots">
+                    <b>SPOTS ARE LIMITED:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus. In et orci id magna auctor vestibulum tempor at metus. Sed varius consequat diam, et lacinia mi. Aliquam congue egestas enim et lobortis. 
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container-bottom">
+                    <h3 data-lb-name="Strategies" data-lb="editable-rich-text" data-lb-id="strategies">I Can't Believe The Top Earners Use These Simple Strategies!</h3>
+                    <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                        <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name">
+                        <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email">
+                        <button data-lb-name="Submit Button" data-lb-id="submit-text" type="submit" data-lb="editable-text" class="btn" style="cursor: pointer;">YES! I WANT MORE LEADS</button>
+                        <p class="privacy" data-lb-name="Privacy-Top" data-lb="editable-text" data-lb-id="privacy-top"><span class="lock">&#160;&#160;&#160;</span> We value your privacy and never spam you</p>
+                    </form>
+                </div>	
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                </div>
+            </div>
+
+        </div>
+
+    </body>

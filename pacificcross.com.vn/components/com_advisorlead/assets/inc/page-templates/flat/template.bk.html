@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta name="mp-customizable-color" content="#fcfcff; Page Background Color">
+<meta name="mp-customizable-color" content="#5f5f5f; Footer Background Color">
+<link href='https://fonts.googleapis.com/css?family=Amaranth:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body,html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-size:18px;
+	font-family:'Amaranth',sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #fcfcff;
+	/*overflow: hidden;*/
+}
+.container_width {
+	width: 1180px;
+	margin: 0 auto;
+}
+.footer {
+	background-color:#5f5f5f;
+	color:#ffffff;
+	font-size:18px;
+	padding:25px 0;
+	text-align:center;
+	font-weight:normal;
+}
+.col-3 {
+	float:left;
+	width:33.33%;
+	box-sizing: border-box;
+	padding:10px 5px;
+}
+.modcenter {
+	clear:both;
+	float:none;
+	text-align:center;
+	padding:10px 0;
+}
+.modcenter h3 {
+	font-weight:bold;
+	font-size:36px;
+	padding:20px 0;
+	margin:0;
+}
+.modcenter h4 {
+	font-weight:bold;
+	font-size:24px;
+	padding:10px 0;
+	margin:0;
+}
+.modcenter p {
+	font-weight:normal;
+	padding:0;
+	margin:0;
+}
+.clr {
+	clear:both;
+	float:none;
+}
+.greybg {
+	background-color:#ececed;
+	padding:20px 0;
+}
+.modnorman {
+	padding:20px 0;
+}
+.modnorman h3 {
+	font-weight:bold;
+	font-size:36px;
+	padding:20px 0;
+	margin:0;
+}
+.modnorman p {
+	font-weight:normal;
+	padding:10px 0;
+	margin:0;
+}
+.modnorman ul {
+	padding:0;
+	margin:0 25px;
+	list-style:url(../../../images/flat_tick.png);
+}
+.modnorman ul li {
+	padding:10px 0;
+	margin:0;
+}
+.blackbg {
+	background-color:#000000;
+	padding:25px 0;
+}
+.modtop {
+	color:#ffffff;
+}
+.modtop h3 {
+	color:#526075;
+	text-align:center;
+	font-weight:normal;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:0;
+	margin:0;
+	padding-bottom:20px;
+	font-family:Oswald;
+	font-weight:300;
+}
+.modtop h4 {
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	font-size:28px;
+	text-transform:uppercase;
+	padding:0;
+	margin:0;
+	font-family:Oswald;
+	font-weight:700;
+}
+.headertop {
+	background:url(../../../images/flat_bgheader.jpg) left top no-repeat #1e222b;
+	min-height:690px;
+	color:#ffffff;
+}
+.col-6 {
+	float:left;
+	width:60%;
+	box-sizing: border-box;
+	padding:0 5px;	
+}
+.col-4 {
+	float:left;
+	width:40%;
+	box-sizing: border-box;
+	padding:0 5px;	
+}
+.modtopright {
+	background-color:#FFFFFF;
+	color:#000;
+	text-align:center;
+}
+.modtopright h3 {
+	padding:40px 36px;
+	margin:0;
+	background-color:#66a811;
+	color:#fff;
+	font-size:26px;
+	font-weight:normal;
+}
+.contrighht {
+	padding:30px 36px;
+	padding-bottom:56px;
+}
+.contrighht img {
+	max-width:100%;
+}
+.modtopright a.btnstyle {
+	display:block;
+	padding:20px;
+	background-color:#39a02b;
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:20px;
+	font-family:Oswald;
+	font-weight:300;
+}
+.modtopleft h1 {
+	text-transform:uppercase;
+	padding:98px 0;
+	margin:0;
+	font-weight:700;
+	font-size:50px;
+	font-family:Oswald;
+}
+.leftline {
+	border-left:4px solid #39a02b;
+	padding:2px 50px;
+}
+.modtopleft h2 {
+	margin:0;
+	padding:0;
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight:400;
+	font-family:Oswald;
+}
+.modtopleft h3 {
+	margin:0;
+	padding:0;
+	font-size:28px;
+}
+.modtopleft .moreinfo {
+	margin-left:50px;
+	margin-top:40px;
+
+}
+.modtopleft .moreinfo a {
+	display:inline-block;
+	color:#ffffff;
+	text-decoration:none;
+	background-color:#3c485b;
+	padding:28px 76px;
+	text-transform:uppercase;
+	font-size:22px;
+	font-family:Oswald;
+	font-weight:300;
+}
+
+.video-holder {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    background: url("../../../images/flat_img03.png") no-repeat;
+	background-size: 100%;
+	text-align: center;
+}
+.video-holder div{
+	width: 100% !important;
+	height: 670px !important;
+}
+.video-holder img {
+	width: 100%;
+	max-width: 100%;
+}
+.flex-video iframe, .flex-video object, .flex-video embed {
+    position: absolute;
+    top: 6.1%;
+    left: 11.5%;
+    width: 78%;
+   	height: 87.1%;
+}
+embed, iframe, img, object {
+    vertical-align: middle;
+}
+.flex-video {
+	position: relative;
+	height: 0px;
+	overflow: hidden;
+	padding-bottom: 58%;
+}
+/* responsive style */
+/* #Tablet (Landscape)
+================================================== */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+	body {
+		/*background-color:red;*/
+	}
+	.container_width {
+		width: 100%;
+	}
+	.modtopleft h1 {
+		padding: 40px 0px;
+		padding-left:50px;
+	}
+	
+}
+
+/* #Tablet (Portrait)
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body {
+		/*background-color:green;*/
+	}
+	.container_width {
+		width: 100%;
+	}
+	.modtopleft h1 {
+		padding: 20px 0px;
+		padding-left:50px;
+	}
+}
+
+/* #Mobile (Landscape)
+================================================== */
+@media only screen and (max-width: 767px) {
+	body {
+		/*background-color:blue;*/
+	}
+	.container_width {
+		width: 100%;
+		box-sizing: border-box;
+		padding:6px;
+	}
+	div [class^="col-"] {
+		float:none;
+		width:100%;
+	}
+	.modtopleft h1 {
+		padding: 20px 0px;
+		padding-left:10px;
+	}
+	.modtopleft h2 {
+		font-size:28px;
+	}
+	.modnorman img {
+		max-width:100%;
+	}
+}
+/* responsive style */
+</style>
+</head>
+<body>
+<div class="headertop">
+	<div class="container_width">
+		<div class="col-6">
+			<div class="modtopleft">
+				<h1>Your logo here</h1>
+				<div class="leftline">
+					<h2>FLAT AND CLEAN LANDING PAGE TEMPLATE</h2>
+					<h3>Amazing Design and Features</h3>
+					<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet in
+	egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec, a et.
+	Sed rhoncus, montes! Nisi ec, duis sagittis nec, a et. Sed rhoncusUrna
+	lectus phasellus montes porta mid. Eros non magna cras amet. Eros
+	non magna cras amet.</p>
+				</div>
+				<p class="moreinfo"><a href="#" class="moreinfolnk">More Info</a></p>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="modtopright">
+				<h3>Join Us and Get Free Access For 15 Days!</h3>
+				<div class="contrighht">
+					<p><img src="../../../images/flat_img01.jpg" border="0" /></p>
+					<p>Urna lectus phasellus montes porta mid. Eros non
+magna cras amet in egestas pellentesque! Arcu
+tortor eros porta.</p>
+					<p><a href="#"class="btnstyle">Get Access</a></p>
+					<p>We will NEVER give or sell your information</p>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
+<div class="blackbg">
+	<div class="container_width">
+		<div class="modtop">
+			<h3>Featured In:</h3>
+			<div class="col-3">
+				<h4>Your logo here</h4>
+			</div>
+			<div class="col-3">
+				<h4>Your logo here</h4>
+			</div>
+			<div class="col-3">
+				<h4>Your logo here</h4>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+</div>
+<div class="container_width">
+	<div class="modnorman">
+		<p><img src="../../../images/flat_img02.png" border="0" style="float:right; padding-left:50px;" /></p>
+		<h3>Amazing Features!</h3>
+		<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet
+in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec,
+a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		<ul>
+			<li>Urna lectus phasellus montes porta mid. Eros non magna
+cras amet in egestas pellentesque!</li>
+			<li>Urna lectus phasellus montes porta mid. Eros non magna
+cras amet in egestas pellentesque!</li>
+			<li>Urna lectus phasellus montes porta mid. Eros non magna
+cras amet in egestas pellentesque!</li>
+		</ul>
+		<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet
+in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec,
+a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		<div class="clr"></div>
+	</div>
+</div>
+<div class="greybg">
+	<div class="container_width">
+		<div class="modcenter ">
+			<h3>Heres a Video Tour Of The Product</h3>
+			
+			<div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=633 video-height=417" class="video-holder flex-video" style="">
+				<!--<iframe src="index.php?option=com_cta&amp;view=video&amp;layout=video&amp;vidfile=inv-per4.mp4&amp;vidimg=investmentstory.jpg&amp;wmode=opaque" style="display: block;" frameborder="0" height="417" width="633"></iframe>-->
+			</div>
+			
+			<!--<p><img src="../../../images/flat_img03.png" border="0" /></p>-->
+			
+			
+		</div>
+	</div>
+</div>
+<div class="container_width">
+	<div class="modcenter">
+		<h3>Heres a Video Tour Of The Product</h3>
+		<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec, a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		<div class="col-3">
+			<p><img src="../../../images/flat_icon01.png" border="0" /></p>
+			<h4>Awesome Benefits</h4>
+			<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec, a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		</div>
+		<div class="col-3">
+			<p><img src="../../../images/flat_icon02.png" border="0" /></p>
+			<h4>Awesome Benefits</h4>
+			<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec, a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		</div>
+		<div class="col-3">
+			<p><img src="../../../images/flat_icon03.png" border="0" /></p>
+			<h4>Awesome Benefits</h4>
+			<p>Urna lectus phasellus montes porta mid. Eros non magna cras amet in egestas pellentesque! Arcu tortor eros porta. Nec, duis sagittis nec, a et.estas pellentesque! Arcu tortor eros porta. Nec, duis sagittis</p>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
+<div class="footer">
+	<p>&copy; Betty Udesen's 2015</p>
+</div>
+</body>
+</html>

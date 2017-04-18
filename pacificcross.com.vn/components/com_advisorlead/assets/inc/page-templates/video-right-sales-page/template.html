@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        
+        <meta name="mp-customizable-color" content="#fffff8; Background Color" background_color="1">
+        
+        <meta name="mp-customizable-color" content="#ffffff; Headline">
+        <meta name="mp-customizable-color" content="#2C2C2C; Download Button">
+        <meta name="mp-customizable-color" content="#fffff2; Footer Text">
+        <meta content="#FBCD50; Download Button Color Start" name="mp-customizable-color">
+        <meta content="#FBBD03; Download Button Color End" name="mp-customizable-color">
+        <meta content="#baa400; Download Button Border Color" name="mp-customizable-color">
+
+        <style type="text/css">
+            body
+            {
+                background: #fffff8;
+                overflow: hidden;
+                font-size: 18px;
+                color: #fafafa;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                font: normal 14px/24px 'Arial',"Helvetica Neue",Helvetica,sans-serif;
+            }
+            body, html {
+                height: 100%;
+                width: 100%;
+            }
+
+            .container
+            {
+                position: absolute;
+                z-index: 5;
+                overflow: auto;
+                height: 100%;
+                width: 100%;
+            }
+            p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+            .content{
+                width: 100%;
+                text-align: center;
+            }
+            .sub_text{
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-family: Arial;
+                font-weight: bold;
+                color: red;
+
+            }
+            .tablet{
+                max-width: 100%;
+            }
+
+            .clear{
+                clear:both;
+            }
+            .right{
+                float: right;
+                width: 50%;
+            }
+            .logo{
+                padding: 10px 0px 30px 0px;
+                font-family: Arial;
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+
+            }
+            .content_right{
+                border: 1px solid gray;
+                width: 325px;
+                height:420px;
+                border-radius: 5px;
+                background: #2a2a2a;
+                margin: 5px auto;
+            }
+            .title_right{
+                border-radius: 5px 5px 0px 0px;
+                background: #232323;
+                color: yellow;
+                text-align: center;
+                font-family: Arial;
+                font-size: 30px;
+                height:100px;
+                line-height:100px;
+
+            }
+            .content_r{
+
+                height: 130px;
+                text-align: center;
+                color: white;
+                font-family: Arial;
+                font-weight: bold;
+                margin-top: 25px;
+                font-size: 14px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .input_text{
+                width:305px;
+                height:55px;
+                margin-left: 5px;
+                text-align: center;
+                font-size: 18px;
+            }
+            input[type='submit']{
+
+                width: 310px;
+                height:50px;
+                margin-left: 5px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                background: #baa400;
+                border:1px solid  #baa400;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+
+            .footer{
+                text-align: center;
+                margin: 10px 0 30px;
+                color: #fffff2;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .footer #copyright .footer_text{
+                color: #fff;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright{
+                color: #108cef;
+            }
+            .footer #copyright .footer_link_copyright:hover{
+                color: #ffdb4d;
+                text-decoration: none;
+            }
+            #bgimg{
+                position: absolute;
+                z-index: -1;
+                max-width: none;
+            }
+            .header_text{
+				width: 90%;
+                font-size: 40px;
+                margin: 30px 35px;
+                line-height: 1.2;
+                font-weight: bold;
+                color: #ffffff;
+                text-align: center;
+            }
+            .btn {
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                padding: 10px 55px;
+                font-size: 28px;
+                line-height: 32px;
+                background: rgb(68,147,67);
+                color: #fffff1;
+                font-weight: bold;
+                text-shadow: 0px 2px 0px rgba(32,107,26,0.5);
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-transition: background .25s;
+                -moz-transition: background .25s;
+                -ms-transition: background .25s;
+                -o-transition: background .25s;
+                transition: background .25s;
+                margin-bottom: 4px;
+            }
+            .btn:hover
+            {
+                background: rgba(68,147,67,0.8)
+            }
+            .btn:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('https://lh6.googleusercontent.com/-FSPREKZ0gbY/U4DnViDHQCI/AAAAAAAAABU/YBt10O4qGIQ/s31/arrow.png?gl=US') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            .video-holder {
+                width: 90%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 460px !important;
+            }
+
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-bottom: 55%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+            a.submit{
+                color: #2C2C2C;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 30px;
+                margin: 2px auto;
+                padding: 20px 0;
+                width: 80%;
+            }
+            a.submit:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('https://lh6.googleusercontent.com/-FSPREKZ0gbY/U4DnViDHQCI/AAAAAAAAABU/YBt10O4qGIQ/s31/arrow.png?gl=US') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            a.submit
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #baa400;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                moz-border-radius: 6px;
+                moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                webkit-border-radius: 6px;
+                webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+            }
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+            .bottom{
+                margin-top: 20px;
+                text-align: center;
+            }
+            @media only screen and (max-width: 964px){
+                .content {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                .video-holder {
+                    width: 100%; 
+                    margin: 0 auto;
+                }
+
+                .right
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+            @media only screen and (max-width: 568px){
+                .container .header_text, .container .sub_header_text{width: 90%;}
+                .container .header_text{font-size: 26px}
+                .container .sub_header_text{font-size: 22px}
+                .video-holder {width: 100%;}
+                .video-holder iframe{width: 100% !important }
+                a.submit {width: 100%}
+                .bottom img{width: 100%}
+                a.submit{font-size: 25px;}
+            }
+            @media only screen and (max-width: 360px){
+                a.submit{font-size: 17px;}
+            }
+        </style>
+        
+        <script>
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 900, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1440, height: 900, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+        </script>
+    </head>
+    <body>
+    <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image" data-lb-id="background" data-lb-comment="Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/man-mountain2.jpg" style="height: 100%;"/>
+    <div class="container">
+        <div style="float: left; width: 50%"></div>
+        <div class="right">
+            <p data-lb-id="headline" class="header_text" data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Learn How To Generate Targeted Leads For Your Business</p>
+            <div class="content">
+                <section data-lb-id="video" class="video-holder flex-video" data-lb="editable-video editable-optional video-width=817 video-height=556" data-lb-name="Video">
+                    <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                        <img data-lb-id="video-image" data-lb="editable-image max-image-size=817" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                    </a>
+                </section>
+                <section data-lb-name="Timed Release Button" data-lb="editable-fadein-box" data-lb-id="opt-in-box">
+                    <a  id="data-reveal-id" href="#" data-lb-id="submit-button" data-lb="editable-link editable-optional" data-lb-name="Submit Button" class="submit">Download Free Report</a>
+                </section>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="bottom">
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <div id="copyright">
+                <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

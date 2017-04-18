@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta name="mp-customizable-color" content="#5D7381; Content Border Color">
+        <meta name="mp-customizable-color" content="#ffffff; Content Background Color">
+        <meta name="mp-customizable-color" content="#fe9244; Headline Color">
+        <meta name="mp-customizable-color" content="#DF8505; Button Background Color">
+
+        <style type="text/css">
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #fffffd;
+            }
+
+            .container
+            {
+                width: 600px;
+                background: #5D7381;
+                margin: 50px auto;
+                padding: 10px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+            }
+
+            .content
+            {
+                padding: 10px 0;
+                margin: 10px;
+                background: #ffffff;
+                text-align: center;
+            }
+
+            .container img
+            {
+                max-width: 100%;
+            }
+
+            .container hr
+            {
+                border: 1px solid rgba(0,0,0,0.1);
+            }
+
+            .container h2
+            {
+                margin: 0 0 10px;
+                text-align: center;
+                font-size: 26px;
+                line-height: 1.4;
+                color: #fe9244;
+            }
+
+            .container h4
+            {
+                text-align: center;
+                margin: 0 20px 20px;
+                font-size: 18px;
+                color: #fffffe;
+            }
+
+            @media (max-width: 630px)
+            {
+                .container
+                {
+                    width: 90%;
+                }
+            }
+
+            #main_content
+            {
+                padding: 0 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .social-comments
+            {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            form{
+                padding: 0 15px;
+            }
+
+            form input[type="text"]
+            {
+                padding: 15px 0;
+                width: 100%;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                text-align: center;
+                margin-bottom: 15px;
+                border-radius: 4px;
+                transition: 0.5s all;
+                color: rgba(0,0,0,0.5);
+            }
+
+            form input[type="text"]:focus
+            {
+                border: 1px solid #00a8ff;
+                box-shadow: 0px 0px 10px #00a8ff;
+            }
+
+            form button
+            {
+                background-color: #DF8505;
+                color: #ffffff;
+                border-radius: 4px;
+                border: none;
+                display: inline-block;
+                font-size: 17px;
+                line-height: 20px;
+                padding: 12px 20px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+            #copyright
+            {
+                margin-top: 50px;
+                color: #fffff1;
+                font-size: 12px;
+            }
+
+            #copyright a
+            {
+                color: #fffff2;
+                text-decoration: none;
+            }
+
+            .video-background
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                overflow: hidden;
+                min-width: 100%;
+                min-height: 100%;
+                -webkit-transform-style: preserve-3d;
+            }
+
+            .video-background video
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: 1;
+            }
+
+        </style>
+        
+        <script>
+            $(document).ready(function() {
+                if (typeof itps_input_data != 'undefined') {
+                    $('.video-background video').attr('poster', itps_input_data['image-source']);
+                    var extension = itps_input_data['video-source'].substr((itps_input_data['video-source'].lastIndexOf('.') + 1));
+                    var type = '';
+                    switch (extension) {
+                        case "webm":
+                            type = 'video/webm';
+                            break;
+                        case "mp4":
+                            type = 'video/mp4';
+                            break;
+                        case "ogv":
+                            type = 'video/ogg';
+                            break;
+
+                    }
+                    $('.video-background video source').attr('type', type);
+                    $('.video-background video source').attr('src', itps_input_data['video-source']);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <a href="#" data-lb="editable-link editable-optional link-only">
+                    <img src="{LOCAL_URL}/logo-members.png" data-lb-name="Logo" data-lb="editable-image max-image-size=378" data-lb-id="logo">
+                </a>
+                <h2 data-lb-id="headline"  data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Discover These Lead Generating Secrets For Your Home Business!</h2>
+                <hr/>
+                <form data-lb-id="opt-in" method="post" data-lb="editable-opt-in-form" data-lb-name="Opt-in Form Integration" action="#">
+                    <input type="text" id="name" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Name Text" value="Enter Your First Name Here..." data-lb="editable-text-input opt-in-name" data-lb-id="opt-in-name" title="Enter Your First Name Here" name="name" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;"><br/>
+                    <input type="text" id="email" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Email Text" value="Enter a Valid Email Here..." data-lb="editable-text-input opt-in-mail" data-lb-id="opt-in-email" title="Enter a Valid Email Here" name="email" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }"><br/>
+                    <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                    <button data-lb-name="Opt-in Submit" data-lb-id="opt-in-submit" type="submit" data-lb="editable-submit editable-text" class="submit" style="cursor: pointer;">Send Me The Videos!</button>
+                </form>
+            </div>
+        </div>
+        <div class="video-background">
+            <video autoplay="" loop poster="{LOCAL_URL}/sample-video.jpg">
+                <source src="{LOCAL_URL}/sample-video.webm" type="video/webm">
+            </video>
+        </div>
+    </body>
+</html>

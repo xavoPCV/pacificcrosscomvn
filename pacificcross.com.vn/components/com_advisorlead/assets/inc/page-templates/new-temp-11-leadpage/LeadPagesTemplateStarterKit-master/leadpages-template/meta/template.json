@@ -1,0 +1,505 @@
+{
+    "id": "LP-TSK-01",
+    "name": "Template Starter Kit",
+    "mobile": true,
+    "notes": "Initial Release 1.0",
+    "syntax": 4,
+    "version": 1.0,
+    "style": {
+        "replacements": [
+            {
+                "type": "color",
+                "name": "Header Color",
+                "find": "#1e8cc6"
+            },
+            {
+                "type": "color",
+                "name": "Banner Background Color",
+                "find": "#39495A"
+            },
+            {
+                "type": "color",
+                "name": "Banner Text Color",
+                "find": "#fffffe"
+            },
+            {
+                "type": "color",
+                "name": "Date Separator Color",
+                "find": "#989898"
+            },
+            {
+                "type": "color",
+                "name": "Button Color",
+                "find": "#229cdc"
+            },
+            {
+                "type": "color",
+                "name": "Button Text Color",
+                "find": "#fdfefe"
+            },
+            {
+                "type": "color",
+                "name": "Button Hover Color",
+                "find": "#1b7cb0"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Background Color",
+                "find": "#656564"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Number Color",
+                "find": "#FAFAFA"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Label Color",
+                "find": "#adadad"
+            },
+            {
+                "type": "color",
+                "name": "Description Background Color",
+                "find": "#fffffc"
+            },
+            {
+                "type": "color",
+                "name": "Description Header Title Color",
+                "find": "#333335"
+            },
+            {
+                "type": "color",
+                "name": "Description Subheader Title Color",
+                "find": "#555557"
+            },
+            {
+                "type": "color",
+                "name": "Description Paragraph Color",
+                "find": "#222224"
+            },
+            {
+                "type": "color",
+                "name": "Testimonial Background Color",
+                "find": "#727B84"
+            },
+            {
+                "type": "color",
+                "name": "Testimonial Text Color",
+                "find": "#fefefd"
+            },
+            {
+                "type": "color",
+                "name": "Call to Action Background Color",
+                "find": "#fefffe"
+            },
+            {
+                "type": "color",
+                "name": "Call to Action Text Color",
+                "find": "#333332"
+            },
+            {
+                "type": "color",
+                "name": "Footer Background Color",
+                "find": "#656565"
+            },
+            {
+                "type": "color",
+                "name": "Footer Text Color",
+                "find": "#fefdfe"
+            },
+            {
+                "type": "color",
+                "name": "Footer Text Hover Color",
+                "find": "#a0a0a0"
+            }
+        ]
+    },
+    "form": {
+        "title": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "18pt;",
+                "letter-spacing": "0em;"
+            },
+            "html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+        },
+        "submit": {
+            "css": {
+                "background-color": "#ffcb01;",
+                "border-color": "#ffb403;",
+                "border-width": "0pt;",
+                "border-style": "solid;",
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "14pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "Free Instant Access &raquo;"
+        },
+        "privacy": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "12pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+        }
+    },
+    "variables": {
+        "facebookurl": {
+            "variable": "facebookurl",
+            "default": "",
+            "name": "The URL to share on Facebook. Leave blank to share the current page."
+        }
+    },
+    "elements": [
+        {
+            "id": "container--header-wrapper",
+            "name": "Logo Bar",
+            "type": "container"
+        },
+        {
+            "id": "container--intro-wrapper",
+            "name": "Banner Section",
+            "type": "container"
+        },
+        {
+            "id": "container--countdown-wrapper",
+            "name": "Countdown Section",
+            "type": "container"
+        },
+        {
+            "id": "container--description-wrapper",
+            "name": "Description Section",
+            "type": "container"
+        },
+        {
+            "id": "container--testimonial-wrapper",
+            "name": "Testimonial Section",
+            "type": "container"
+        },
+        {
+            "id": "container--cta-wrapper",
+            "name": "Call to Action Section",
+            "type": "container"
+        },
+        {
+            "id": "container--footer-wrapper",
+            "name": "Footer Section",
+            "type": "container"
+        },
+        {
+            "id": "container--social-media",
+            "name": "Social Media Section",
+            "type": "container"
+        },
+        {
+            "id": "container--social-facebook",
+            "name": "Facebook Icon",
+            "type": "container"
+        },
+        {
+            "id": "container--social-twitter",
+            "name": "Twitter Icon",
+            "type": "container"
+        },
+        {
+            "id": "container--social-google",
+            "name": "Google Plus Icon",
+            "type": "container"
+        },
+        {
+            "id": "container--social-linkedin",
+            "name": "LinkedIn Icon",
+            "type": "container"
+        },
+        {
+            "id": "container--imglnk-wrapper",
+            "name": "Image Link Section",
+            "type": "container"
+        },
+        {
+            "id": "container--embed-wrapper",
+            "name": "Embed Section",
+            "type": "container"
+        },
+        {
+            "id": "container--hr1",
+            "name": "Intro HorizontalRule",
+            "type": "container"
+        },
+        {
+            "id": "container--hr2",
+            "name": "Social HorizontalRule",
+            "type": "container"
+        },
+        {
+            "type": "facebook-button",
+            "id": "facebook-button--fblike",
+            "name": "Facebook Like"
+        },
+        {
+            "type": "dynamic",
+            "id": "dynamic--fbshare",
+            "name": "Facebook Share Button",
+            "data": {
+                "variables": [
+                    "facebookurl"
+                ]
+            }
+        },
+        {
+            "id": "image--logo",
+            "name": "Logo",
+            "type": "image",
+            "comment": "Upload your logo.",
+            "data": {
+                "max-width": 245
+            }
+        },
+        {
+            "id": "image--intro_bg",
+            "name": "Banner Background Image",
+            "type": "image",
+            "comment": "Choose a background photo for your banner.",
+            "data": {
+                "max-width": 1600,
+                "alternate-sources": [
+                    "img/01.jpg",
+                    "img/02.jpg",
+                    "img/03.jpg",
+                    "img/04.jpg",
+                    "img/05.jpg",
+                    "img/06.jpg",
+                    "img/07.jpg",
+                    "img/08.jpg",
+                    "img/09.jpg",
+                    "img/10.jpg"
+                ]
+            }
+        },
+        {
+            "type": "embed",
+            "id": "embed--embed_01",
+            "name": "Embed Video/Media"
+        },
+        {
+            "type": "video",
+            "id": "video--description-video",
+            "name": "Description Video/Media"
+        },
+        {
+            "type": "link",
+            "id": "link--cta_1_link",
+            "name": "Primary Signup Button",
+            "data": {
+                "href": "#/optin"
+            }
+        },
+        {
+            "type": "link",
+            "id": "link--cta_2_link",
+            "name": "Secondary Signup Button",
+            "data": {
+                "href": "#/optin"
+            }
+        },
+        {
+            "type": "link",
+            "id": "link--facebook_link",
+            "name": "Facebook Link"
+        },
+        {
+            "type": "link",
+            "id": "link--twitter_link",
+            "name": "Twitter Link"
+        },
+        {
+            "type": "link",
+            "id": "link--google_link",
+            "name": "Google Plus Link"
+        },
+        {
+            "type": "link",
+            "id": "link--linkedin_link",
+            "name": "LinkedIn Link"
+        },
+        {
+            "type": "container",
+            "id": "container--footer_links",
+            "name": "Footer Links"
+        },{
+            "type": "link",
+            "id": "link--footer_link_1",
+            "name": "#1 Footer Link"
+        },
+        {
+            "type": "link",
+            "id": "link--footer_link_2",
+            "name": "#2 Footer Link"
+        },
+        {
+            "type": "link",
+            "id": "link--footer_link_3",
+            "name": "#3 Footer Link"
+        },
+        {
+            "type": "link",
+            "id": "link--footer_link_4",
+            "name": "#4 Footer Link"
+        },
+        {
+            "type": "countdown",
+            "id": "countdown--launch_countdown",
+            "name": "Registration Countdown"
+        },
+        {
+            "id": "text--intro_title",
+            "name": "Banner First Line",
+            "type": "text"
+        },
+        {
+            "id": "text--intro_subtitle",
+            "name": "Banner Second Line",
+            "type": "text"
+        },
+        {
+            "id": "container--horizontalRule",
+            "name": "Horizontal Line",
+            "type": "container"
+        },
+        {
+            "id": "text--join_us",
+            "name": "Banner Small Text",
+            "type": "text"
+        },
+        {
+            "id": "text--day",
+            "name": "Webinar Date",
+            "type": "text"
+        },
+        {
+            "id": "container--dashes",
+            "name": "Webinar Dashes",
+            "type": "container"
+        },
+        {
+            "id": "text--time",
+            "name": "Webinar Time",
+            "type": "text"
+        },
+        {
+            "id": "text--description_title",
+            "name": "Description Header Title",
+            "type": "text"
+        },
+        {
+            "type": "image-link",
+            "id": "image-link--imgLink_01",
+            "name": "Image Link #1",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "type": "image-link",
+            "id": "image-link--imgLink_02",
+            "name": "Image Link #2",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "type": "image-link",
+            "id": "imageLink--imgLink_03",
+            "name": "Image Link #3",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "text--description_subtitle",
+            "name": "Description Subheader Title",
+            "type": "text"
+        },
+        {
+            "id": "text--description_text",
+            "name": "Description Text",
+            "type": "text"
+        },
+        {
+            "id": "text--testimonial_title",
+            "name": "Testimonial Title",
+            "type": "text"
+        },
+        {
+            "id": "text--testimonial_1_text",
+            "name": "#1 Testimonial Text",
+            "type": "text"
+        },
+        {
+            "id": "text--testimonial_1_author",
+            "name": "#1 Testimonial Author",
+            "type": "text"
+        },
+        {
+            "id": "text--testimonial_2_text",
+            "name": "#2 Testimonial Text",
+            "type": "text"
+        },
+        {
+            "id": "text--testimonial_2_author",
+            "name": "#2 Testimonial Author",
+            "type": "text"
+        },
+        {
+            "id": "text--countdown_text",
+            "name": "Countdown Title",
+            "type": "text"
+        },
+        {
+            "id": "text--cta_title",
+            "name": "Call To Action Title",
+            "type": "text"
+        },
+        {
+            "id": "text--cd-days",
+            "name": "Days Text",
+            "type": "text"
+        },
+        {
+            "id": "text--cd-hours",
+            "name": "Hours Text",
+            "type": "text"
+        },
+        {
+            "id": "text--cd-mins",
+            "name": "Mins Text",
+            "type": "text"
+        },
+        {
+            "id": "text--cd-secs",
+            "name": "Secs Text",
+            "type": "text"
+        },
+        {
+            "id": "text--emb_title",
+            "name": "Embed Section Headline",
+            "type": "text"
+        },
+        {
+            "id": "text--imglnk_title",
+            "name": "Image Link / Social Headline",
+            "type": "text"
+        },
+        {
+            "id": "text--fblike_text",
+            "name": "FB Like Text",
+            "type": "text"
+        },
+        {
+            "id": "text--legal_text",
+            "name": "Legal Text",
+            "type": "text"
+        }
+    ]
+}

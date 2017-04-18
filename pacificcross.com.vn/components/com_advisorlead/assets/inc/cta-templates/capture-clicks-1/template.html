@@ -1,0 +1,157 @@
+<div id="color_changeable">
+    <color element="#form_style" value="#ffffff" type="background-color" name="Form Background Color" />
+    <color element="#form_style" value="#f5ecec" type="border-color" name="Form Border Color" />
+
+    <color element="#submit_button" value="#d91c00" type="background-color" name="Button Color" />
+    <color element="#submit_button" value="#540200" type="text-shadow" more="0 0 5px" name="Button Text Shadow Color" />
+    <color element="#submit_button" value="#FFB403" type="border-color" name="Button Border Color" />    
+    <color element="#right_box_content" parent="#form_style" value="#296390" type="background-color" name="Box Right Background Color" />
+</div>
+<div id="attribute_changeable">
+    <attribute element='#form_style' display_name='Border Style' edit_type='select-border-style' att_id='form-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#form_style' display_name='Border Width' edit_type='slider' att_id='form-border-width' att_type='border-width' def_value="13" min="0" max="15"/>
+
+    <attribute element='#header_text' display_name='Font' edit_type='select-font' att_id='header-text-font-family' att_type='font-family' def_value="Ubuntu" />
+    <attribute element='#header_text' display_name='Letter Spacing' edit_type='slider' att_id='header-text-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#header_text' display_name='Font Size' edit_type='slider' att_id='header-text-font-size' att_type='font-size' def_value="26px" min="10" max="48" />
+
+    <attribute element='#box_title' display_name='Font' edit_type='select-font' att_id='box-title-font-family' att_type='font-family' def_value="Arial"/>
+    <attribute element='#box_title' display_name='Letter Spacing' edit_type='slider' att_id='box-title-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#box_title' display_name='Font Size' edit_type='slider' att_id='box-title-font-size' att_type='font-size' def_value="14px" min="10" max="48" />
+
+    <attribute element='#left_list' display_name='Font' edit_type='select-font' att_id='left-list-font-family' att_type='font-family' def_value="Arial"/>
+    <attribute element='#left_list' display_name='Letter Spacing' edit_type='slider' att_id='left-list-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#left_list' display_name='Font Size' edit_type='slider' att_id='left-list-font-size' att_type='font-size' def_value="14px" min="10" max="48" />
+
+    <attribute element='#privacy_policy' display_name='Font' edit_type='select-font' att_id='privacy-policy-font-family' att_type='font-family' def_value="Arial"/>
+    <attribute element='#privacy_policy' display_name='Letter Spacing' edit_type='slider' att_id='privacy-policy-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#privacy_policy' display_name='Font Size' edit_type='slider' att_id='privacy-policy-font-size' att_type='font-size' def_value="13px" min="10" max="48" />
+
+    <attribute element='#no_interesting' display_name='Font' edit_type='select-font' att_id='no-interesting-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#no_interesting' display_name='Letter Spacing' edit_type='slider' att_id='no-interesting-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#no_interesting' display_name='Font Size' edit_type='slider' att_id='no-interesting-font-size' att_type='font-size' def_value="13px" min="10" max="48" />
+
+    <attribute element='#submit_button' display_name='Font' edit_type='select-font' att_id='button-font-family' att_type='font-family'  def_value="Arial"/>
+    <attribute element='#submit_button' display_name='Letter Spacing' edit_type='slider' att_id='button-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#submit_button' display_name='Font Size' edit_type='slider' att_id='button-font-size' att_type='font-size' def_value="20px" min="10" max="48" />
+    <attribute element='#submit_button' display_name='Border Style' edit_type='select-border-style' att_id='button-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#submit_button' display_name='Top Border Width' edit_type='slider' att_id='button-top-border' att_type='border-top-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Bottom Border Width' edit_type='slider' att_id='button-bottom-border' att_type='border-bottom-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Left Border Width' edit_type='slider' att_id='button-left-border' att_type='border-left-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Right Border Width' edit_type='slider' att_id='button-right-border' att_type='border-right-width' def_value="0" min="0" max="15" />
+</div>
+<style>
+    #capture_clicks_content #header_text{
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #capture_clicks_content .right_box{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #left_list{
+        list-style-image: url('{LOCAL_URL}/check.png');
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    #left_list li{
+        margin-bottom: 10px;
+    }
+
+    #right_box_content{
+        background: #296390;
+        min-height: 400px;
+        position: relative;
+        z-index: 2;
+    }
+
+    #capture_clicks_content #form_body #privacy_policy{
+        color: #5f9db6;
+    }
+
+    #capture_clicks_content #form_body #submit_button{
+        padding: 3%;
+        text-shadow: 0 0 5px #540200;
+        border: 1px solid #3d0c00;
+        border-radius: 5px;
+
+        background-color: #d91c00;
+    }
+
+    #capture_clicks_content #form_body #submit_button:hover{
+
+        background-color: #820009;
+    }
+
+    #capture_clicks_content #form_style{
+        border: 13px solid #f5ecec;
+        padding: 0;
+    }
+
+    #capture_clicks_content #form_body #form_fields li input{
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    #capture_clicks_content #form_body #form_fields{
+        padding: 10px 0;
+    }
+
+    #glow_inside{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 0 130px 130px rgba(255,255,255,0.3);
+        z-index: 1;
+    }
+
+</style>
+<div id="capture_clicks_content">
+    <form id="form_style" method="POST">
+        <div id="form_body" class="row">
+            <div id="left_box_content" class="columns_8">
+                <div id="header_text" element_id='header_text' element_type='text' removable element_name='Header Text' class="mits_form_element">
+                    Battle Mastermind: Watch mastermind sessions with Russell Brunson, John Lee Dumas, Ray Higdon, and lots more!
+                </div>
+                <div class="row">
+                    <div id="header_text" class="columns_5">
+                        <img id="form_image" element_id='form_image' element_type='image' removable element_name='Form Image' class="mits_form_element" src="{LOCAL_URL}/battle-mastermind-book.png">
+                    </div>
+                    <div class="columns_7">
+                        <p id="box_title" element_id="box_title" element_type="text" removable element_name="Box Title" class="mits_form_element">Discover the Secrets that top earners used to build their business, and other Incredible Tips you won't hear anywere else!</p>
+                        <ul id="left_list" element_id='left_list' element_type='text' removable element_name='Left List' class="mits_form_element">
+                            <li>30 minute - 1 hour mastermind sessions.</li>
+                            <li>The top names in the network marketing business.</li>
+                            <li>The top entrepreneurs in the world.</li>
+                            <li>These sessions are priceless!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="right_box_content" class="columns_4">
+                <ul id="form_fields">
+                    <li field_name="email">
+                        <input type="text" placeholder="Email Address" name="email" is_required="true">  
+                        <span type="invalid" class="error-message" style="display: none;">Please enter a correct value for this field</span>  
+                        <span type="required" class="error-message" style="display: none;">You must fill out this field in order to proceed</span>   
+                        <i class="icon_drag"></i>
+                    </li>
+                </ul>
+                <button id="submit_button"  type="submit" element_id='submit_button' element_type='text' element_name='Submit Button' class="mits_form_element">Watch Now</button>
+                <div id="privacy_policy" element_id='privacy_policy' removable element_type='text' element_name='Privacy Policy Text' class="mits_form_element">
+                    <i>We respect your privacy. Your information will not be shared with any third party and you can unsubscribe at any time.</i>
+                </div>
+                <div id="no_interesting" element_id='no_interesting' removable element_type='text' element_name='No Interesting Text' class="mits_form_element" event_behavior='cta_close' action="close_forever">
+                    <span style="color: red;">Not interesting ? Never show this popup again</span>
+                </div>
+                <div id="glow_inside"></div>
+            </div>
+        </div>
+        <div id="capture_clicks_close" event_behavior='cta_close' action="close_only"></div>
+    </form>
+</div>

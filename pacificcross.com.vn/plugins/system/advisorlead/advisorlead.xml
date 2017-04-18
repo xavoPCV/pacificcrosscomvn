@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system">
+	<name>advisorlead</name>
+	<author>HT</author>
+	<creationDate>Dec 2015</creationDate>
+	<authorEmail>hungtt@iexodus.com</authorEmail>
+	<authorUrl>www.iexodus.com</authorUrl>
+	<version>1.0</version>
+	<description>advisorlead</description>
+	<files>
+		<filename plugin="advisorlead">advisorlead.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

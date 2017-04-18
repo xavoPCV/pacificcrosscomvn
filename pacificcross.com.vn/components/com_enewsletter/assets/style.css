@@ -1,0 +1,31 @@
+.com_enews {}
+.com_enews h1.h1title {}
+.com_enews ul.archivelist, .com_enews ul.archivelist > li {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.com_enews ul.archivelist {
+	clear:both;
+}
+.com_enews ul.archivelist > li {
+	float:left;
+	width:33.33%;
+	box-sizing: border-box;
+	padding:2px;
+	height:230px;
+	overflow:hidden;
+}
+.com_enews ul.archivelist > li img {
+	width:100%;
+}
+.clr {
+	float:none;
+	clear:both;
+}
+a.tag-cloud {
+    
+    text-decoration: none;
+ 
+    display: block;
+}

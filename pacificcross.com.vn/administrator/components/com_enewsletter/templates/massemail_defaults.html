@@ -1,0 +1,217 @@
+<div id="isdatahtml">
+  <table width="800" align="center" cellpadding="0" cellspacing="0"
+  bgcolor="#FFFFFF">
+    <tr>
+      <td>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="enewsheader">
+				  <tr valign="top">
+					<td height="100" bgcolor="#ffffff" style="vertical-align:top;" >
+                                            
+                                         <div id="logomail" style="width: 48%; float: left; margin-bottom: 50px; position: relative;" class="ui-draggable ui-draggable-handle ui-sortable-handle">
+                                <img  id="imgslogo"  src="http://www.advisorproducts.com/components/com_enewsletter/images/logotext.png" border="0" /></div>
+                                        
+                                        </td>
+					<td align="left" width="385px">
+						    <div id="address" style="width: 48%;float: left;margin-bottom: 50px;" class="ui-sortable-handle">
+						<div id="address-content" class="ui-draggable ui-draggable-handle" style="position: relative;"> <table border="0" cellspacing="0" cellpadding="0">
+						<tr valign="top">
+							<td>
+								<p style="font-size:12px;"><b>{$firm_name}</b><br/>
+								<span id="topaddress">{$firm_address}, {$firm_address2}<br/>
+								{$firm_city}, {$firm_state} {$firm_zip}<br/>
+								{$firm_phone}<br/></span>
+								{$firm_email}<br/>
+								{$firm_url}</p>
+							</td>
+							<td id="secondaddress">
+								<p style="font-size:12px;"><span id="topaddress2"><b> </b><br/>{$firm_second_address}, {$firm_second_address2}<br/>
+								{$firm_second_city}, {$firm_second_zip} {$firm_second_state}<br/>
+								{$firm_second_phone}<br/></span></p>
+							</td>
+						</tr>
+						</table>          </div>
+                                                    </div>
+                                            
+					   <p align="right" width="250" style="margin-right:60px;" ><br/>
+                                           <div id="social" >   
+                                             {$social_links}
+                                           </div> 
+                                             
+                                           
+                                           </p>
+					</td>
+					</tr>
+				</table>
+				{$firm_banner}
+            </td>
+          </tr>
+
+          <tr>
+            <td valign="top">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top" bgcolor="#FFFFFF">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+                                  <tbody>
+                                     <tr bgcolor="#ECEBE0" id= "massemailcontent">
+                                      <td style="padding:0 25px 0px 25px;">
+                                      <table bgcolor="#ECEBE0" width="100%"> 
+                                      <tr>
+                                        <td>
+                                      <div id="cta" style="display: block; margin-bottom: 0px; " class="ui-sortable-handle">
+					    
+					   <img src="http://rimbatest1.advisorproducts.com/images/contenttest.png" alt="Smiley face"  style="display:none;" ><table id="articles" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" class="mceItemTable">
+                              <tbody>
+                                  <tr id="intro" bgcolor="#ECEBE0">
+                                      <td style="padding: 10px 25px 10px 25px;" data-mce-style="padding: 10px 25px 10px 25px;">
+                                          <strong class="intro"> {$intro} </strong>
+                                      </td>
+                                  </tr>
+                                  <tr id="article_1" style="background-color: #fbe497;" data-mce-style="background-color: #fbe497;">
+                                      <td style="padding: 25px;" data-mce-style="padding: 25px;">
+                                          <table width="100%" class="mceItemTable">
+                                              <tbody>
+                                                  <tr>
+                                                      <td style="padding: 0 0 0 0;  font-face: arial; font-size: 10px; text-align: justify;" valign="top" data-mce-style="padding: 0 0 0 0; width: 45%; font-face: arial; font-size: 10px; text-align: justify;">
+                                                           <a href="{$articlelink1}" data-mce-href="{$articlelink1}">
+                                                              <img src="images/contenttest.png" border="0" width="545"  height="300" data-mce-src="{$articleimage1}"> </a>
+                                                          <br>
+                                                          <span style="font-family: Arial; font-size: medium;" data-mce-style="font-family: Arial; font-size: medium;"> <strong style="font-size: 20px;" data-mce-style="font-size: 20px;"><a href="{$articlelink1}" style="color: #000000; text-decoration: none;" data-mce-href="{$articlelink1}" data-mce-style="color: #000000; text-decoration: none;">{$articletitle1}</a></strong> <br>{$articlebody1} </span>
+                                                      </td>
+                                                     
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+			           </div>
+                                          </td>
+                                       </tr>
+                                       </table>
+                                      </td>
+                                    </tr>
+
+                                    <tr id="disclosure">
+                                      <td style="padding:10px 25px 0 25px;">
+                                      <font face="Arial" size="1">
+                                        
+                                        </font>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="center" style="padding:10px 0 0 0;" >
+                                      <p><img src="http://sample3joomla.advisorproducts.com/templates/sample3/images/couplecartoon.png" style="margin-top: 10px;border:none !important;"></p>
+									  <p><font size="4" face="arial">Give us a call and learn more today!
+									  <span id="bottomaddress">
+									  <br />
+										{$firm_address_bottom}, {$firm_address2_bottom}<br/>
+										{$firm_city_bottom}, {$firm_zip_bottom} {$firm_state_bottom}<br/>
+										{$firm_phone_bottom}
+										</span>
+									  </font></p>
+									  <p id="bottomaddress2"><font size="4" face="arial">
+										{$firm_second_address_bottom}, {$firm_second_address2_bottom}<br/>
+										{$firm_second_city_bottom}, {$firm_second_zip_bottom} {$firm_second_state_bottom}<br/>
+										{$firm_second_phone_bottom}
+									  </font></p>
+                                      
+                                      
+									  </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<div style="display: none;" class="ssddffssf" >
+      <div id="advions-content" class="module ui-sortable-handle" style=" margin-top: 5px; margin-bottom: 20px; border: 4px solid rgb(221, 221, 221); border-radius: 3px; text-align: center;"> </div>
+                       
+    <div id="poll-content" class="module blue ui-sortable-handle" style=" padding: 20px; color: rgb(255, 255, 255); margin-top: 5px; margin-bottom: 20px; border-radius: 3px; text-align: center; background-color: rgb(34, 104, 190);"> 
+                            <h1 style="color: #F79925!important;    text-transform: uppercase;    font-size: 18px!important; " class="poll-content-title1">   quick poll     </h1>
+                            
+   <div class="poll-content-text1" style="    text-align: center;color: #fff; ">  <div>Real average hourly earnings soared since October 2014  ?</div><br /></div>   
+                       
+    </div>
+                        
+  <div id="seminar" class="module default ui-sortable-handle" style="   margin-top: 5px;    margin-bottom: 20px;    border: 4px solid rgb(221,221,221);    border-radius: 3px;    padding: 30px;    text-align: center;">
+                                   <h3 class="seminar-content-title2">
+                                      Establish A Sustainble Retirement Income Plan
+                                   </h3>
+                                   <div class="seminar-content-text2">                                    
+                                       <a href="#" class="button-or" style="    color: #FFF!important;    background-color: #FF9b0b;    font-size: 12px;    padding: 10px;    margin: 5px;    margin-top: 20px;    text-decoration: none;    padding-left: 30px;    padding-right: 30px;"> Start </a>
+                                   </div>
+                               </div>
+                               
+                              
+  <div id="map" class="module ui-sortable-handle" style=" margin-top: 5px; margin-bottom: 20px; border: 4px solid rgb(221, 221, 221); border-radius: 3px; text-align: center;">
+                           </div>
+                              
+                            
+                        
+   <div id="schedule" class="module default ui-sortable-handle" style=" margin-top: 5px; margin-bottom: 20px; border: 4px solid rgb(221, 221, 221); border-radius: 3px; padding: 30px; text-align: center;">
+                                   <a id="aschedule" href="http://www.advisorproducts.com/book-now-iexodus">
+                                  <img src="http://www.advisorproducts.com/components/com_enewsletter/images/meeting.png" width="69" /><h3 class="poll-content-title2">
+                                     Schedule A Meeting
+                                   </h3>
+                                  </a>
+                               </div>
+			<div id="serminar1" class="module default ui-sortable-handle" style=" margin-top: 5px; margin-bottom: 20px; border: 4px solid rgb(221, 221, 221); border-radius: 3px; padding: 30px; text-align: center;">
+                                   <a id="aserminar1" href="https://www.advisorproducts.com/index.php?option=com_zcalendar">
+                                  <img src="http://www.advisorproducts.com/components/com_enewsletter/images/serminar.png" width="69" /><h3 class="poll-content-title2">
+                                     Webinar Series 
+                                   </h3>
+                                  </a>
+                               </div>
+                        
+                        <div id="weekly" class="module default ui-sortable-handle" style="margin-top: 5px; margin-bottom: 20px; border-radius: 3px; padding: 30px; text-align: center;">
+                                  
+                                  <img src="http://www.advisorproducts.com/components/com_enewsletter/images/weekly.png" width="69" /><h3 class="poll-content-title2">
+                                  <a id="aweekly" href="https://www.advisorproducts.com/weekly-update">Weekly Investment Update</a>
+                                   </h3>
+                                 
+                        </div>
+                               
+                                <div id="invest" class="ui-sortable-handle" style="   margin-top: 5px;    margin-bottom: 20px;    border: 4px solid rgb(221,221,221)!important;    border-radius: 3px;    background-color: #fff!important;padding: 30px;    text-align: center;" >
+                             
+                                 <img src="http://rimbatest1.advisorproducts.com/images/Investment.png" width="69" alt="Smiley face" />
+                                 <br>
+                                <a id="ainvest" href="http://rimbatest1.advisorproducts.com/about/featured-news" style="font-size: 22px;">Investment Indexes</a> 
+                                
+                        </div>
+                        
+                        
+                        <div id="financial" class="ui-sortable-handle" style=" margin-top: 5px;    margin-bottom: 20px;    border: 4px solid rgb(221,221,221)!important;    border-radius: 3px;    background-color: #fff!important;padding: 30px;    text-align: center;" >
+                                
+                            <img src="http://rimbatest1.advisorproducts.com/images/financial.png" width="69" alt="Smiley face" /><br>
+                             <a id="afinancial" href="http://rimbatest1.advisorproducts.com/about/financial-briefs" style="font-size: 22px;">Finalcial Planning</a> 
+                            
+                            
+                        </div>
+                        
+                        
+                               <div id="cloud-tag" class="module default ui-sortable-handle" style=" margin-top: 5px; margin-bottom: 20px; border: 4px solid rgb(221, 221, 221); border-radius: 3px; padding: 30px; text-align: center;">
+		<div style="    display: table;    padding: 10px;">
+	  	</div>
+	</div>
+</div>
+
+</div>

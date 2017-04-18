@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>PublishDown</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Publish down field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="publishdown_separator" type="text" size="3" default="/" label="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_SEPARATOR" description="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_SEPARATOR_DESC" />
+				<field name="publishdown_day" type="list" default="2" label="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_DAY" description="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_DAY_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishdown_month" type="list" default="1" label="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_MONTH" description="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_MONTH_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishdown_year" type="list" default="0" label="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_YEAR" description="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_YEAR_DESC">
+					<option value="0">1</option>
+					<option value="1">2</option>
+					<option value="2">3</option>
+				</field>
+				<field name="publishdown_hour" type="text" size="20" default="23:59:59" label="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_HOUR" description="COM_FLEXIMPORT_FIELD_PUBLISHDOWN_HOUR_DESC" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

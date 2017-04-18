@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_FAQ_FORM_LBL_FAQ_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_FAQ_FORM_LBL_FAQ_CREATED_BY"
+            description="COM_FAQ_FORM_DESC_FAQ_CREATED_BY"  /> 
+
+       <field name="faq_category_id" type="category"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_CATEGORY_ID"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_CATEGORY_ID" 
+                
+                
+                 required="true" 
+            extension="com_faq.faqs.faq_category_id"
+            filter="raw" /> 
+
+       <field name="faq_question" type="text"
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_QUESTION"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_QUESTION" 
+                 required="true" 
+			 /> 
+
+       <field name="faq_answer" type="editor"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_ANSWER"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_ANSWER" 
+                
+                
+                
+            filter="safehtml" /> 
+
+       <field name="faq_upvotes" type="text"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_UPVOTES"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_UPVOTES" 
+                
+                
+                 /> 
+
+       <field name="faq_downvotes" type="text"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_DOWNVOTES"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_DOWNVOTES" 
+                
+                
+                
+            filter="int" /> 
+
+       <field name="faq_learningcenter" type="text"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_LEARNINGCENTER"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_LEARNINGCENTER" 
+                
+                
+                
+            filter="int" /> 
+
+       <field name="faq_date" type="calendar"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_DATE"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_DATE" 
+                
+                
+                 /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

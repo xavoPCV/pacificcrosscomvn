@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Select</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Select field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="select_create_value" type="list" default="0" label="COM_FLEXIMPORT_FIELD_SELECT_CREATE_VALUE" description="COM_FLEXIMPORT_FIELD_SELECT_CREATE_VALUE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

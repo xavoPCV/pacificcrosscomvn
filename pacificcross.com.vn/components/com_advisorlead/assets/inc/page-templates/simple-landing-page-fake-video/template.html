@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+
+        <meta name="mp-customizable-color" content="#fffff8; Background Color" background_color="1">
+
+        <meta content="#fffffe; Header Background Color" name="mp-customizable-color">
+        <meta content="#ffffff; Body Background Color" name="mp-customizable-color">        
+        <meta name="mp-customizable-color" content="#fd0000; Headline">
+        <meta name="mp-customizable-color" content="#000002; Subheadline">
+        <meta content="#005ac1; Form Color Start" name="mp-customizable-color">
+        <meta content="#243042; Form Color End" name="mp-customizable-color">
+        <meta content="#fffff4; Form Border Color" name="mp-customizable-color">
+        <meta content="#000003; Form Text Color" name="mp-customizable-color">
+
+        <meta name="mp-customizable-color" content="#bb0001; Button Background Start Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#6d0102; Button Background End Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#ccacaa; Button Border Top Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#ccacab; Button Border Bottom Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#ccacac; Button Border Left Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#ccacad; Button Border Right Color" button_id="opt-in-submit">
+        <meta name="mp-customizable-color" content="#fffff2; Button Text Color" button_id="opt-in-submit">
+
+        <meta content="#616161; Footer Text" name="mp-customizable-color">
+
+        <style type="text/css">
+            body
+            {
+                color: #fafafa;
+                font: normal 14px/24px 'Arial',"Helvetica Neue",Helvetica,sans-serif;
+                font-size: 18px;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                width: 100%;
+                background: #fffff8;
+            }
+            body, html
+            {
+                height: 100%;
+                width: 100%;
+            }
+            img
+            {
+                max-width: 100%;
+            }
+            .container
+            {
+                height: 100%;
+                overflow: scroll;
+                position: absolute;
+                width: 100%;
+                z-index: 5;
+            }
+            .content
+            {
+                margin: 65px auto 0 auto;
+                text-align: center;
+                width: 950px;
+            }
+            #bgimg
+            {
+                position: absolute;
+                z-index: -1;
+            }
+
+            form.integration-form
+            {
+                padding: 5px 0;
+                margin: 0 auto 10px;
+                max-width: 670px;
+                width: 100%;
+                background: -moz-linear-gradient(center top,#005ac1 5%,#243042 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#005ac1),color-stop(1,#243042));
+                background-color: #005ac1;
+                border: 1px solid #fffff4;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005ac1',endColorstr='#243042');
+                font-weight: bold;
+                moz-border-radius: 6px;
+                moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                webkit-border-radius: 6px;
+                webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+            }
+            form.integration-form p
+            {
+                color: #cccccc;
+                margin-bottom: 0;
+                margin-top: 5px;
+            }
+            input[type=text], input[type=email]
+            {
+                background: #ffffff;
+                border: 1px solid rgba(0,0,0,0.09);
+                border-radius: 5px;
+                color: #4f4f4f;
+                font-family: 'Source Sans Pro',sans-serif;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: bold;
+                height: 30px;
+                margin: 10px 0;
+                margin-right: 10px;
+                text-align: center;
+                text-align: left;
+                width: 30%;
+            }
+            input[type=text]:hover, input[type=email]:hover
+            {
+                border-radius: 5px;
+            }
+            .btn
+            {
+                display: inline-block;
+                font-size: 14px;
+                margin: 0 auto;
+                background: none;
+                border: none;
+            }
+            .btn>span{
+                display: block;
+                padding: 10px;
+                color: #fffff2;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+
+                font-weight: bold;
+                position: relative;
+                text-decoration: none;
+
+                border: solid 1px;
+                border-top-color: #ccacaa;
+                border-bottom-color: #ccacab;
+                border-left-color: #ccacac;
+                border-right-color: #ccacad;
+
+                background-color: #bb0001;
+                background: -webkit-linear-gradient(#bb0001,#6d0102);
+                background: -moz-linear-gradient(#bb0001,#6d0102);
+                background: -o-linear-gradient(#bb0001,#6d0102);
+                background: linear-gradient(#bb0001,#6d0102);
+                background-size: 100%;
+            }
+            .btn span:hover
+            {
+                background-size: 200%;
+            }
+
+            #box-top
+            {
+                background: #fffffe;
+                padding: 2%;
+                border-bottom: 2px solid #333;
+            }
+            #box-top p
+            {
+                color: #000001;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            #box-top p.title
+            {
+                color: #fd0000;
+                font-size: 46px;
+                line-height: 46px;
+                padding: 0px;
+                margin: 0px;
+            }           
+            #box-bottom{                               
+                text-align: center; 
+                width: 95%;
+                background-size: 100%;
+                margin: 0 auto;
+                margin-bottom: 2%;
+            }
+            .content-box-bottom{
+                background: #ffffff;
+                box-shadow: 0px 5px 15px #000;
+            }
+
+            #box-bottom p{font-size: 26px;color: #000002;font-weight:bold; margin: 0; padding: 20px 0 10px 0;}
+            #box-bottom a
+            {
+                color: #fff;
+                text-decoration: none;
+            }
+            #box-bottom p.title
+            {
+                color: #fd0000;
+                font-size: 46px;
+                line-height: 46px;
+                padding: 0px;
+                margin: 0px;
+            } 
+            .footer
+            {
+                color: #616161;
+                font-family: Arial;
+                font-weight: 400;
+                letter-spacing: -.5px;
+                margin: 0 25px 20px 25px;
+                text-align: center;
+            }
+            .footer #copyright
+            {
+                clear: both;
+                font-size: 16px;
+                font-weight: normal;
+                padding: 20px 0;
+            }
+            .footer #copyright .footer_text
+            {
+                color: #616161;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright
+            {
+                color: #108cef;
+            }
+            .footer #copyright .footer_link_copyright:hover
+            {
+                color: #bb0001;
+                text-decoration: none;
+            }
+            section.video-holder > div{margin: 0 auto 10px auto;}
+            @media only screen and (max-width: 964px)
+            {
+                .content
+                {
+                    width: 100%;
+                }
+                #box-top p.title
+                {
+                    font-size: 32px;
+                }
+                #box-top p
+                {
+                    font-size: 24px;
+                }
+            }
+            @media only screen and (max-width: 767px)
+            {
+                #box-top p.title
+                {
+                    font-size: 28px;
+                }
+                #box-top p
+                {
+                    font-size: 17px;
+                }
+                input[type=text], input[type=email],button.submit
+                {
+                    width: 50%;
+                }
+                button.submit
+                {
+                    margin-bottom: 2%;
+                }
+            }
+            @media only screen and (max-width: 420px)
+            {
+            } 
+            #box-bottom form, #box-bottom .bottom, #box-bottom .footer {
+                margin: 0 auto;
+                width: 75%;
+            }
+        </style>
+        
+        <script>
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 900, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1440, height: 900, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+            var itps_input_data = {"message": "Get this FREE Instant video! Just enter your email ASAP!"};
+
+            $(function() {
+                $(".video-holder").click(function() {
+                    alert(itps_input_data['message']);
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+    <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image" data-lb-id="background" data-lb-comment="Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/SkyWheel-Myrtle-Beach2.jpg" style="height: 100%;"/>
+
+    <div class="container">
+        <div class="content">
+            <div id="box-top">
+                <p class="title" data-lb-name="Headline" data-lb="editable-text" data-lb-id="title">WEBINAR REGISTRATION LINK BELOW!</p>
+            </div>
+            <div id="box-bottom">
+                <div class="content-box-bottom">
+                    <p class="date" data-lb-name="Subheadline" data-lb="editable-text" data-lb-id="time">Webinar Date: August 29th 6PM Pacific Time - Space Is Limited</p>
+                    <section class="video-holder" style="cursor: pointer;">
+                        <img data-lb-comment="Recommended image width: 678px" data-lb-name="Avatar Image" data-lb-id="avatar-image" data-lb="editable-image max-image-size=167" src="{LOCAL_URL}/tablet-big.png">
+                    </section>
+                    <form class="integration-form" action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                        <p class="title-form" data-lb-name="Title form" data-lb="editable-text" data-lb-id="title-form">Enter Your Information Below To Join The Webinar</p>
+                        <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your Name" data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your Name" data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name">
+
+                        <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your Email" data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter Your Email" data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+
+                        <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                        <button type="submit" class="btn">
+                            <span data-lb-name="Opt-in Submit" data-lb-id="opt-in-submit" type="submit" data-lb="editable-button">Get Access Now!</span>
+                        </button>
+                    </form>
+                    <div class="bottom">
+                        <a href="#" data-lb-id="guaranteed-image-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image width: 661px" data-lb-name="Guaranteed Image" style="cursor: pointer;display:block">
+                            <img data-lb-comment="Recommended image width: 661px" data-lb-name="Guaranteed Image" data-lb-id="guaranteed-image" data-lb="editable-image editable-optional max-image-size=661" src="{LOCAL_URL}/guaranteed.png">
+
+                        </a>
+                    </div>
+                    <div class="footer">
+                        <div id="copyright">
+                            <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                            <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                            <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+

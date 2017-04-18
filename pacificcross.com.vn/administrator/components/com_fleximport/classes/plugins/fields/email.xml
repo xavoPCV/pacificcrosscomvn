@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Email</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Email field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="email_release" type="list" default="1" label="COM_FLEXIMPORT_FIELD_FLEXIRELEASE" description="COM_FLEXIMPORT_FIELD_FLEXIRELEASE_DESC" >
+					<option value="1">COM_FLEXIMPORT_FIELD_FLEXIRELEASE_NEW</option>
+					<option value="0">COM_FLEXIMPORT_FIELD_FLEXIRELEASE_OLD</option>
+				</field>
+				<field name="email_separator" type="text" default="::" label="COM_FLEXIMPORT_FIELD_EMAIL_SEPARATOR" description="COM_FLEXIMPORT_FIELD_WEBLINK_SEPARATOR_DESC" />
+				<field name="email_export" type="list" default="1" label="COM_FLEXIMPORT_FIELD_EMAIL_EXPORT" description="COM_FLEXIMPORT_FIELD_EMAIL_EXPORT_DESC" >
+					<option value="1">COM_FLEXIMPORT_FIELD_EMAIL_EXPORT_ADDR</option>
+					<option value="2">COM_FLEXIMPORT_FIELD_EMAIL_EXPORT_TEXT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

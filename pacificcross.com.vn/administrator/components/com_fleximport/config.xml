@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields addfieldpath="/administrator/components/com_fleximport/elements">
+		<fieldset name="import"  label="COM_FLEXIMPORT_IMPORT">
+		<field name="allow_cron" type="radio" default="0" label="COM_FLEXIMPORT_PARAM_ALLOW_CRON" description="COM_FLEXIMPORT_PARAM_ALLOW_CRON_DESC" menu="hide">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="ajax_import_step0" type="text" size="5" default="20" label="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP0" description="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP0_DESC" menu="hide" />
+		<field name="ajax_import_step1" type="text" size="5" default="20" label="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP1" description="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP1_DESC" menu="hide" />
+		<field name="ajax_import_step2" type="text" size="5" default="20" label="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP2" description="COM_FLEXIMPORT_PARAM_AJAX_IMPORT_STEP2_DESC" menu="hide" />
+		<field name="notimelimit" type="radio" default="0" label="COM_FLEXIMPORT_PARAM_NOTIMELIMIT" description="COM_FLEXIMPORT_PARAM_NOTIMELIMIT_DESC" menu="hide">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="debug" type="radio" default="0" label="COM_FLEXIMPORT_PARAM_DEBUG" description="COM_FLEXIMPORT_PARAM_DEBUG_DESC" menu="hide">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		</fieldset>
+		<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+			<field name="rules"	type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_fleximport" section="component" />
+		</fieldset>
+	</fields>
+</config>

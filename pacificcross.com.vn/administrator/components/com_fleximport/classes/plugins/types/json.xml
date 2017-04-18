@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_type">
+	<name>JSON</name>
+	<author>NetAssoPro</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>JSON import model for flexIMPORT</description>
+	<form>
+	<fields name="params">
+		<fieldset name="fleximport">
+
+		</fieldset>
+	</fields>
+	</form>
+</install>

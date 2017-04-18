@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+    <name>com_gnosis</name>
+    <creationDate>2013-06-09</creationDate>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Lander Compton</author>
+    <authorEmail>lander083077@gmail.com</authorEmail>
+    <authorUrl>http://www.hypermodern.org</authorUrl>
+    <version>1.1.0</version>
+    <description>A dictionary/glossary compnent for Joomla! v.1.1.0</description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+	<update>
+			<schemas>
+					<schemapath type="mysql">sql/updates</schemapath>
+			</schemas>
+	</update>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>gnosis.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>css</folder>
+    </files>
+    <languages folder="site">
+
+        <language tag="en-GB">language/en-GB.com_gnosis.ini</language>
+    
+    </languages>
+    <administration>
+        <menu img="components/com_gnosis/assets/images/s_com_gnosis.png">COM_GNOSIS</menu>
+        <submenu>
+
+            <menu link="option=com_gnosis&amp;view=words" view="words"
+                  img="components/com_gnosis/assets/images/s_words.png" alt="Gnosis/Words">COM_GNOSIS_TITLE_WORDS
+            </menu>
+            <menu link="option=com_gnosis&amp;view=categories" view="categories"
+                  img="components/com_gnosis/assets/images/s_words.png" alt="Gnosis/Categries">
+                COM_GNOSIS_TITLE_CATEGORIES
+            </menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>gnosis.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+			<folder>overrides</folder>
+        </files>
+        <languages folder="administrator">
+
+            <language tag="en-GB">language/en-GB.com_gnosis.ini</language>
+            <language tag="en-GB">language/en-GB.com_gnosis.sys.ini</language>
+
+        </languages>
+    </administration>
+</extension>
+        <!-- Component built by the Joomla Component Creator -->
+        <!-- http://www.notwebdesign.com/joomla-component-creator/ -->

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Minigallery</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Minigallery field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="localisation_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_LOCALISATION_USE" description="COM_FLEXIMPORT_FIELD_LOCALISATION_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="localisation" type="list" default="local" label="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION" description="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_DESC">
+					<option value="local">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_LOCAL</option>
+					<option value="ftp">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_FTP</option>
+					<option value="web">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_WEB</option>
+				</field>
+				<field name="address_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_ADDRESS_USE" description="COM_FLEXIMPORT_FIELD_ADDRESS_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="address" type="text" size="40" label="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS" description="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS_DESC" />
+				<field name="server_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_SERVER_USE" description="COM_FLEXIMPORT_FIELD_SERVER_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="server" type="text" size="40" label="COM_FLEXIMPORT_TYPE_IMPORT_SERVER" description="COM_FLEXIMPORT_TYPE_IMPORT_SERVER_DESC" />
+				<field name="port" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_PORT" description="COM_FLEXIMPORT_TYPE_IMPORT_PORT_DESC" />
+				<field name="user_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_USER_USE" description="COM_FLEXIMPORT_FIELD_USER_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="username" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME" description="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME_DESC" />
+				<field name="password" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD" description="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD_DESC" />
+				<field name="image_exist" type="list" default="1" label="COM_FLEXIMPORT_FIELD_MINIGALLERY_EXIST" description="COM_FLEXIMPORT_FIELD_MINIGALLERY_EXIST_DESC">
+					<option value="1">COM_FLEXIMPORT_FIELD_MINIGALLERY_EXIST_USE</option>
+					<option value="2">COM_FLEXIMPORT_FIELD_MINIGALLERY_EXIST_REPLACE</option>
+					<option value="3">COM_FLEXIMPORT_FIELD_MINIGALLERY_EXIST_NEW</option>
+				</field>
+				<field name="image_noexist" type="list" default="0" label="COM_FLEXIMPORT_FIELD_MINIGALLERY_NOEXIST" description="COM_FLEXIMPORT_FIELD_MINIGALLERY_NOEXIST_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image_default" type="fiflexifiles" label="COM_FLEXIMPORT_FIELD_MINIGALLERY_DEFAULT" description="COM_FLEXIMPORT_FIELD_MINIGALLERY_DEFAULT_DESC" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

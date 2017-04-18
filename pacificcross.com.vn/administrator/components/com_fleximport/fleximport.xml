@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>flexIMPORT</name>
+	<creationDate>September 2015</creationDate>
+	<author>NetAssoPro</author>
+	<copyright>(C) 2008-2015 NetAssopro</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>http://extensions.netassopro.com</authorUrl>
+	<version>3.0</version>
+	<description></description>
+	<media folder="media" destination="com_fleximport">
+		<folder>images</folder>
+	    <folder>css</folder>
+	    <folder>js</folder>
+	</media>
+	<administration>
+		<menu img="components/com_fleximport/assets/images/icon-16-fleximport.png">com_fleximport</menu>
+		<files>
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>installation</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>CHANGELOG.TXT</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>fleximport.php</filename>
+			<filename>index.html</filename>
+            <filename>script.php</filename>
+		</files>
+		<languages folder="language">
+			<language tag="fr-FR">fr-FR/fr-FR.com_fleximport.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_fleximport.sys.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_types_csv.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_types_json.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_types_xml.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_attribs.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_categories.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_checkbox.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_checkboximage.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_createdby.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_date.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_email.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_extendedweblink.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_file.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_image.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_language.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_linkslist.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_maintext.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_minigallery.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_modifiedby.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_none.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_publishdown.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_publishup.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_radio.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_radioimage.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_relation.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_select.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_selectmultiple.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_state.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_tags.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_text.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_textarea.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_title.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.plg_fleximport_fields_weblink.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fleximport.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fleximport.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_types_csv.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_types_json.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_types_xml.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_attribs.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_categories.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_checkbox.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_checkboximage.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_createdby.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_date.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_email.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_extendedweblink.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_file.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_image.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_language.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_linkslist.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_maintext.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_minigallery.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_modifiedby.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_none.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_publishdown.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_publishup.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_radio.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_radioimage.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_relation.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_select.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_selectmultiple.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_state.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_tags.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_text.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_textarea.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_title.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_fleximport_fields_weblink.ini</language>
+		</languages>
+	</administration>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+    <scriptfile>script.php</scriptfile>
+</extension>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#f3f3f3; Body" name="mp-customizable-color">
+        <meta content="#fefefe; Background" name="mp-customizable-color">
+        <meta content="#f23232; Headline" name="mp-customizable-color">
+        <meta content="#f23233; Sub Headline" name="mp-customizable-color">
+        <meta content="#a21111; Ticket Title Bg" name="mp-customizable-color">
+        <meta content="#ffe0e0; Ticket Title" name="mp-customizable-color">
+        <meta content="#000001; Ticket Text" name="mp-customizable-color">
+        <meta content="#f3f3f4; Ticket Border" name="mp-customizable-color">
+        <meta content="#fafafa; Ticket Box" name="mp-customizable-color">
+        <meta content="#efefef; Box Border" name="mp-customizable-color">
+        <meta content="#fdfdbb; Space Background" name="mp-customizable-color">
+        <meta content="#000004; Space Text" name="mp-customizable-color">
+        <meta content="#1165ce; Driver" name="mp-customizable-color">
+        <meta content="#a11010; Listing Background" name="mp-customizable-color">
+        <meta content="#fffff3; Listing Title" name="mp-customizable-color">
+        <meta content="#2395d2; Listing Sub Title" name="mp-customizable-color">
+        <meta content="#fffff1; Box Gift Background" name="mp-customizable-color">
+        <meta content="#fd2424; Title Gift" name="mp-customizable-color">
+        <meta content="#0a55df; Like Us Title" name="mp-customizable-color">
+        <meta content="#fbcc4d; Submit Button Color Star" name="mp-customizable-color">
+        <meta content="#fbbe08; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#fffff4; Submit Button Text" name="mp-customizable-color">
+        <meta content="#fffff5; Submit Button Border" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{background: #f3f3f3;font-size:18px; font-family:'Arial',sans-serif;}
+            img{max-width: 100%}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+            .content-post{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          -webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f7f7f7),color-stop(1,#e8e8e8));
+                          background:-moz-linear-gradient(center top,#f7f7f7 5%,#e8e8e8 100%);
+                          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',endColorstr='#e8e8e8');
+                          background-color:#f7f7f7;
+                          -moz-border-radius:6px;
+                          -webkit-border-radius:6px;
+                          border-radius:4px;
+                          display:inline-block;
+                          font-weight:bold;
+                          text-decoration:none;
+                          position:relative}
+            a.submit{width:160px;margin:10px auto;font-size:20px;padding:10px;color:#fffff4 ; font-weight: 600;}
+            a.submit{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                     -webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                     box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                     background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#fbcc4d),color-stop(1,#fbbe08));
+                     background:-moz-linear-gradient(center top,#fbcc4d 5%,#fbbe08 100%);
+                     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbcc4d',endColorstr='#fbbe08');
+                     background-color:#fbcc4d;
+                     -moz-border-radius:6px;
+                     -webkit-border-radius:6px;
+                     border-radius:6px;
+                     border:1px solid #fffff5;
+                     display:inline-block;
+                     font-weight:bold;
+                     text-decoration:none;
+                     position:relative}
+            a.submit:hover{background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#fbbe08),color-stop(1,#fbcc4d));
+                           background:-moz-linear-gradient(center top,#fbbe08 5%,#fbcc4d 100%);
+                           filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbe08',endColorstr='#fbcc4d');
+                           background-color:#fbbe08}
+            a.submit:active{position:relative;top:1px}
+            .content-post{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          -webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                          background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f7f7f7),color-stop(1,#e8e8e8));
+                          background:-moz-linear-gradient(center top,#f7f7f7 5%,#e8e8e8 100%);
+                          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',endColorstr='#e8e8e8');
+                          background-color:#f7f7f7;
+                          -moz-border-radius:6px;
+                          -webkit-border-radius:6px;
+                          border-radius:4px;
+                          display:inline-block;
+                          font-weight:bold;
+                          text-decoration:none;
+                          position:relative}
+            .wrapper{max-width: 750px; margin:0 auto;background: #fefefe}
+            .content{padding: 0 10px;}
+            .header{text-align: center;background: #fefefe}
+            .left,.right{width: 50%;float: left; text-align: center;}
+            .clear {clear: both;}
+            .logo{padding: 25px 0}
+            .headline{color: #f23232;margin: 0;padding: 0 0 15px 0;}
+            .headline span{text-decoration: underline}
+            .sub-headline{color: #f23233;text-align: center;font-size: 26px;margin: 10px 0;padding-top:15px }
+            .content-post{width: 100%;margin: 20px 0;overflow: hidden;background: #a11010;padding-bottom: 38px}
+            .content-post h3{text-align: left;margin-top:5px;font-size: 26px;margin-bottom: 10px}
+            #post-1{color: #fffff3}
+            .content-post p{color: #fffff2;font-size: 16px;font-weight:600;margin-right: 20px;}
+            .content-post .left{text-align: left;}
+            .content-left{padding-left:20px;}
+            .content-left p.post-title{font-size: 24px;font-weight: 600}
+            .content-left img {float: left; margin-right: 10px}
+            .content-left .expert{padding-left: 70px;line-height: 17px;color: #2395d2;font-size: 14px;}
+            .box-right{text-align: left;
+                       margin: 2% auto;
+                       background: #fafafa;
+                       padding: 1% 2%;
+                       font-size: 17px;
+                       line-height: 17px;
+                       border: 1px solid #efefef;}
+            .space{background: #fdfdbb;padding: 10px;font-size:14px;text-align: left;color: #000004}
+            .space b{font-size: 16px}
+            .content-right{padding: 10px;text-align: center;width: 92%;background: #fffff1;float: right;margin:2%}
+            .content-right h2{color: #fd2424;font-weight: 600}
+            .content-right img{text-align: left;float: left}
+            .ticket-title{background: #a21111;color: #ffe0e0;margin: 0; padding: 10px 20px;font-size: 20px;font-weight: normal;}
+            .subtitle-ticket{text-align: center;
+                             font-size: 18px;
+                             padding-bottom: 10px;
+                             border-bottom: 1px solid #efefef;
+                             width: 90%;
+                             margin: 15px auto 0;}
+            .driver p{text-align: center;font-size: 22px;color: #1165ce}
+            .lagel-text{text-align: center;}
+            .lagel-link{color: #1065c1}
+            .share div{width:50%; float: left; text-align: right;}
+            .fb-share div{width:50%;float: left; text-align: left;}
+            .share{width: 100%; float: left; text-align: center; margin:0 auto;overflow: hidden}
+            .fb-share{float: left;overflow: hidden}
+            .fb-share img{text-align: center;}
+            .top-content-left{width:60%;float: left;}
+            .top-content-right{width:40%;float: left;text-align: center;}
+            .ticket{margin-left:15px;border: 1px solid #f3f3f4;color: #000001}
+            .fb-like-us{float: right;}
+            .fb-like-us h1{cursor: pointer;font-size: 14px;color: #0a55df;margin-bottom: 35px}
+            .content-right .book{}
+            .content-right .download{float: right}
+            .footer{background-color: #fefefe;
+                    border-top: 1px solid #ececec;
+                    width: 100%;
+                    clear: both;
+                    min-height: 66px;
+                    margin-top: 10px;}
+            #copyright{text-align: center;
+                       font-size: 14px;
+                       color: #929292;
+                       font-family: 'Raleway',sans-serif;
+                       padding: 30px 0px;}
+            #copyright a{cursor: pointer;
+                         padding: 0px;
+                         margin: 0 0 15px 0;}
+            .footer a{color: #929292;text-decoration: none;}
+            .footer_link_copyright{color: #4763b3;text-decoration: underline}
+            .box_row{
+                width: 100%;
+                float: left;
+            }
+            .box_row .box_box{                
+                width: 40%;
+                float: left;
+            }
+            .box_row .box_box img{
+                width: 100%;
+            }
+            .box_row .box_fb_download{                
+                width: 60%;
+                float: right;
+            }
+            .content-right .share .twitter_share{
+                float: right;
+                text-align: right;
+                margin-right: 1%;
+            }
+            .content-right .share .gplus_share{
+                float: left;
+                text-align: left;
+                margin-left: 1%;
+            }
+            .box_fb_download .fb-like-us, .box_fb_download .download{
+                width: 100%;
+                text-align: right;
+                float: right;
+            }
+            @media only screen and (max-width: 1200px) {
+            }
+            @media only screen and (max-width: 964px){
+                .content-post p{color: #cccccd;font-size: 14px}
+            }
+            @media only screen and (max-width: 767px) { 
+                .wrapper{width: 80%;}
+                .left,.right{width: 100%;text-align: center}
+                .right img{}
+                .content-post p{color: #cccccd;font-size: 16px} 
+                .content-post .right{text-align: center;}  
+                .top-content-right, .top-content-left{
+                    width: 100%;
+                }
+                .content-left .expert{
+                    line-height: 25px;
+                }
+            }
+            @media only screen and (max-width: 420px){
+            }
+
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 290px !important;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 60%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+
+        </style>
+        
+        <script>
+            $(document).ready(function() {
+                var onclick = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;";
+                $('.facebook_share, .gplus_share, .twitter_share').attr('onclick', onclick);
+                $('.facebook_share').attr('href', facebook_share_url);
+                $('.gplus_share').attr('href', google_share_url);
+                $('.twitter_share').attr('href', twitter_share_url);
+                $('.fb-like-box').attr('data-href', itps_input_data['facebooklikebox']);
+                FB.XFBML.parse($('.fb-like-box')[0]);
+            });
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=719478438075635&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <div class="header">
+            <div class="logo">
+                <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link editable-optional link-only" data-lb-id="Logo-link"><img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image max-image-size=188"></a>
+            </div>
+            <p class="headline" data-lb-name="Thank you text" data-lb="editable-rich-text" data-lb-id="title">Thank you! You have <span>successfully registered</span> for our webinar</p>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h3 class="sub-headline" data-lb-name="Congratulations text" data-lb="editable-text" data-lb-id="sub-headline">Congratulations, See You In The Webinar!</h3>
+                <div class="top-content">
+                    <div class="top-content-left">
+                        <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=438 video-height=298" class="video-holder flex-video"> 
+                        <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                            <img data-lb-id="video-image" data-lb="editable-image max-image-size=438" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                            </a>
+                        </div>
+
+                        <p class="space" data-lb-name="Space title" data-lb="editable-rich-text" data-lb-id="space-title"><b>Space Is Limited:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus</p>
+                    </div>
+                    <div class="top-content-right">
+                        <div class="ticket">
+                            <h1 class="ticket-title" data-lb-name="Ticket title" data-lb="editable-rich-text" data-lb-id="ticket-title">YOUR TICKET</h1>
+                            <h3 class="subtitle-ticket" data-lb-name="Ticket Text" data-lb="editable-rich-text" data-lb-id="ticket-text">Admit one:<br>
+                                Traffic & Lead <br>
+                                Generation Webinar</h3> 
+                            <div class="box-right">
+                                <p data-lb-name="Time text" data-lb="editable-rich-text" data-lb-id="text-time">
+                                    <b>Host:</b> Vince Reed<br><br>
+                                    <b>Date:</b> Friday , April 20, 2014</br><br>
+                                    <b>Time:</b> 6.00 pm Pacific<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8.00 pm Central<br>
+                                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9.00 pm Eastern</br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="driver clear " >
+                    <p data-lb-name="Center Text" data-lb="editable-rich-text" data-lb-id="center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        nulla tellus, sit amet sollicitudin arcu vehicula vitae</p>
+                </div>
+                <div class="listing-post">
+                    <div class="content-post clear">
+                        <div class="left">
+                            <div class="content-left">
+                                <p class="post-title" id="post-1" data-lb-name="Post tittle text" data-lb="editable-text" data-lb-id="post-title-1">Lorem ipsum dolor sit amet, consectetur</p>
+                                <a href="#" data-lb-id="cricle-image-1-link" data-lb="editable-link editable-optional link-only" data-lb-name="Circle Image 1 " style="cursor: pointer;display:block;overflow:hidden;float:left">
+                                    <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 1" data-lb-id="cricel-image-1" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/number1.png">
+                                </a>
+                                <p class="expert" data-lb-name="Description post 1" data-lb="editable-rich-text" data-lb-id="expert-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae.</p>
+                                <a href="#" data-lb-id="cricle-image-2-link" data-lb="editable-link editable-optional link-only" data-lb-name="Circle Image 2" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                                    <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 2" data-lb-id="cricel-image-2" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/number2.png">
+                                </a>
+                                <p class="expert" data-lb-name="Description post 2" data-lb="editable-rich-text" data-lb-id="expert-2">Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. </p>
+                                <a href="#" data-lb-id="cricle-image-3-link" data-lb="editable-link editable-optional link-only" data-lb-name="Circle image 3 link " style="cursor: pointer;display:block;overflow:hidden;float:left">
+                                    <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 3" data-lb-id="cricel-image-3" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/number3.png">
+                                </a>         
+                                <p class="expert" data-lb-name="Description post 3" data-lb="editable-rich-text" data-lb-id="expert-3">Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas...  </p>
+                            </div>
+                        </div> 
+                        <div class="right">
+                            <div class="content-right">
+                                <h2 class="title-gift" data-lb-name="Gift title" data-lb="editable-text" data-lb-id="gift-title">Get You Free Gift!</h2>
+                                <div class="box_row">
+                                    <div class="box_box">
+                                        <a href="#" data-lb-id="gift-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Gift image link " style="cursor: pointer;display:block;overflow:hidden;float:left">
+                                            <img class="book" data-lb-comment="Recommended image width: 180px" data-lb-name="Gift Image" data-lb-id="gift-image" data-lb="editable-image editable-optional max-image-size=678" src="{LOCAL_URL}/book.png">
+                                        </a>
+                                    </div>
+                                    <div class="box_fb_download">
+                                        <div class="fb-like-us" data-lb-name="FB Like Us" data-lb-id="fb-like-us" data-lb="editable-optional">
+                                            <h1 data-lb-name="Like Us Text" data-lb="editable-rich-text" data-lb-id="like-us" style="cursor: pointer;">Like Us On Facebook</h1>
+                                            <!--<div class="mini-logo">
+                                                <a data-lb-name="Mini Logo" href="#" data-lb-comment="Recommended image width: 50px" data-lb="editable-link link-only" data-lb-id="Mini-Logo-link"><img src="{LOCAL_URL}/mini-logo.png" border="0" data-lb-comment="Recommended image width: 50px" data-lb-name="Mini Logo Image" data-lb-id="mini-logo-img" alt="mini-logo" data-lb="editable-image max-image-size=50"></a>
+                                            </div>-->
+                                            <div data-lb-name="Like Box" data-lb-id="like-box" data-lb="editable-optional" class="like-box-facebook">
+                                                <div data-lb="editable-likebox" class="fb-like-box" data-href="https://www.facebook.com/VinceReedLive" data-width="180px" data-colorscheme="light" data-show-faces="false"  data-header="false" data-stream="false" data-show-border="true" data-colorscheme="light"></div>
+                                            </div>
+                                        </div>
+                                        <div class="download">
+                                            <a class="submit" data-lb-name="Button Text" href="#" data-lb-comment="Enter your button text and url here." data-lb="editable-link editable-optional" data-lb-id="button-text" style="cursor: pointer; text-align: center;">DOWNLOAD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share">
+                                    <!-- <div data-lb-name="Facebook Visibility" data-lb="editable-optional" data-lb-id="share-bar-fb" style="cursor: pointer;">
+                                        <a target="_blank" href="#" class="facebook_share">
+                                            <img src="{LOCAL_URL}/share-f.png" data-lb-comment="Recommended image width: 158px" data-lb-name="FB Image" data-lb-id="fb-image" data-lb="editable-image max-image-size=158" >
+                                        </a>
+                                    </div> -->
+                                    <div data-lb-name="Twiter Visibility" data-lb="editable-optional"  data-lb-id="share-bar-tw" style="cursor: pointer;">
+                                        <a target="_blank" href="#" class="twitter_share">
+                                            <img src="{LOCAL_URL}/share-t.png" data-lb-comment="Recommended image width: 158px" data-lb-name="Tw Image" data-lb-id="twiter-image" data-lb="editable-image max-image-size=158" >
+                                        </a>
+                                    </div>
+                                    <div data-lb-name="Google Plus Visibility" data-lb="editable-optional" data-lb-id="share-bar-gp" style="cursor: pointer;">
+                                        <a target="_blank" href="#" class="gplus_share">
+                                            <img src="{LOCAL_URL}/share-google-plus.png" data-lb-comment="Recommended image width: 158px" data-lb-name="G+ Image" data-lb-id="google-image" data-lb="editable-image max-image-size=158" >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" >
+            <div id="copyright">
+                <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+            </div>
+        </div>	
+    </body>
+</html>

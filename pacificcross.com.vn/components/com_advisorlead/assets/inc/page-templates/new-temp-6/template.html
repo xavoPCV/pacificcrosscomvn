@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+        <style>
+                 html,body{overflow-x:hidden;max-width:100%}
+                 body{font-family:sans-serif .'Open Sans';font-size:17px;line-height:1.47;color:#545454;margin: 0px;background-color: #f8f8f8;}
+                .col-md-1 {width: 8.33%;}
+                .col-md-2 {width: 16.66%;}
+                .col-md-3 {width: 25%;float: left;}
+                .col-md-4 {width: 33.33%;}
+                .col-md-5 {width: 41.66%;float: left;}
+                .col-md-6 {width: 50%;float: left;margin-right: 80px;}
+                .col-md-7 {width: 58.33%;}
+                .col-md-8 {width: 66.66%;    float: left;}
+                .col-md-9 {width: 75%;float: left;}
+                .col-md-10 {width: 83.33%;}
+                .col-md-11 {width: 91.66%;}
+                .col-md-12 {width: 100%;}
+                .site-show{
+                     width: 1100px;
+                     
+                     margin: 0 auto;
+                }
+                .mid{
+                        display: flex;
+                    background-color: #16c4a9;
+                }
+                .logo{
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .mid h1{
+                    color: #fff;
+                    font-size: 32px;
+                  font-weight: normal;
+                   
+                }
+                .mid{
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                }
+                .mid h3{
+                    color: #666;
+                   
+                   
+                }
+                .mid img {
+                        width: 620px;
+                        margin-left: -250px;
+                }
+                .mid div {
+                    color: #f9f9f9;
+                        margin-bottom: 30px;
+                            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+                }
+                .bt {
+                    margin-top: 30px;
+                    width: 85%;
+                    padding: 35px;
+                    background-color: #cdc02e;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 26px;    
+                    text-transform: uppercase;
+                    color: #444;
+                    font-weight: bold;
+                }
+                .end{
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                        display: flex;
+                }
+                .end div{
+                   color: #7c7c7c;
+                    font-family: Georgia,Times,"Times New Roman",serif;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 1.4em;
+                }
+                .end a{
+                    color: #16c4a9;
+                    margin-top: 10px;
+                }
+                .end img {
+                    min-width: 120px;
+                    margin-left: 10px;
+                }
+                 @media only screen and (max-width: 800px) {
+                    /* For mobile phones: */
+                      [class*="col-"] {
+                        width: 100%;
+                    }
+                     .site-show{
+                         width: 100%;
+                         text-align: center;
+                         margin: 0 auto;
+                    }
+                      .col-md-6 {
+                        float: none;
+                    }
+                 }
+                  /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+          <div class="fullpage">
+            <div class="top">
+                <div class="site-show" >
+                    <div class="logo">   <img data-lb-comment="Recommended image width: 240px" data-lb-name="Logo 1" data-lb-id="logo-1"  data-lb="editable-image editable-optional  max-image-size=250px"   src="{LOCAL_URL}/eguide/logo.png" /> </div>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="site-show" >
+                    <div class="col-md-6" style="padding-top: 110px;">
+                        <h1 data-lb-name="Title 1" data-lb="editable-rich-text editable-optional" data-lb-id="title1"  >ESSENTIAL GUIDE TO RETIRING</h1>
+                        <h3 data-lb-name="Title 2" data-lb="editable-rich-text editable-optional" data-lb-id="title2"  >Download the complete 75 page PDF</h3>
+                        <div data-lb-name="Content 1" data-lb="editable-rich-text editable-optional" data-lb-id="Content 1"  >Augue egestas, vut in sociis mid! Quis lacus turpis velit, duis scelerisque ac mus eu dolor? Platea cursus est, adipiscing purus lacus et aliquam. Augue. Sit. Magnis velit, duis scelerisque ac mus eu dolor? gue. Sit. Magnis velit, duis scelerisq</div>
+                        <a href="#myModal" id="data-reveal-id" class="click fancybox-pop" > <button class="bt" > download mockup!   </button > </a>
+                    </div>
+                    <div class="col-md-5">
+                        <img data-lb-comment="Recommended image width: 620px" data-lb-name="Image Book" data-lb-id="imgbook"  data-lb="editable-image editable-optional  max-image-size=620px"   src="{LOCAL_URL}/eguide/b2.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <div class="site-show" >
+                    <h3 data-lb-name="Title 3" data-lb="editable-rich-text editable-optional" data-lb-id="title3" >
+                        About the Author or Testimonail
+                    </h3>
+                    <div class="col-md-3">
+                        <img  data-lb-comment="Recommended image width: 120px" data-lb-name="User Image" data-lb-id="userimg"  data-lb="editable-image editable-optional  max-image-size=120px" src="{LOCAL_URL}/eguide/h1.png" />
+                    </div>
+                    <div data-lb-name="Content 2" data-lb="editable-rich-text editable-optional" data-lb-id="Content 2"  class="col-md-8">
+                    "Amet proin dolor proin diam elementum! Mus ac et, augue! Hac dolor massa amet et, purus, dis, vel et ridiculus porttitor lectus? Mid nunc, sed hac augue! Augue lundium! Scelerisque lundium dictumst! Sed! Sit ultrices aliquam, sit nunc nisi vel porttitor a quis dapibus adipiscing aliquam, tempor phasellus, ac sit ut vut ultricies mauris?"
+                    <br><br>
+                      <a> Billy Two Shoes - eBook Downloader Addict</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+<section style="width:100%;text-align: center;background-color: #5f5f5f;color: #fff;    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            <div   data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="copyright"  style="padding-top: 50px;padding-bottom: 50px; font-size: 26px;">&copy; Betty Udesen's 2015</div>
+        </section>
+ <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text editable-optional" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+    
+    </body>
+</html>

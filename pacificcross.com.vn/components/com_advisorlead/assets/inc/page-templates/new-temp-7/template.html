@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" type="text/css" rel="stylesheet">
+        <style>
+            
+            html,body{overflow-x:hidden;max-width:100%}
+            body{font-family:'Open Sans',sans-serif;font-size:17px;line-height:1.47;color:#545454;background:#f5f5f4;margin: 0;}
+            .col-md-1 {width: 8.33%;}
+                .col-md-2 {width: 16.66%;}
+                .col-md-3 {width: 25%;}
+                .col-md-4 {width: 33.33%;}
+                .col-md-5 {width: 41.66%;float: left;    margin-bottom: 50px;}
+                .col-md-6 {width: 50%;float: left;}
+                .col-md-7 {width: 58.33%;}
+                .col-md-8 {width: 66.66%;}
+                .col-md-9 {width: 75%;}
+                .col-md-10 {width: 83.33%;}
+                .col-md-11 {width: 91.66%;}
+                .col-md-12 {width: 100%;}
+            a{color:#2265A1;max-width:100%;text-decoration: none;}a:hover{color:#2265A2}a:focus ul li{vertical-align:top}.add-this-widget{position:fixed;width:55px;z-index:999;top:180px}.b-header{padding:20px 0 20px;background:#fffffe;color:#d7d7d9}.b-logo__image{max-width:95%;max-height:55px}.b-home{padding:120px 0;color:#f9f9f8;position:relative;overflow:hidden;}
+            .hero-img{position:absolute;top:0;z-index: -1}
+            .b-home__title{font-size:45px;font-weight:700;line-height:1.05;margin:0 0 5px 0;padding:10px 0;color:#f9f9f9}
+            .btn-hero{margin:10px;padding:20px 40px;font-size:30px;font-weight:bold;color:#6c4700;background-color:#dc940c;border:0;font-family:'Arial',sans-serif;border-radius: 6px;}
+            .btn-hero:hover{color:#6c4701;background-color:#EFD210}#footer-legal-section{padding:20px 0;background-color:#f4f4f4;color:#333332}.footer-social-container{margin-bottom:10px}.footer-social-container img{max-width:32px;max-height:32px;margin:2px}.legal-text{font-size:12px}@media only screen and (max-width:1600px){}@media only screen and (max-width:992px){body{font-size:16px}.b-inline-list__item{width:47%;margin:0 1% 50px}
+                                                     .b-header__logo{text-align:center}.b-menu__list{text-align:center}.b-home{padding:20px 0}.b-home__title{font-size:50px}.hero-image{margin-top:40px}.b-footer__title{text-align:center}}@media only screen and (max-width:768px){.add-this-widget{display:none}.b-inline-list__item{width:100%;margin:0 0 30px}.b-block-title__top{font-size:35px}.b-block-title__bottom{font-size:25px}.b-header{position:relative}.b-footer__text{text-align:center}}@media only screen and (max-width:480px){.spacer{display:none}.product-list{text-align:center}.product-list li{width:80%;position:relative;vertical-align:top}.product-box-header{font-size:20px}.product-box-text{font-size:14px}.b-inline-list{margin:0}}
+             .container{
+                     width: 1200px;
+                     
+                     margin: 0 auto;
+                }
+                .hero-3-text{
+                    margin-bottom: 40px;
+                }
+                .hero-bullet-text{
+                    font-size:17px; 
+                }
+                .hero-bullet-text li{
+                    line-height: 30px;
+                }
+                @media only screen and (max-width: 800px) {
+                    /* For mobile phones: */
+                      [class*="col-"] {
+                        width: 100%;
+                    }
+                     .container{
+                            width: 100%;
+                         text-align: center;
+                         margin: 0 auto;
+                    }
+                    .col-md-6 {
+                        float: none;
+                    }
+                   
+            }   
+              /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+        </style>
+         <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+	
+	<header id="header" class="b-header">
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12 text-center">
+
+                                    <div class="b-header__logo" style="text-align:center">
+						
+						<a href="#home" class="b-logo js-goto" data-lead-id="image-link-2">
+							<img data-lb-comment="Recommended image width: 240px" data-lb-name="Logo Image" data-lb-id="logo-1"  data-lb="editable-image editable-optional  max-image-size=240px" src="{LOCAL_URL}logo.png" alt="your logo" class="b-logo__image">
+						</a>
+
+					</div> <!-- end .b-header__logo --> 
+				
+				</div> <!--end .col-md-4 -->
+			</div> <!--end .row -->
+		</div> <!--end .container -->   
+
+	</header> <!-- end #b-header.b-header -->
+	<div id="home" class="b-home">
+		<img data-lb-comment="Recommended image width: 1920px" data-lb-name="Background Image" data-lb-id="Background"  data-lb="editable-image editable-optional  max-image-size=1920px"  data-lead-id="hero-bg-image" src="{LOCAL_URL}magnet/bg.jpg" class="hero-img center-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+                                    <div style="    padding-left: 30px;    padding-right: 50px;">
+					<h1 data-lb-name="Title 1" data-lb="editable-rich-text editable-optional" data-lb-id="title1" class="b-home__title" data-lead-id="hero-header-text">ADVISOR WEBSITE WIDGET</h1>
+                                        <div data-lb-name="Title 2" data-lb="editable-rich-text editable-optional" data-lb-id="title2" style="font-size: 20px;" >Customizable Widgets</div>
+                                        <ul data-lb-name="Content 1" data-lb="editable-richtext-area editable-optional" data-lb-id="Content1" data-lead-id="hero-bullet-text " class="col-md-5 hero-bullet-text">
+						<li>CTA</li>
+						<li>Enewsletter</li>
+						<li>Tell A Friend</li>
+                                                <li>Google Map</li>
+                                                <li>Featured News</li>
+                                                <li>Finalcial Briefs</li>
+                                                <li>Market Snapshort</li>
+					</ul>
+                                         <ul  data-lb-name="Content 2" data-lb="editable-richtext-area editable-optional" data-lb-id="Content2" data-lead-id="hero-bullet-text " class="col-md-5 hero-bullet-text">
+						<li>Market Databank</li>
+						<li>Twitter Feed</li>
+						<li>Facebook Feed</li>
+                                                <li>Advisor Vault</li>
+                                                <li>Account Access</li>
+                                                <li>Youtube Integation</li>
+                                                <li>Book Appointment</li>
+					</ul>
+                                        <br><br>
+                                        <a href="#myModal" id="data-reveal-id" class="click fancybox-pop" >
+                                            <span  data-lb-name="Button" data-lb="editable-button editable-optional" data-lb-id="button1"  data-lead-id="hero-button-link" class="btn btn-primary btn-hero">INTERESTED</span>
+                                        </a>
+					
+                                        </div>
+				</div>
+				<div class="col-md-6">
+					<img data-lb-comment="Recommended image width: 632px" data-lb-name="Image 1" data-lb-id="img1"  data-lb="editable-image editable-optional  max-image-size=632px" src="{LOCAL_URL}magnet/hero-image.png" data-lead-id="hero-right-image" class="hero-image img-responsive center-block">
+				</div>
+			</div> <!--end .col-md-10 -->
+		</div> 
+	</div>
+	
+
+	
+
+<div style="position: absolute; bottom: 0px; top: 0px; right: 0px; left: 0px; z-index: 2147483646; width: 100%; opacity: 0.5; display: none; height: 968px; background: black;"></div>
+    
+    <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email" style="width: 100%;padding: 10px;">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text editable-optional" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+    
+    </body>
+    
+</html>

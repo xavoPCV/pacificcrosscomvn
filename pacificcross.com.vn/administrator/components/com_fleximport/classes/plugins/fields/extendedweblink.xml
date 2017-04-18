@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>ExtendedWeblink</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Extended Weblink field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field type="spacer" label="COM_FLEXIMPORT_FIELD_NO_PARAMS" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

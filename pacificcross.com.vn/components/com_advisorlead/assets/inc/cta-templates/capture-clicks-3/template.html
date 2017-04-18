@@ -1,0 +1,214 @@
+<div id="color_changeable">
+    <color element="#form_style" value="#fffffe" type="border-color" name="Form Border Color" />
+    <color element="#form_style" value="#cdcfd0" type="background-color" name="Form Background Color" />
+
+
+    <color element="#submit_button" value="#b31616" type="background-color" name="Button Color" />
+    <color element="#submit_button" value="#000000" type="text-shadow" more="1px 1px 1px" name="Button Text Shadow Color" />
+    <color element="#submit_button" value="#db6363" type="border-color" name="Button Border Color" />    
+
+    <color element="#header_text" value="#ffffff" type="text-shadow" more="0 0 5px" name="Header Text Shadow Color" />
+
+    <color element="#bottom_part" parent="#form_style" value="#1647b3" type="background-color" name="Bottom Part Background Color" />
+</div>
+<div id="attribute_changeable">
+    <attribute element='#form_style' display_name='Border Style' edit_type='select-border-style' att_id='form-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#form_style' display_name='Border Width' edit_type='slider' att_id='form-border-width' att_type='border-width' def_value="5px" min="0" max="15"/>
+
+    <attribute element='#header_text' display_name='Font' edit_type='select-font' att_id='header-text-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#header_text' display_name='Letter Spacing' edit_type='slider' att_id='header-text-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#header_text' display_name='Font Size' edit_type='slider' att_id='header-text-font-size' att_type='font-size' def_value="26px" min="10" max="48" />
+
+    <attribute element='#subhead_text' display_name='Font' edit_type='select-font' att_id='subhead-text-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#subhead_text' display_name='Letter Spacing' edit_type='slider' att_id='subhead-text-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#subhead_text' display_name='Font Size' edit_type='slider' att_id='subhead-text-font-size' att_type='font-size' def_value="14px" min="10" max="48" />
+
+    <attribute element='#box_list' display_name='Font' edit_type='select-font' att_id='box-title-font-family' att_type='font-family' def_value="Arial"/>
+    <attribute element='#box_list' display_name='Letter Spacing' edit_type='slider' att_id='box-title-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#box_list' display_name='Font Size' edit_type='slider' att_id='box-title-font-size' att_type='font-size' def_value="26px" min="10" max="48" />
+
+    <attribute element='#privacy_policy' display_name='Font' edit_type='select-font' att_id='privacy-text-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#privacy_policy' display_name='Letter Spacing' edit_type='slider' att_id='privacy-text-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#privacy_policy' display_name='Font Size' edit_type='slider' att_id='privacy-text-font-size' att_type='font-size' def_value="13px" min="10" max="48" />
+
+    <attribute element='#no_interesting' display_name='Font' edit_type='select-font' att_id='no-interesting-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#no_interesting' display_name='Letter Spacing' edit_type='slider' att_id='no-interesting-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#no_interesting' display_name='Font Size' edit_type='slider' att_id='no-interesting-font-size' att_type='font-size' def_value="13px" min="10" max="48" />
+
+    <attribute element='#submit_button' display_name='Font' edit_type='select-font' att_id='button-font-family' att_type='font-family'  def_value="Arial"/>
+    <attribute element='#submit_button' display_name='Letter Spacing' edit_type='slider' att_id='button-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#submit_button' display_name='Font Size' edit_type='slider' att_id='button-font-size' att_type='font-size' def_value="20px" min="10" max="48" />
+    <attribute element='#submit_button' display_name='Border Style' edit_type='select-border-style' att_id='button-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#submit_button' display_name='Top Border Width' edit_type='slider' att_id='button-top-border' att_type='border-top-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Bottom Border Width' edit_type='slider' att_id='button-bottom-border' att_type='border-bottom-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Left Border Width' edit_type='slider' att_id='button-left-border' att_type='border-left-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Right Border Width' edit_type='slider' att_id='button-right-border' att_type='border-right-width' def_value="0" min="0" max="15" />
+</div>
+<style>
+    #capture_clicks_content #form_style{
+        border: 5px solid #fff;
+        background: #cdcfd0;
+    }
+
+    #capture_clicks_content #header_text{
+        color: #446cc0;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+        text-shadow: 0 0 5px #fff;
+    }
+
+    #capture_clicks_content #subhead_text{
+        font-size: 14px;
+    }
+
+    #capture_clicks_content #box_list{
+        margin-top: 20px;
+        list-style-image: url('{LOCAL_URL}/check.png');
+        padding-left: 20px;
+    }
+
+    #capture_clicks_content #box_list li{
+        color: #000;
+        font-size: 22px;
+        margin-bottom: 10px;   
+    }
+
+    #background_image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #top_part{
+        position: relative;
+        z-index: 2;
+    }
+
+    #bottom_part{
+        background: #1647b3;
+        padding: 15px 15px 0 15px;
+        position: relative;
+        z-index: 2;
+        width: 104%;
+        left: -2%;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+    }
+
+    #bottom_part:before{
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 0;
+        border-bottom: 12px solid #000;
+        border-left: 12px solid transparent;
+    }
+
+    #bottom_part:after{
+        content: "";
+        position: absolute;
+        top: -12px;
+        right: 0;
+        border-bottom: 12px solid #000;
+        border-right: 12px solid transparent;
+    }
+
+    #capture_clicks_content #form_body #form_fields{
+        padding: 0;
+    }
+
+    #capture_clicks_content #form_body #form_fields li,#capture_clicks_content #form_body #form_fields li.placeholder{
+        width: 48%;
+        float: left;
+        vertical-align: middle;
+        margin-right: 2%;
+    }
+
+    #capture_clicks_content #form_body #submit_button{
+        margin: 0;
+        background: #b31616;
+        border-bottom: 0;
+        text-shadow: 1px 1px 1px #000;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    #glow_inside{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 0 200px 200px rgba(255,255,255,0.8);
+        z-index: 1;
+    }
+
+    #capture_clicks_content img{
+        margin-top: 20px;
+    }
+
+    #capture_clicks_content #form_body #form_fields li input{
+        border-bottom: 1px solid #515959;
+        border-right: 1px solid #1d1d1d;
+        border-radius: 8px;
+        padding: 10px 20px;
+    }
+
+    #capture_clicks_content #form_body #privacy_policy{
+        margin: 10px;
+        color: #000;
+        font-weight: bold;
+    }
+
+</style>
+<div id="capture_clicks_content">
+    <form id="form_style" method="POST">
+        <div id="form_body">
+            <div id="top_part">
+                <div class="row">
+                    <div class="columns_8">
+                        <div id="header_text" element_id='header_text' element_type='text' removable element_name='Header Text' class="mits_form_element">
+                            <i>Want To Learn How To Profit With Facebook?</i>
+                        </div>
+                        <div id="subhead_text" element_id='subhead_text' element_type='text' removable element_name='SubHeadline Text' class="mits_form_element">
+                            This Video Course reveals my best techniques for making money with Facebook PPC advertising.
+                        </div>
+                        <ul id="box_list" element_id='box_list' element_type='text' removable element_name='Box List' class="mits_form_element">
+                            <li>Setting up your Facebook ad account.</li>
+                            <li>Mastering the Power Editor</li>
+                            <li>Turn Likes Into Sales</li>
+                            <li>Get fans and leads at the same time</li>
+                        </ul>
+                    </div>
+                    <div class="columns_4">
+                        <img id="right_image" element_id='right_image' element_type='image' element_name='Right Image' removable class="mits_form_element" src="{LOCAL_URL}/book.png">
+                    </div>
+                </div>
+            </div>
+            <div id="bottom_part">
+                <div class="row">
+                    <ul id="form_fields" class="columns_8">
+                        <li field_name="email">
+                            <input type="text" placeholder="Email Address" name="email" is_required="true">  
+                            <span type="invalid" class="error-message" style="display: none;">Please enter a correct value for this field</span>  
+                            <span type="required" class="error-message" style="display: none;">You must fill out this field in order to proceed</span>   
+                            <i class="icon_drag"></i>
+                        </li>
+                    </ul>
+                    <div class="columns_4" style="padding: 0;">
+                        <button id="submit_button"  type="submit" element_id='submit_button' element_type='text' element_name='Submit Button' class="mits_form_element">Get It Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="privacy_policy" element_id='privacy_policy' removable element_type='text' element_name='Privacy Policy Text' class="mits_form_element">
+                We will never share your info.
+            </div>
+            <div id="no_interesting" element_id='no_interesting' removable element_type='text' element_name='No Interesting Text' class="mits_form_element" event_behavior='cta_close' action="close_forever">
+                <span style="color: red;">Not interesting ? Never show this popup again</span>
+            </div>
+        </div>
+        <div id="glow_inside"></div>
+        <div id="capture_clicks_close" event_behavior='cta_close' action="close_only"></div>
+    </form>
+</div>

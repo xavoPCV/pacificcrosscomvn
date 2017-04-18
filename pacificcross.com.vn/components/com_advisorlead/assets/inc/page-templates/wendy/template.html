@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta content="#f2f1ed; Background Header Color" name="mp-customizable-color">
+        <meta content="#fff0f2; Box Right Background Color" name="mp-customizable-color">        
+        <meta content="#6d0102; Submit Button Color" name="mp-customizable-color">
+        <meta content="#282828; Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#fffffe; Submit Button Text" name="mp-customizable-color">
+        <style type="text/css">
+
+            html,
+            body {
+                margin:0;
+                padding:0;
+                height:100%;
+                font-family: 'Arial',sans-serif;
+                font-size: 18px;
+                color: #1a1a1a;
+                overflow: hidden;
+            }
+            .container{position: absolute;z-index: 5; height: 100%; width: 100%; overflow: auto; }
+            #bgimg{
+                position: absolute;
+                z-index: -1;
+            }
+            img{
+            }
+            .content
+            {
+                width: 1546px;
+                margin:0 auto;
+                text-align: center;
+                height: 100%;
+                position: relative;
+            }
+            .row
+            {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                position: relative;
+            }
+            #box-top{
+                background: #f2f1ed;
+                float: left;
+                position: relative;
+            }
+            #box-top .right p
+            {
+                padding-top: 50%;
+                line-height: 20px;
+                text-align: left;
+                position: absolute;
+                bottom: 0;
+            }
+            .box-middle {
+                height: 100%;
+                float: left;
+            }
+            #box-bottom .bg{
+                max-width: 100%;
+                width: 100%;
+            }
+            #box-top, #box-bottom{
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                line-height: 0;
+            }
+            #box-middle, #box-top, #box-bottom{
+                width: 100%;
+                float: left;
+                position: relative;
+                z-index: 1;
+            }
+            .content-box-bottom {
+                float: left;
+                width: 100%;
+            }
+            .content-post {
+                padding: 0% 10%;
+                height: 100%;
+                float: left;
+                width: 80%;
+            }
+            .clear {
+                clear: both;
+            }
+            .left
+            {
+                width: 50%;
+                float: left;
+                text-align: center;
+                height: 100%;
+            }
+            p
+            {
+                padding-top: 0px !important;
+                margin-top: 0px !important;
+            }
+            .right {
+                width: 50%;
+                float: left;
+                text-align: center;
+                height: 100%;
+            }
+            .content-left
+            {
+                padding-right: 2%;
+            }
+            .post-title{
+                color: #fff;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: left;
+                margin: 20% 0 10%;
+            }
+            .below_big_title{
+                color: #fff;
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .below_big_title span{
+                color: #ffc423;
+            }
+            .post-title-big{
+                color: #fff;
+                font-size: 150px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+            }
+            .left_text
+            {
+                width: 100%;
+                text-align: left;
+                float: left;
+            }
+            .content-right {
+                padding: 0 20px;
+                text-align: center;
+                width: 80%;
+                float: right;
+                margin: 0px;
+            }
+            .content-right .integration-form{
+
+                background: #fff0f2;
+                border: 2px dotted #fff0f2;
+                border-radius: 10px 10px 0px 0px;
+            }
+            input[type=text], input[type=email] {
+                background: #ffffff;
+                border: 1px solid rgba(0,0,0,0.09);
+                height: 30px;
+                margin: 2% 0;
+                margin-right: 10px;
+                text-align: center;
+                text-align: left;
+                width: 90%;
+                padding-left: 1%;
+                border-radius: 10px;
+            }
+            button.submit
+            {
+                background: #6d0102;
+                border: 2px solid #282828;
+                display: inline-block;
+                font-weight: bold;
+                text-decoration: none;
+                color: #fffffe;
+                font-size: 20px;
+                font-weight: bold;
+                width: 91%;
+                padding: 2% 0;
+                margin: 3% 0 14% 0;
+                border-radius: 10px;
+            }
+            #box-top .left{
+                text-align: left;
+            }
+            .image_bottom{
+                position: absolute;
+                bottom: 140px;
+                left: 7%;
+                z-index: 99;
+            }
+            .des{
+                font-size: 18px;
+                color: #000;
+                padding-top: 5% !important;
+                text-align: left;
+                padding-left: 3%;
+            }
+            @media only screen and (max-width: 1546px)
+            { 
+                .content
+                {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 1460px)
+            { 
+                .image_bottom{
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 1200px)
+            { 
+                .content-right{
+                    width: 100%;
+                }
+                .right {
+                    width: 100%;
+                }
+                .left
+                {
+                    width: 100%;
+                }
+            }
+        </style>
+                
+        <script>
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 1100, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1440, height: 1100, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+        </script>
+    </head>
+    <body>
+    <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image max-image-size=1634" data-lb-id="background" data-lb-comment="Tip: Recommended image size 1440 x 1100 pixels. Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/bg_free_food.png" style="width: 1440px; height: 100%;"/>
+    <div class="container">            
+        <div class="content">
+            <div id="box-top">
+                <div class="row">
+                    <div class="left">
+                        <img class="bg" alt="" data-lb-name="Top Logo Image" id="top-img" data-lb="editable-image image-size=120" data-lb-id="box-top" data-lb-comment="Tip: Recommended image size 120px width. Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/logo_free_food.png"/>                        
+                    </div>
+                    <div class="right">
+                        <div class="left_text" style="position: relative; min-height: 120px;"><p id="post-line" data-lb-name="Post line text" data-lb="editable-text" data-lb-id="post-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="box-middle">
+                <div class="content-box-bottom">                        
+                    <div class="content-post">  
+                        <div class="left">
+                            <div class="content-left">
+                                <div class="left_text">
+                                    <p class="post-title-big" id="post-title" data-lb-name="Post Title" data-lb="editable-text" data-lb-id="post-title">FREE</p>
+                                    <p class="below_big_title" id="post-line-1" data-lb-name="Post below 1 text" data-lb="editable-text" data-lb-id="post-line-1">
+                                        <span>Double</span> Beef<br>
+                                        <span>Double</span> Cheese
+                                    </p> 
+                                </div> 
+                            </div>
+                        </div> 
+                        <div class="right">
+                            <div class="content-right">
+                                <h2 class="post-title" data-lb-name="Title Form" data-lb="editable-text" data-lb-id="gift-title">Fill Out The Form Below To Get
+                                    Your Instant Approval</h2>                                        
+                                <form class="integration-form" action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                                    <p class="des" data-lb-name="Description Form" data-lb="editable-rich-text" data-lb-id="post_right_des">Neque porro quisquam est qui dolorem</p>
+                                    <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your Name" data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your Name" data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name">
+
+                                    <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your Email" data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter Your Email" data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+
+                                    <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+
+                                    <button data-lb-name="Opt-in Submit" data-lb-id="opt-in-submit" type="submit" data-lb="editable-submit editable-text" class="submit">Get More Info!</button>
+                                </form>
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+            <!--<div style="clear: both"></div>-->
+            <div id="box-bottom">
+
+                <img class="image_bottom" data-lb-comment="Recommended image width: 731px" data-lb-name="Image Footer" data-lb-id="image_footer" data-lb="editable-image max-image-size=731" src="{LOCAL_URL}/free_food_1.png">                                                                
+                <img class="bg" alt="" data-lb-name="Bottom Image" id="bottom-img" data-lb="editable-image image-size=1546" data-lb-id="box-bottom" data-lb-comment="Tip: Recommended image size 1546px width. Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/bg_bottom_free_food.png"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

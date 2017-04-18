@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_type">
+	<name>CSV</name>
+	<author>NetAssoPro</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.1</version>
+	<description>CSV import model for flexIMPORT</description>
+	<form>
+	<fields name="params">
+		<fieldset name="fleximport">
+			<field name="csv_separator" type="list" default="2" label="COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR" description="COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR_DESC">
+				<option value="1">COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR_TAB</option>
+				<option value="2">COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR_DOT_COMA</option>
+				<option value="3">COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR_COMA</option>
+				<option value="4">COM_FLEXIMPORT_TYPE_IMPORT_CSV_SEPARATOR_SPACE</option>
+			</field>
+			<field name="csv_quote" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_CSV_QUOTE" description="COM_FLEXIMPORT_TYPE_IMPORT_CSV_QUOTE_DESC">
+				<option value="1">COM_FLEXIMPORT_TYPE_IMPORT_CSV_QUOTE_NONE</option>
+				<option value="2">COM_FLEXIMPORT_TYPE_IMPORT_CSV_QUOTE_SIMPLE</option>
+				<option value="3">COM_FLEXIMPORT_TYPE_IMPORT_CSV_QUOTE_DOUBLE</option>
+			</field>
+			<field name="csv_value_multiple" type="text" default="%%" label="COM_FLEXIMPORT_TYPE_IMPORT_CSV_VALUE_MULTIPLE" description="COM_FLEXIMPORT_TYPE_IMPORT_CSV_VALUE_MULTIPLE_DESC" />
+			<field name="csv_encode" type="list" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_CSV_ENCODE" description="COM_FLEXIMPORT_TYPE_IMPORT_CSV_ENCODE_DESC">
+				<option value=""></option>
+				<option value="UTF-8">UTF-8</option>
+				<option value="ASCII">ASCII</option>
+				<option value="Windows-1252">Windows-1252</option>
+				<option value="ISO-8859-15">ISO-8859-15</option>
+				<option value="ISO-8859-1">ISO-8859-1</option>
+				<option value="ISO-8859-6">ISO-8859-6</option>
+				<option value="CP1256">CP1256</option>
+			</field>
+		</fieldset>
+	</fields>
+	</form>
+</install>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta name="mp-customizable-color" content="#e4ebf6; Content Background Color">
+        <meta name="mp-customizable-color" content="#000001; Content Shadow Color">
+        <meta name="mp-customizable-color" content="#fe9244; Headline Color">
+        <meta name="mp-customizable-color" content="#fffffe; Subline Color">
+        <meta name="mp-customizable-color" content="#00000a; General Text Color">
+        <meta name="mp-customizable-color" content="#fffffc; Video Border Color">
+        <meta name="mp-customizable-color" content="#E17803; Button Background Color">
+        <meta name="mp-customizable-color" content="#ffc800; Text Input Border Color">
+
+        <style type="text/css">
+
+            body,html
+            {
+                width: 100%;
+                height: 100%;
+            }
+
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #0081fa;
+                color: #00000a;
+                overflow: hidden;
+            }
+
+            .container
+            {
+                width: 650px;
+                background:rgba(226, 185, 20, 0.34);
+                padding: 10px;
+                border-radius: 2px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                margin-top: 150px;
+                margin-right: 50px;
+                float: right;
+            }
+
+            .content
+            {
+                padding: 30px 20px;
+                text-align: left;
+            }
+            .content h1 {margin-top: 0;
+                         font-size:50px;
+                         color: #fff
+            }
+            .container h2
+            {
+                margin: 0 10px 20px;
+                text-align: center;
+                font-size: 36px;
+                line-height: 1.4;
+                color: #fe9244;
+                padding-bottom: 20px;
+                background: url({LOCAL_URL}/h1_back.jpg) no-repeat 50% 100%;
+            }
+
+            .container h4
+            {
+                text-align: center;
+                margin: 0 20px 20px;
+                font-size: 18px;
+                color: #fffffe;
+            }
+
+
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .container{margin: 100px auto!important;float: none;width: 90%;min-width: 350px}
+                form input[type="text"]{
+                    max-width: 70%!important;
+                    width: 50%!important
+                }
+            }
+
+
+
+            #main_content
+            {
+                padding: 0 10px;
+                text-align: center;
+                font-size: 15px;
+            }
+            #main_content p{
+                text-align: left;
+                font-size: 20px;
+                color: #000;
+                max-width: 440px
+            }
+            .social-comments
+            {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            form input[type="text"]
+            {
+                padding: 12px;
+                width: 100%;
+                max-width: 445px;
+                border: 1px solid #fff;
+                text-align: left;
+                margin-bottom: 25px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                padding-top: 8px;
+                outline: none
+
+            }
+
+            form button
+            {
+                background-color: #E17803;
+                color: #ffffff;
+
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border: none;
+                display: inline-block;
+                font-size: 18px;
+                line-height: 17px;
+                padding: 15px 20px;
+                text-align: center;
+                vertical-align: middle;
+                margin-left: -5px;
+
+            }
+
+            #copyright
+            {
+                margin-top: 50px;
+                color: #fffff1;
+                font-size: 12px;
+            }
+
+            #copyright a
+            {
+                color: #fffff2;
+                text-decoration: none;
+            }
+
+            .wrapper
+            {
+                position: absolute;
+                z-index: 5;
+                overflow: auto;
+                height: 100%;
+                width: 100%;
+            }
+
+            #bgimg
+            {
+                position: absolute;
+                z-index: -1;
+            }
+            .share img {
+                float: left;
+                margin-left: 10px;
+            }
+            .share{margin-bottom: 50px}
+        </style>
+        
+        <script>
+
+            $(function() {
+                if (typeof itps_input_data != 'undefined')
+                {
+                    $('.countdown-nums').countdown(itps_input_data['toDate'], function(event) {
+                        var $this = $(this);
+                        switch (event.type) {
+                            case"seconds":
+                            case"minutes":
+                            case"hours":
+                            case"days":
+                            case"weeks":
+                            case"daysLeft":
+                                $this.find('span.' + event.type).html(event.value);
+                                break;
+                            case"finished":
+                                break;
+                        }
+                    });
+                }
+            });
+
+            (function(h) {
+                h.fn.countdown = function(a, l) {
+                    function m(a, d) {
+                        return function() {
+                            return d.call(a)
+                        }
+                    }
+                    var k = "seconds minutes hours days weeks daysLeft".split(" ");
+                    return this.each(function() {
+                        function j() {
+                            if (0 === e.closest("html").length)
+                                clearInterval(f), d("removed");
+                            else {
+                                c--;
+                                0 > c && (c = 0);
+                                g = {seconds: c % 60, minutes: Math.floor(c / 60) % 60, hours: Math.floor(c / 60 / 60) % 24, days: Math.floor(c / 60 / 60 / 24), weeks: Math.floor(c / 60 / 60 / 24 / 7), daysLeft: Math.floor(c / 60 / 60 / 24) % 7};
+                                for (var a = 0; a < k.length; a++) {
+                                    var b = k[a];
+                                    i[b] != g[b] && (i[b] = g[b], d(b))
+                                }
+                                0 == c && (clearInterval(f), d("finished"))
+                            }
+                        }
+                        function d(d) {
+                            var b = h.Event(d);
+                            b.date = new Date((new Date).valueOf() + c);
+                            b.value = i[d] || "0";
+                            b.toDate = a;
+                            b.lasting = g;
+                            switch (d) {
+                                case"seconds":
+                                case"minutes":
+                                case"hours":
+                                    b.value = 10 > b.value ? "0" + b.value.toString() : b.value.toString();
+                                    break;
+                                default:
+                                    b.value && (b.value = b.value.toString())
+                            }
+                            l.call(e, b)
+                        }
+                        if (!(a instanceof Date))
+                            if (String(a).match(/^[0-9]*$/))
+                                a = new Date(a);
+                            else if (a.match(/([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{2,4})\s([0-9]{1,2})\:([0-9]{2})\:([0-9]{2})/) || a.match(/([0-9]{2,4})\/([0-9]{1,2})\/([0-9]{1,2})\s([0-9]{1,2})\:([0-9]{2})\:([0-9]{2})/))
+                                a = new Date(a);
+                            else if (a.match(/([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{2,4})/) || a.match(/([0-9]{2,4})\/([0-9]{1,2})\/([0-9]{1,2})/))
+                                a = new Date(a);
+                            else
+                                throw Error("Doesn't seen to be a valid date object or string");
+                        var e = h(this), i = {}, g = {}, f = e.data("countdownInterval"), c = Math.floor((a.valueOf() - (new Date).valueOf()) / 1E3);
+                        j();
+                        f && clearInterval(f);
+                        e.data("countdownInterval", setInterval(m(e, j), 1E3));
+                        f = e.data("countdownInterval")
+                    })
+                }
+            })(jQuery);
+
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 2000, height: 1040, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 2000, height: 1040, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+        </script>
+    </head>
+    <body>
+        <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image max-image-size=1366" data-lb-id="background" data-lb-comment="Tip: Recommended image size 2000 x 1040 pixels. Background aligned to the top left of browser and scales proportionally to fit width." src="http://localhost/internettrafficpages_live/wp-content/themes/jupiter/template_image/bg3.png" style="width: 2000px; height: 100%;"/>
+        <div class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <h1 data-lb-id="headline"  data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Sunrise</h1>
+
+                    <div id="main_content" >
+                        <p  data-lb-name="Form text" data-lb="editable-rich-text" data-lb-id="form-text" >The Ultimate Coming Soon & Maintenance Mode Plugin for WordPres</p>
+
+                        <form data-lb-id="opt-in" method="post" data-lb="editable-opt-in-form" data-lb-name="Opt-in Form Integration" action="#">
+                            <input type="text" id="name" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Name Text" value="Enter Your First Name Here" data-lb="editable-text-input opt-in-name" data-lb-id="opt-in-name" title="Enter Your First Name Here" name="name" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                            <input type="text" id="email" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Email Text" value="Email" data-lb="editable-text-input opt-in-mail" data-lb-id="opt-in-email" title="Enter a Valid Email Here" name="email" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }">
+                            <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                            <button data-lb-name="Opt-in Submit" data-lb-id="opt-in-submit" type="submit" data-lb="editable-submit editable-text" class="submit" style="cursor: pointer;">Subcrible</button>
+                        </form>
+                        <p data-lb-name="Countdown Timer Numbers" data-lb="editable-optional" class="text-center countdown-nums" data-lb-id="countdown-timers">
+                            <span class="days">0</span> <span data-lb-name="Days Text" data-lb="editable-text" class="count-text" data-lb-id="days-text">Days</span>
+                            <span class="hours">00</span> <span data-lb-name="Hours Text" data-lb="editable-text" class="count-text" data-lb-id="hours-text">Hours</span>
+                            <span class="minutes">00</span> <span data-lb-name="Minutes Text" data-lb="editable-text" class="count-text" data-lb-id="minutes-text">Minutes</span>
+                            <span class="seconds">00</span> <span data-lb-name="Seconds Text" data-lb="editable-text" class="count-text" data-lb-id="seconds-text">Seconds</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+        <field name="id" type="text" default="0" label="COM_GNOSIS_FORM_LBL_CATEGORY_ID"
+               readonly="true" class="readonly"
+               description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="created_by" type="createdby" default=""
+               label="COM_GNOSIS_FORM_LBL_CATEGORY_CREATED_BY"
+               description="COM_GNOSIS_FORM_DESC_CATEGORY_CREATED_BY"/>
+
+        <field name="category_name" type="text"
+
+               label="COM_GNOSIS_FORM_LBL_CATEGORY_CATEGORY"
+               description="COM_GNOSIS_FORM_DESC_CATEGORY_CATEGORY"
+
+
+               required="true"
+               filter="safehtml"
+               size="50"
+               maxlength="200"/>
+
+
+        <field name="description" type="editor"
+
+               label="COM_GNOSIS_FORM_LBL_CATEGORY_DESCRIPTION"
+               description="COM_GNOSIS_FORM_DESC_CATEGORY_DESCRIPTION"
+
+
+               cols="100%"
+               rows="10"
+               filter="raw"/>
+
+
+        <field
+                name="state"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="inputbox"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field name="checked_out" type="hidden" filter="unset"/>
+        <field name="checked_out_time" type="hidden" filter="unset"/>
+
+    </fieldset>
+
+</form>

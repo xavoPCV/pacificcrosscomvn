@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="mp-customizable-color" content="#eeeeef; Background Color">
+        <meta name="mp-customizable-color" content="#ffffff; Box Background Color">
+        <meta name="mp-customizable-color" content="#444444; Footer Background Color">
+        <meta name="mp-customizable-color" content="#eeeeee; Line Color">
+        <meta name="mp-customizable-color" content="#f5f5f5; Text Box Background Color">
+
+        <meta name="mp-customizable-color" content="#114C7F; Button Background Start Color" button_id="button">
+        <meta name="mp-customizable-color" content="#357ebd; Button Background End Color" button_id="button">
+        <meta name="mp-customizable-color" content="#114C7E; Button Border Top Color" button_id="button">
+        <meta name="mp-customizable-color" content="#114C7D; Button Border Bottom Color" button_id="button">
+        <meta name="mp-customizable-color" content="#114C7C; Button Border Left Color" button_id="button">
+        <meta name="mp-customizable-color" content="#114C7B; Button Border Right Color" button_id="button">
+        <meta name="mp-customizable-color" content="#fffff5; Button Text Color" button_id="button">
+
+        <style type="text/css">
+
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            html{
+                width: 100%;
+                background: #444444;
+            }
+
+            body {
+                font-size: 14px;
+                font-family:'Arial',sans-serif;
+                color: #333;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                background: #eeeeef;
+            }
+
+            h1{
+                font-size: 36px;
+                text-align: center;
+                margin: 40px 0;
+                font-weight: normal;
+                color: #114c7f;
+            }
+
+            hr{
+                border: none;
+                border-top: 1px solid #eeeeee;
+                margin: 15px 0;
+            }
+
+            p{
+                line-height: 1.5;
+            }            
+
+            #container{
+                padding: 30px;
+                background: #eeeeef;
+            }
+
+            #container .content{
+                background: #ffffff;
+                max-width: 1170px;
+                margin: 0 auto;
+                border: 1px solid #cccccc;
+                padding: 60px;
+            }
+
+            .columns{
+                width: 48%;
+                margin: 1%;
+                float: left;
+            }
+
+            .columns label{
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .columns input{
+                display: block;
+                width: 100%;
+                padding: 8px;
+                outline: none;
+                transition: 0.5s all;
+                border: 1px solid #ccc;
+            }
+
+            .columns input:focus,.columns input:active{
+                border-color: #0076c2;
+                -webkit-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                -moz-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+            }
+
+            span.small{
+                font-size: 12px;
+            }
+
+            label>span:first-child{
+                color: #c00;
+            }
+
+            .btn {
+                background: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 10px 0;
+                max-width: 100%;
+                width: 100%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+
+
+            .btn>span {
+                position: relative;
+                display: inline-block;
+                padding: 15px 2%;
+                font-size: 20px;
+                line-height: 26px;
+
+                color: #fffff5;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                transition: 0.5s all;
+                margin-bottom: 4px;
+
+                border: solid 1px;
+                border-top-color: #114C7E;
+                border-bottom-color: #114C7D;
+                border-left-color: #114C7C;
+                border-right-color: #114C7B;
+
+                background: -webkit-linear-gradient(#114C7F,#357ebd);
+                background: -moz-linear-gradient(#114C7F,#357ebd);
+                background: -o-linear-gradient(#114C7F,#357ebd);
+                background: linear-gradient(#114C7F,#357ebd);
+                background-size: 100%;
+            }
+
+            .btn>span:hover {
+                background-size: 200%;
+            }
+
+
+            .box_text{
+                background: #f5f5f5;
+                border: 1px solid #e3e3e3;
+                padding: 15px;
+                font-size: 13px;
+                color: #666;
+            }
+
+            #footer_wrap{
+                background:#444444;
+                color: #aaa;
+            }
+
+            #footer_wrap .content{
+                max-width: 1170px;
+                padding: 30px 60px;
+                margin: 0 auto;
+            }
+
+            #copyright span{
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            #copyright a{
+                color: #357ebe;
+            }
+
+            .clear{
+                clear: both;
+            }
+
+            @media only screen and (max-width: 640px){
+                .columns{
+                    margin: 1% 0;
+                    width: 100%;
+                }
+                
+                #container .content{
+                    padding: 1% 5%;
+                }
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div id="container">
+            <div class="content">
+                <h1 data-lb-id="headline" data-lb="editable-rich-text editable-optional" data-lb-name="HeadLine">Thursday Night Webinar</h1>
+                <hr/>
+                <p data-lb-id="time-text" data-lb="editable-rich-text editable-optional" data-lb-name="Time Text">Thur, July 23rd, 2015 6:00 PM - 7:00 PM PST</p>
+                <hr/>
+                <p data-lb-id="maincontent" data-lb="editable-rich-text editable-optional" data-lb-name="Main Content">
+                    Join {Presenters Name} live for the Weekly Practice Webinar! <br/><br/>
+                    This is for all people who would like to find out more information about {Your Company}. <br/><br/>
+                    I will be talking about PPC ads on popular social websites, and opening the webinar for any questions you may have about your business. <br/><br/>
+                    This is a great opportunity to take advantage of {Presenters Name}  knowledge and make yourself better.
+                </p>
+                <hr/>
+                <span class="small" data-lb-id="required-field-text" data-lb="editable-rich-text editable-optional" data-lb-name="Required Field Text">* Required field</span>
+                <form class="form_content" data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" method="post">
+                    <div class="columns" data-lb="opt-in-name-wrapper">
+                        <label for="name" data-lb="editable-rich-text editable-optional">First Name *</label>
+                        <input onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" type="text" id="name">
+                    </div>
+                    <div class="columns">
+                        <label for="email">Email Address *</label>
+                        <input onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" type="text" id="email">
+                    </div>
+                    <div class="columns" data-lb="opt-in-phone-wrapper">
+                        <label for="phone">Mobile Phone</label>
+                        <input class="inp-text" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" type="text" id="phone">
+                    </div>
+                    <div class="clear"></div>
+                    <p class="box_text" data-lb-name="Form Privacy Text" data-lb="editable-rich-text editable-optional" data-lb-id="privacy-text-1">By clicking this button, you submit your information to the webinar organizer, who will use it to communicate with you regarding this event and their other services.</p>
+                    <button type="submit" class="btn">
+                        <span data-lb-name="Submit Button" data-lb="editable-button editable-optional" data-lb-id="button">Register</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="content">
+                <div id="copyright">
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2015 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

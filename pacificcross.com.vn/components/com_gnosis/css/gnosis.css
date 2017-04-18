@@ -1,0 +1,162 @@
+/* ------------ Begin Individual word view CSS ----------------*/
+/* the div containing all of the below fields in the individual word view*/
+.gnosis_word_fields {
+    background-color: #fff;
+	color: #000000;
+}
+/* The div containing each respective field in the individual word view*/
+.gnosis_word {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+	color: #313741;
+}
+
+.gnosis_definition {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.gnosis_examples {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.gnosis_etymology {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.gnosis_author {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+	margin-bottom: 20px;
+    background-color: #fff;
+
+}
+.gnosis_source {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+	margin-bottom: 20px;
+    background-color: #fff;
+}
+.gnosis_created {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+	margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.gnosis_modified {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+	margin-bottom: 20px;
+    background-color: #fff;
+}
+.gnosis_tags {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    background-color: #fff;
+}
+
+.gnosis_pronounce {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* the label of the fields in the individual word view*/
+.gnosis_label {
+    font-style: normal;
+    font-weight: bold;
+	color: #313741;
+}
+/* ------------ END Individual word view CSS ----------------*/
+
+
+
+
+/* ------------ Begin Lists Views CSS -----------------------*/
+
+/* The add word button on the list views */
+.gnosis_add {
+    padding: 5px;
+    text-align: right;
+}
+/* the rows in the tables in tags, category, and words views */
+.row1 {
+    background-color: #fff;
+}
+
+.row1:hover {
+    background-color: #edf4fc;
+}
+
+.row0 {
+    background-color: #f9f9f9;
+}
+
+.row0:hover {
+    background-color: #edf4fc;
+}
+
+.table {
+
+}
+
+.wordList {
+
+}
+
+
+/* css for the tag, words, and category views fields*/
+.gnosis-list-word {
+    min-width: 60px;
+}
+
+.gnosis-list-pron {
+    min-width: 130px;
+}
+
+.gnosis-list-cate {
+    min-width: 100px;
+}
+
+.gnosis-list-defi {
+
+}
+
+.gnosis-list-auth {
+    min-width: 100px;
+}
+.gnosis-list-source {
+    min-width: 120px;
+}
+.gnosis-list-date {
+
+}
+.gnosis-list-tags {
+
+}
+
+/* ------------ End Lists Views CSS -----------------------*/

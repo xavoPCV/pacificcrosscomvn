@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+    <!-- Joomla! 1.6 compatibility -->
+    <layout title="ViewPoll">
+        <message></message>
+        <config>
+          
+        </config>
+    </layout>
+
+</metadata>

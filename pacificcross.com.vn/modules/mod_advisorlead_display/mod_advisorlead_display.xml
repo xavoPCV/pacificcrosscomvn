@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>AdvisorLead Module</name>
+    <creationDate>August 29, 2015</creationDate>
+    <author>Vu Nguyen</author>
+    <authorEmail>vu@iexodus.com</authorEmail>
+    <authorUrl>iexodus.com</authorUrl>
+    <version>1.0</version>
+    <description>AdvisorLead Module</description>
+    <files>
+        <filename module="mod_advisorlead_display">mod_advisorlead_display.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_advisorlead_display.xml</filename>
+    </files>
+</extension>

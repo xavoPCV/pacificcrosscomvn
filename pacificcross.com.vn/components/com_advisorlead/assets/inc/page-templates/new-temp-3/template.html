@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:400,300,600,700|Roboto+Slab:400,300,700" rel="stylesheet" type="text/css">
+        <style>
+              /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-md-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+           body{font-family:'Open Sans',sans-serif;font-size:16px;font-weight:400;word-wrap:break-word;margin: 0;}
+           .padding-left{padding-left:0}.padding-right{padding-right:0}img{max-width:100%}a{outline:none}a:focus{text-decoration:none;outline:none}
+           .image-left{position:absolute;left:-38px;top:45%}.image-right{position:absolute;right:0;top:30%;overflow:hidden;width:250px;text-align:right}.main-page{width:100%;display:inline-block;position:relative;padding:0}
+           .image-bg{height:100%;max-height:100%!important;max-width:100%!important;position:absolute;width:100%;z-index:-1}
+           .content-box-top{width:100%;display:inline-block;text-align:center;margin-bottom:60px;padding:10px 0 0px}
+           .image-box{float:none;margin:0 auto;display:inline-block;width:49%;vertical-align:top;text-align:left}
+           .image-box img{max-width:100%!important}
+           .content-box{float:none;margin:0 auto;display:inline-block;vertical-align:top;text-align:left}
+           .content-box-top h1{font-size:85px;font-family:'Amatic SC',cursive;color:#fff;font-weight:700;text-transform:uppercase;line-height:85px;margin:90px 0 70px}.button{margin-bottom:20px;display:inline-block;width:100%}
+           .button input{width:72%;border:2px solid #bcc9cc;border-radius:4px;color:#0a2e26;background-color:#fffdfd;padding:10px 4%;font-size:20px;font-weight:600;height:56px}
+           .button a{border-radius:4px;color:#fffffd;white-space:normal;word-break:break-all;background-color:#25b142;padding:12px 2%;font-size:20px;transition-duration:0.5s;font-weight:700;text-transform:uppercase;line-height:30px;text-align:center;width:100%;float:left;    text-decoration: none;}
+           .button a:hover{text-decoration:none;background-color:#ee5429;transition-duration:0.5s}
+           .content-box-top p{font-size:20px;font-weight:300;color:#eee;line-height:28px;margin:0}.content-box-middle{float:none;margin:0 auto 215px;text-align:center;color:#6e7a7c}.content-box-middle h2{text-transform:uppercase;font-size:50px;line-height:55px;color:#0b2e36;font-family:'Roboto Slab',serif;font-weight:700;margin:0 0 10px}
+           .content-box-middle h3{font-size:46px;line-height:48px;font-family:'Amatic SC',cursive;font-weight:700;margin:0 0 50px}.content-box-middle p{font-size:24px;line-height:32px;margin:0 0 30px;font-weight:300}.content-box-bottom{margin-bottom:0;padding:0 0 90px;position:relative}.content-box-bottom .image-box{vertical-align:bottom}.content-box-bottom .image-box img{bottom:0;margin-bottom:-325px;position:relative;z-index:-1;max-width:100%!important}
+           .content-box-bottom h1{font-size:30px;font-family:'Roboto Slab',serif;color:#0a2c34;font-weight:700;text-transform:uppercase;line-height:30px;margin:0 0 40px}.content-box-bottom ul{margin:0;padding:0;list-style:none}
+           .content-box-bottom ul li{font-size:32px;list-style-image:url('{LOCAL_URL}foodtruckr-growth/tick.png');background:top 6px left 0px no-repeat;color:#6d787a;margin-bottom:25px;margin-left:40px;font-family:'Amatic SC',cursive;padding:0 0 0 45px;line-height:32px;font-weight:700;position:relative;background-size: 15px 15px;}
+           .content-box-bottom ul li img{position:absolute;left:0;top:7px}
+           .content-box-bottom ul li:last-child{margin-bottom:0}.content-box-top .scrollmagic-pin-spacer,.content-box-bottom .scrollmagic-pin-spacer{width:49%!important}.content-box-top .image3 
+           .scrollmagic-pin-spacer{width:100%!important;display:block!important}ul.no-bullet{margin-left:-30px;margin-top:20px}.content-box-bottom ul.no-bullet li{list-style-image:none;padding-left:76px}
+           .green-box{background-color:#5abb4b;padding:96px 0}.green-box .container{border:8px solid #fffefe;position:relative;color:#fffffe;padding:65px 65px 80px;text-align:center}.green-box h4{font-size:52px;font-family:'Roboto Slab',serif;text-transform:uppercase;font-weight:700;margin:0 0 23px}.green-box p{font-size:48px;font-family:'Amatic SC',cursive;line-height:48px;font-weight:700;padding:0;margin:0}.icon{border:8px solid #fffefe;border-radius:100%;width:80px;height:80px;bottom:-42px;right:0;left:0;margin:0 auto;position:absolute;background-color:#5abb4b}.contact{background-color:#0d3139;color:#fefeff}
+           .contact .content-box-top{padding:30px 0 0 0;margin-bottom:0}.contact h2{text-transform:uppercase;font-size:42px;line-height:45px;font-family:'Roboto Slab',serif;font-weight:700;margin:0 0 10px}.contact h3{font-size:40px;line-height:48px;font-family:'Amatic SC',cursive;font-weight:700;margin:0 0 30px}.contact .content-box p{font-size:24px;color:#fefeff;line-height:32px;margin:0 0 30px;font-weight:300}.contact .image-box{position:relative;vertical-align:bottom;text-align:right;z-index:0}.contact .content-box{margin-top:15%}.contact .form{padding:0 0 0 22%;position:absolute;top:38%}.contact .image-box img{animation:none;margin-bottom:-60px;bottom:0;position:relative;z-index:0}.contact .form-box{position:absolute;top:32%;margin-left:21%;max-width:360px;padding:20px;z-index:10}.contact .form-title{font-size:30px;font-family:'Roboto Slab',serif;color:#0a2c34;font-weight:700;text-transform:uppercase;line-height:30px;margin:0 0 40px;text-align:left}.contact .form-subtitle{font-size:46px;line-height:48px;font-family:'Amatic SC',cursive;font-weight:700;margin:0 0 50px;color:#0a2c34;text-align:left}.btn-form{text-align:left}.food-truc{padding:0;position:relative;color:#fefeff;z-index:9}.food-truc .row{padding:94px 0}.food-truc .btn{border-radius:4px;white-space:normal;word-break:break-all;margin:16px 0 0 0;display:inline-block;color:#fffffd;background-color:#25b142;padding:17px 50px;font-size:20px;transition-duration:0.5s;font-weight:700;text-transform:uppercase}.food-truc .btn:hover{text-decoration:none;background-color:#ee5429;transition-duration:0.5s}.food-truc h2{text-transform:uppercase;font-size:42px;line-height:45px;font-family:'Roboto Slab',serif;font-weight:700;margin:0 0 10px}.food-truc h3{font-size:40px;line-height:48px;font-family:'Amatic SC',cursive;font-weight:700;margin:0 0 30px}.food-truc .image-box{position:relative;vertical-align:middle;text-align:right}.food-truc .content-box{vertical-align:middle}.food-truc .image-box img{animation:none}.food-truc .container{text-align:center}.footer{padding:24px 0;background-color:#fffdff}.footer .content-box{text-align:center}.footer img,.footer h5,.footer .button{display:inline;vertical-align:middle}.footer img{margin-right:20px;max-height:56px}.footer h5{font-size:48px;font-weight:700;line-height:52px;color:#0b2c34;margin:0;font-family:'Amatic SC',cursive}.footer .button{margin-bottom:0;margin-left:20px}.footer .button a{float:none;width:auto}@media only screen and (max-width:1200px){.image-left{left:-28px}.image-left img{width:70%}.image-right{text-align:right;top:35%}.image-right img{width:60%}.contact .form-box{margin-left:10%}}
+           
+           @media only screen and (max-width:992px){.image-right{display:none}.image-left{display:none}.content-box-top{padding:40px 0 0 0;margin-bottom:30px}.content-box-top h1{margin:10px 0 30px;font-size:60px;line-height:60px}.button{text-align:center}.button a{display:block;margin:20px auto;width:50%;float:none}.image-box{padding:0;width:100%;text-align:center}.content-box{width:100%;padding:0;text-align:center}.content-box-middle h2{font-size:30px;line-height:35px}.content-box-middle h3{font-size:30px;line-height:35px;margin-bottom:30px}.content-box-middle p{font-size:20px;line-height:26px}.content-box-bottom .image-box img{position:initial;bottom:0;margin-bottom:0;z-index:9999}.contact .content-box{margin-top:0}.content-box-middle{margin-bottom:0}.content-box-bottom h1{font-size:30px!important}.content-box-bottom ul li{text-align:left}.green-box h4{font-size:35px}.green-box .container{padding:45px 30px 60px;width:100%}.green-box{padding:40px 15px 75px}.green-box p{font-size:35px;line-height:38px}.contact .image-box{text-align:center}.contact .form{padding:0;left:-50px;right:0;top:30%}.contact .form-box{margin-left:25%}.contact .form-box .button a{width:100%}.food-truc .row{padding:40px 0}.food-truc h2{font-size:35px;line-height:35px}.food-truc .btn{margin:0}.food-truc .image-box{text-align:center;margin-top:40px}.footer .content-box{margin-bottom:30px}.footer h5{line-height:38px;margin-top:8px}.footer h5,.footer img{display:block;margin:10px auto;float:none}.row{margin:0}}
+           @media only screen and (max-width:700px){.contact .form-box{margin-left:22%}}
+           @media only screen and (max-width:620px){.contact .form-box{margin-left:18%;top:32%}}
+           @media only screen and (max-width:540px){.contact .form-box{margin-left:14%}}
+           @media only screen and (max-width:480px){.image-bg{z-index:0}.content-box-top h1{font-size:40px;line-height:44px}.button input{width:66%;height:46px;font-size:16px}
+                                                    .button a{width:100%;font-size:16px;line-height:22px;min-height:40px}
+                                                    .content-box-middle h3{margin-bottom:20px}
+                                                    .content-box-middle h2{font-size:26px;line-height:32px}
+                                                    .content-box-middle p{font-size:18px;line-height:24px;margin-bottom:20px}.content-box-bottom h1{font-size:22px!important;line-height:30px!important;margin-bottom:10px}.content-box-bottom ul li{font-size:24px;line-height:26px;margin-bottom:15px}.green-box h4{font-size:22px;margin-bottom:15px}.green-box .container{padding:15px 15px 50px}.green-box{padding:20px 15px 55px}.green-box p{font-size:22px;line-height:28px}.contact h2{font-size:30px;line-height:35px}.contact h3{font-size:30px;line-height:36px;margin-bottom:20px}.contact .content-box p{font-size:20px;line-height:28px}.contact .form{left:0;position:inherit;background-color:#f6f6f6;padding:30px 15px 0}.contact .form iframe{width:100%}.food-truc h2{font-size:25px;line-height:25px}.food-truc h3{font-size:30px;line-height:36px;margin-bottom:20px}.food-truc .btn{width:100%}.food-truc .row{padding:30px 0}.food-truc .image-box{margin-top:30px}.form-bg iframe{width:70%}.contact .form-box{display:block;position:relative;background:#fefefe;width:100%;margin:0 auto;max-width:100%;padding:40px}.contact .form-title{margin:10px auto;text-align:center}.contact .form-subtitle{margin:10px auto;text-align:center}.contact .form-box .button a{margin:5px auto}.content-box-bottom ul li:before{top:5px}.form-bg{display:none}.main-page{background-color:#f8faf1}.food-truc{background-color:#9c9e9e}.contact .content-box-top{padding:20px 0}}
+           @media only screen and (max-width:320px){}
+           .container{
+                   width: 1200px;
+                text-align: center;
+                margin: 0 auto;
+           }
+             @media only screen and (max-width: 768px) {
+                    /* For mobile phones: */
+                     .container{
+                            width: 100%;
+                         text-align: center;
+                         margin: 0 auto;
+                    }
+                    .tranw{
+                        display: none;
+                    }
+                    .scrollmagic-pin-spacer{
+                        min-height: 343px!important;
+                    }
+                    .green-box .container {
+                        border: none;
+                            padding: 0;
+    padding-bottom: 80px;
+                    }
+            }   
+             /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main-page" data-lead-id="elements01">
+        <img data-lb-comment="Recommended image width: 1920px" data-lb-name="Image Background" data-lb-id="Image-Background" alt="Image-Background" data-lb="editable-image editable-optional  max-image-size=100%" class="image-bg" src="{LOCAL_URL}foodtruckr-growth/bg.jpg" data-lead-id="elements02" alt="">
+      
+        <div class="container">
+            <div class="row">
+                <div class="content-box-top" data-lead-id="elements05">
+                    <div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px auto; display: inline-block; position: relative; box-sizing: content-box; width: 100%; min-height: 769px; height: auto; padding-top: 100px; padding-bottom: 0px;">
+                        <div class="image-box col-md-6 padding-left" data-lead-id="elements06" id="elements06" style="position: relative; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto; box-sizing: border-box; width: 100%;">
+                            <div  href="#/optin" data-lead-id="elements07" class="mainimg">
+                                 <img data-lb-comment="Recommended image width: 515px" data-lb-name="Image 1" data-lb-id="Image-1" alt="Image-1" data-lb="editable-image editable-optional  max-image-size=515px"  class="image1" src="{LOCAL_URL}foodtruckr-growth/main.png" alt="" style="top: -10px;z-index: 28;position: absolute;">
+                                 <div  class="tranw" style="width: 515px;height: 620px;background: white;position: absolute;z-index: 11;top: 0;margin-top: -10px;opacity: 0.8;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box col-md-6 padding-right" data-lead-id="elements08">
+                        <h1 data-lb-name="Title" data-lb="editable-rich-text editable-optional" data-lb-id="Title 1"   class="animated fadeInUp" data-lead-id="elements09" data-wow-duration="300ms">Your Roadmap for a Surviving and Thriving Food Truck Business</h1>
+                        <div class="button animated fadeInUp" data-lead-id="elements10" data-wow-duration="600ms">
+                           
+                          
+                            <a  href="#myModal" id="data-reveal-id" class="click fancybox-pop"><span  data-lb-name="Learn more button" data-lb="editable-button" data-lb-id="button1" href="#/optin" data-lead-id="elements12" > <div  data-lb-name="Download Button 1" data-lb="editable-button editable-optional" data-lb-id="button" > Lean More</div> </span></a>
+                        </div>
+                        <p  data-lb-name="Text Info" data-lb="editable-rich-text editable-optional" data-lb-id="text1" data-lead-id="elements13">Sign up to receive updates about The Food Truck Growth Kit and an exclusive discount when it's available for purchase!</p>
+                    </div>
+                </div>
+
+                <div class="content-box-middle col-md-10" data-lead-id="elements14">
+                    <div class="wow fadeInUp animated" data-lead-id="elements15" data-wow-duration="400ms" style="visibility: visible; animation-duration: 400ms; animation-name: fadeInUp;">
+                        <h2  data-lb-name="Title 2" data-lb="editable-rich-text editable-optional" data-lb-id="Title 2" data-lead-id="elements16">Your Food Truck Business Bigger. Better. This Year.</h2>
+                        <h3   data-lb-name="Title 3" data-lb="editable-rich-text editable-optional" data-lb-id="Title 3" data-lead-id="elements17">As a food truck owner, you’ve navigated some tough roads.</h3>
+                    </div>
+                    <div data-lb-name="content" data-lb="editable-rich-text editable-optional" data-lb-id="content" class="wow fadeInUp animated" data-wow-duration="600ms" data-lead-id="elements18" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                        <p>You purchased and outfitted a truck, navigated governmental red tape, and spent many long days on your feet, serving up delicious food.</p>
+                        <p>Your hard work is paying off. You have some loyal customers. You're getting recognized around town. Overall, your food truck business is surviving—but you know it could be growing and thriving.</p>
+                        <p>In this multimedia field kit, we’ll give you step-by-step lessons that make expanding your business a natural evolution.</p>
+                    </div>
+                </div>
+                <div id="trigger2"></div>
+                <div class="content-box-bottom content-box-top" data-lead-id="elements19">
+                    <div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px auto; display: inline-block; position: relative; box-sizing: content-box; width: 100%; min-height: 391px; height: auto; padding-top: 100px; padding-bottom: 0px;"><div class="image-box col-md-6 padding-left" data-lead-id="elements20" id="elements20" style="position: relative; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto; box-sizing: border-box; width: 100%;"><a href="#/optin" data-lead-id="elements21">
+                                <img data-lb-comment="Recommended image width: 515px" data-lb-name="Image 2" data-lb-id="Image-2" alt="Image-2" data-lb="editable-image editable-optional  max-image-size=515px" src="{LOCAL_URL}foodtruckr-growth/main.png" class="image2" alt="" style="top: -10px;"></a></div></div>
+                    <div class="content-box col-md-6 padding-right" data-lead-id="elements22">
+                        <h1 data-lb-name="LESSONS INCLUDE TITLE" data-lb="editable-rich-text editable-optional" data-lb-id="LESSONS INCLUDE title" class="wow fadeInUp animated" data-wow-duration="400ms" data-lead-id="elements23" style="visibility: visible; animation-duration: 400ms; animation-name: fadeInUp;">Lessons Include:</h1>
+                        <ul  data-lb-name="LESSONS INCLUDE" data-lb="editable-rich-text editable-optional" data-lb-id="LESSONS INCLUDE" class="wow fadeInUp animated" data-wow-duration="600ms" data-lead-id="elements24" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                            <li>Employee training methods that set you up for success</li>
+                            <li>How to treat your customers like gold—even when they complain</li>
+                            <li>Managing the expected (health inspections) and the unexpected (rattling truck noises)</li>
+                            <li>Real-world, take-it-to-the-streets methods for spreading the word about your truck</li>
+                            <li>How to grow your catering and events business</li>
+                            <li>Employee training methods that set you up for success</li>
+                            <li>How to treat your customers like gold—even when they complain</li>
+                            <li>Managing the expected (health inspections) and the unexpected (rattling truck noises)</li>
+                            <li>Real-world, take-it-to-the-streets methods for spreading the word about your truck</li>
+                            <li>How to grow your catering and events business</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+        
+     <div class="green-box" data-lead-id="elements25">
+        <div class="container">
+            <div   class="wow fadeInUp animated" data-wow-duration="400ms" data-lead-id="elements26" style="visibility: visible; animation-duration: 400ms; animation-name: fadeInUp;">
+                <h4 data-lb-name="Title 4" data-lb="editable-rich-text editable-optional" data-lb-id="title4"  >More Than Just a Book</h4>
+                <p data-lb-name="Footer Text" data-lb="editable-rich-text editable-optional" data-lb-id="footer"  >The Food Truck Growth Kit includes a handbook (with accompanying audiobook), audio interviews with food truck owners, bonus articles, worksheets, and posters to hang in your truck.</p>
+            </div>
+            <div class="icon" data-lead-id="elements27"><img src="https://my.leadpages.net/template/6708303114010624/raw/img/icon01.png?aid=" data-lead-id="elements28" alt=""></div>
+        </div>
+    </div>
+        <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text editable-optional" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+.icon-48-words {
+    background-image: url(../images/l_words.png);
+    padding-left: 60px !important;
+}
+
+.icon-48-word {
+    background-image: url(../images/l_words.png);
+    padding-left: 60px !important;
+}
+
+.spacer {
+    background-color: #ddd;
+
+}
+

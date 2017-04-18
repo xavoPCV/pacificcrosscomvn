@@ -1,0 +1,1 @@
+var $ap = jQuery.noConflict(true);

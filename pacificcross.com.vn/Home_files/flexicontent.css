@@ -1,0 +1,100 @@
+@import url('flexi_form.css');
+@import url('flexi_containers.css');
+@import url('flexi_shared.css');
+@import url('flexi_frontend.css');
+
+/*#HT*/
+.cuslabels {
+	background:url(../images/bg.png) center center no-repeat;
+	color:#fff;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+	width: 76px;
+	height:30px;
+	white-space: nowrap;
+}
+
+.cuslabels2 {
+	background:url(../images/bg2.png) center center no-repeat;
+	color:#fff;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+	width: 76px;
+	height:30px;
+	white-space: nowrap;
+}
+
+
+.cuslabels_g {
+	background:url(../images/bg3.png) center center no-repeat;
+	color:#fff;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+	width: 76px;
+	height:30px;
+	white-space: nowrap;
+}
+
+.cuslabels2_g {
+	background:url(../images/bg3.png) center center no-repeat;
+	color:#fff;
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+	width: 76px;
+	height:30px;
+	white-space: nowrap;
+}
+
+
+/*k
+.cuslabels {
+background: url(../images/bg.png) center center no-repeat;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    width: 80px;
+    height: 45px;
+    background-size: 100% 45px;
+    margin-top: -50px!important;
+   
+    padding: 1px;
+  
+
+}
+
+*/
+
+
+#mygooglemap {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.infoside {
+	float:left;
+	width:55%;
+	height:1000px;
+	/*overflow:scroll;
+	overflow-x: hidden;*/
+}
+.mapside {
+	float:right;
+	width:72%;
+	height:1000px;
+	position:relative;
+	
+}
+.infoside input[type=text], .infoside select {
+	height:auto;
+}

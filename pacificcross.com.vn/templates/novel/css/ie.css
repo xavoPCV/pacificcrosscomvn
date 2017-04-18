@@ -1,0 +1,18 @@
+.button, button, .addtocart_button_module {
+	overflow: visible;
+	height: 28px;
+	line-height: 20px;
+	border: 0;
+}
+
+#log-panel {
+	width: 120px;
+}
+
+.camera_prev {
+	margin-left: -400px !important;
+}
+
+.camera_next {
+	margin-right: -400px !important;
+}

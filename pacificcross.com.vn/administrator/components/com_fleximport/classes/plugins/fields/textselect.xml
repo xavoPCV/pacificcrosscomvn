@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Textselect</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Textselect field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+		  		<field name="text_start" type="text" label="COM_FLEXIMPORT_FIELD_TEXTSELECT_START" description="COM_FLEXIMPORT_FIELD_TEXTSELECT_START_DESC" />
+		  		<field name="text_end" type="text" label="COM_FLEXIMPORT_FIELD_TEXTSELECT_END" description="COM_FLEXIMPORT_FIELD_TEXTSELECT_END_DESC" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

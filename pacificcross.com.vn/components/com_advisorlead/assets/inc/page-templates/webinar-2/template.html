@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#FDFDFD; Page Background Color" name="mp-customizable-color"> 
+        <meta content="#fefefe; Content Page Background Color" name="mp-customizable-color">
+        <meta content="#4EACE4; Live Webinar Text" name="mp-customizable-color">
+        <meta content="#2884db; Headline Background" name="mp-customizable-color">
+        <meta content="#fffff1; Headline Text" name="mp-customizable-color">
+        <meta content="#e3e3e3; Content Top" name="mp-customizable-color">
+        <meta content="#313131; Date and Time Text" name="mp-customizable-color">
+
+        <meta name="mp-customizable-color" content="#EE9411; Button Background Start Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#C75101; Button Background End Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc1; Button Border Top Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc2; Button Border Bottom Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc3; Button Border Left Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc4; Button Border Right Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#fffff0; Button Text Color" button_id="submit-button">
+
+        <meta content="#bdbdbd; Privacy-Top" name="mp-customizable-color">
+        <meta content="#3880ad; Host Name" name="mp-customizable-color">
+        <meta content="#fffff5; Month" name="mp-customizable-color">
+        <meta content="#000000; Day" name="mp-customizable-color">
+        <meta content="#030303; Will Learn Title" name="mp-customizable-color">
+        <meta content="#222222; Will Learn Content" name="mp-customizable-color">
+        <meta content="#2889eb; Spots Background" name="mp-customizable-color">
+        <meta content="#fffff3; Spots Text" name="mp-customizable-color">
+        <meta content="#cccccc; Footer Text" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;background-color:#FDFDFD}
+            .container {width: 1090px;margin: 0 auto;overflow: hidden;}
+            .main-content {background-color: #fefefe}
+            .main-content h1.title{text-align: center;font-weight: normal;color: #4EACE4}
+            .head {background: #2884db}
+            .hn {color:#3880ad; text-align: center; width: 96%; margin-top: 0px}
+            #more-learn{color:#fffff6 }
+            #limited{color: #000001}
+            .head h3{text-align: center;font-weight: bold;font-size: 30px;color: #fffff1;padding: 20px;margin-bottom: 0}
+            .content{padding: 30px 0 ;width: 100%}
+            .content.host-name{background: #e3e3e3;color: #313131}
+            .left{width: 50%;float: left;}
+            .host-name .left{width: 80%}
+            .host-name .right{margin-left: 1%; background-color:#fff;  padding:1%; float: left; width: 12.5%; box-shadow: 0px 4px 4px #cccccc; border: 1px solid #BBB;}
+            .host-name .left .avata{width: 40%;float: left;text-align: center;}
+            .host-name .left .share{width: 58%;float: left;text-align: center;}
+            .host-name .left h3{margin-top: 2px}
+            form{width: 100%;margin:0 auto;}
+            form p{color: #ccc}
+            input[type=text], input[type=email] {width: 90%;
+                                                 height: 50px;
+                                                 border: 1px solid rgba(0,0,0,0.09);
+                                                 text-align: left;
+                                                 font-family: 'Arial',sans-serif;
+                                                 font-weight: 400;
+                                                 font-size: 20px;
+                                                 color: #4f4f4f;
+                                                 font-style: italic;
+                                                 margin: 10px 0;
+                                                 background: #ffffff;
+                                                 padding-left: 2%;
+            }
+            .btn {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background: none;
+                text-decoration: none;
+                padding: 0 0 5px;
+                margin: 10px auto;
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn span{
+                font-size: 26px;
+                width: 90%;
+                color: #fffff0;
+                padding: 3% 1%;
+                position: relative;
+                display: inline-block;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                font-weight: bold;
+                position: relative;
+                text-decoration: none;
+                transition: 0.5s all;
+
+                border: solid 1px;
+                border-top-color: #ccccc1;
+                border-bottom-color: #ccccc2;
+                border-left-color: #ccccc3;
+                border-right-color: #ccccc4;
+
+                background-color: #EE9411;
+                background: -webkit-linear-gradient(#EE9411,#C75101);
+                background: -moz-linear-gradient(#EE9411,#C75101);
+                background: -o-linear-gradient(#EE9411,#C75101);
+                background: linear-gradient(#EE9411,#C75101);
+                background-size: 100%;
+            }
+
+            .btn span:hover{
+                background-size: 200%;
+            }
+            .right{width: 50%;float: right;}
+            .content.description h1{color: #030303}
+            .content.description p{color: #222222;padding-left:30px;padding-top: 10px}
+            .content.description .right p{color: #222222;padding-left:0px; font-size: 30px;padding-top: 10px}
+            .description .number{width: 50px;height:50px;
+                                 line-height: 50px;font-weight: bold;text-align: center;color: #fff;
+                                 border-radius: 50px;float: left;margin-right: 10px;
+                                 background: url('{LOCAL_URL}/circle-button.png') 0 center no-repeat;}
+            .content.limit{color: #fff;background: #2889eb;text-align: center}
+            .content.description .left img{float: left;margin-right: 10px}
+            .content.description .right {text-align: center;}
+            .content.description .right.time p {text-align: center;color: #000}
+            .limit b{font-weight: 400}
+            .description h1 b{color: red}
+            .footer{text-align: center;}
+            .footer #copyright {font-weight: normal;
+                                font-size: 18px;
+                                color: #cccccc;
+                                margin: 20px 0;
+                                clear: both;
+                                padding-top: 50px;
+            }
+            .footer #copyright .footer_text{color: #cccccc;text-decoration: none;}
+            .footer #copyright .footer_link_copyright{ color: #108cef;}
+            .footer #copyright .footer_link_copyright:hover{color: #ea7111;text-decoration: none;}
+            .footer .right{padding-top: 35px;}
+            .footer h3{font-size: 36px}
+            .privacy{text-align: center;font-size: 16px;color: #bdbdbd}
+            .spots-are-limited{color: #fffff3}
+            .clendar{position: relative;width:178px ;height: 178px;font-weight: bold;margin: 0 auto;}
+            .month{
+                position: absolute;
+                left: 30px;
+                top: 45px;
+                color: #fffff5
+            }
+            .day{
+                position: absolute;
+                left: 32%;
+                bottom: 25px;
+                font-size: 60px;
+                color: #000000
+            }
+            span.lock{width: 12px;height: 15px;background: url('{LOCAL_URL}/lock-icon.png') 0 center no-repeat; }
+            span.email-icon{width: 12px;height: 15px;background: url('{LOCAL_URL}/lock-icon.png') 0 center no-repeat; }
+
+            @media only screen and (max-width: 1100px){
+                .container {width: 100%;
+                }
+            }
+            @media only screen and (max-width: 992px){
+                .host-name .right{
+                    width: 23%;
+                }
+                .host-name .left{
+                    width: 100%;
+                }
+                .host-name .left .share{
+                    width: 50%;
+                }
+                .description .left{
+                    width: 40%;
+                }
+                .content.description .right{
+                }
+                .spots-are-limited{
+                    width: 82%;
+                }
+                .footer .left{
+                    width: 41%;
+                }
+                .footer .right{
+                    width: 35%;
+                }
+                .footer .copyright{
+
+                }
+            }
+            @media only screen and (max-width: 768px){
+                .clendar{
+                }
+                .host-name .right{
+                    width: 23%;
+                }
+                .host-name .left .share{
+                    width: 50%;
+                }
+                .host-name .left{
+                    width: 100%;
+                }
+                .description .left{
+                    width: 100%;
+                }
+                .description .right{
+                    width: 100%;
+                }
+                .spots-are-limited{
+                    width: 92%;
+                }
+                .footer .left, .footer .right{
+                    width: 100%;
+                }
+                .hn{
+                }
+            }
+            @media only screen and (max-width: 600px){
+                .host-name .left{
+                }
+                .host-name .left .avata{
+                    width: 100%;
+                }
+                .host-name .left .share{
+                    width: 100%;
+                }
+                .clendar{
+                }
+                .host-name .right{
+                    width: 70%;
+                    margin-left: 15%;
+                }
+                form{
+                    width: 100%;
+                }
+                .hn{
+                }
+                .description .left h1{
+                    width: 100%;
+                }
+                .description .left p{
+                    width: 100%;
+                }
+                .description .right{
+                }
+                .footer .left{
+                }
+                .footer .right{
+                }
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function() {
+                var onclick = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;";
+                $('.facebook_share, .gplus_share, .twitter_share').attr('onclick', onclick);
+                $('.facebook_share').attr('href', facebook_share_url);
+                $('.gplus_share').attr('href', google_share_url);
+                $('.twitter_share').attr('href', twitter_share_url);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main-content" style="margin-bottom:45px;">
+            <h1 class="title" data-lb-name="Pre-Headline" data-lb="editable-rich-text editable-optional"  data-lb-id="pre-headline">
+                <b>Live Webinar</b> with Host Name
+            </h1>
+
+            <div class="head" >
+                <h3 data-lb-name="Headline" data-lb="editable-rich-text" data-lb-id="headline">"Discover These Traffic Generating Secrets <br>That Can Get You 25 Leads Per Day To Your Business"</h3>
+            </div>
+
+            <div class="content host-name">
+                <div class="container">
+                    <div class="left">
+                        <div class="avata">
+                            <div class="clendar">
+                                <a href="#" data-lb-id="calendar-image1-link" data-lb="editable-link editable-optional link-only" data-lb-name="Calendar Image 1" style="cursor: pointer;display:block">
+                                    <img width="100%" data-lb-comment="Recommended image width: 178px" data-lb-name="Calendar Image" data-lb-id="calendar-image" data-lb="editable-image max-image-size=178" src="{LOCAL_URL}/calendar-icon.png">
+                                </a>
+                                <div class="month" data-lb-name="Month" data-lb="editable-text editable-optional" data-lb-id="month">April</div>
+                                <div class="day" data-lb-name="Day" data-lb="editable-text editable-optional" data-lb-id="day">26</div>
+                            </div>
+                            <p data-lb-name="Time" data-lb="editable-rich-text" data-lb-id="time">Thursday, April 26th<br>
+                                6:00 PM Pacific<br>
+                                9:00 PM Eastern</p>
+
+                        </div>
+                        <div class="share">
+
+                            <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name" style="display: none;">
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+                                <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                                <button type="submit" class="btn">
+                                    <span data-lb-name="Submit Button" data-lb="editable-button" data-lb-id="submit-button">YES! I WANT MORE LEADS</span>
+                                </button>
+                                <p class="privacy" data-lb-name="Privacy-Top" data-lb="editable-text" data-lb-id="privacy-top"><span class="lock">&#160;&#160;&#160;</span> We value your privacy and never spam you</p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#" data-lb-id="avatar-link" data-lb="editable-link editable-optional link-only" data-lb-name="Avatar Image" style="cursor: pointer;display:block">
+                            <img width="100%" data-lb-comment="Recommended image width: 167px" data-lb-name="Avatar Image" data-lb-id="avatar-image" data-lb="editable-image max-image-size=167" src="{LOCAL_URL}/avatar.png">
+                        </a>
+                        <h3 class="hn" data-lb-name="Host Name" data-lb="editable-text" data-lb-id="host-name">Host Name</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content description">
+                <div class="container">
+                    <div class="left">
+                        <h1 data-lb-name="Will-learn-title" data-lb="editable-rich-text" data-lb-id="will-learn-title">During This Free Webinar You Will Learn</h1>
+                        <a href="#" data-lb-id="circle-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 1" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Chekmark Image 1" data-lb-id="cricel-image-1" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+
+                        <p data-lb-name="Will-learn-1" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                        <a href="#" data-lb-id="circle-image-2-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 2" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 2" data-lb-id="cricel-image-2" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-2" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                        <a href="#" data-lb-id="circle-iamge-3-link" data-lb="editable-link editable-optional link-only" data-lb-name="Checkmark Image 3" style="cursor: pointer;display:block;overflow:hidden;float:left">
+                            <img data-lb-comment="Recommended image width: 50px" data-lb-name="Checkmark Image 3" data-lb-id="cricel-image-3" data-lb="editable-image max-image-size=50" src="{LOCAL_URL}/checkmark.png">
+                        </a>
+                        <p data-lb-name="Will-learn-3" data-lb="editable-rich-text editable-optional" data-lb-id="will-learn-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+
+                    </div>
+                    <div class="right time">
+                        <div class="clendar">
+                            <a href="#" data-lb-id="calendar-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Calendar Image link" style="cursor: pointer;display:block">
+                                <img data-lb-comment="Recommended image width: 178px" data-lb-name="Calendar Image" data-lb-id="calendar-image" data-lb="editable-image max-image-size=178" src="{LOCAL_URL}/calendar-icon.png" style="cursor: pointer;">
+                            </a>
+                            <div class="month" data-lb-name="Month" data-lb="editable-text editable-optional" data-lb-id="month">April</div>
+                            <div class="day" data-lb-name="Day" data-lb="editable-text editable-optional" data-lb-id="day">26</div>
+                        </div>
+                        <p data-lb-name="Time" data-lb="editable-rich-text" data-lb-id="time">Thurday, Aprill 26th<br>
+                            6:00 PM Pacific<br>
+                            9:00 PM Eastern</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content  limit">
+                <div class="container spots-are-limited" data-lb-name="Spots are limited" data-lb="editable-rich-text" data-lb-id="spots">
+                    <b>SPOTS ARE LIMITED :</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus. In et orci id magna auctor vestibulum tempor at metus. Sed varius consequat diam, et lacinia mi. Aliquam congue egestas enim et lobortis. 
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="left">
+                        <h3 data-lb-name="Strategies" data-lb="editable-rich-text" data-lb-id="strategies">I Can't Believe The Top Earners Use These Simple Strategies!</h3>
+                        <img src="https://googledrive.com/host/0B_Y1OBeOK_x4UGtBTjdqNjNPcWs/logo-video-sales-page3.png" data-lb-name="Logo Image" data-lb-id="logo-image" alt="logo" data-lb="editable-image editable-optional max-image-size=176" class="logo"></a>
+                    </div>
+                    <div class="right">
+                        <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                            <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name" style="display: none;">
+                            <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+                            <button data-lb-name="Submit Button" data-lb-id="submit-text" type="submit" data-lb="editable-text" class="btn" style="cursor: pointer;">YES! I WANT MORE LEADS</button>
+                            <p class="privacy" data-lb-name="Privacy-Top" data-lb="editable-text" data-lb-id="privacy-top"><span class="lock">&#160;&#160;&#160;</span> We value your privacy and will never spam you</p>
+                        </form>
+                    </div>
+                </div>	
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                </div>
+            </div>
+
+        </div>
+
+    </body>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#e01a1a; Headline Background" name="mp-customizable-color">
+        <meta content="#fffff1; Headline Text" name="mp-customizable-color">
+        <meta content="#000002; Content Top" name="mp-customizable-color">
+        <meta content="#ccccc1; Strategies Top" name="mp-customizable-color">
+        <meta content="#10CE04; Join Background" name="mp-customizable-color">
+        <meta content="#ffffff; Join Text" name="mp-customizable-color">
+        <meta content="#0033FF; Author" name="mp-customizable-color">
+        <meta content="#111222; Position" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{font-family:Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif}
+
+            .hn {color:#000007}#more-learn{color:#fffff6 }#limited{color: #000001}.join-text{color: #ffffff}
+            .container {width: 100%;margin: 0 auto;overflow: hidden;}
+            .main-content{
+                width: 960px;
+                margin:0 auto;
+            }
+            .wrap{
+                width: auto;
+                margin-left: 45px;
+                margin-right: 45px;
+            }
+            .logo{padding: 25px 0}
+            .logo a {
+                display: block;
+                overflow: hidden;
+                float: left;
+            }
+
+            .main-content h1{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-weight: inherit;
+                font-style: inherit;
+                font-size: 100%;
+                font-family: inherit;
+                vertical-align: baseline;
+                background: none repeat scroll 0 0 transparent;
+                text-align: center;
+                font-size: 36px;
+                margin:50px 0;
+            }
+            .head {clear: both;}
+            .head h3{text-align: center;font-weight: bold;font-size: 30px;color: #fffff1;padding: 20px;margin-bottom: 0}
+            .content{padding: 30px 0;width: 100%; border-bottom: 1px solid #c7c7c7}
+            /*.content.host-name{background: #000002;color: #fff}*/
+            .host-name .left{width: 55%;float: left;}
+
+            .host-name .right{
+                width: 40%;
+                position: relative;
+                padding-right: 5px;
+                padding-top: 5px;
+            }
+            .contents{
+                position: absolute;
+                right: -5px;
+                top: -5px;    
+            }
+            .form-head {
+                width: auto;
+                padding: 25px;
+                background: #ebebeb;
+                text-align: left;
+            }
+            .form-head p{
+                margin-bottom: 0;
+                font-size: 14px;
+                color: #333;
+            }
+            .host-name .right h3{text-align: left;margin:0; font-size: 22px;}
+            form{
+                width: 100%;margin:0 auto;
+                background: #53bad1;
+                overflow: hidden;
+            }
+            input[type=text], input[type=email] {
+                width: 275px;
+                -moz-box-shadow: inset 1px 1px 3px rgba(1,1,1,.35);
+                -webkit-box-shadow: inset 1px 1px 3px rgba(1,1,1,.35);
+                box-shadow: inset 1px 1px 3px rgba(1,1,1,.35);
+                width: auto; height: 40px;
+                border: 1px solid rgba(0,0,0,0.09);
+                text-align: left;
+                font-family: 'Arial',sans-serif;
+
+                font-weight: 400;font-size: 20px;color: #4f4f4f;font-style: italic;margin: 10px 0;background: #ffffff;padding-left: 20px;
+            }
+
+            .btn {margin: 0;
+                  width: 300px;
+                  height: 60px;
+                  z-index: 6;
+                  background: #0066cc;
+                  color: #fff;
+                  border:none;
+                  border-radius: 5px;
+                  font-size: 20px;
+                  font-weight: bold;
+            }
+
+            /*span.arrow {margin-left:20px;padding: 0;width: 30px;height: 30px;background-size: 18px;
+                background:url('https://lh5.ggpht.com/-g-Wp7kn8xiJc8ifN8Z_mzBL_GDrtNTlqIfNlL5zQitPM9bAZ-2cClVTzw_yE9ECBO4pcX9jzETj6yCelS_khg=s0') 0 center no-repeat;
+            }*/
+            .right{width: 49%;float: right;text-align: center}
+            .content.description h1{color: #000;text-transform: uppercase;}
+            .description .number{width: 50px;height:50px;line-height: 50px;font-weight: bold;text-align: center;color: #fff;border-radius: 50px;float: left;margin-right: 10px;background: url('{LOCAL_URL}/circle-button.png') 0 center no-repeat;}
+            .content.limit{color: #fffff3;background: #EA7111;text-align: center}
+            .content.description .left{width: 49%;float: left;margin-right: 2%}
+            .content.description .right {text-align: center;}
+            .content.description  img{float: left;}
+            .content.description .right.time p {text-align:left;color: #000;width: 178px;margin: 0 auto;}
+            .limit .container{ width:95%}
+            .limit b{font-weight: 400}
+            .description h1 b{color: red}
+            .footer{text-align: center;overflow: hidden;}
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 15px;
+                color: #000;
+                margin: 20px 0;
+                clear: both;
+            }
+            .footer #copyright .footer_text{
+                color: #000;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright{ color: #108cef;}
+            .footer #copyright .footer_link_copyright:hover{
+                color: #ea7110;
+                text-decoration: none;
+            }
+            .footer h3{font-size: 36px}
+            .privacy{text-align: center;font-size: 14px;color: #fff;width: 300px;margin:20px auto;}
+
+            .clendar{position: relative;width:178px;height: 178px; font-weight: bold;margin: 15px auto;
+            }
+            .month{position: absolute;left:20px;top: 40px;color: #fffff5}
+            .day{position: absolute;left:55px;bottom: 25px;font-size: 60px;color: #000000}
+            span.lock{width: 12px;height: 15px;background: url('{LOCAL_URL}/lock-icon.png') 0 center no-repeat;}
+
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 490px !important;
+            }
+
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 68%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            .content.description  img{
+                width: 42px;
+            }
+            .plus {
+                float: left;
+                width: 100%;
+                clear: both;
+            }
+            .plus p{
+                float: left;
+                margin-left: 50px;
+                width: auto;
+                margin-top:0;
+                font-size: 15px;
+            }
+            .plus h3{
+                float: left;
+                margin-top: 0;
+                margin-left: 10px;
+            }
+            section{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            section p {
+                font-weight: bold;
+                font-size: 22px;
+            }
+            .author{
+                color: #0033FF;
+                font-weight: bold;
+                font-size: 23px;
+
+            }
+            .position{
+                color: #111222;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+
+            @media only screen and (max-width: 1085px){
+                .right{width: 100%;float: left;}
+                .left{width:100%}
+                .footer .btn{width: 70%}
+            }
+
+
+            @media only screen and (max-width: 768px){
+                .host-name .right{
+                    width: 63%;
+                }
+                .content.description .left{
+                    width: 80%;
+                }
+            }
+            @media only screen and (max-width: 600px){
+                .host-name .left{
+                    float: none;
+                    width: 100%;
+                }
+                .host-name .left .avata{
+                    float: none;
+                    margin: 0 auto;
+                    width: 50%;
+                }
+                .host-name .right{
+                    float: none;
+                    width: 95%;
+                    margin: 0 auto;
+                }
+                .content.description .left{
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-left:0;
+                }
+
+            }
+            @media only screen and (max-width: 400px){
+                .btn {font-size: 14px;}
+            }
+            @media only screen and (max-width: 300px){
+                .btn {font-size: 8px;}
+            }
+            #bgimg
+            {
+                position: absolute;
+                z-index: -1;
+            }
+        </style>
+        
+        <script>
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+
+        </script>
+        <script>
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 1100, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1440, height: 1100, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+        </script>
+    </head>
+    <body>
+        <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image max-image-size=1366" data-lb-id="background" data-lb-comment="Tip: Recommended image size 1440 x 1100 pixels. Background aligned to the top left of browser and scales proportionally to fit width." src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/img_tem.png" style="width: 1440px; height: 100%;"/>
+        <div class="main-content">
+
+            <div class="wrap">
+
+                <div class="logo">
+                    <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link editable-optional link-only" data-lb-id="Logo-link">
+                        <img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image editable-optional max-image-size=188">
+                    </a>
+                </div>
+
+                <div class="head" >
+                    <img src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/drop.png" border="0" data-lb-comment="Recommended image width: 874px" data-lb-name="Drop Image" data-lb-id="drop-img" alt="Drop" data-lb="editable-image editable-optional max-image-size=874">
+                </div>
+
+
+                <h1 data-lb-name="Will-learn-title" data-lb="editable-rich-text" data-lb-id="will-learn-title">This is Your Primary Headline. Test a Few Different Versions to Increase Your Conversions!</h1>
+
+                <div class="content host-name">
+                    <div class="container">
+
+                        <div class="left">
+                            <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=444 video-height=312" class="video-holder flex-video"> 
+                                <img data-lb-id="video-image" data-lb="editable-image image-width=444 image-height=312" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                            </div>
+                            <h3 data-lb-name="Tell" data-lb="editable-rich-text" data-lb-id="tell">Tell visitors about your offer</h3>
+                            <p data-lb-name="Descript tell visitors" data-lb="editable-rich-text" data-lb-id="des-tell">Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+                        </div>
+
+                        <div class="right">
+                            <div class="contents">
+                                <img src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/free.png" alt="">
+                            </div>
+                            <div class="form-head">
+                                <h3 data-lb-name="Get Start" data-lb="editable-rich-text" data-lb-id="get-start">Get Started Now</h3>
+                                <p data-lb-name="Descript get start" data-lb="editable-rich-text" data-lb-id="des-start">Test different form button text to see which converts better. You may be suprised! </p> 
+                            </div>
+                            <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="name" name="name" style="display: none">
+                                <input onblur="if ($(this).val() == '') {
+                    $(this).val($(this).attr('title'));
+                }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                    $(this).val('')
+                }" type="text" id="email" name="email">
+                                <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+                                <button data-lb-name="Submit Button" data-lb-id="submit-text" type="submit" data-lb="editable-text" class="btn" style="cursor: pointer;">Contact Me</button>
+                                <p class="privacy" data-lb-name="Privacy-Top" data-lb="editable-text" data-lb-id="privacy-top">We will never share your information with a 3rd party. We hate spam just as much as you do!</p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content description">
+                    <div class="container">
+                        <div class="left">
+
+                            <div class="plus">
+                                <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 1" data-lb-id="cricel-image-1" data-lb="editable-image max-image-size=50" src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/plus+.png">
+                                <h3 data-lb-name="Make Point" data-lb="editable-rich-text" data-lb-id="make-point">Make an Important Point</h3>
+                                <p data-lb-name="Will-learn-1" data-lb="editable-rich-text" data-lb-id="will-learn-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                            </div>
+
+                            <div class="plus">
+                                <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 2" data-lb-id="cricel-image-2" data-lb="editable-image max-image-size=50" src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/plus+.png">
+                                <h3 data-lb-name="Make Point 2" data-lb="editable-rich-text" data-lb-id="make-point-2">Second Important Point</h3>
+                                <p data-lb-name="Will-learn-2" data-lb="editable-rich-text" data-lb-id="will-learn-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="right">
+
+                            <div class="plus">
+                                <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 3" data-lb-id="cricel-image-3" data-lb="editable-image max-image-size=50" src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/plus+.png">
+                                <h3 data-lb-name="Make Point" data-lb="editable-rich-text" data-lb-id="make-point">Make an Important Point</h3>
+                                <p data-lb-name="Will-learn-3" data-lb="editable-rich-text" data-lb-id="will-learn-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                            </div>
+
+                            <div class="plus">
+                                <img data-lb-comment="Recommended image width: 50px" data-lb-name="Circle Image 4" data-lb-id="cricel-image-4" data-lb="editable-image max-image-size=50" src="http://107.170.3.129/advisorlead//wp-content/themes/jupiter/template_image/plus+.png">
+                                <h3 data-lb-name="Make Point 4" data-lb="editable-rich-text" data-lb-id="make-point-4">Second Important Point</h3>
+                                <p data-lb-name="Will-learn-4" data-lb="editable-rich-text" data-lb-id="will-learn-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero pulvinar, posuere nibh eget, porta metus.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <section data-lb-name="Fade-In Box 2" data-lb="editable-fadein-box" data-lb-id="opt-in-box-2">
+                        <p data-lb-name="provided" data-lb="editable-rich-text" data-lb-id="provided">
+                            "I've been a customer of YourCompany for 5 months & couldn't be more pleased with the service & guidance they've provided! I would recommend this to anyone!"
+                        </p>
+                        <span data-lb-id="Author" data-lb="editable-text editable-optional" data-lb-name="author" class="author">John Smith</span><br>
+                        <span data-lb-id="Position" class="position" data-lb="editable-text editable-optional" data-lb-name="position" >CEO | Cool Inc.</span>
+                    </section>
+
+                </div>
+
+                <div class="footer">
+
+                    <div id="copyright">
+                        <span style="float:left" data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+
+                        <div style="float:right">
+                            <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                            <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions</a>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

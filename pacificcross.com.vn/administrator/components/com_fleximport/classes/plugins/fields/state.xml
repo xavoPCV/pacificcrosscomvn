@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>State</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>State field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="state_default" type="list" default="0" label="COM_FLEXIMPORT_FIELD_STATE_DEFAULT" description="COM_FLEXIMPORT_FIELD_STATE_DEFAULT_DESC">
+					<option value="1">COM_FLEXIMPORT_FIELD_STATE_PUBLISHED</option>
+					<option value="0">COM_FLEXIMPORT_FIELD_STATE_UNPUBLISHED</option>
+					<option value="-1">COM_FLEXIMPORT_FIELD_STATE_ARCHIVED</option>
+					<option value="-3">COM_FLEXIMPORT_FIELD_STATE_PENDING</option>
+					<option value="-4">COM_FLEXIMPORT_FIELD_STATE_TO_WRITE</option>
+					<option value="-5">COM_FLEXIMPORT_FIELD_STATE_IN_PROGRESS</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

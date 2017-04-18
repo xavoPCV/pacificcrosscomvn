@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+     
+
+ 
+		<field name="filter_category" type="category"
+            label="Browse by Category"
+            description="COM_PORTFOLIO_FORM_DESC_CONTENT_CATEGORY"  extension="com_faq.faqs.faq_category_id" show_root="1" onchange="this.form.submit();" /> 
+
+      
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<form>
+	<fieldset name="details">
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+		<field name="title" type="text" label="Title" required="true" class="inputbox" size="80" />
+		<field name="file_name" type="file" label="File name" />
+		<field name="cur_picture_name" type="hidden" />
+	</fieldset>
+</form>

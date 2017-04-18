@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta content="#000001; Top Background" name="mp-customizable-color">
+        <meta content="#fffffe; Middle Background" name="mp-customizable-color">
+        <meta content="#0072ff; Bottom Background" name="mp-customizable-color">
+        <meta content="#ff0000; Headline Text" name="mp-customizable-color">
+
+        <meta property="fb:admins" content=""/>
+        <style type="text/css">
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .container
+            {
+                width: 100%;
+            }
+
+            .top-content
+            {
+                background: #000001;
+                text-align: center;
+            }
+
+            .top-content h2
+            {
+                color: #ff0000;
+                font-size: 46px;
+                margin: 0;
+                padding: 100px 0;
+            }
+
+            .middle-content
+            {
+                background: #fffffe;
+                text-align: center;
+                padding-bottom: 260px;
+            }
+
+            .middle-content h4
+            {
+                color: #ff0001;
+                font-size: 30px;
+            }
+
+            .bottom-content
+            {
+                background: #0072ff;
+                text-align: center;
+            }
+
+            .video-list
+            {
+                margin: 0;
+                padding: 20px 0;
+            }
+
+            .video-list li
+            {
+                display: inline-block;
+                list-style: none;
+                margin: 10px;
+                transition: all 0.8s;
+                cursor: pointer;
+            }
+
+            .video-list li:hover,.video-list li.active
+            {
+
+                -webkit-filter: drop-shadow(0px 0px 15px rgba(255,0,0,0.8));
+                -ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#f00');
+                filter: drop-shadow(0px 0px 15px rgba(255,0,0,0.8));
+            }
+            .video-list li img
+            {
+                width: 200px;
+                height: 132px;
+            }
+
+            a.submit:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('https://lh6.googleusercontent.com/-FSPREKZ0gbY/U4DnViDHQCI/AAAAAAAAABU/YBt10O4qGIQ/s31/arrow.png?gl=US') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            a.submit
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #15b800;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                -moz-border-radius: 6px;
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                width:670px;
+                margin:10px auto;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 38px;
+                padding:20px 0;
+                color: #2C2C2C;
+            }
+
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+
+            #footer-content
+            {
+                position: relative;
+                top: -190px;
+                left: 0;
+            }
+
+            #copyright
+            {
+                margin: 30px 0 0;
+                font-family: Arial;
+            }
+
+            #copyright a,#copyright span
+            {
+                color: #fff;
+                text-decoration: none;
+
+            }
+
+            #copyright a:hover
+            {
+                text-decoration: none;
+            }
+
+            .bottom
+            {
+                margin: 20px 0;
+            }
+
+            .social-comments
+            {
+                position: relative;
+                top: -190px;
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .video-holder {
+                width: 80%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+                top: -220px;
+                position: relative;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 550px !important;
+            }
+            
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 54%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            } 
+
+            .video-container
+            {
+                width: 1024px;
+                margin: 0 auto;
+            }
+
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+                a.submit
+                {
+                    width: 90%;
+                }
+            }
+
+            @media only screen and (max-width: 1024px)
+            {
+                .video-container
+                {
+                    width: 100%;
+                }
+            }
+
+            .row-fluid .span4:nth-of-type(3n+1)
+            {
+                margin-left: 0;
+            }
+
+
+
+        </style>
+        
+        <script>
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+
+            $(document).ready(function()
+            {
+                $('.video-selector').each(function(i)
+                {
+                    if (typeof itps_input_data != 'undefined')
+                    {
+                        var video_href = itps_input_data['video-source-' + (i + 1)];
+                        $(this).attr('video-href', video_href);
+                    }
+
+                    if ($(this).attr('playable') === 'false' && !$(this).attr('video-href'))
+                    {
+                        $(this).css('opacity', '0.5');
+                    }
+                });
+
+                $('.video-selector').click(function()
+                {
+                    $('.video-selector').removeClass('active');
+                    $(this).addClass('active');
+                    if ($(this).attr('playable') === 'true' && $(this).attr('video-href'))
+                    {
+                        $('#video-holder').html('<iframe width="853" height="480" src="' + $(this).attr('video-href') + '?autoplay=1" frameborder="0" allowfullscreen></iframe>').fadeIn();
+                    } else
+                    {
+                        $(this).removeClass('active');
+                    }
+                });
+            });
+
+            $(function() {
+                $(".fb-comments").attr('data-href', $(location).attr('href'));
+                if (typeof itps_input_data != 'undefined')
+                {
+                    $('.fb-like').attr('data-href', "" + itps_input_data['facebooklikeurl']);
+                    if (itps_input_data['facebookcomments'] != '')
+                        $('.fb-comments').attr('data-href', "" + itps_input_data['facebookcomments']);
+                    $('.fb-comments').attr('data-num-posts', "" + itps_input_data['facebookcommentsposts']);
+
+                }
+                !(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id))
+                        return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=719478438075635";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+
+            });
+            $(window).resize(function() {
+
+                var width = $(".social-comments").width();
+
+                if ($(window).width() <= 980) {
+                    $(".fb-comments").attr("data-width", width);
+                    FB.XFBML.parse($(".social-comments")[0]);
+                }
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-content">
+                <h2 data-lb-id="headline" data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Headline Text</h2>
+            </div>
+            <div class="middle-content">
+                <ul class="video-list">
+                    <li class="video-selector" playable="true"><img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 1" data-lb-id="video-image-1" data-lb="editable-image editable-optional max-image-size=200" src="https://lh4.googleusercontent.com/-FtQHnVbzUfI/U5eh5VrDkdI/AAAAAAAAAQg/5ZdeoX52JSo/s200/video1tn.png"></li>
+                    <li class="video-selector" playable="true"><img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 2" data-lb-id="video-image-2" data-lb="editable-image editable-optional max-image-size=200" src="https://lh3.googleusercontent.com/-_lNR6doB428/U7yCnrpr-fI/AAAAAAAAAaA/DTTb-vklF-M/w200-h132-no/video2tn.png"></li>
+                    <li class="video-selector" playable="true"><img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 3" data-lb-id="video-image-3" data-lb="editable-image editable-optional max-image-size=200" src="https://lh5.googleusercontent.com/-mWGGd-JgRtI/U7yDdOQDorI/AAAAAAAAAac/9wMZty898Es/w200-h132-no/video3tn.png"></li>
+                    <li class="video-selector" playable="true"><img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 4" data-lb-id="video-image-4" data-lb="editable-image editable-optional max-image-size=200" src="https://lh3.googleusercontent.com/-egCR37BsMsI/U7yDc27OOfI/AAAAAAAAAaY/CcEPVagqGKk/w200-h132-no/video4tn.png"></li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <div class="video-container">
+                    <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=820 video-height=553" class="video-holder flex-video" id="video-holder" style="cursor: pointer;"> 
+                        <img data-lb-id="video-image" data-lb="editable-image max-image-size=820" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png">
+                    </div>
+                </div>
+                <div data-lb-name="Hide Social Comments Column" data-lb="editable-optional" class="social-comments" data-lb-id="hide-social">
+                    <div data-width="600" data-show-faces="true" data-send="true" data-font="arial" class="fb-like" data-href=""></div>
+                    <div data-width="600" data-num-posts="8" class="fb-comments" data-href=""></div>
+                </div>
+                <div id="footer-content">
+                    <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text" style="cursor: pointer;">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text" style="cursor: pointer;">Terms &amp; Conditions |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3" style="cursor: pointer;"> Copyright 2014 <a class="footer_link_copyright" href="http://107.170.3.129/advisorlead">MITS Pages</a></span><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fb-root"></div>
+    </body>
+</html>

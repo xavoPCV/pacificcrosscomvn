@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#fefefe; Body" name="mp-customizable-color">
+        <meta content="#262626; Element Box Top Left 1" name="mp-customizable-color">
+        <meta content="#fd100a; Element Box Top Left 2" name="mp-customizable-color">
+        <meta content="#2b3136; Element Box Top Left 3" name="mp-customizable-color">
+        <meta content="#444441; List Box Top Left 1" name="mp-customizable-color">
+        <meta content="#3d464d; Element Box Top Right" name="mp-customizable-color">
+        <meta content="#FBCD50; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#FBBD03; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#ba8800; Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#000000; Download Button Text" name="mp-customizable-color">
+        <meta content="#ededed; Wrapper Second - Background" name="mp-customizable-color">
+        <meta content="#c22e2e; Wrapper Second - Border" name="mp-customizable-color">
+        <meta content="#202020; Wrapper Second - Content" name="mp-customizable-color">
+        <meta content="#2f3e6c; Avatar Name" name="mp-customizable-color">
+        <meta content="#9b9b9b; Occupation - Company" name="mp-customizable-color">
+        <meta content="#666666; Footer Disclaimer" name="mp-customizable-color">
+        <meta content="#666667; Disclaimer Link" name="mp-customizable-color">
+        <meta content="#444444; Disclaimer Link Hover" name="mp-customizable-color">
+        <meta content="#929292; Footer Text" name="mp-customizable-color" >
+        <meta content="#4763b3;Footer Link" name="mp-customizable-color" >
+        <meta content="#b34747; Footer Hover" name="mp-customizable-color">
+        <meta content="#444445; Popup Text Color" name="mp-customizable-color">
+        <meta content="#f6b33d; Popup Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#fbbd04; Popup Submit Button Color End" name="mp-customizable-color">
+        <meta content="#c79408; Popup Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#000001; Popup Submit Button Text Color" name="mp-customizable-color">
+
+
+        <style type="text/css">
+            body{background: #f3f3f3;font-size:18px; font-family:'Arial',sans-serif; margin: 0}
+            img{max-width: 100%;}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+            .clear{clear: both;}
+            button,input,select,textarea {
+                font-size:100%;
+                margin:0;
+                vertical-align:baseline;
+                *vertical-align:middle;
+                box-sizing:content-box;
+                outline:none;
+                border-radius:none;
+                box-shadow:none;
+            }
+            button,input {line-height:normal;}
+            .bg-top{
+                background-image: url(/wp-content/themes/jupiter/template_image/tech-grid-header.jpg);
+                background-repeat: repeat;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                border-top-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #c22e2e;
+            }
+            .wrapper{
+                background-color: #fefefe;
+                width: 100%;
+            }
+            .content {
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            /* wrapper frist begin */
+            .wrapper-frist{margin-bottom: 40px;}
+            .content-box-top{
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            .box-top-left, .box-top-right{
+                width: 46%;
+                float: left;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            /* Box left */
+            .element-box-top-left .le-box-top-el-1{
+                font-size: 32px;
+                color: #262626;
+                text-align: left;
+                margin: 0 0 10px 0;
+                line-height: 1.1em;
+                font-weight: bold;
+            }
+            .element-box-top-left .le-box-top-el-2{
+                font-size: 17px;
+                color: #fd100a;
+                text-align: left;
+                margin: 0 0 20px 0;
+                line-height: 1.1em;
+                font-weight: bold;
+            }
+            .element-box-top-left .le-box-top-el-3{
+                font-size: 15px;
+                color: #2b3136;
+                text-align: left;
+                margin: 0 0 10px 0;
+                font-weight: bold;
+            }
+            .list-box-top-left-1 img.list,
+            .list-box-top-left-2 img.list,
+            .list-box-top-left-3 img.list,
+            .list-box-top-left-4 img.list{
+                float: left;
+                margin-right: 10px;
+                display: block;
+            }
+            .list-box-top-left-1 p.le-box-top-li-te-1,
+            .list-box-top-left-2 p.le-box-top-li-te-2,
+            .list-box-top-left-3 p.le-box-top-li-te-3,
+            .list-box-top-left-4 p.le-box-top-li-te-4{
+                padding-left: 42px;
+                line-height: 1.6em;
+                color: #444441;
+            }
+
+            /* Box right*/
+            .element-box-top-right .ri-box-top-el{
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 300;
+                color: #3d464d;
+                text-align: center;
+            }
+            .submit-button{text-align: center}
+            .submit-button > .click > span{
+                width:80%;
+                margin:10px auto;
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 38px;
+                padding:20px 0;
+                color: #000000;
+            }
+            .submit-button > .click > span{
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #ba8800;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                position: relative;
+                text-decoration: none;
+            }
+            .submit-button > .click > span:hover{
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            .submit-button > .click > span:active{
+                position: relative;
+                top: 1px;
+            }
+            .arrow-img{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .arrow-img > img{
+                width: 25%;
+            }
+            .arrow-img > img.arr-m{margin: 0 49px}
+            @media (max-width: 1199px) {
+                .arrow-img > img.arr-m{margin: 0 38px}
+                .submit-button > .click > span{font-size: 20px}
+            }
+            @media (max-width: 768px) {
+                .arrow-img > img.arr-m{margin: 0 60px}
+                .submit-button > .click > span{font-size: 32px}
+            }
+            @media (max-width: 580px) {
+                .arrow-img > img.arr-m{margin: 0 40px}
+                .submit-button > .click > span{font-size: 20px}
+            }
+            @media (max-width: 402px) {
+                .arrow-img > img.arr-m{margin: 0 25px}
+            }
+            @media (max-width: 367px) {
+                .submit-button > .click > span{font-size: 17px}
+            }
+            
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div{
+                width: 99.5% !important;
+                height: 490px !important;
+            }
+
+            .video-holder img{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 70%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+            }
+            /* wrapper frist end */
+
+            /* wrapper secont begin */
+            .wrapper-secont{
+                background: linear-gradient(to bottom, #ededed 0%, #ededed 100%);
+                padding-top: 40px;
+                padding-bottom: 40px;
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: #c22e2e;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #c22e2e;
+            }
+            .content-box-middle{
+                width: 60%;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin: 0 auto;
+            }
+            .content-box-middle .box-mi-tx{
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 1.4em;
+                color: #202020;
+                font-style: italic;
+                margin: 0 0 1.1em;
+                text-align: center;
+            }
+            .content-box-middle .element-box-middle{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 35px auto;
+            }
+            .content-box-middle .element-box-middle cite{
+                font-weight: 400;
+                font-size: 16px;
+                color: #9b9b9b;
+                text-align: left;
+                margin: 0 auto;
+                text-transform: none;
+                line-height: normal;
+                display: inline-flex;
+                font-style: normal;
+                width: 50%;
+            }
+            .content-box-middle .element-box-middle cite b.box-mid-na{color: #2f3e6c}
+            .content-box-middle .element-box-middle cite img{
+                border: 3px solid #fff;
+                float: left;
+                margin-top: -5px;
+                margin-right: 15px;
+                width: 106px;
+                box-shadow: 0 0 5px rgba(0,0,0,.35);
+                max-width: 50%;
+                max-height: 100px;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+            }
+            .content-box-middle .element-box-middle cite span.ri-el-box-mid{padding-top: 30px;max-width: 50%;}
+            /* wrapper secont end */
+
+            /* wrapper third begin */
+            .content-box-bottom{padding: 100px 0 0 0;}
+            .content-box-bottom small.footer-disclaimer{
+                clear: both;
+                float: none;
+                line-height: 1.6em;
+                font-weight: 400;
+            }
+            .content-box-bottom p.footer-disclaimer span{
+                color: #666666;
+                font-size: 17px;
+            }
+            .content-box-bottom p.footer-disclaimer span a{
+                text-decoration: underline;
+                line-height: inherit;
+                color: #666667;
+                font-size: 13px;
+            }
+            .content-box-bottom p.footer-disclaimer span a:hover{
+                text-decoration: underline;
+                color: #444444;
+            }
+            /* wrapper third end */
+            
+            /* Footer begin */
+            .footer{
+                width: 100%;
+                clear: both;
+                min-height: 66px;
+                margin-top: 10px;
+                background: #fefefe;
+            }
+            #copyright{
+                text-align: center;
+                font-size: 14px;
+                color: #929292;
+                font-family: 'Raleway',sans-serif;
+                padding: 30px 0px;
+            }
+            #copyright a{
+                cursor: pointer;
+                padding: 0px;
+                margin: 0 0 15px 0;
+            }
+            .footer a{color: #4763b3;text-decoration: none;}
+            .footer a:hover{color: #b34747;text-decoration: underline}
+            /* Footer end */
+
+            /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+            .ie7 .inp-fix .inp-text {margin-top:-1px;}
+            .btn > span{
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #f6b33d;
+                border: 1px solid #c79408;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                -moz-border-radius: 6px;
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+            }
+            .btn > span:hover{
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            .btn > span:active{
+                position: relative;
+                top: 1px;
+            }
+            .btn {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background: none;
+                text-decoration: none;
+                padding: 0 0 5px;
+            }
+            .subscribe_button span{padding: 10px;}
+            .bottom{margin-top: 20px;}
+            /* box popup end */
+
+            /* responsive begin */
+            @media (max-width: 479px) {
+                .content-box-middle{width: 100%}
+                .content-box-middle .element-box-middle cite{width: 100%}
+            }
+            @media (max-width: 768px) {
+                .content-box-middle .element-box-middle cite{width: 100%}
+            }
+            @media (max-width: 768px) {
+                .content-box-middle .element-box-middle cite {width: 60%;}
+                .box-top-left, .box-top-right{width: 100%; padding-left: 0; padding-right: 0}
+                .content-box-middle .element-box-middle cite{width: 80%}
+            }
+            @media (min-width: 768px) {
+                .content {width: 750px;}
+            }
+            @media (min-width: 992px) {
+                .content {width: 750px;}
+            }
+            @media (min-width: 1200px) {
+                .content {width: 960px;}
+            }
+            /* responsive begin */
+
+        </style>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="bg-top"></div>
+            <div class="wrapper-frist">
+                <div class="content">
+                    <div class="content-box-top">
+                        <div class="box-top-left">
+                            <div class="element-box-top-left">
+                                <p class="le-box-top-el-1" data-lb-name="Box Top Left Element 1" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-le-el-1">HOW TO GENERATE 10-25 LASER TARGETED LEADS PER DAY</p>
+                            </div>
+                            <div class="element-box-top-left">
+                                <p class="le-box-top-el-2" data-lb-name="Box Top Left Element 2" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-le-el-2">WATCH MY  7-STEP PPC MARKETING EXPOSED VIDEO COURSE AND DOMINATE YOUR INDUSTRY…</p>
+                            </div>
+                            <div class="element-box-top-left">
+                                <p class="le-box-top-el-3" data-lb-name="Box Top Left Element 3" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-le-el-3">Sign Up for my FREE course to learn my secret money formula…</p>
+                            </div>
+                            <div class="element-box-top-left">
+                                <div class="list-box-top-left-1">
+                                    <img class="list" data-lb-comment="Recommended image width: 32px" data-lb-name="List Image" data-lb-id="list-image" data-lb="editable-image editable-optional max-image-size=50" src="{LOCAL_URL}/check-22.png">
+                                    <p class="le-box-top-li-te-1" data-lb-name="Box Top List 1" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-li-te-1"><b>PPC EXPOSED -  how to maximize your cpc and keyword choices when setting up campaigns</b></p>
+                                </div>
+                                <div class="list-box-top-left-2">
+                                    <img class="list" data-lb-comment="Recommended image width: 32px" data-lb-name="List Image" data-lb-id="list-image" data-lb="editable-image editable-optional max-image-size=50" src="{LOCAL_URL}/check-22.png">
+                                    <p class="le-box-top-li-te-2" data-lb-name="Box Top List 2" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-li-te-2">The secrets I wish I knew <b>when I got started</b>. These will change your business forever ;)</p>
+                                </div>
+                                <div class="list-box-top-left-3">
+                                    <img class="list" data-lb-comment="Recommended image width: 32px" data-lb-name="List Image" data-lb-id="list-image" data-lb="editable-image editable-optional max-image-size=50" src="{LOCAL_URL}/check-22.png">
+                                    <p class="le-box-top-li-te-3" data-lb-name="Box Top List 3" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-li-te-3">How <b>the money pipeline</b> will CHANGE your business…</p>
+                                </div>
+                                <div class="list-box-top-left-4">
+                                    <img class="list" data-lb-comment="Recommended image width: 32px" data-lb-name="List Image" data-lb-id="list-image" data-lb="editable-image editable-optional max-image-size=50" src="{LOCAL_URL}/check-22.png">
+                                    <p class="le-box-top-li-te-4" data-lb-name="Box Top List 4" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-li-te-4">Plus… I'll show <b>what I spend 90% of my time doing</b> - you don't want to miss this…</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-top-right">
+                            <div class="element-box-top-right">
+                                <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video video-width=438 video-height=298" class="video-holder flex-video"> 
+                                    <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                                        <img data-lb-id="video-image" data-lb="editable-image max-image-size=438" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="element-box-top-right">
+                                <p class="ri-box-top-el" data-lb-name="Box Top Right Element" data-lb="editable-rich-text editable-optional" data-lb-id="box-top-ri-el">Click The “Sign Up Now” Button For INSTANT Access…</p>
+                                <section data-lb-name="Download Button" data-lb="editable-fadein-box" data-lb-id="opt-in-box" class="submit-button">
+                                    <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">
+                                    <span data-lb-name="Download Button" data-lb="editable-rich-text" data-lb-id="button" style="cursor: pointer;">Click here to Subscribe &#187</span>
+                                    </a>
+                                </section>
+                                <div class="arrow-img">
+                                    <img src="{LOCAL_URL}/left-arrow.png" class="arr-l" data-lb-comment="Recommended image size: 85px x 74px" data-lb-name="Arrow Left" data-lb-id="arrow-left" data-lb="editable-image editable-optional max-image-width=85 max-image-height=74" />
+                                    <img src="{LOCAL_URL}/middle-arrow.png" class="arr-m" data-lb-comment="Recommended image size: 85px x 74px" data-lb-name="Arrow Middle" data-lb-id="arrow-middle" data-lb="editable-image editable-optional max-image-width=85 max-image-height=74" />
+                                    <img src="{LOCAL_URL}/right-arrow.png" class="arr-r" data-lb-comment="Recommended image size:85px x 74px" data-lb-name="Arrow Right" data-lb-id="arrow-right" data-lb="editable-image editable-optional max-image-width=85 max-image-width=74" />
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-secont">
+                <div class="content">
+                    <div class="content-box-middle">
+                        <p class="box-mi-tx" data-lb-name="Box 2 Text" data-lb="editable-rich-text editable-optional" data-lb-id="box-2-text">Successful entrepreneurs understand that “you don’t know what you don’t know”. See why it&rsquo;s important to learn from everyone.</p>
+                        <div class="element-box-middle">
+                            <cite>
+                                <img data-lb-comment="Recommended image size: 160px x 160px" data-lb-name="Avata Image" data-lb-id="avata-img" data-lb="editable-image max-image-width=160 max-image-height=160" src="{LOCAL_URL}/avatar160.jpg" />
+                                <span class="ri-el-box-mid">
+                                    <b class="box-mid-na" data-lb-name="Avata Name" data-lb="editable-rich-text editable-optional" data-lb-id="ava-name">First &amp; Last Name</b><br />
+                                    <span class="op-testimonial-company" data-lb-name="Occupation - Company" data-lb="editable-rich-text editable-optional" data-lb-id="op-testimonial-company">Home business</span>
+                            </span>
+                          </cite>
+                      </div>
+                        <div class="clear" ></div>
+                  </div>
+                </div>
+            </div>
+            <div class="wrapper-third">
+                <div class="content">
+                    <div class="content-box-bottom">
+                        <p class="footer-disclaimer">
+                            <span data-lb-name="Box 3 Text" data-lb="editable-rich-text editable-optional" data-lb-id="box-3-text">I Want To Help You In Your {Keyword} Business...
+                            <br/><br/>Many marketers in MLM get tired of chasing friends and family members which often leads to a high failure rate.  Reps in {Keyword}    that understand the it takes time to grow a business and are committed   to building their business have success a lot faster than reps who rely   on friends and family.  These 5 <strong>{Keyword} </strong>prospecting tips will help you grow business. <a href="#">Read More</a>.</span>
+                        </p>
+                        <div class="clear" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" >
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a href="#">AdvisorLead</a></span><br><br>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

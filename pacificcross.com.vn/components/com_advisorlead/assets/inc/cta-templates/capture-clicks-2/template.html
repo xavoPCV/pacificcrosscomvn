@@ -1,0 +1,137 @@
+<div id="color_changeable">
+    <color element="#form_style" value="#f5ecec" type="border-color" name="Form Border Color" />
+
+    <color element="#submit_button" value="#0274be" type="background-color" name="Button Color" />
+    <color element="#submit_button" value="#000000" type="text-shadow" more="0 0 5px" name="Button Text Shadow Color" />
+    <color element="#submit_button" value="#FFB403" type="border-color" name="Button Border Color" />    
+
+    <color element="#left_box_content" parent="#form_style" value="#142c3c" type="box-shadow" more="0 0 10px" name="Box Shadow Color" />
+    <color element="#left_box_content" parent="#form_style" value="#517a96" type="background-color" name="Box Background Color" />
+
+    <color element="#bottom_part" parent="#form_style" value="#e9e9e9" type="background-color" name="Bottom Part Background Color" />
+</div>
+<div id="attribute_changeable">
+    <attribute element='#form_style' display_name='Border Style' edit_type='select-border-style' att_id='form-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#form_style' display_name='Border Width' edit_type='slider' att_id='form-border-width' att_type='border-width' def_value="0" min="0" max="15"/>
+
+    <attribute element='#header_text' display_name='Font' edit_type='select-font' att_id='header-text-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#header_text' display_name='Letter Spacing' edit_type='slider' att_id='header-text-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#header_text' display_name='Font Size' edit_type='slider' att_id='header-text-font-size' att_type='font-size' def_value="30px" min="10" max="48" />
+
+    <attribute element='#box_list' display_name='Font' edit_type='select-font' att_id='box-title-font-family' att_type='font-family' def_value="Arial"/>
+    <attribute element='#box_list' display_name='Letter Spacing' edit_type='slider' att_id='box-title-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#box_list' display_name='Font Size' edit_type='slider' att_id='box-title-font-size' att_type='font-size' def_value="26px" min="10" max="48" />
+
+    <attribute element='#no_interesting' display_name='Font' edit_type='select-font' att_id='no-interesting-font-family' att_type='font-family' def_value="Arial" />
+    <attribute element='#no_interesting' display_name='Letter Spacing' edit_type='slider' att_id='no-interesting-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#no_interesting' display_name='Font Size' edit_type='slider' att_id='no-interesting-font-size' att_type='font-size' def_value="13px" min="10" max="48" />
+
+    <attribute element='#submit_button' display_name='Font' edit_type='select-font' att_id='button-font-family' att_type='font-family'  def_value="Arial"/>
+    <attribute element='#submit_button' display_name='Letter Spacing' edit_type='slider' att_id='button-letter-spacing' att_type='letter-spacing' def_value="0" min="0" max="10" />
+    <attribute element='#submit_button' display_name='Font Size' edit_type='slider' att_id='button-font-size' att_type='font-size' def_value="20px" min="10" max="48" />
+    <attribute element='#submit_button' display_name='Border Style' edit_type='select-border-style' att_id='button-border-style' att_type='border-style' def_value="solid"/>
+    <attribute element='#submit_button' display_name='Top Border Width' edit_type='slider' att_id='button-top-border' att_type='border-top-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Bottom Border Width' edit_type='slider' att_id='button-bottom-border' att_type='border-bottom-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Left Border Width' edit_type='slider' att_id='button-left-border' att_type='border-left-width' def_value="0" min="0" max="15" />
+    <attribute element='#submit_button' display_name='Right Border Width' edit_type='slider' att_id='button-right-border' att_type='border-right-width' def_value="0" min="0" max="15" />
+</div>
+<style>
+    #left_box_content{
+        background: #517a96;
+        position: absolute;
+        top: 0;
+        margin-top: 40px;
+        margin-left: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #142c3b;
+        opacity: 0.88;
+        z-index: 2;
+    }
+
+    #capture_clicks_content #header_text{
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #capture_clicks_content #box_list{
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #background_image{
+        position: relative;
+        z-index: 1;
+    }
+
+    #top_part{
+        position: relative;
+    }
+
+    #bottom_part{
+        background: #e9e9e9;
+        padding: 20px;
+    }
+
+    #capture_clicks_content #form_body #form_fields{
+        padding: 10px 0;
+    }
+
+    #capture_clicks_content #form_body #form_fields li,#capture_clicks_content #form_body #form_fields li.placeholder{
+        width: 48%;
+        float: left;
+        vertical-align: middle;
+        margin-right: 2%;
+    }
+
+    #capture_clicks_content #form_body #submit_button{
+        margin: 0;
+        background: #0274be;
+        border-bottom: 0;
+        text-shadow: 0 0 2px #fff;
+        text-transform: none;
+        padding: 10px;
+    }
+
+</style>
+<div id="capture_clicks_content">
+    <form id="form_style" method="POST">
+        <div id="form_body">
+            <div id="top_part">
+                <img id="background_image" element_id='background_image' element_type='image' element_name='Background Image' removable max-image-width='850' max-image-height="400" class="mits_form_element" src="{LOCAL_URL}/bg2.jpg">
+                <div id="left_box_content" class="columns_6">
+                    <div id="header_text" element_id='header_text' element_type='text' removable element_name='Header Text' class="mits_form_element">
+                        Sign up for FREE below and find out:
+                    </div>
+                    <div id="box_list" element_id='box_list' element_type='text' removable element_name='Box List' class="mits_form_element">
+                        1. Twitter PPC Secrets.<br/>
+                        2. How to create Twitter website cards.<br/>
+                        3. How to build lead generation cards.
+                    </div>
+                </div>
+            </div>
+            <div id="bottom_part">
+                <div class="row">
+                    <ul id="form_fields" class="columns_8">
+                        <li field_name="email">
+                            <input type="text" placeholder="Email Address" name="email" is_required="true">  
+                            <span type="invalid" class="error-message" style="display: none;">Please enter a correct value for this field</span>  
+                            <span type="required" class="error-message" style="display: none;">You must fill out this field in order to proceed</span>   
+                            <i class="icon_drag"></i>
+                        </li>
+                    </ul>
+                    <div class="columns_4">
+                        <button id="submit_button"  type="submit" element_id='submit_button' element_type='text' element_name='Submit Button' class="mits_form_element">I want to LEARN!</button>
+                    </div>
+                </div>
+                <div id="no_interesting" element_id='no_interesting' removable element_type='text' element_name='No Interesting Text' class="mits_form_element" event_behavior='cta_close' action="close_forever">
+                    <span style="color: red;">Not interesting ? Never show this popup again</span>
+                </div>
+            </div>
+        </div>
+        <div id="capture_clicks_close" event_behavior='cta_close' action="close_only"></div>
+    </form>
+</div>

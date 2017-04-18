@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="system" method="upgrade">
+	<name>System - flexIMPORT</name>
+	<creationDate>December 2014</creationDate>
+	<author>NetAssoPro</author>
+	<copyright>Copyright (C) 2012 NetAssoPro</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>http://extensions.netassopro.com</authorUrl>
+	<version>2.1</version>
+	<description></description>
+	<files>
+		<filename plugin="fleximport">fleximport.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

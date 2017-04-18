@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,300italic,400italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+          <script>
+                $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                     
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                 });
+            
+                    function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+        <style>
+            
+
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+          
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url('{LOCAL_URL}/icon-popup.png');
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+            
+        </style>
+    </head>
+    <style>
+               
+       html,body{overflow-x:hidden;max-width:100%;margin: 0;}body{font-family:'Open Sans',sans-serif;font-size:14px;line-height:1.2;color:#4a4b52;background:#f2f2f1}a{color:#e34421}a:hover,a:active{color:#e96b51}hr{padding:0;margin:0}ul li{vertical-align:top}h1,h2,h3,h4,h5,h6{font-family:'Signika',sans-serif}::-webkit-input-placeholder{color:#a0a0a4}:-moz-placeholder{color:#a0a0a4}::-moz-placeholder{color:#a0a0a4}:-ms-input-placeholder{color:#a0a0a4}h1,h2,h3,h4,h5,h6{font-family:'Signika',sans-serif}.b-socials__href{display:inline-block;margin:0 7px;-webkit-transition:all .3s;transition:all .3s;vertical-align:middle;text-decoration:none;height:24px;opacity:1}.b-socials__href img{max-height:20px}.b-text{font-size:18px;line-height:1.666}.phone-icon{float:left;margin-right:10px;width:24px;height:24px}.b-section{position:relative;padding:70px 0 70px;background:#fffffe}.b-section--arrow:after{position:absolute;z-index:10;top:100%;right:0;left:0;display:block;width:0;height:0;margin:-1px auto 0;content:'';border-width:42px 42px 0 42px;border-style:solid;border-color:#fff transparent transparent transparent}.b-section--dark{color:#fff;background:#353746}.b-section--dark:after{border-color:#353746 transparent transparent transparent}.b-section--grey{background:#f9f9f9}.b-section--grey:after{border-color:#f9f9f9 transparent transparent transparent}.b-section--small-padding-top{padding-top:30px}.b-section--small-padding-bottom{padding-bottom:40px}.b-section__title{font-size:40px;font-weight:700;margin:0 0 15px;color:#353746}.b-section__text{margin:0 0 60px;text-align:center}.b-thumb-photo{display:inline-block;width:130px;height:130px;padding:5px;border:1px solid #575a70;border-radius:50%}.b-thumb-photo--small{width:105px;height:105px;padding:4px}.b-thumb-photo--small .b-thumb-photo__image-placeholder{width:95px;height:95px}.b-thumb-photo--tiny{width:73px;height:73px;padding:3px}.b-thumb-photo--tiny .b-thumb-photo__image-placeholder{width:65px;height:65px}.b-thumb-photo__image-placeholder{display:block;overflow:hidden;width:118px;height:118px;border-radius:50%}.b-thumb-photo__image{display:block;max-width:100%}.b-rating{font-size:25px;color:#f9cf00}.b-search{display:table;width:100%}.b-search__input-placeholder{display:table-cell;vertical-align:top}.b-search__input{line-height:37px;width:100%;height:37px;border:1px solid #f3f3f3;background:#f3f3f3}.b-search__button-placeholder{display:table-cell;width:41px;vertical-align:top}.b-search__button{height:37px}.about-media-container{width:571px;float:right;margin-left:20px}.about-image{margin-bottom:20px}.video-wrapper{}.video-container{position:relative;padding-bottom:56.25%;padding-top:5px;height:0;overflow:hidden;margin:auto}.video-container iframe,.video-container object,.video-container embed,.video-container img{position:absolute;top:0;left:0;width:100%!important;height:100%!important;margin:auto}.btn{font-family:'Arial',sans-serif}.btn-primary{-webkit-transition:all .2s;transition:all .2s;border:0;background:#e34426}.btn-primary:hover,.btn-primary:focus,.btn-primary:active{background:#e96b53}.btn-lg{padding:10px 30px}.btn-sqr{border-radius:0}.btn-inverse{color:#fff;background:#76767b}.b-btn{font-size:20px;font-weight:700;padding:10px 25px 10px;-webkit-transition:all .4s;transition:all .4s;white-space:normal;border:0;border-radius:0}.b-btn--color{color:#fff;background:#000}.b-btn--color:hover{color:#fff;background:#141414}.b-btn--color:active{color:#fff;background:black}.b-btn--color:focus{color:#fff;outline:none}.wp-caption-text{font-size:14px}.widget{font-size:16px;line-height:1.625}.widget ul{font-size:18px;margin:0;padding:0;list-style:none;color:#e34426}.widget ul li{margin:0 0 7px}.widgettitle{font-size:30px;font-weight:700;margin:0 0 18px}.widget_categories ul{font-size:18px;font-weight:700}.tagcloud{color:#e34426}.b-widget-agent{text-align:center}.b-widget-agent__photo{margin:0 0 10px}.b-widget-agent__more{color:#e34426}.b-header__top{margin:0;padding:10px 0 10px;background:#f2f2f2}.b-header__phone{font-size:18px;color:#8c8d99}.b-header{padding:10px 0 10px;background:#fffffd}.main-logo{max-height:55px}.b-header .b-menu__href{color:#e34422}.b-header .b-menu__href:hover{color:#e36b51}@media only screen and (max-width:768px){.b-header__phone{margin:0 0 15px;text-align:center}}.b-header__socials{font-size:20px;text-align:right;color:#76767b}@media only screen and (max-width:768px){.b-header__socials{text-align:center}.main-logo{margin:auto}}@media only screen and (max-width:480px){.b-header__socials{font-size:16px}}.b-header__logo{font-size:42px;font-weight:700;color:#353746}@media only screen and (max-width:1200px){.b-header__logo{font-size:35px}}@media only screen and (max-width:992px){.b-header__logo{font-size:42px;text-align:center}}.b-header__menu{font-size:18px;text-align:right}@media only screen and (max-width:1200px){.b-header__menu{font-size:13px}}@media only screen and (max-width:992px){.b-header__menu{text-align:center}.about-media-container{margin-left:0;margin:auto;margin-bottom:20px;float:none;width:571px}}@media only screen and (max-width:768px){.b-header__menu{font-size:16px}.about-media-container{margin-left:0;margin-bottom:20px;float:none;width:100%}.about-image{width:100%}}.b-menu__burger{display:none;margin:15px auto 0;border:0;background:transparent}.b-menu__burger span{display:block;width:40px;height:5px;margin:5px 0;background:#e34422}@media only screen and (max-width:768px){.b-menu__burger{display:inline-block}}.b-menu__list{margin:0;padding:0;list-style:none}@media only screen and (max-width:768px){.b-menu__list{display:none}}.b-menu__item{display:inline-block;margin:13px 0 5px 20px;vertical-align:top}.b-menu__item:first-child{margin-left:0}@media only screen and (max-width:768px){.b-menu__item{width:100%;margin:0;text-align:center}}@media only screen and (max-width:768px){.b-menu__href{display:inline-block;padding:10px 0}}.b-testimonial{text-align:center}.b-testimonial__text{font-style:italic;margin:0 0 15px}.b-testimonial__rating{margin:0 0 15px}.b-testimonial__rating img{width:24px;height:24px}.b-testimonial__image-placeholder{margin:0 0 10px}.b-testimonial__image{margin:0 auto}.b-testimonial__name{font-size:16px;font-weight:700;font-style:italic}#question{background-color:#363742;color:#f8f8f4}@media only screen and (max-width:992px){.b-question{text-align:center}}.b-question__title{color:#e64426;margin-bottom:60px}.b-question__image-placeholder{overflow:hidden;float:left;width:300px;height:300px;margin:0 40px 0 0;border-radius:50%}@media only screen and (max-width:480px){.b-question__image-placeholder{width:260px;height:260px;float:none;margin:0 auto 20px auto}}.b-question__image{width:100%;height:auto}.b-question__content{margin:30px 0 0}.b-question__subtitle{font-size:35px;font-weight:700;margin:0 0 20px}.b-question__text{font-size:16px;line-height:1.475;margin:0 0 20px}.b-question__phone{font-size:36px;margin:0 0 30px}.question-btn{background-color:#e54426;color:#f5f8f8}.question-btn:hover{background-color:#e96b52;color:#f6f8f8}.b-house{padding:40px 0 15px;background-color:#353743;color:#fcfcfc}.b-house__images{margin:0 0 30px;text-align:center}.b-house__image{max-width:100%;height:auto;vertical-align:top}.b-house__agent{margin:0 0 30px}.b-agent__bio{margin:0 0 20px}.b-agent__text{font-size:16px;line-height:1.4375;margin:0 0 20px}.b-agent__contacts{margin:0 0 17px}.b-agent-bio__image-placholder{float:left;overflow:hidden;width:121px;margin:0 19px 10px 0;border-radius:10px}.b-agent-bio__image{max-width:100%;height:auto;vertical-align:top}.b-agent-bio__content{margin:0 0 0 140px}.b-agent-bio__name{font-size:30px;font-weight:400;margin:0 0 10px;color:#e34423}.b-agent-bio__post{font-size:25px;margin:0 0 10px}.b-agent-bio__socials{font-size:18px;color:#fff}.b-agent-bio__socials .b-socials__href{margin:0 1px}.b-agent-bio__socials .b-socials__href img{width:18px;height:18px}.b-agent-contacts__list{font-size:20px;line-height:1.55;margin:0;padding:0;list-style:none}.hero-btn{background-color:#e34424;color:#fcfcfa}.hero-btn:hover{background-color:#e86c52;color:#fcfcfb}#interior-image-section{background-color:#EEF2F5}.b-house-props{background-color:#fffffc}.b-house-props:after{border-color:#353742 transparent transparent transparent}.b-house-props__title{color:#454647}.b-house-props__item{margin:0 0 30px;color:#565456}.b-house-item__title{font-size:35px;font-weight:400;color:#454648;margin:0 0 15px}.b-house-item__data{margin:0 0 10px;padding:18px 0;border-top:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd}.b-house-item__price{font-size:28px;float:left;padding:2px 10px;color:#fff8f9;background:#e34221}.b-house-item__info{float:right;max-width:50%}.b-house-item__text{font-size:16px;line-height:1.4375;margin:0 0 20px}.b-house-item__buttons-placeholder{margin:30px 0 0}.b-house-item__button{margin:0 10px 10px 0}.details-btn-1{background-color:#76757b;color:#f9f9f1}.details-btn-1:hover{background-color:#76757b;color:#f9f9f1}.details-btn-2{background-color:#76757a;color:#f9f9f2}.details-btn-2:hover{background-color:#76757a;color:#f9f9f2}.b-house-info--big .b-house-info__list{margin-bottom:-7px}.b-house-info--big .b-house-info__item{font-size:23px;color:#454455;margin:0 0 7px 5px;padding:5px 7px;background-color:#efeeee}.b-house-info--big .b-house-info__item--beds:before{width:34px;height:22px;background:url('https://lh3.googleusercontent.com/tNvQVGA1sf86-Y6dc04XNEs8QB08NARdom6RIXWlTTLkYOxYjEfBolldeufplwSG08ETpaQeIn6z6niwS9B4=s0') 0 0 no-repeat}.b-house-info--big .b-house-info__item--baths:before{width:26px;height:18px;background:url('https://lh3.googleusercontent.com/M6-WaF8mugrUkqS3e0yptTW1VzttDL9cUNVslSg-9sQSsGxhxQvbElhv9ffrj-XOrH2jrlBUWmm4JhQhg2SXuw=s0') 0 0 no-repeat}.b-house-info--big .b-house-info__item--footage:before{width:27px;height:20px;background:url('https://lh3.googleusercontent.com/doSSDVXKJyMsIcIc2QLVfJNo-B9F7t-tRTOpYCa3sEQYNGqEbykENJ4nZYJupRRD4WFJMOlv3S1GnWXWGfBuow=s0') 0 0 no-repeat}.b-house-info__list{margin:0;margin:0 0 0 -5.5px;padding:0;list-style:none}.b-house-info__item{font-size:17px;display:inline-block;margin:0 0 0 5px;padding:2px 5px;vertical-align:top;background:#efefee;color:#343332}.b-house-info__item:before{display:inline-block;margin:-3px 5px 0 0;content:'';vertical-align:middle}.b-house-info__item--beds:before{width:25px;height:15px;background:url('https://lh3.googleusercontent.com/cEvtonxnwF0PGsbsZlMx7mS0xlXtL-lKiGZoCKGr445Kvyboqh6M0Cg_eeRUhXrSb6xZutt2KeaTmAxTmowH_w=s0') 0 0 no-repeat}.b-house-info__item--baths:before{width:19px;height:13px;background:url('https://lh3.googleusercontent.com/bZhrnXsE-XYf5vHSPgAIzpUxL4qfea3ClWwbUp3u1KisAHW0lixy40OsGk7Luxqoh_hhWzeCFQvRZSK04uIi=s0') 0 0 no-repeat}.b-house-info__item--footage:before{width:20px;height:14px;background:url('https://lh3.googleusercontent.com/2U1fLlwG4urpjbjoA8btxoe5earqvcsGJi2iHH1BGaHYYtUBoNVYONSUepSlm6t2lZ9sMJ7nj4ZYu7x670WxxQ=s0') 0 0 no-repeat}.b-house-features{font-size:23px;color:#4a4b52}.b-house-features--light{color:#76767b}.b-house-features__list{margin:0;padding:0;list-style:none}.b-house-features__list li,.b-house-features__item{margin:0 0 6px;padding:6px 15px;background:#efefef}#open{background-color:#353742;text-align:center}.b-open__title{color:#f8f8f9}.b-open__timer{margin:0 0 30px}.b-open__button-placeholder{text-align:center}.b-open__button{font-size:33px;padding:15px 50px;border-radius:10px}.b-counter__list{margin:0;padding:0;list-style:none;text-align:center}.b-counter__item{display:inline-block;margin:0 10px 10px;vertical-align:top}.b-counter__inner{font-size:27px;display:inline-block;text-align:center;vertical-align:top;color:#313434;background:#f8f8f2}.b-counter__number{display:inline-block;padding:15px 5px;width:80px;vertical-align:top;color:#fafefa;background:#e24426;font-family:'Oswald',sans-serif}.b-counter__word{display:inline-block;padding:15px 25px 15px 15px;vertical-align:top;font-family:'Oswald',sans-serif}.b-counter-title{font-size:39px;font-weight:700;position:relative;max-width:720px;min-height:72px;padding:15px 10px 15px;text-align:center;color:#fffffd;background:#b30012}.countdown-btn{background-color:#e44426;color:#f3f8f8}.countdown-btn:hover{background-color:#e86b52;color:#f4f8f8}#listings{background-color:#fefeff}#sales{background-color:#fefefd}.listings-main-title{color:#353748}#sales .listings-main-title{color:#353749}.b-listings__text{font-weight:700;color:#343436}#sales .b-listings__text{color:#343432}.b-listings__list{margin:0;margin:0 -2.5% -40px 0;padding:0;list-style:none}.b-listings-item{background-color:#fefefc}#sales .b-listings-item{background-color:#fefefe}.b-listings__item{display:inline-block;width:30%;margin:0 2.5% 40px 0;text-align:left;vertical-align:top}.b-listings__more-placeholder{margin:70px 0 0;text-align:center;color:#e34426}.b-listings__more{font-size:17px;text-transform:uppercase}.b-listings-item{border-radius:7px;box-shadow:0 0 8px rgba(0,0,0,.1)}.b-listings-item__top{position:relative;overflow:hidden;border-bottom:3px solid #e34523;border-radius:7px 7px 0 0}#sales .b-listings-item__top{border-bottom:3px solid #e34428}.b-listings-item__image{display:block;width:100%;height:auto}.b-listings-item__price{font-size:20px;position:absolute;top:30px;right:0;padding:3px 10px;color:#fbfbfb;background:#e34522}#sales .b-listings-item__price{background:#e34427;color:#fbfbfa}.b-listings-item__hot{font-size:20px;font-weight:700;position:absolute;top:10px;left:-45px;width:150px;padding:7px 0;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;text-align:center;color:#fcfcfe;background:#0095FF}.b-listings-item__sold{font-size:20px;font-weight:700;position:absolute;top:10px;left:-45px;width:150px;padding:7px 0;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;text-align:center;color:#fcfdfe;background:#e34521}.b-listings-item__bottom{padding:15px 15px 10px}.b-listings-item__title{font-size:20px;font-weight:700;margin:0 0 10px;color:#353844}#sales .b-listings-item__title{color:#353747}.b-listings-item__info{margin:0 0 10px}#sales .b-house-info__item{color:#343433;background-color:#f2f2f3}.b-listings-item__text{color:#343434;font-size:16px;line-height:1.4375;margin:0 0 10px;border-bottom:1px solid #babbc2}#sales .b-listings-item__text{color:#343435;border-bottom:1px solid #babbc3}.b-listings-item__more-placeholder{text-align:right;color:#e34426}.b-listings-item__more{font-size:17px;text-transform:uppercase;color:#e34524}#sales .b-listings-item__more{color:#e34429}.listings-view-all-link{color:#e34525}#sales .listings-view-all-link{color:#e34526}.divider-1{border-color:#d7d4d7}@media only screen and (max-width:992px){.b-listings__list{margin-right:-2%}.spacer{display:none}.b-listings__item{width:47.5%;margin-right:2%}}@media only screen and (max-width:768px){.b-listings__list{margin-right:0}.b-listings__item{width:100%;margin-right:0}}#why-me{background-color:#353845;color:#fbfbfd}#why-me.b-section--dark:after{border-color:#353845 transparent transparent transparent}.b-why-we__title{color:#fbfbfc;margin-bottom:50px}.b-why-we__image-placeholder{text-align:center;float:left;margin-right:20px;width:500px}@media only screen and (max-width:768px){.b-why-we__image-placeholder{width:100%;margin:0 0 20px 0}}.b-why-we__image{max-width:100%;height:auto}#features{background-color:#353846;color:#fbfbff}#features.b-section--dark:after{border-color:#353846 transparent transparent transparent}.b-features__title{color:#fbfbfe}.b-features__text{margin:0 0 40px;text-align:center}.b-features__list{margin:0;margin:0 -1% -45px;padding:0;list-style:none;text-align:center}@media only screen and (max-width:992px){.b-features__list{margin-right:0;margin-left:0}}.b-features__item{display:inline-block;width:47.5%;margin:0 1% 45px;color:#fcfcff;text-align:left;vertical-align:top}@media only screen and (max-width:992px){.b-features__item{width:100%;padding:0;border:0}}.b-features-item__icon-placeholder{float:left;width:150px;margin:25px 0 0;text-align:center}@media only screen and (max-width:768px){.b-features-item__icon-placeholder{float:none;width:100%;margin:0 0 25px}}.b-features-item__content{margin:0 0 0 150px;padding:0 0 0 30px;border-left:1px solid #fefefa}@media only screen and (max-width:768px){.b-features-item__content{margin:0;padding:0;text-align:center;border:0}}.b-features-item__title{font-size:25px;font-weight:700;margin:0 0 20px;color:#e34527}#team{background-color:#fffffa;color:#343333}#team .b-team__title{color:#353847}.b-team__list{margin:0;margin:0 -2.5% -40px 0;padding:0;list-style:none}.b-socials__href--border{border:1px solid #d7d7d7;padding:10px;margin:0;display:inline-block;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3;background-color:#f9f9fe}.b-socials__href--border img{height:16px}@media only screen and (max-width:992px){.b-team__list{margin-right:-2%}}@media only screen and (max-width:768px){.b-team__list{margin-right:0}}.b-team__item{display:inline-block;width:30%;margin:0 2.5% 40px 0;text-align:left;vertical-align:top}@media only screen and (max-width:992px){.b-team__item{width:47.5%;margin-right:2%}}@media only screen and (max-width:768px){.b-team__item{width:100%;margin-right:0}}.b-team-item__image-placeholder{overflow:hidden;margin:0 0 7px;border-radius:7px}.b-team-item__image{display:block;width:100%;height:auto}.b-team-item__socials{margin:0 0 10px;color:#76767b}.b-team-item__title{font-size:25px;font-weight:700;margin:0 0 15px;color:#e34528}.b-team-item__text{font-size:16px;line-height:1.4375;color:#343334}#vendors{background-color:#f9f9f8;color:#343345}.b-vendors__title{color:#353647}.b-vendors__text{font-weight:700}.b-vendors__list{margin:0;margin:0 -1% -45px;padding:0;list-style:none;text-align:center}#vendors .b-testimonial__text{color:#343346}#vendors .b-testimonial__name{color:#343536}.b-thumb-photo{border:1px solid #353848}@media only screen and (max-width:992px){.b-vendors__list{margin-right:0;margin-left:0}}.b-vendors__item{display:inline-block;width:47.5%;margin:0 1% 45px;vertical-align:top}@media only screen and (max-width:992px){.b-vendors__item{width:100%;padding:0;border:0}}#contact-today{background-color:#353849;color:#f9f9fd}.b-contact-today__title{font-size:50px;color:#e34529}.b-contact-today__text{margin:0 0 30px}.b-contact-today__list{font-size:21px;font-weight:700;margin:0 0 30px;padding:0;text-align:center}.b-contact-today__item{display:inline-block;text-align:center;vertical-align:top}.b-contact-today__item:before{display:inline-block;width:5px;height:5px;margin:-2px 10px 0;content:'';vertical-align:middle;border-radius:50%;background:#fff}.b-contact-today__item:first-child:before{display:none}.b-contact-today__button-placeholder{text-align:center}.contact-btn{background-color:#e34324;color:#fcfdfa}.contact-btn:hover{background-color:#e96c52;color:#fcfdfb}@media only screen and (max-width:992px){.b-contact-today__item{display:block;margin:0 0 10px}.b-contact-today__item:before{margin-left:0}.b-contact-today__item:first-child:before{display:inline-block}}#testimonials{background-color:#fefefb;color:#343534}#testimonials .b-testimonials__title{color:#353641}#testimonials .b-thumb-photo{border:1px solid #353642}.b-testimonial__name{color:#343532}.b-testimonials__list{margin:0;margin:0 0 -30px;padding:0;list-style:none}.b-testimonials__item{margin:0 10% 30px}@media only screen and (max-width:992px){.b-testimonials__item{margin-right:0;margin-left:0}}.b-footer-widgets{padding:30px 0 30px;color:#6c777b;background:#ebedef}.widgettitle{color:#6c777c}.b-footer-widgets__list{margin:0;margin:0 -2.5%;padding:0;list-style:none;text-align:center}@media only screen and (max-width:768px){.b-footer-widgets__list{margin:0}}.b-footer-widgets__list>li{display:inline-block;width:24%;padding:0 15px;text-align:left;vertical-align:top;border-left:1px solid #cbced0}.b-footer-widgets__list>li:first-child{border:0}@media only screen and (max-width:992px){.b-footer-widgets__list>li{width:48%;margin:0 0 20px}.b-footer-widgets__list>li:nth-child(2n+1){border:0}}@media only screen and (max-width:768px){.b-footer-widgets__list>li{width:100%;padding:0;border:0}}.b-footer{padding:30px 0 30px;background:#f9f9fc}.b-footer__socials{font-size:20px;margin:0 0 15px;text-align:center}.b-footer__text{font-size:14px;text-align:center;color:#acacac}@media only screen and (max-width:480px){.b-footer__socials{font-size:16px}}
+       
+    </style>
+    <body>
+	
+
+	<div class="b-header__top" data-lead-id="header-top-nav-container">
+			
+			<div class="container"  data-lead-id="top-nav-left-container"  >
+				<div class="row">
+					
+					<div class="col-sm-6"> 
+						<img  data-lb-name="Tel icon" data-lb="editable-optional" data-lb-id="tel-icon" src="{LOCAL_URL}new-temp-12/phone.png" data-lead-id="phone-icon-image" class="phone-icon">
+						<div data-lb-name="Tel" data-lb="editable-rich-text editable-optional" data-lb-id="Tel"   class="b-header__phone b-phone" data-lead-id="phone-text">
+							1-800-555-5555
+						</div> <!-- end .b-phone -->
+					
+					</div> <!--end .col-md-6 -->
+					
+					<div class="col-sm-6" data-lead-id="top-nav-social-container"> 
+
+						<div class="b-header__socials b-socials">
+							
+							<a href="#" data-lb-id="socials-href-facebook" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link facebook" class="b-socials__href" data-lead-id="top-social-1-link"><img src="{LOCAL_URL}new-temp-12/facebook_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-twitter" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link twitter" class="b-socials__href" data-lead-id="top-social-2-link"><img src="{LOCAL_URL}new-temp-12/twitter_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-google" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link google" class="b-socials__href" data-lead-id="top-social-3-link"><img src="{LOCAL_URL}new-temp-12/google_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-linkedin" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link linkedin" class="b-socials__href" data-lead-id="top-social-4-link"><img src="{LOCAL_URL}new-temp-12/linkedin_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-instagram" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link instagram" class="b-socials__href" data-lead-id="top-social-5-link"><img src="{LOCAL_URL}new-temp-12/instagram_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-pinterest" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link pinterest" class="b-socials__href" data-lead-id="top-social-6-link"><img src="{LOCAL_URL}new-temp-12/pinterest_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-youtube" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link youtube" class="b-socials__href" data-lead-id="top-social-7-link"><img src="{LOCAL_URL}new-temp-12/youtube_icon.png"></a>
+							<a href="#" data-lb-id="socials-href-email" data-lb="editable-link editable-optional link-only" data-lb-name="Socials Link email" class="b-socials__href" data-lead-id="top-social-8-link"><img src="{LOCAL_URL}new-temp-12/email_icon.png"></a>
+
+						</div> <!-- end .b-phone -->
+					
+					</div> <!--end .col-md-6 -->
+			
+				</div> <!--end .row -->
+			</div> <!--end .container -->   
+
+		</div> <!-- end .b-header__top -->
+
+	<div class="b-header" id="header" data-lead-id="header-nav-container">
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-3" data-lead-id="logo-container"> 
+
+					<div class="b-header__logo">
+						<img data-lb-comment="Recommended image width: 304px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image editable-optional max-image-size=304" src="{LOCAL_URL}new-temp-12/logo.png" data-lead-id="logo-image" class="main-logo img-responsive">
+					</div> <!-- end .b-header__logo -->
+				
+				</div> <!--end .col-md-3 -->
+				
+				<div class="col-md-9" data-lead-id="header-links-container"> 
+
+					<nav class="b-header__menu b-menu" id="menu">
+
+						<button class="b-menu__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						
+						<ul class="b-menu__list" data-lb-name="menu" data-lb="editable-rich-text editable-optional" data-lb-id="menu"    >
+							
+							<li class="b-menu__item" data-lead-id="header-1-link-container">		
+								
+								<a href="#" class="b-menu__href" data-lead-id="header-1-link">HOME</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-2-link-container">		
+								
+								<a href="#about" class="b-menu__href" data-lead-id="header-2-link">ABOUT</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-3-link-container">		
+								
+								<a href="#why-me" class="b-menu__href" data-lead-id="header-3-link">WHY ME</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-4-link-container"> 		
+								
+								<a href="#listings" class="b-menu__href" data-lead-id="header-4-link">LISTINGS</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-5-link-container">		
+								
+								<a href="#team" class="b-menu__href" data-lead-id="header-5-link">TEAM</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-6-link-container">		
+								
+								<a href="#sales" class="b-menu__href" data-lead-id="header-6-link">SOLD</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-7-link-container">		
+								
+								<a href="#vendors" class="b-menu__href" data-lead-id="header-7-link">HAPPY VENDORS</a>
+								
+							</li> <!-- end .b-menu__item -->
+							
+							<li class="b-menu__item" data-lead-id="header-8-link-container">		
+								
+								<a href="#contact-today" class="b-menu__href" data-lead-id="header-8-link">CONTACT ME</a>
+								
+							</li> <!-- end .b-menu__item -->
+						
+						</ul> <!-- end .b-menu__list -->
+
+					</nav> <!-- end .b-header__menu -->
+				
+				</div> <!--end .col-md-9 -->
+
+		
+			</div> <!--end .row -->
+		</div> <!--end .container -->   
+		
+	</div> <!-- end #header.b-header -->
+
+	
+	
+
+	
+        <div data-lb-name="countdown block"  data-lb-id="countdown-container" >
+
+	<section  class="b-open b-section b-section--dark" id="open" >
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12"> 
+                                        
+                                    <h2 style="font-size: 60px;color: #e14421;"  data-lb-name="Header title1 text" data-lb="editable-rich-text editable-optional"  class="b-open__title b-section__title text-center" data-lb-id="title1-text">
+						ALL LISTINGS
+					</h2> <!-- end .b-house-props__title -->
+                                        
+                                        
+                                        <h2 style="font-size: 30px"  data-lb-name="Header title2 text" data-lb="editable-rich-text editable-optional"  class="b-open__title b-section__title text-center" data-lb-id="title2-text">
+						" Exceeding Client's expectations"
+					</h2> <!-- end .b-house-props__title -->
+
+					
+
+					<div class="b-open__button-placeholder" data-lead-id="countdown-cta-container">
+                                            
+                                            <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">
+                                                <div data-lb-name="countdown seconds" data-lb="editable-button editable-optional"  href="#" class="btn btn-primary b-open__button countdown-btn" data-lb-id="countdown-cta-link">Request A Showing</div>
+                                            </a>
+
+					</div> <!-- end .b-open__button-placeholder -->
+				
+				</div> <!--end .col-md-12 -->
+		
+			</div> <!--end .row -->
+		</div> <!--end .container -->   
+   
+
+	</section> <!-- end #open.b-open -->
+     <section style="    padding: 0px;" class="b-house-props b-section b-section--arrow" id="house" data-lead-id="details-container"></section>
+     </div>
+	<section class="b-listings b-section" id="listings" data-lead-id="listing-container">
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12"> 
+
+					<h2  data-lb-name="listings title text" data-lb="editable-rich-text editable-optional" class="b-listings__title b-section__title text-center listings-main-title" data-lb-id="listings-title-text">
+						Available Listings
+					</h2> <!-- end .b-listings__title b-section__title -->
+
+					<div data-lb-name="listings subtitle text" data-lb="editable-rich-text editable-optional"  class="b-listings__text b-section__text b-text" data-lb-id="listings-subtitle-text">
+						<p>
+							Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas.
+						</p>
+					</div> <!-- end .b-listings__text -->
+
+					<ul class="b-listings__list" data-lead-id="listings-container">
+						
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-1-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 1"   data-lb="editable-image editable-optional max-image-size=350"  data-lb-id="content-img-1" src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-1-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 1 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-1-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 1 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-1-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 1 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-1-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-1-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 1 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-1-bed-number-container">        
+											<span data-lead-id="listing-1-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 1 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-1-bath-number-container">        
+											<span data-lead-id="listing-1-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 1 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-1-feet-number-contianer">        
+											<span data-lead-id="listing-1-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 1 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-1-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-1-more-link-container">
+
+									<a data-lb-name="listings 1 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-1-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-2-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 2" data-lb-id="content-img-2"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-2-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 2 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-2-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 2 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-2-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 2 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-2-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-2-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 2 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-2-bed-number-container">        
+											<span data-lead-id="listing-2-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 2 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-2-bath-number-container">        
+											<span data-lead-id="listing-2-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 2 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-2-feet-number-contianer">        
+											<span data-lead-id="listing-2-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 2 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-2-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-2-more-link-container">
+
+									<a data-lb-name="listings 2 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-2-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-3-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 3" data-lb-id="content-img-3"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-3-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 3 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-3-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 3 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-3-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 3 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-3-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-3-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 3 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-3-bed-number-container">        
+											<span data-lead-id="listing-3-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 3 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-3-bath-number-container">        
+											<span data-lead-id="listing-3-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 3 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-3-feet-number-contianer">        
+											<span data-lead-id="listing-3-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 3 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-3-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-3-more-link-container">
+
+									<a data-lb-name="listings 3 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-3-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-4-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 4" data-lb-id="content-img-4"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-4-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 4 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-4-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 4 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-4-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 4 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-4-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-4-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 4 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-4-bed-number-container">        
+											<span data-lead-id="listing-4-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 4 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-4-bath-number-container">        
+											<span data-lead-id="listing-4-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 4 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-4-feet-number-contianer">        
+											<span data-lead-id="listing-4-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 4 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-4-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-4-more-link-container">
+
+									<a data-lb-name="listings 4 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-4-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-5-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 5" data-lb-id="content-img-5"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-5-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 5 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-5-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 5 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-5-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 5 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-5-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-5-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 5 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-5-bed-number-container">        
+											<span data-lead-id="listing-5-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 5 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-5-bath-number-container">        
+											<span data-lead-id="listing-5-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 5 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-5-feet-number-contianer">        
+											<span data-lead-id="listing-5-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 5 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-5-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-5-more-link-container">
+
+									<a data-lb-name="listings 5 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-5-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-6-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 6" data-lb-id="content-img-6"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-6-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 6 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-6-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 6 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-6-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 6 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-6-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-6-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 6 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-6-bed-number-container">        
+											<span data-lead-id="listing-6-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 6 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-6-bath-number-container">        
+											<span data-lead-id="listing-6-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 6 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-6-feet-number-contianer">        
+											<span data-lead-id="listing-6-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 6 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-6-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-6-more-link-container">
+
+									<a data-lb-name="listings 6 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-6-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-7-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 7" data-lb-id="content-img-7"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-7-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 7 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-7-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 7 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-7-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 7 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-7-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-7-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 7 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-7-bed-number-container">        
+											<span data-lead-id="listing-7-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 7 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-7-bath-number-container">        
+											<span data-lead-id="listing-7-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 7 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-7-feet-number-contianer">        
+											<span data-lead-id="listing-7-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 7 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-7-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-7-more-link-container">
+
+									<a data-lb-name="listings 7 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-7-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						
+                                                <li class="b-listings__item b-listings-item" data-lead-id="listing-8-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 8" data-lb-id="content-img-8"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-8-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 8 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-8-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 8 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-8-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 8 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-8-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-8-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 8 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-8-bed-number-container">        
+											<span data-lead-id="listing-8-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 8 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-8-bath-number-container">        
+											<span data-lead-id="listing-8-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 8 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-8-feet-number-contianer">        
+											<span data-lead-id="listing-8-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 8 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-8-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-8-more-link-container">
+
+									<a data-lb-name="listings 8 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-8-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						<li class="b-listings__item b-listings-item" data-lead-id="listing-9-container">        
+							
+							<div class="b-listings-item__top">
+
+								<div class="b-listings-item__image-placeholder">
+
+									<img  data-lb-comment="Recommended image width: 350px" data-lb-name="Content Image 9" data-lb-id="content-img-9"  data-lb="editable-image editable-optional max-image-size=350"   src="{LOCAL_URL}new-temp-12/listings.jpg" alt="b-listings-item" class="b-listings-item__image" data-lead-id="listing-9-image">
+
+								</div> <!-- end .b-listings-item__image-placeholder -->
+
+								<div data-lb-name="listings 9 price text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__price" data-lb-id="listing-9-price-text">
+									$5,000
+								</div> <!-- end .b-listings-item__price -->
+								<div data-lb-name="listings 9 sold text" data-lb="editable-rich-text editable-optional" class="b-listings-item__hot" data-lb-id="listing-9-sold-text">
+									HOT!
+								</div> <!-- end .b-listings-item__hot -->
+								
+
+							</div> <!-- end .b-listings-item__top -->
+
+							<div class="b-listings-item__bottom">
+
+								<h3 data-lb-name="listings 9 address text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__title" data-lb-id="listing-9-address-text">
+									House on Oakmont Ave
+								</h3> <!-- end .b-listings-item__title -->
+
+								<div class="b-listings-item__info b-house-info" data-lead-id="listing-9-info-container">
+
+									<ul  class="b-house-info__list">
+
+										<li  data-lb-name="listings 9 bed number text" data-lb="editable-rich-text editable-optional" class="b-house-info__item b-house-info__item--beds" data-lb-id="listing-9-bed-number-container">        
+											<span data-lead-id="listing-9-bed-number-text">5</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 9 bath number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--baths" data-lb-id="listing-9-bath-number-container">        
+											<span data-lead-id="listing-9-bath-number-text">2</span>
+										</li> <!-- end .b-house-info__item -->
+
+										<li  data-lb-name="listings 9 feet number text" data-lb="editable-rich-text editable-optional"  class="b-house-info__item b-house-info__item--footage" data-lb-id="listing-9-feet-number-contianer">        
+											<span data-lead-id="listing-9-feet-number-text">2,500</span>
+										</li> <!-- end .b-house-info__item -->
+
+									</ul> <!-- end .b-house-info__list -->
+
+								</div> <!-- end .b-listings-item__info -->
+
+								<div  data-lb-name="listings 9 info text" data-lb="editable-rich-text editable-optional"  class="b-listings-item__text" data-lb-id="listing-9-info-text">
+									<p>
+										Vel nec sociis ac in, lundium auctor aenean, in adipiscing massa, dignissim, dapibus? Tempor scelerisque, egestas tincidunt placerat cum et placerat tempor? Lundium turpis! Integer mattis. Augue velit porttitor tincidunt, 
+									</p>
+								</div> <!-- end .b-listings-item__text -->
+
+								<div class="b-listings-item__more-placeholder" data-lead-id="listing-9-more-link-container">
+
+									<a data-lb-name="listings 9 more-link" data-lb="editable-link editable-optional"  href="#"  class="b-listings-item__more" data-lb-id="listing-9-more-link">More Info</a>
+
+								</div> <!-- end .b-listings-item__more-placeholder -->
+
+							</div> <!-- end .b-listings-item__bottom -->
+							
+						</li> <!-- end .b-listings__item -->
+						
+					
+					</ul> <!-- end .b-listings__list -->
+
+				</div> <!--end .col-md-12 -->
+		
+			</div> <!--end .row -->
+		</div> <!--end .container -->   
+
+	</section> <!-- end #listings.b-listings -->
+
+
+<div style="position: absolute; bottom: 0px; top: 0px; right: 0px; left: 0px; z-index: 2147483646; width: 100%; opacity: 0.5; display: none; height: 12180px; background: black;"></div>
+    <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <style>
+                    #form-header-text, #leadpages-form-header-text {
+                    padding-top: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid #dadada;
+                    padding-bottom: 5px;
+                    margin-left: 62px;
+                    margin-right: 57px;
+                        font-family: Helvetica, Arial, sans-serif;
+                    font-size: 10pt;
+                    letter-spacing: 0em;
+                                }
+                                #form-image, #leadpages-form-image {
+                    margin: 0 15px 0 0;
+                        vertical-align: middle;
+                }
+                .leadbox-content-wrapper, #form-preview fieldset, fieldset {
+                width: 450px;
+                max-width: 100%;
+                padding: 0;
+            }
+            .form12 fieldset{
+                     display: inline-block;
+                    text-align: left;
+                    vertical-align: middle;
+                    margin: 0 auto;
+                    max-width: 400pt;
+                    padding: 0 10pt;
+                    border: none;
+                    width: 450px;
+                    max-width: 100%;
+                    padding: 0;
+    
+            }
+            .form12 fieldset #form-fields {
+                    padding: 0;
+                    margin: 0 0 10px 25px;
+                    margin-left: 0;
+                    list-style: none;
+                    padding-top: 10px;
+            }
+            .form12 fieldset #form-fields li {
+                       line-height: 20px;
+                       margin-bottom: 10px;
+                           margin: 1em 0;
+    position: relative;
+            }
+            .form12 fieldset #form-fields  input {
+                     padding: 13px;
+                    color: #201D1D;
+                    background: white;
+                    border: 1pt solid #C9D7DD;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    -o-transition: none;
+                    transition: none;
+                    width: 422px;
+                    box-sizing: content-box;
+            }
+            .form12 button[type=submit] {
+    margin: 0.2em auto 0;
+    padding: 0.9em;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 100%;
+    text-shadow: 2px 2px 0 #1285dd;
+    max-width: none;
+    
+    outline-offset: 5pt;
+}
+                </style>
+               
+                <form  data-lb-id="form-popup-headline" data-lb-name="Form Popup" data-lb="editable-opt-in-form editable-optional" id="form" class="editable form12" style="background-color: #ffffff;border-color: #ffffff;border-width: 1pt;border-style: solid;">
+               
+                
+                <div id="form-header">
+                    
+                        <img  data-lb-comment="Recommended image size 850 x 50  pixels" data-lb-name="Popup Status Bar" data-lb-id="status-image-pop" alt="" data-lb="editable-image max-image-size=850 editable-optional"  id="form-header-image" class="editable" src="{LOCAL_URL}leadbox_status_bar_gray3.gif" data-id="default">
+                    
+                     <div data-lb-name="Popup Status Text" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-status-text" id="form-header-text" class="editable" style="font-family: Helvetica, Arial, sans-serif; font-size: 10pt; letter-spacing: 0em;    margin-bottom: 36px;">
+                    Almost there! Please complete this form and click
+                    the button below to gain instant access.</div>
+                </div>
+                
+                <img ata-lb-comment="Recommended image size 256 x 256  pixels" data-lb-name="Popup Leadbox Bar" data-lb-id=";eadbox-image-pop" alt="" data-lb="editable-image max-image-size=256 editable-optional"  id="form-image" class="editable
+                    " src="{LOCAL_URL}leadbox-image-placeholder3.png
+                    " data-id="default">
+                <fieldset>
+                    <div data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline"  id="form-title" class="editable" style="font-size:18pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <div style="text-align: center"><strong>Enter your email address below to be notified when we launch!</strong></div>
+                    </div>
+                    <ul id="form-fields" class="unstyled ui-sortable">
+                    <li class="control-group editable draggable" id="custom-field-LP-NONE"><div class="controls">
+                            <input  onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="text" placeholder="Name">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable required" id="custom-field-LP-NONE1"><div class="controls">
+                            <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="email" placeholder="E-mail">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable" id="custom-field-LP-NONE2"><div class="controls">
+                            <input type="text" placeholder="Phone Number" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" >
+                       
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li></ul>
+                    <button  data-lb-name="Popup Subscribe Button" data-lb="editable-button editable-optional" data-lb-id="button-pop" id="submit-button" type="submit" class="editable" style="width: 100%;font-size: 14pt; border: 0pt solid rgb(255, 180, 3); letter-spacing: 0em; font-family: Helvetica, Arial, sans-serif; text-shadow: rgb(18, 133, 221) 2px 2px 0px; background-color: rgb(255, 203, 1);text-align: center;">
+                        <div   style="">Join Now!</div>
+                    </button>
+                    <br>
+                    <div id="privacy-policy" class="editable" style="margin-top: 15px;font-size:12pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    
+    </body>
+</html>

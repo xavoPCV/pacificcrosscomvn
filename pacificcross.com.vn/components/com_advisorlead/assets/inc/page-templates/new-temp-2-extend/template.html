@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sales Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Lora:400,700,400italic,700italic|Oswald:400,700,300|Lato:400,700,400italic,700italic|Cardo:400,700,400italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+        <style>
+                  /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+          
+              body{
+                width: 100%;
+                margin: 0;
+            }
+            .fullpage{
+                width: 100%;
+            }
+            .site-show{
+              text-align: center;  
+              margin: 0 auto;
+              width: 900px;
+            }
+            .b1{
+                color: white;
+               background-color:white;
+                text-transform: uppercase;
+                width: 100%;
+                padding: 1px;
+                border: 1px solid #ccc;
+                font-size: 25px;
+                    font-family: 'Oswald';
+                    margin-top: 30px;
+                      margin-bottom:  30px;
+                
+            }
+            .b1 div{
+                margin: 1px;
+                  background-color:#ceb012;
+                  padding: 15px;
+                      color: white;
+            }
+            .b2{
+                    color: #5f5f5f;
+                    font-family: "Oswald";
+                    font-size: 22px;
+                    padding: 0 20px 40px;
+                    text-align: center;
+                        box-sizing: border-box;
+                        font-weight: bold;
+            }
+            a {
+                color: #ceb012;
+                 text-decoration: none;
+                 font-weight: bold;
+            }
+            .mid{
+                background: #f8f8f8;
+            }
+            .logo{
+                    padding: 30px 10px 20px;
+                    text-align: center;
+                    background: #fefefe;
+            }
+            .video-holder {
+                background-color: #fcfcfc;
+                text-align: center;
+                padding: 20px 0 40px;
+            }
+            .mod-1 .col-3{
+                float: left;
+            }
+            .mod-1 .col-9{
+                float: left;
+                text-align: left;
+                    padding: 60px 0;
+                    
+            }
+            .mod-1 .col-8{
+                float: left;
+                text-align: left;
+                    padding: 60px 0;
+                        padding-left: 20px;
+            }
+            .mod-1 .col-9 a{
+             
+            }
+            .colum-1{
+                    color: #ceb012;
+                    font-family: "Lato";
+                    font-size: 22px;
+                    line-height: 36px;
+            }
+            .header{
+                text-align: left;
+                    color:  #ceb012;
+                font-family: "Oswald";
+                font-size: 28px;
+                padding: 5px 0px;
+                font-weight: 400;
+               
+            }
+            .mid .text{
+                 text-align: left;
+                     color: #212121;
+                font-family: "Lato";
+                font-size: 18px;
+                margin-top: 20px;
+              
+            }
+            .header1{
+                    color:  #ceb012;
+                    font-family: 'Oswald';
+                    font-size: 32px;
+                    text-align: center;
+                    padding: 20px 0 40px;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+            }
+            .imguser{
+                    border-radius: 50%;
+            }
+            .footer {
+                    display: table;
+                    width: 100%;
+                    padding: 15px;
+                    font-family: "Lora";
+            }
+              @media only screen and (max-width: 768px) {
+                    /* For mobile phones: */
+                    [class*="col-"] {
+                        width: 100%;
+                    }
+                     .site-show{
+                        width: 100%;
+                    }
+                    .b1{
+                        margin: 0;
+                    }
+                    .mod-1 .col-8 {
+   
+                        text-align: center;
+                        padding: 30px 0;
+
+                    }
+                    .header {
+                            margin-left: 10px;
+                    }
+                    .footer{
+                        padding: 0px;
+                    }
+            }
+             .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 39%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+                min-height: 150px;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+            
+                width: 100%;
+                height: 100%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+            .arrow{
+                   max-width: 145px;
+                    position: absolute;
+                    margin-left: 587px;
+                    margin-top: 466px;
+                    z-index: 100000
+            }
+            /* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="fullpage">
+            <div class="top">
+                <div class="site-show" >
+                     <div class="logo"><img data-lb-comment="Recommended image width: 277px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image editable-optional max-image-size=277"  src="{LOCAL_URL}corporate/logo.png" > </div>
+                      <div class="arrow"><img data-lb-comment="Recommended image width: " data-lb-name="arrow Image" data-lb-id="arrow-img" data-lb="editable-image editable-optional "  src="https://my.leadpages.net/template/4931475242221568/raw/img/arrow.png?aid=" alt="" data-lead-id="arrow" class="img-responsive"></div>
+                     
+                      
+                      
+                      <section data-lb-id="video" class="video-holder flex-video" data-lb="editable-video editable-optional video-width=887 video-height=600" data-lb-name="Video">
+                        <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                            <img  data-lb-id="video-image" data-lb="editable-image max-image-size=887" data-lb-name="Video Image" class="tablet" src="{LOCAL_URL}sales-page/video.png"/>
+                        </a>
+                    </section>
+                    
+                    <button class="b1" >  <a href="#myModal" id="data-reveal-id" class="click fancybox-pop" ><div  data-lb-name="Download Button 1" data-lb="editable-button editable-optional" data-lb-id="button" type="button" class="gree-bott" >YES! SEND ME PRICING INFO FOR YOUR VOTER ID CALL PROGRAM >></div>  </a> </button>
+                     <div class="b2" data-lb-name="Content Header 1" data-lb="editable-rich-text editable-optional" data-lb-id="Content Header 1" > Have Questions About Our Phone Program ?<a >Contact Us Now!</a> </div>
+                </div>
+            </div>
+         
+            <div class="footer">
+                <div class="site-show" >
+                     <div data-lb-name="Title Footer" data-lb="editable-rich-text editable-optional" data-lb-id="footer" class="col-9 header1">what our customer are saying</div>
+                
+                 <div class="mod-1">
+                          <div class="col-3"><div class="col-3"> <img class="imguser" data-lb-comment="Recommended image width: 150px" data-lb-name="Image User 2" data-lb-id="Content-2-link-img" alt="Content-img-2" data-lb="editable-image editable-optional  max-image-size=150" src="{LOCAL_URL}sales-page/fritz.png" > </div></div>
+                          <div class="col-9" data-lb-name="Info User 2 " data-lb="editable-rich-text editable-optional" data-lb-id="Info User 2">"I've watched Dan with utter amazement at his ability to parachute into any state in the country and build a political organization from scratch. We need more organizers like Ground Game Strategies..."<a href="#"> Trevis Butcher, MT Leader</a></div>
+                    </div>
+                 <div class="mod-1">
+                       
+                          <div class="col-9" data-lb-name="Info User 3 " data-lb="editable-rich-text editable-optional" data-lb-id="Info User 3" > Maecenas nec justo quam, id tincidunt dolor. Integer a tellus ut nunc elementum volutpat. Vivamus eu arcu lacus. Phasellus eu ipsum a metus ullamcorper mollis. <a href="#"> Mt Bauter</a> </div>
+                             <div class="col-3"> <img class="imguser" data-lb-comment="Recommended image width: 150px" data-lb-name="Image User 3" data-lb-id="Content-3-link-img" alt="Content-img-3" data-lb="editable-image editable-optional  max-image-size=150" src="{LOCAL_URL}sales-page/craig.png" > </div>
+                    </div>
+                     
+                 
+                     
+                     </div>
+            </div>
+            
+            
+             <div class="footer">
+                <div class="site-show" >
+             <div class="mod-1">
+                          <div class="col-3"><div class="col-3"> <img class="imguser" data-lb-comment="Recommended image width: 150px" data-lb-name="Image User 4" data-lb-id="Content-3-link-img" alt="Content-img-4" data-lb="editable-image editable-optional  max-image-size=150" src="{LOCAL_URL}sales-page/bob.png" > </div></div>
+                          
+                          <div class="col-9" data-lb-name="Info User 4 " data-lb="editable-rich-text editable-optional" data-lb-id="Info User 4">"I've watched Dan with utter amazement at his ability to parachute into any state in the country and build a political organization from scratch. We need more organizers like Ground Game Strategies..."<a href="#"> Trevis Butcher, MT Leader</a></div>
+                    </div>
+                 <div class="mod-1">
+                       
+                          <div class="col-9" data-lb-name="Info User 5 " data-lb="editable-rich-text editable-optional" data-lb-id="Info User 5" > Maecenas nec justo quam, id tincidunt dolor. Integer a tellus ut nunc elementum volutpat. Vivamus eu arcu lacus. Phasellus eu ipsum a metus ullamcorper mollis. <a href="#"> Mt Bauter</a> </div>
+                             <div class="col-3"> <img class="imguser" data-lb-comment="Recommended image width: 150px" data-lb-name="Image User 5" data-lb-id="Content-5-link-img" alt="Content-img-5" data-lb="editable-image editable-optional  max-image-size=150" src="{LOCAL_URL}sales-page/antia.png" > </div>
+                    </div>
+        
+                </div>
+             </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text editable-optional" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

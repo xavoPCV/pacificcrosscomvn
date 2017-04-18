@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+<name>Travel Insurance Price</name>
+<creationDate>September 2015</creationDate>
+<author>Minhcom</author>
+<authorEmail>QuangNH@gmail.com</authorEmail>
+<authorUrl>www.minhcom.com</authorUrl>
+<copyright>Copyright Minhcom</copyright>
+<license>License GNU/GPL</license>
+<version>1.0.0</version>
+<description>Pacific Travel Insurance Plugin for Joomla</description>
+<files>
+   <filename plugin="travelpricecalculation">travelpricecalculation.php</filename>
+</files>
+<languages>
+   <language tag="en-GB">language/en-GB/en-GB.plg_system_travelpricecalculation.ini</language>
+</languages>
+
+<config>
+		<fields name="params">
+            <!-- General Annual -->
+			<fieldset name="PI_TRAVEL_ANNUAL">
+                <!-- Basic Annual Premium  -->
+				<field name="pi_premier_annual" type="text"
+					default="318"
+					description="JFIELD_PI_PREMIER_ANNUAL_DESC"
+					label="JFIELD_PI_PREMIER_ANNUAL_LABEL"
+					size="200"/>
+
+                <!-- Car Protection Premium -->
+                <field name="pi_premier_opt_car" type="text"
+                       default="75"
+                       description="JFIELD_PI_PREMIER_OPT_CAR_DESC"
+                       label="JFIELD_PI_PREMIER_OPT_CAR_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Executive -->
+                <field name="pi_executive_annual" type="text"
+                       default="186"
+                       description="JFIELD_PI_EXECUTIVE_ANNUAL_DESC"
+                       label="JFIELD_PI_EXECUTIVE_ANNUAL_LABEL"
+                       size="200"/>
+
+                <!-- Car Protection Executive -->
+                <field name="pi_executive_opt_car" type="text"
+                       default="75"
+                       description="JFIELD_PI_EXECUTIVE_OPT_CAR_DESC"
+                       label="JFIELD_PI_EXECUTIVE_OPT_CAR_LABEL"
+                       size="200"/>
+
+                <!-- Bon voyage Car Protection Per Day -->
+                <field name="pi_voyage_car" type="text"
+                       default="5"
+                       description="JFIELD_PI_VOYAGE_CAR_DESC"
+                       label="JFIELD_PI_VOYAGE_CAR_LABEL"
+                       size="200"/>
+
+			</fieldset>
+
+            <!-- Bon Voyage Individual -->
+            <fieldset name="PI_TRAVEL_VOYAGE_INDIVIDUAL">
+                <!-- Plan A Up to 5 days -->
+                <field name="pi_voyage_idv_a_5" type="text"
+                       default="25"
+                       description="JFIELD_PI_VOYAGE_IDV_A_5_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 8 days -->
+                <field name="pi_voyage_idv_a_8" type="text"
+                       default="36"
+                       description="JFIELD_PI_VOYAGE_IDV_A_8_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 11 days -->
+                <field name="pi_voyage_idv_a_11" type="text"
+                       default="42"
+                       description="JFIELD_PI_VOYAGE_IDV_A_11_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 15 days -->
+                <field name="pi_voyage_idv_a_15" type="text"
+                       default="46"
+                       description="JFIELD_PI_VOYAGE_IDV_A_15_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 24 days -->
+                <field name="pi_voyage_idv_a_24" type="text"
+                       default="55"
+                       description="JFIELD_PI_VOYAGE_IDV_A_24_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 31 days -->
+                <field name="pi_voyage_idv_a_31" type="text"
+                       default="68"
+                       description="JFIELD_PI_VOYAGE_IDV_A_31_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan A For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_idv_a_step" type="text"
+                       default="13"
+                       description="JFIELD_PI_VOYAGE_IDV_A_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_A_STEP_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 5 days -->
+                <field name="pi_voyage_idv_b_5" type="text"
+                       default="20"
+                       description="JFIELD_PI_VOYAGE_IDV_B_5_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 8 days -->
+                <field name="pi_voyage_idv_b_8" type="text"
+                       default="27"
+                       description="JFIELD_PI_VOYAGE_IDV_B_8_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 11 days -->
+                <field name="pi_voyage_idv_b_11" type="text"
+                       default="31"
+                       description="JFIELD_PI_VOYAGE_IDV_B_11_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 15 days -->
+                <field name="pi_voyage_idv_b_15" type="text"
+                       default="34"
+                       description="JFIELD_PI_VOYAGE_IDV_B_15_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 24 days -->
+                <field name="pi_voyage_idv_b_24" type="text"
+                       default="37"
+                       description="JFIELD_PI_VOYAGE_IDV_B_24_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 31 days -->
+                <field name="pi_voyage_idv_b_31" type="text"
+                       default="46"
+                       description="JFIELD_PI_VOYAGE_IDV_B_31_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan B For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_idv_b_step" type="text"
+                       default="9"
+                       description="JFIELD_PI_VOYAGE_IDV_B_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_B_STEP_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 5 days -->
+                <field name="pi_voyage_idv_c_5" type="text"
+                       default="17"
+                       description="JFIELD_PI_VOYAGE_IDV_C_5_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 8 days -->
+                <field name="pi_voyage_idv_c_8" type="text"
+                       default="23"
+                       description="JFIELD_PI_VOYAGE_IDV_C_8_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 11 days -->
+                <field name="pi_voyage_idv_c_11" type="text"
+                       default="26"
+                       description="JFIELD_PI_VOYAGE_IDV_C_11_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 15 days -->
+                <field name="pi_voyage_idv_c_15" type="text"
+                       default="28"
+                       description="JFIELD_PI_VOYAGE_IDV_C_15_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 24 days -->
+                <field name="pi_voyage_idv_c_24" type="text"
+                       default="31"
+                       description="JFIELD_PI_VOYAGE_IDV_C_24_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 31 days -->
+                <field name="pi_voyage_idv_c_31" type="text"
+                       default="34"
+                       description="JFIELD_PI_VOYAGE_IDV_C_31_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan C For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_idv_c_step" type="text"
+                       default="6"
+                       description="JFIELD_PI_VOYAGE_IDV_C_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_IDV_C_STEP_LABEL"
+                       size="200"/>
+            </fieldset>
+
+            <!-- Bon Voyage Family -->
+            <fieldset name="PI_TRAVEL_VOYAGE_FAMILY">
+                <!-- Plan A Up to 5 days -->
+                <field name="pi_voyage_family_a_5" type="text"
+                       default="50"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_5_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 8 days -->
+                <field name="pi_voyage_family_a_8" type="text"
+                       default="72"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_8_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 11 days -->
+                <field name="pi_voyage_family_a_11" type="text"
+                       default="84"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_11_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 15 days -->
+                <field name="pi_voyage_family_a_15" type="text"
+                       default="92"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_15_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 24 days -->
+                <field name="pi_voyage_family_a_24" type="text"
+                       default="110"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_24_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan A Up to 31 days -->
+                <field name="pi_voyage_family_a_31" type="text"
+                       default="136"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_31_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan A For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_family_a_step" type="text"
+                       default="26"
+                       description="JFIELD_PI_VOYAGE_FAMILY_A_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_A_STEP_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 5 days -->
+                <field name="pi_voyage_family_b_5" type="text"
+                       default="40"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_5_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 8 days -->
+                <field name="pi_voyage_family_b_8" type="text"
+                       default="54"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_8_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 11 days -->
+                <field name="pi_voyage_family_b_11" type="text"
+                       default="62"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_11_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 15 days -->
+                <field name="pi_voyage_family_b_15" type="text"
+                       default="68"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_15_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 24 days -->
+                <field name="pi_voyage_family_b_24" type="text"
+                       default="74"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_24_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan B Up to 31 days -->
+                <field name="pi_voyage_family_b_31" type="text"
+                       default="92"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_31_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan B For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_family_b_step" type="text"
+                       default="18"
+                       description="JFIELD_PI_VOYAGE_FAMILY_B_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_B_STEP_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 5 days -->
+                <field name="pi_voyage_family_c_5" type="text"
+                       default="34"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_5_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_5_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 8 days -->
+                <field name="pi_voyage_family_c_8" type="text"
+                       default="46"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_8_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_8_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 11 days -->
+                <field name="pi_voyage_family_c_11" type="text"
+                       default="52"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_11_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_11_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 15 days -->
+                <field name="pi_voyage_family_c_15" type="text"
+                       default="56"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_15_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_15_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 24 days -->
+                <field name="pi_voyage_family_c_24" type="text"
+                       default="62"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_24_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_24_LABEL"
+                       size="200"/>
+
+                <!-- Plan C Up to 31 days -->
+                <field name="pi_voyage_family_c_31" type="text"
+                       default="68"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_31_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_31_LABEL"
+                       size="200"/>
+
+                <!-- Plan C For Each Additional Week Maximum 180 Days -->
+                <field name="pi_voyage_family_c_step" type="text"
+                       default="12"
+                       description="JFIELD_PI_VOYAGE_FAMILY_C_STEP_DESC"
+                       label="JFIELD_PI_VOYAGE_FAMILY_C_STEP_LABEL"
+                       size="200"/>
+            </fieldset>
+		</fields>
+	</config>
+	
+</extension>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+        <name>Enewsletter</name>
+        <version>1.3</version>
+		<author>API</author>
+    	<creationDate>30 January 2014</creationDate>
+        <!-- The description is optional and defaults to the name -->
+        <description>Enewsletter Component</description>
+
+		<media destination="com_enewsletter" folder="admin/media">
+			<filename>index.html</filename>
+			<filename>twitter.png</filename>
+			<filename>facebook.png</filename>
+			<filename>linkedin.png</filename>
+			<folder>logo</folder>
+			<folder>banner</folder>
+		</media>
+		
+		<install> <!-- Runs on install -->
+                <sql>
+                    <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+                </sql>
+        </install>
+        <uninstall> <!-- Runs on uninstall -->
+                <sql>
+                    <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+                </sql>
+        </uninstall>
+		
+		
+		<files folder="site">
+			<filename>index.html</filename>
+			<filename>enewsletter.php</filename>
+			<filename>controller.php</filename>
+			<filename>XML2Array.php</filename>
+			<filename>setup_defines.php</filename>
+			<folder>controllers</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+		
+ 
+        <administration>				
+			<menu>COM_ENEWSLETTER</menu>
+			<files folder="admin">
+					<!-- Admin Main File Copy Section -->
+					<filename>SmartDOMDocument.class.php</filename>
+					<filename>index.html</filename>
+					<filename>enewsletter.php</filename>
+					<filename>controller.php</filename>
+					<filename>XML2Array.php</filename>
+					<folder>controllers</folder>
+					<folder>help</folder>
+					<folder>helpers</folder>
+					<folder>languages</folder>
+					<folder>models</folder>
+					<folder>views</folder>
+					<folder>css</folder>
+					<folder>images</folder>
+					<folder>icons</folder>
+					<folder>libraries</folder>
+					<folder>js</folder>
+					<folder>sql</folder>
+					<folder>templates</folder>
+					<folder>media</folder>
+			</files>
+			
+			<languages folder="admin">
+				<language tag="en-GB">languages/en-GB.com_enewsletter.ini
+				</language>
+				<language tag="en-GB">languages/en-GB.com_enewsletter.sys.ini
+				</language>
+			</languages>
+        </administration> 
+</extension>

@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!--#OID#3436#OIDEND#-->
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <title>Untitled Document</title>
+</head>
+<body bgcolor="#D5D5D5">
+  <table width="800" align="center" cellpadding="0" cellspacing="0"
+  bgcolor="#FFFFFF">
+    <tr>
+      <td>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="enewsheader">
+				  <tr valign="top">
+					<td height="100" bgcolor="#ffffff" style="vertical-align:top;" >{$logo}</td>
+					<td align="left" width="385px"><!--address on right-->
+						
+						<table border="0" cellspacing="0" cellpadding="0">
+						<tr valign="top">
+							<td>
+								<p style="font-size:12px;"><b>{$firm_name}</b><br/>
+								<span id="topaddress">{$firm_address}, {$firm_address2}<br/>
+								{$firm_city}, {$firm_state} {$firm_zip}<br/>
+								{$firm_phone}<br/></span>
+								{$firm_email}<br/>
+								{$firm_url}</p>
+							</td>
+							<td id="secondaddress">
+								<p style="font-size:12px;"><span id="topaddress2"><b>&nbsp;</b><br/>{$firm_second_address}, {$firm_second_address2}<br/>
+								{$firm_second_city}, {$firm_second_zip} {$firm_second_state}<br/>
+								{$firm_second_phone}<br/></span></p>
+							</td>
+						</tr>
+						</table>
+					   <p align="right" width="250" style="margin-right:60px;" ><br/>{$social_links}</p>
+					</td>
+					</tr>
+				</table><!--enewsheader-->
+				{$firm_banner}
+            </td>
+          </tr>
+
+          <tr>
+            <td valign="top">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top" bgcolor="#FFFFFF">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+                                  <tbody>
+                                     <tr bgcolor="#ECEBE0" id= "massemailcontent">
+                                      <td style="padding:0 25px 0px 25px;">
+                                      <table bgcolor="#ECEBE0" width="100%"> 
+                                      <tr>
+                                        <td>
+                                        {$massemailcontent}
+                                          </td>
+                                       </tr>
+                                       </table>
+                                      </td>
+                                    </tr>
+
+                                    <tr id="disclosure">
+                                      <td style="padding:10px 25px 0 25px;">
+                                      <font face="Arial" size="1">
+                                          {$disclosure}
+                                        </font>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td align="center" style="padding:10px 0 0 0;" >
+                                      <p><img src="http://sample3joomla.advisorproducts.com/templates/sample3/images/couplecartoon.png" style="margin-top: 10px;border:none !important;"></p>
+									  <p><font size="4" face="arial">Give us a call and learn more today!
+									  <span id="bottomaddress">
+									  <br />
+										{$firm_address_bottom}, {$firm_address2_bottom}<br/>
+										{$firm_city_bottom}, {$firm_zip_bottom} {$firm_state_bottom}<br/>
+										{$firm_phone_bottom}
+										</span>
+									  </font></p>
+									  <p id="bottomaddress2"><font size="4" face="arial">
+										{$firm_second_address_bottom}, {$firm_second_address2_bottom}<br/>
+										{$firm_second_city_bottom}, {$firm_second_zip_bottom} {$firm_second_state_bottom}<br/>
+										{$firm_second_phone_bottom}
+									  </font></p>
+									  </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#f0f0f0; Body" name="mp-customizable-color">
+        <meta content="#222222; Header Menu Background" name="mp-customizable-color">
+        <meta content="#ffffff; Header Links" name="mp-customizable-color">
+        <meta content="#fffff1; Setup Account Background" name="mp-customizable-color">
+        <meta content="#0741ff; Setup Account Background Top" name="mp-customizable-color">
+        <meta content="#1d1d1d; Setup Account" name="mp-customizable-color">
+
+        <meta name="mp-customizable-color" content="#FBCD50; Button Background Start Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#FBBD03; Button Background End Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc1; Button Border Top Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc2; Button Border Bottom Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc3; Button Border Left Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#ccccc4; Button Border Right Color" button_id="submit-button">
+        <meta name="mp-customizable-color" content="#fffff0; Button Text Color" button_id="submit-button">
+
+        <meta content="#f9f9f9; Blog Post Background" name="mp-customizable-color">
+        <meta content="#000001; Blog Post Title" name="mp-customizable-color">
+        <meta content="#848488; Blog Post Content" name="mp-customizable-color">
+        <meta content="#ff0303; Read More" name="mp-customizable-color">
+        <meta name="mp-customizable-color" content="#4a4a4a; Footer Text">
+        <meta name="mp-customizable-color" content="#108cef; Footer Text Link">
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;background: #f0f0f0;}
+            .header-menu{
+                background: #222222;
+                float: left;
+                width: 100%;
+                height: 57px;
+            }
+            .home-link{width:100%;}
+            a.home-img{float:left;border-right: #000000 solid 2px;text-decoration:none}
+            .hometop .header_text{padding-left: 20px;float:left; padding-top: 15px;}
+            .link123{padding-right: 30px;float:right;padding-top: 15px;}
+            .link123 .header_text{float:left;margin-left: 13px;}
+            .header_text{color: #ffffff;}
+            a.link{color: white;margin-left: 30px;text-decoration:none}
+            img{max-width: 100%}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+            button.submit{ margin:0 auto;font-size:14px; padding:15px 10px;color:#fffff2;}
+            .content-post{background-color:#f9f9f9;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:4px;display:inline-block;text-decoration:none;position:relative}
+            .wrapper{max-width: 950px; margin:0 auto;}
+            .container {width: 100%;overflow: hidden;}
+            .left,.right{width: 50%;float: left;}
+            .clear {clear: both;}
+            .logo{padding: 25px 0}
+            .title{color: #1d1d1d}
+            .subtitle{color: #000020}
+            .content{padding: 20px 0;width: 100%;}
+            #blue-top{height: 20px; background: #0741ff}
+            .host-name .right .setup-account{background: #fffff1;width: 90%; margin: 10px auto;}
+            .content h1{font-size: 26px;text-align:center;}
+            .content h3{margin:0;}
+            form {margin: 0 auto;}
+            input[type=text], input[type=email] {width: 85%;
+                                                 height: 50px;
+                                                 border: 1px solid rgba(0,0,0,0.09);
+                                                 text-align: left;
+                                                 font-family: 'Arial',sans-serif;
+                                                 font-weight: 400;
+                                                 font-size: 20px;
+                                                 color: #4f4f4f;
+                                                 font-style: italic;
+                                                 margin: 5px 15px;
+                                                 background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f0f0f1),color-stop(1,#f7f7f7));
+                                                 padding-left: 20px;
+            }
+            .btn {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background: none;
+                text-decoration: none;
+                padding: 0 0 5px;
+                margin: 10px auto;
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn span{
+                font-size: 26px;
+                width: 90%;
+                color: #fffff0;
+                padding: 3% 1%;
+                position: relative;
+                display: inline-block;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                font-weight: bold;
+                position: relative;
+                text-decoration: none;
+                transition: 0.5s all;
+
+                border: solid 1px;
+                border-top-color: #ccccc1;
+                border-bottom-color: #ccccc2;
+                border-left-color: #ccccc3;
+                border-right-color: #ccccc4;
+
+                background-color: #FBCD50;
+                background: -webkit-linear-gradient(#FBCD50,#FBBD03);
+                background: -moz-linear-gradient(#FBCD50,#FBBD03);
+                background: -o-linear-gradient(#FBCD50,#FBBD03);
+                background: linear-gradient(#FBCD50,#FBBD03);
+                background-size: 100%;
+            }
+
+            .btn span:hover{
+                background-size: 200%;
+            }
+            .content-post{width: 98%;margin: 20px 0;overflow: hidden;padding: 10px}
+            .content-post a{text-align: left;margin-top:5px; margin-bottom: 10px}
+            #post-color{color: #000001}
+            .content-post .read-more{color: #ff0303}
+            .content-post p{color: #848488;font-size: 18px}
+            .content-post .left{text-align: left;}
+            .content-post .right{text-align: right;}
+            .content-left{padding-left:20px;}
+            .right img{width: 440px;}
+            .footer{text-align: center;
+                    margin: 30px 0;
+                    color: #4a4a4a;
+                    font-family: Arial;
+                    font-size: 16px;
+                    font-weight: bold;}
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .footer #copyright .footer_text{
+                color: #4a4a4a;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright{color:#108cef;}
+            .footer #copyright .footer_link_copyright:hover{
+                color: #ffdb4d;
+                text-decoration: none;
+            }
+            @media only screen and (max-width: 1200px) {
+                .wrapper{width: 90%}
+
+            }
+            @media only screen and (max-width: 964px){
+                .content-post a{font-size: 20px}
+                .content-post p{font-size: 14px}
+                input[type=text], input[type=email]{width: 82%}
+            }
+            @media only screen and (max-width: 763px) {
+                .left,.right{width: 100%;text-align: center}
+                .content-left{padding: 0;}
+                .right img{padding: 0;}
+                .content-post a{font-size: 20px}
+                .content-post p{font-size: 14px}
+                .content-post .read-more{font-size: 14px}
+                .content-post .right{text-align: center;}
+                input[type=text], input[type=email]{width: 80%;font-size: 16px;}
+                .btn{font-size: 16px;width: 85%;}
+                .link123{padding-right: 7px;}
+            }
+            @media only screen and (max-width: 480px){
+                .footer{margin: 10px 0 30px}
+                .footer #copyright{font-size: 11px;}
+            }
+            @media only screen and (max-width: 320px) {
+                input[type=text], input[type=email]{width: 80%;font-size: 16px;}
+                .btn{width: 89%;}
+                .link123{padding-right: 0;
+                         padding-bottom: 15px;
+                         background: #222222;
+                         width: 100%;}
+            }
+            /*.content-post p:hover{
+                background-color: #faf8c7;
+            }*/
+
+            .video-holder {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 320px !important;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 60%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+            .row-fluid .span4:nth-of-type(3n+1)
+            {
+                margin-left: 0;
+            }
+        </style>
+        
+
+        <script>
+             jQuery(document).ready(function($) {	
+       
+                   $('.page-content-divider', parent.document).prepend( ' \n\
+               <style> a.current{background-color: #ccc!important;} a.alltab{ color:#333 }  a.alltab:hover { background-color: #ddd!important;} </style> <button style="background: white;    margin-bottom: 91px;    padding: 14px;    color: #000;" class="sasasbajbhsja btn-block content_accordion_btn" >Get Content API</button>' );       
+                   var numItems = jQuery('.content-post').length;
+                               $('.sasasbajbhsja', parent.document).hide();
+                               
+                               
+                         $.ajax({
+                            url: "index.php?option=com_advisorlead&task=getcontent&num="+numItems,
+                            type: "GET",
+                            enctype: 'multipart/form-data',
+                            processData: false,  // tell jQuery not to process the data
+                            contentType: false   // tell jQuery not to set contentType
+                          }).done(function( data ) {         
+                            $('#edit-template-body', parent.document).prepend( data );   
+                             $('.sasasbajbhsja', parent.document).show();
+                              $('.1_save_content_block', parent.document).click(function() {
+                                        bjhdasd();
+                                    
+                             });
+                               $('#limitmax_fbc', parent.document).change(function() {  change_max1(); });   
+                               $('#limitmax_fnc', parent.document).change(function() {  change_max2(); });   
+                              
+                          });
+                          return false;
+
+                          });
+                          
+                     function change_max1(){
+                          var numItems = jQuery('.content-post').length;
+                                        a = $('#limitmax_fbc', parent.document).val();
+                                        $.ajax({
+                                           url: "index.php?option=com_advisorlead&task=getcontent_fbc&limitmax_fbc="+a+"&num="+numItems,
+                                           type: "GET",
+                                           enctype: 'multipart/form-data',
+                                           processData: false,  // tell jQuery not to process the data
+                                           contentType: false   // tell jQuery not to set contentType
+                                         }).done(function( data ) {         
+                                         // alert(data);
+                                            $('#tabs-2', parent.document).empty().html(data);
+                                         });
+                               
+                     }   
+                     
+                     function change_max2(){
+                          var numItems = jQuery('.content-post').length;
+                                        a = $('#limitmax_fbc', parent.document).val();
+                                        $.ajax({
+                                           url: "index.php?option=com_advisorlead&task=getcontent_fnc&limitmax_fnc="+a+"&num="+numItems,
+                                           type: "GET",
+                                           enctype: 'multipart/form-data',
+                                           processData: false,  // tell jQuery not to process the data
+                                           contentType: false   // tell jQuery not to set contentType
+                                         }).done(function( data ) {         
+                                         // alert(data);
+                                            $('#tabs-4', parent.document).empty().html(data);
+                                         });
+                               
+                     }   
+                           
+                     function bjhdasd(){
+                         
+                               
+                                $numb =  $('#numblockse', parent.document).val();
+                                $numc =  $('#numartical', parent.document).val();
+                                $tit  =  $('#art-tit'+$numc, parent.document ).html();
+                                $img  =  $('#art-image'+$numc, parent.document ).html();                                 
+                                $link =  $('#art-link'+$numc, parent.document ).html();
+                                $des  =  $('#art-description'+$numc, parent.document ).html()+' <a class="read-more" href="'+$link+'">Read more</a>';
+                                $ntit = 'post-title-'+$numb;
+                                $ndes = "expert-"+$numb;
+                                $nimg = "post-image-"+$numb;
+                                $nimgl= "post-image-"+$numb+"-link";
+                                    $("[data-lb-id='"+$ntit+"']").empty().html( $tit );
+                                    $("[data-lb-id='"+$ntit+"']").attr("href", $link);
+                                    $("[data-lb-id='"+$ndes+"']").empty().html( $des );
+                                    $("[data-lb-id='"+$nimg+"']").attr("src", $img);
+                                    $("[data-lb-id='"+$nimgl+"']").attr("href", $link);
+                             
+                                if (parent.MITS.page_id != 0){
+                                    
+                                  
+                                    parent.MITS.changeble_elements[$ndes]['text']= $des;
+                                    parent.MITS.changeble_elements[$ndes]['default_text']= $des;                                  
+                                    parent.MITS.changeble_elements[$ntit]['text']= $tit;
+                                    parent.MITS.changeble_elements[$ntit]['default_text']= $tit;
+                                    parent.MITS.changeble_elements[$ntit]['href']= $link;                                 
+                                    parent.MITS.changeble_elements[$nimg]['default_url']= $img;
+                                    parent.MITS.changeble_elements[$nimg]['url']= $img;
+                                    parent.MITS.changeble_elements[$nimgl]['href']= $link;
+                                    // chang if user data 
+                                      parent.MITS.edit_data[$ndes]['text']= $des;
+                                      parent.MITS.edit_data[$ntit]['text']= $tit;
+                                      parent.MITS.edit_data[$nimg]['default_url']= $img;
+                                      
+                               }else{
+                                    //     alert('Please save page First, after use this function again ');
+                                    //     TestObj = parent.MITS.element_data;alert(TestObj);
+                                    parent.MITS.changeble_elements[$ntit]['text'] = $tit; 
+                                    parent.MITS.changeble_elements[$ntit]['href']= $link;
+                                    parent.MITS.changeble_elements[$ndes]['text'] = $des; 
+                                    parent.MITS.changeble_elements[$nimg]['default_url']= $img;
+                                    parent.MITS.changeble_elements[$nimg]['url']= $img;
+                                    parent.MITS.changeble_elements[$nimgl]['href']= $link;
+                                    //alert( );
+                               }
+                     }     
+                    $(document).ready(function() {                     
+                      $('.sasasbajbhsja', parent.document ).click(function() {
+                           $('#nsjdnasjkndkjas', parent.document ).fadeIn();
+                           $('#redactor_modal_overlay', parent.document ).fadeIn();
+                      });                 
+                  });
+             
+</script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header-menu">
+                    <a class="home-img" href="#" data-lb-name="Home" data-lb-comment="Recommended image width: 60px" data-lb="editable-link editable-optional link-only" data-lb-id="home">
+                        <img src="{LOCAL_URL}/home-bottom.png" data-lb-comment="Recommended image width: 60px" data-lb-name="Home Image" data-lb-id="home-link-img" alt="home-img" data-lb="editable-image max-image-size=57" >
+                    </a>
+                    <div class="home-link" >
+                        <div class="hometop">
+                            <a data-lb-id="home-link" class="header_text" data-lb="editable-text editable-optional" data-lb-name="Home-Link">Home Link</a>
+                        </div>
+                        <div class="link123">
+                            <a data-lb-id="link1" class="header_text" data-lb="editable-link editable-optional" data-lb-name="Link1">Link 1</a>
+                            <a data-lb-id="link2" class="header_text" data-lb="editable-link editable-optional" data-lb-name="link2">Link 2</a>
+                            <a data-lb-id="link3" class="header_text" data-lb="editable-link editable-optional" data-lb-name="Link3">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link editable-optional link-only" data-lb-id="Logo-link"><img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image max-image-size=188"></a>
+                </div>
+            </div>
+            <div class="content host-name">
+                <div class="left">
+                    <section data-lb-id="video" class="video-holder flex-video" data-lb="editable-video editable-optional video-width=475 video-height=323" data-lb-name="Video">
+                        <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                            <img data-lb-id="video-image" data-lb="editable-image max-image-size=475" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                        </a>
+                    </section>
+                </div>
+                <div class="right">
+                    <div class="setup-account">
+                        <div id="blue-top"></div>
+                        <form action="#" data-lb-name="Opt-in Form Integration" data-lb="editable-opt-in-form" method="post" data-lb-id="opt-in">
+                            <h1 class="title" data-lb-name="Title Color" data-lb="editable-text" data-lb-id="title">Setup Your Account Today!</h1>
+                            <input onblur="if ($(this).val() == '') {
+                                        $(this).val($(this).attr('title'));
+                                    }" title="Enter Your First Name Here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter Your First Name Here..." data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                        $(this).val('')
+                                    }" type="text" id="name" name="name" style="display:none">
+                            <input onblur="if ($(this).val() == '') {
+                                        $(this).val($(this).attr('title'));
+                                    }" title="Enter a Valid Email Here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a Valid Email Here..." data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                        $(this).val('')
+                                    }" type="text" id="email" name="email">
+                            <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                        jQuery(this).val('')
+                                    }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                                        jQuery(this).val(jQuery(this).attr('title'));
+                                    }" style="cursor: pointer; display: none;">
+                            <button type="submit" class="btn">
+                                <span data-lb-name="Submit Button" data-lb="editable-button" data-lb-id="submit-button">SETUP YOUR ACCOUNT</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-post">
+                <div class="content-post clear" data-lb-name="Listing Post 1" data-lb-id="listing-post-1" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 1" data-lb="editable-link" data-lb-id="post-title-1">Blog Post Title 1</a>
+                            <p class="expert" data-lb-name="Blog Post Text 1" data-lb="editable-rich-text" data-lb-id="expert-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="right">
+                        <a href="#" data-lb-id="post-image-1-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 1">
+                            <img data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 1" data-lb-id="post-image-1" data-lb="editable-image max-image-width=440 max-image-height=228" src="{LOCAL_URL}/blog-5.png">
+                        </a>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 2" data-lb-id="listing-post-2" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 2" data-lb="editable-link" data-lb-id="post-title-2">Blog Post Title 2</a>
+                            <p class="expert" data-lb-name="Blog Post Text 2" data-lb="editable-rich-text" data-lb-id="expert-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="right"> 
+                        <a href="#" data-lb-id="post-image-2-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 2">
+                            <img data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 2" data-lb-id="post-image-2" data-lb="editable-image max-image-width=440 max-image-height=228" src="{LOCAL_URL}/blog-4.png">
+                        </a>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 3" data-lb-id="listing-post-3" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 3" data-lb="editable-link" data-lb-id="post-title-3">Blog Post Title 3</a>
+                            <p class="expert" data-lb-name="Blog Post Text 3" data-lb="editable-rich-text" data-lb-id="expert-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="right">
+                        <a href="#" data-lb-id="post-image-3-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 3">
+                            <img data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 3" data-lb-id="post-image-3" data-lb="editable-image max-image-width=440 max-image-height=228" src="{LOCAL_URL}/blog-3.png">
+                        </a>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 4" data-lb-id="listing-post-4" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 4" data-lb="editable-link" data-lb-id="post-title-4">Blog Post Title 4</a>
+                            <p class="expert" data-lb-name="Blog Post Text 4" data-lb="editable-rich-text" data-lb-id="expert-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="right">
+                        <a href="#" data-lb-id="post-image-4-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 4">
+                            <img data-lb-comment="Recommended image size: 440px x 228px" data-lb-name="Post Image 4" data-lb-id="post-image-4" data-lb="editable-image max-image-width=440 max-image-height=228" src="{LOCAL_URL}/blog-2a.png">
+                        </a>
+                    </div>   
+                </div>
+                <div class="footer" >
+                    <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

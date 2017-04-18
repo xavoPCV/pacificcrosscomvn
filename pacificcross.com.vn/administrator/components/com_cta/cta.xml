@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_cta</name>
+	<author>Advisorproducts</author>
+	<creationDate>Nov 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Iexodus. All rights reserved.</copyright>
+	<authorEmail>hungtt@iexodus.com</authorEmail>
+	<authorUrl>www.iexodus.com</authorUrl>
+	<version>1.6</version>
+	<description>Inbound-Marketing Component</description>
+	<install>
+    	<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+  		</sql>
+    </install>
+    <uninstall>
+    	<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+  		</sql>
+   </uninstall>
+   <config>
+		<fields name="params">
+			<fieldset name="params">
+				<field name="SQL_SERVER_HOST" default="192.168.77.5"></field>
+				<field name="SQL_SERVER_DATABASE" default="Advisorsites"></field>
+				<field name="SQL_SERVER_USERNAME" default="jwebuser"></field>
+				<field name="SQL_SERVER_PASSWORD" default="J0om1)Smd!"></field>
+				<field name="VIDEO_BASE_URL" default="http://backoffice1.advisorsites.com/CTAvideos"></field>
+				<field name="IMG_BASE_URL" default="http://backoffice1.advisorsites.com/CTAvideos/ctaimage"></field>
+				<field name="IMG_VIDEO_BASE_URL" default="http://backoffice1.advisorsites.com/CTAvideos/videoimage"></field>
+				<field name="constant_contact_secret" default="pjPjkThcdY3mHczREJgTpTdn" />
+				<field name="constant_contact_token" default="3fpfy8g92zydfmr7g7p9rz8c" />
+			</fieldset>
+		</fields>
+	</config>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>cta.php</filename>
+		<filename>controller.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>libraries</folder>
+		<folder>logo</folder>
+		<folder>models</folder>
+		<folder>player</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu img="class:weblinks">COM_CTA</menu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>cta.php</filename>
+			<folder>export_excel</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_cta.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

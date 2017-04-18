@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Textarea</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Textarea field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="textarea_start" type="textarea" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_TEXTAREA_START" description="COM_FLEXIMPORT_FIELD_TEXTAREA_START_DESC" />
+				<field name="textarea_end" type="textarea" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_TEXTAREA_END" description="COM_FLEXIMPORT_FIELD_TEXTAREA_END_DESC" />
+				<field name="textarea_html" type="list" default="0" label="COM_FLEXIMPORT_FIELD_TEXTAREA_HTML" description="COM_FLEXIMPORT_FIELD_TEXTAREA_HTML_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="textarea_convert_return" type="list" default="1" label="COM_FLEXIMPORT_FIELD_TEXTAREA_CONVERT_RETURN" description="COM_FLEXIMPORT_FIELD_TEXTAREA_CONVERT_RETURN_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

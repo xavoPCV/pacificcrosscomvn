@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>mod_advisorlead_popup</name>
+	<description>mod_advisorlead_popup</description>
+	<version>1.0</version>
+	<author>HT</author>
+	<creationDate>Dec 2015</creationDate>
+	<files>
+		<filename module="mod_advisorlead_popup">mod_advisorlead_popup.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_advisorlead_popup.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="configuration" label="Options">
+				<field
+					name="page_id"
+					type="sql"
+					label="Select Popup"
+					query="SELECT `id`, `name` FROM #__advisorlead_cta" key_field="id" value_field="name">
+				</field>
+				<field name="myimage" type="media" label="Image" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

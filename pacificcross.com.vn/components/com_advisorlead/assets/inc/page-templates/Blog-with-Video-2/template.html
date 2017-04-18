@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#000010; Title text color" name="mp-customizable-color">
+        <meta content="#000020; Subtitle text color" name="mp-customizable-color">
+        <meta content="#000001; Title 1 color" name="mp-customizable-color">
+        <meta content="#000002; Title 2 color" name="mp-customizable-color">
+        <meta content="#000003; Title 3 color" name="mp-customizable-color">
+
+         <meta content="#f7f7f7; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#e8e8e8; Submit Button Color End" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;}
+            img{max-width: 100%}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+            button.submit{ margin:0 auto;font-size:14px; padding:15px 10px;color:#fffff2  ;}
+            .content-post{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);-webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f7f7f7),color-stop(1,#e8e8e8));background:-moz-linear-gradient(center top,#f7f7f7 5%,#e8e8e8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',endColorstr='#e8e8e8');background-color:#f7f7f7;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:4px;display:inline-block;font-weight:bold;text-decoration:none;position:relative}
+            
+
+            .wrapper{max-width: 950px; margin:0 auto;}
+            .container {width: 100%; margin:0 auto;}
+            .left,.right{width: 50%;float: left; text-align: center;}
+            .clear {clear: both;}
+            .logo{padding: 25px 0}
+            .title{color: #000010}
+            .subtitle{color: #000020}
+            .top-content h1{font-size: 26px}
+            .top-content h3{margin:0;}
+            .content-post{width: 100%;margin: 20px 0;overflow: hidden;padding: 10px}
+            .content-post h3{text-align: left;margin-top:5px;font-size: 26px;margin-bottom: 10px}
+            #post-1{color: #000001}
+            #post-2{color: #000002}
+            #post-3{color: #000003}
+            .content-post a{color: red}
+            .content-post p{color: #cccccd;font-size: 18px}
+            .content-post .left{text-align: left;}
+            .content-post .right{text-align: right;}
+            .content-left{padding-left:20px;}
+
+            @media only screen and (max-width: 1200px) {
+                .wrapper{width: 90%}
+
+            }
+            @media only screen and (max-width: 964px){
+                .content-post p{color: #cccccd;font-size: 14px}
+            }
+            @media only screen and (max-width: 767px) {
+                .left,.right{width: 100%;text-align: center}
+                 .right img{padding: 20px; }
+                .content-post p{color: #cccccd;font-size: 16px} 
+                .content-post .right{text-align: center;}  
+
+            }
+            @media only screen and (max-width: 420px){
+
+            }
+             .video-holder {
+                width: 680px;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+            }
+               @media only screen and (max-width: 964px){
+              
+                .video-holder {
+                    width: 90%;   
+                }
+            }
+        </style>
+        
+       
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo">
+                    <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link link-only" data-lb-id="Logo-link"><img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image max-image-size=188"></a>
+                </div>
+            </div>
+            <div class="top-content">
+                <div class="left">
+                    <section data-lb-id="video" class="video-holder" data-lb="editable-video editable-optional video-width=680 video-height=460" data-lb-name="Video">
+                <img class="tablet" src="{LOCAL_URL}/tablet-big.png"/>
+            </section>
+                </div>
+                <div class="right">
+                    <h1 class="title" data-lb-name="Title Color" data-lb="editable-text" data-lb-id="title">Setup Your Account Today!</h1>
+                    <h3 class="subtitle" data-lb-name="Subtittle Color" data-lb="editable-text" data-lb-id="subtitle">Sub headline text here</h3>
+                </div>
+            </div>
+            <div class="listing-post">
+                <div class="content-post clear">
+                     <div class="left">
+                        <div class="content-left">
+                             <h3 class="post-title" id="post-1" data-lb-name="Post Title Color 1" data-lb="editable-text" data-lb-id="post-title-1">Post Text Title</h3>
+                             <p class="expert" data-lb-name="Expert Color 1" data-lb="editable-rich-text" data-lb-id="expert-1">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                             </p>
+                         </div>
+                     </div> 
+
+                     <div class="right">
+                         <img data-lb-comment="Recommended image width: 440px" data-lb-name="Post Image 1" data-lb-id="post-image-1" data-lb="editable-image max-image-size=440" src="{LOCAL_URL}/blog-1.png">
+                     </div>   
+                </div>
+                <div class="content-post clear">
+                     <div class="left">
+                        <div class="content-left">
+                             <h3 class="post-title" id="post-2" data-lb-name="Post Title Color 2" data-lb="editable-text" data-lb-id="post-title-2">Post Text Title</h3>
+                             <p class="expert" data-lb-name="Expert Color 2" data-lb="editable-rich-text" data-lb-id="expert-2">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                             </p>
+                         </div>
+                     </div> 
+
+                     <div class="right">
+                         <img data-lb-comment="Recommended image width: 440px" data-lb-name="Post Image 2" data-lb-id="post-image-2" data-lb="editable-image max-image-size=440" src="{LOCAL_URL}/blog-1.png">
+                     </div>   
+                </div>
+                <div class="content-post clear">
+                     <div class="left">
+                        <div class="content-left">
+                             <h3 class="post-title" id="post-3" data-lb-name="Post Title Color 3" data-lb="editable-text" data-lb-id="post-title-3">Post Text Title</h3>
+                             <p class="expert" data-lb-name="Expert Color 3" data-lb="editable-rich-text" data-lb-id="expert-3">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                             </p>
+                         </div>
+                     </div> 
+
+                     <div class="right">
+                         <img data-lb-comment="Recommended image width: 440px" data-lb-name="Post Image 3" data-lb-id="post-image-3" data-lb="editable-image max-image-size=440" src="{LOCAL_URL}/blog-1.png">
+                     </div>   
+                </div>
+            </div>
+        </div>
+
+    </body>

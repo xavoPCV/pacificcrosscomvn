@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Fleximedia</name>
+	<author>NetAssoPro</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>(C) 2008-2014 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Fleximedia field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="localisation_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_LOCALISATION_USE" description="COM_FLEXIMPORT_FIELD_LOCALISATION_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="localisation" type="list" default="local" label="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION" description="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_DESC">
+					<option value="local">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_LOCAL</option>
+					<option value="ftp">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_FTP</option>
+					<option value="web">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_WEB</option>
+				</field>
+				<field name="address_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_ADDRESS_USE" description="COM_FLEXIMPORT_FIELD_ADDRESS_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="address" type="text" size="40" label="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS" description="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS_DESC" />
+				<field name="server_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_SERVER_USE" description="COM_FLEXIMPORT_FIELD_SERVER_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="server" type="text" size="40" label="COM_FLEXIMPORT_TYPE_IMPORT_SERVER" description="COM_FLEXIMPORT_TYPE_IMPORT_SERVER_DESC" />
+				<field name="port" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_PORT" description="COM_FLEXIMPORT_TYPE_IMPORT_PORT_DESC" />
+				<field name="user_use" type="list" default="0" label="COM_FLEXIMPORT_FIELD_USER_USE" description="COM_FLEXIMPORT_FIELD_USER_USE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="username" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME" description="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME_DESC" />
+				<field name="password" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD" description="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD_DESC" />
+				<field name="fleximedia_prefix" type="text" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_PREFIX" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_PREFIX_DESC" />
+				<field name="fleximedia_suffix" type="text" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_SUFFIX" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_SUFFIX_DESC" />
+
+				<field name="fleximedia_exist" type="list" default="1" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_EXIST" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_EXIST_DESC">
+					<option value="1">COM_FLEXIMPORT_FIELD_FLEXIMEDIA_USE</option>
+					<option value="2">COM_FLEXIMPORT_FIELD_FLEXIMEDIA_REPLACE</option>
+					<option value="3">COM_FLEXIMPORT_FIELD_FLEXIMEDIA_NEW</option>
+				</field>
+				<field name="fleximedia_cat" type="sql" key_field="id" value_field="name"  query="select id,name from #__fleximedia_categories where published=1 order by name" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_CAT" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_CAT_DESC" required="true" />
+				<field name="fleximedia_type" type="sql" key_field="id" value_field="name"  query="select id,name from #__fleximedia_types where published=1 and media=1 order by name" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_TYPE" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_TYPE_DESC" required="true" />
+				<field name="fleximedia_noexist" type="list" default="0" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_NOEXIST" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_NOEXIST_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="fleximedia_default" type="sql" key_field="id" value_field="name"  query="select id,name from #__fleximedia where published=1 and media=1 order by name" label="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_DEFAULT" description="COM_FLEXIMPORT_FIELD_FLEXIMEDIA_DEFAULT_DESC">
+					<option value=""></option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

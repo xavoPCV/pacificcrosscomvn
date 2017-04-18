@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details" addfieldpath="/administrator/components/com_fleximport/models/fields">
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"	readonly="true" />
+		<field name="name" type="text" label="COM_FLEXIMPORT_TYPE" description="COM_FLEXIMPORT_TYPE_DESC" size="40" class="inputbox" required="true" default="" />
+		<field name="published" type="list"	label="JSTATUS" description="COM_FLEXIMPORT_PUBLISHED_DESC" class="inputbox" size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field name="flexi_type_id" type="fiflexitype" label="COM_FLEXIMPORT_FLEXI_TYPE" description ="COM_FLEXIMPORT_FLEXI_TYPE_DESC" required="true" />
+		<field name="import_type" type="fiplugins" label="COM_FLEXIMPORT_IMPORT_TYPE" description ="COM_FLEXIMPORT_IMPORT_TYPE_DESC" required="true" folder="types" default="csv" />
+		<field name="description" type="textarea" label="COM_FLEXIMPORT_DESCRIPTION" description="COM_FLEXIMPORT_DESCRIPTION_DESC" filter="safehtml" />
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+	</fieldset>
+	<fields name="params">
+		<fieldset name="standard" label="COM_FLEXIMPORT_STANDARD_TYPES_PROPERTIES">
+			<field name="localisation" type="list" default="local" label="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION" description="COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_DESC">
+				<option value="local">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_LOCAL</option>
+				<option value="ftp">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_FTP</option>
+				<option value="web">COM_FLEXIMPORT_TYPE_IMPORT_LOCALISATION_WEB</option>
+			</field>
+			<field name="filename" type="text" default="fleximport" label="COM_FLEXIMPORT_TYPE_IMPORT_FILENAME" description="COM_FLEXIMPORT_TYPE_IMPORT_FILENAME_DESC" />
+			<field name="filter" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_FILTER" description="COM_FLEXIMPORT_TYPE_IMPORT_FILTER_DESC" />
+			<field name="address" type="text" size="40" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS" description="COM_FLEXIMPORT_TYPE_IMPORT_ADDRESS_DESC" />
+			<field name="server" type="text" size="40" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_SERVER" description="COM_FLEXIMPORT_TYPE_IMPORT_SERVER_DESC" />
+			<field name="username" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME" description="COM_FLEXIMPORT_TYPE_IMPORT_USERNAME_DESC" />
+			<field name="password" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD" description="COM_FLEXIMPORT_TYPE_IMPORT_PASSWORD_DESC" />
+			<field name="port" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_PORT" description="COM_FLEXIMPORT_TYPE_IMPORT_PORT_DESC" />
+			<field name="delete" type="list" default="1" label="COM_FLEXIMPORT_TYPE_DELETE" description="COM_FLEXIMPORT_TYPE_DELETE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="archive" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_ARCHIVE" description="COM_FLEXIMPORT_TYPE_IMPORT_ARCHIVE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="archive_path" type="text" size="40" default="images/fleximport/archives/" label="COM_FLEXIMPORT_TYPE_IMPORT_ARCHIVE_PATH" description="COM_FLEXIMPORT_TYPE_IMPORT_ARCHIVE_PATH_DESC" />
+			<field name="temp_path" type="text" size="40" default="tmp/fleximport/" label="COM_FLEXIMPORT_TYPE_IMPORT_TEMP_PATH" description="COM_FLEXIMPORT_TYPE_IMPORT_TEMP_PATH_DESC" />
+			<field name="log_path" type="text" size="40" default="images/fleximport/logs/" label="COM_FLEXIMPORT_TYPE_IMPORT_LOG_PATH" description="COM_FLEXIMPORT_TYPE_IMPORT_LOG_PATH_DESC" />
+			<field name="log_email" type="text" size="40" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_LOG_EMAIL" description="COM_FLEXIMPORT_TYPE_IMPORT_LOG_EMAIL_DESC" />
+			<field type="spacer" label="COM_FLEXIMPORT_TYPE_IMPORT_PARAMS" />
+			<field name="access" type="list" default="0" label="COM_FLEXIMPORT_TYPE_IMPORT_ACCESS" description="COM_FLEXIMPORT_TYPE_IMPORT_ACCESS_DESC">
+				<option value="0">Public</option>
+				<option value="1">Registered</option>
+				<option value="2">Special</option>
+			</field>
+			<field name="allow_add" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_ADD_ALLOW" description="COM_FLEXIMPORT_TYPE_IMPORT_ADD_ALLOW_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="allow_update" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_UPDATE_ALLOW" description="COM_FLEXIMPORT_TYPE_IMPORT_UPDATE_ALLOW_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="allow_delete" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_DELETE_ALLOW" description="COM_FLEXIMPORT_TYPE_IMPORT_DELETE_ALLOW_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="field_linked_id" type="list" default="1" label="COM_FLEXIMPORT_TYPE_IMPORT_LINKED_ID" description="COM_FLEXIMPORT_TYPE_IMPORT_LINKED_ID_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="field_linked" type="fifields" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_LINKED" description="COM_FLEXIMPORT_TYPE_IMPORT_LINKED_DESC" />
+			<field name="field_action" type="fifields" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_ACTION" description="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_DESC" />
+			<field name="field_action_value_add" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_ADD" description="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_ADD_DESC" />
+			<field name="field_action_value_update" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_UPDATE" description="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_UPDATE_DESC" />
+			<field name="field_action_value_delete" type="text" default="" label="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_DELETE" description="COM_FLEXIMPORT_TYPE_IMPORT_ACTION_VALUE_DELETE_DESC" />
+			<field name="field_delete_action" type="list" default="0" label="COM_FLEXIMPORT_TYPE_IMPORT_DELETE_ACTION" description="COM_FLEXIMPORT_TYPE_IMPORT_DELETE_ACTION_DESC">
+				<option value="0">COM_FLEXIMPORT_TYPE_IMPORT_STATE_UNPUBLISHED</option>
+				<option value="-1">COM_FLEXIMPORT_TYPE_IMPORT_STATE_ARCHIVED</option>
+				<option value="1">COM_FLEXIMPORT_TYPE_IMPORT_STATE_DELETE</option>
+			</field>
+			<field type="spacer" label="COM_FLEXIMPORT_TYPE_EXPORT_PARAMS" />
+			<field name="export_prefix" type="text" default="" label="COM_FLEXIMPORT_TYPE_EXPORT_PREFIX" description="COM_FLEXIMPORT_TYPE_EXPORT_PREFIX_DESC" />
+			<field name="export_suffix" type="text" default="" label="COM_FLEXIMPORT_TYPE_EXPORT_SUFFIX" description="COM_FLEXIMPORT_TYPE_EXPORT_SUFFIX_DESC" />
+		</fieldset>
+	</fields>
+</form>

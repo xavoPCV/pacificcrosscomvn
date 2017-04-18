@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.6" group="flexicontent_fields" method="upgrade">
+	<name>FLEXIcontent - CORE property</name>
+	<author>ggppdk</author>
+	<creationDate>July 2012</creationDate>
+	<copyright>Copyright (C) 2012 ggppdk</copyright>
+	<license>GNU/GPL v2</license>
+	<authorEmail>ggppdk@...</authorEmail>
+	<authorUrl>www.flexicontent.org</authorUrl>
+	<version>1.0</version>
+	<description>Item Form CORE property placer Plugin for FLEXIcontent. This field is used to define the place that the CORE property will appear in Item Form. This is done by ordering it in fields manager, while Content Type filter is enabled</description>
+	<files>
+		<filename plugin="coreprops">coreprops.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+	<fields name="attribs">
+		
+		<!--fieldset name="standard" repeat="1">
+		</fieldset-->
+		
+		<fieldset name="group-coreprops-editing" repeat="1" icon_class="icon-pencil" label="FLEXI_FIELD_EDITING" addfieldpath="/administrator/components/com_flexicontent/elements">
+			
+			<field name="" type="separator" default="Custom place (in frontend Item Form) this selected CORE property via field manager ordering" level="level1"/>
+			<field name="" type="separator" default="FLEXI_CORE_PROPS_DESCRIPTION" level="level3"/>
+			
+			<field name="props_type" type="groupedlist" default="" label="FLEXI_COREPRPS_PROPRI" description="FLEXI_COREPRPS_PROPRI_DESC">
+				<group label="FLEXI_BASIC_SINGLE_PROPS">
+					<option value="alias"             >FLEXI_ALIAS</option>
+					<option value="lang"              >FLEXI_COREPROPS_LANGUAGE</option>
+					<option value="language"          >FLEXI_COREPROPS_LANGUAGE_N_ASSOCS</option>
+					<option value="category"          >FLEXI_COREPROPS_CATEGORY_MAIN</option>
+					<option value="disable_comments"  >FLEXI_COREPROPS_DISABLE_COMMENTS</option>
+					<option value="notify_subscribers">FLEXI_COREPROPS_NOTIFY_SUBSCRIBERS</option>
+					<option value="captcha"           >FLEXI_COREPROPS_CAPTCHA</option>
+				</group>
+				<group label="FLEXI_COREPROPS_PUBLISHING_PROPS">
+					<option value="timezone_info"     >FLEXI_COREPROPS_TIMEZONE</option>
+					<option value="created_by_alias"  >FLEXI_COREPROPS_CREATE_BY_ALIAS</option>
+					<option value="publish_up"        >FLEXI_COREPROPS_PUBLISH_UP</option>
+					<option value="publish_down"      >FLEXI_COREPROPS_PUBLISH_DOWN</option>
+					<option value="access"            >FLEXI_COREPROPS_VIEW_ACCESS</option>
+				</group>
+				<group label="FLEXI_COREPROPS_PROP_GROUPS">
+					<option value="perms"             >FLEXI_PERMISSIONS</option>
+					<option value="metadata"          >FLEXI_COREPROPS_META</option>
+					<option value="seoconf"           >FLEXI_COREPROPS_SEO</option>
+					<option value="display_params"    >FLEXI_COREPROPS_DISP_PARAMS</option>
+					<option value="layout_selection"  >FLEXI_COREPROPS_LAYOUT_SELECT</option>
+					<option value="layout_params"     >FLEXI_COREPROPS_LAYOUT_PARAMS</option>
+				</group>
+			</field>
+			
+			<field name="" type="separator" default="NOTE, fields: language, alias can also be displayed in frontend. For displaying 'publish_up', 'publish_down' please use date field in appropriate mode" level="level4"/>
+			
+		</fieldset>
+		<fieldset name="group-coreprops-viewing" repeat="1" icon_class="icon-eye-open" label="FLEXI_FIELD_VIEWING" addfieldpath="/administrator/components/com_flexicontent/elements">
+			
+			<field name="" type="separator" default="FLEXI_FIELD_LABEL_AND_ACCESS" level="level1" />
+			
+			<field name="display_label" type="radio" default="1" label="FLEXI_FIELD_DISPLAY_LABEL" description="FLEXI_FIELD_DISPLAY_LABEL_DESC" class="btn-group btn-group-yesno">
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="show_acc_msg" type="multilist" subtype="radio" default="0" label="FLEXI_FIELD_SHOW_NOACCESS" description="FLEXI_FIELD_SHOW_NOACCESS_DESC" toggle_related="1" class="btn-group btn-group-yesno">
+				<option value="0" show_list="" hide_list="field-acc-msg">FLEXI_NO</option>
+				<option value="1" show_list="field-acc-msg" hide_list="">FLEXI_YES</option>
+			</field>
+			<field name="no_acc_msg" type="text" default="" label="FLEXI_FIELD_NOACCESS_MSG" description="FLEXI_FIELD_NOACCESS_MSG_DESC" depend_class="field-acc-msg"/>
+			
+		</fieldset>
+		<fieldset name="group-coreprops-filtering" repeat="1" icon_class="icon-filter" label="FLEXI_FILTERING_CONF" description="FLEXI_FILTERING_CONF_DESC" addfieldpath="/administrator/components/com_flexicontent/elements">
+			
+			<field name="" type="separator" default="FLEXI_FIELD_VALUES" level="level1" />
+			
+			<field name="" type="separator" default="FLEXI_ADVANCED_SEARCH_VIEW" level="level2" />
+			<field name="display_label_filter_s" type="radio" default="2" label="FLEXI_LABEL_FILTER_WITH_OVERRIDE" description="FLEXI_LABEL_FILTER_WITH_OVERRIDE_DESC" class="btn-group btn-group-yesno">
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_OUTSIDE_FILTER</option>
+				<option value="2">FLEXI_INSIDE_FILTER</option>
+			</field>
+			<field name="display_filter_as_s" type="multilist" default="0" label="FLEXI_DISPLAY_FILTER_AS" toggle_related="1" description="FLEXI_DISPLAY_FILTER_AS_DESC">
+				<option value="0" show_list="filt-drop-down-s" hide_list="filt-as-slider-s">FLEXI_DISPLAY_AS_DROP_DOWN</option>
+				<option value="1" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_TEXT_SEARCH</option>
+				<option value="7" show_list="filt-as-slider-s" hide_list="filt-drop-down-s">FLEXI_DISPLAY_AS_SLIDER</option>
+				<option value="2" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_DROP_DOWN_RANGE</option>
+				<option value="3" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_TEXT_SEARCH_RANGE</option>
+				<option value="8" show_list="filt-as-slider-s" hide_list="filt-drop-down-s">FLEXI_DISPLAY_AS_SLIDER_RANGE</option>
+				<option value="4" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_RADIO</option>
+				<option value="5" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_CHECKBOXES</option>
+				<option value="6" show_list="" hide_list="filt-drop-down-s,filt-as-slider-s">FLEXI_DISPLAY_AS_TAG_LIKE</option>
+			</field>
+			
+			<field name="faceted_filter_s" type="multilist" subtype="list" default="2" label="FLEXI_FILTER_FACETED_FILTER_USING" description="FLEXI_FILTER_FACETED_FILTER_USING_DESC" toggle_related="1">
+				<option value="0" show_list="" hide_list="active-filts-mode-s">FLEXI_FS_NONE</option>
+				<option value="1" show_list="" hide_list="active-filts-mode-s">FLEXI_FS_PAGE_CONFIGURATION</option>
+				<option value="2" show_list="active-filts-mode-s" hide_list="">FLEXI_FS_ACTIVE_FILTERS</option>
+			</field>
+			
+			<field name="" type="separator" default="FLEXI_FACETED_BEHAVIOR_ACTIVE_FILTERS" level="level3" depend_class="active-filts-mode-s"/>
+			<field name="show_matching_items_s" type="radio" default="1" label="FLEXI_FILTER_SHOW_MATCHING_ITEMS" description="FLEXI_FILTER_SHOW_MATCHING_ITEMS_DESC" depend_class="active-filts-mode-s" class="btn-group group-fcinfo">
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="hide_disabled_values_s" type="radio" default="0" label="FLEXI_FILTER_UNAVAILABLE_VALUES" description="FLEXI_FILTER_UNAVAILABLE_VALUES_DESC" depend_class="active-filts-mode-s" class="btn-group group-fcinfo">
+				<option value="0">FLEXI_DISABLE</option>
+				<option value="1">FLEXI_HIDE</option>
+			</field>
+			
+			<field name="" type="separator" default="FLEXI_DISPLAY_AS_DROP_DOWN" level="level3" depend_class="filt-drop-down" />
+			<field name="filter_usefirstoption_s" type="multilist" subtype="radio" default="0" label="FLEXI_FIELD_CUSTOMIZE_FILTER_FIRST_OPTION" toggle_related="1" description="FLEXI_FIELD_CUSTOMIZE_FILTER_FIRST_OPTION_DESC" depend_class="filt-drop-down-s" class="btn-group btn-group-yesno">
+				<option value="0" show_list="" hide_list="displaydefauttext-mode-s">FLEXI_NO</option>
+				<option value="1" show_list="displaydefauttext-mode-s" hide_list="">FLEXI_YES</option>
+			</field>
+			<field name="filter_firstoptiontext_s" type="text" default="FLEXI_ALL" label="FLEXI_FILTER_FIRST_OPTION_TEXT" depend_class="filt-drop-down-s displaydefauttext-mode-s" description="FLEXI_FILTER_FIRST_OPTION_TEXT_DESC" />
+			
+			<field name="" type="separator" default="FLEXI_DISPLAY_AS_SLIDER" level="level3" depend_class="filt-as-slider-s" />
+			<field name="slider_display_config_s" type="multilist" subtype="radio" toggle_related="1" default="1" label="FLEXI_FILTER_SLIDER_DATA" description="FLEXI_FILTER_SLIDER_DATA_DESC" depend_class="filt-as-slider-s" class="btn-group group-fcmethod fcoffinfo">
+				<option value="1" show_list="" hide_list="filt-as-slider-custom-s">Found values</option>
+				<option value="2" show_list="filt-as-slider-custom-s" hide_list="">Custom values</option>
+			</field>
+			<field name="slider_custom_range_s"  type="textarea" default="'min': '', '25%': 500, '50%': 2000, '75%': 10000, 'max': ''" label="FLEXI_FILTER_SLIDER_CUSTOM_VALUES" description="FLEXI_FILTER_SLIDER_CUSTOM_VALUES_DESC" depend_class="filt-as-slider-s filt-as-slider-custom-s"/>
+			<field name="slider_custom_labels_s" type="textarea" default="label_any ## label_500 ## label_2000 ## label_10000 ## label_any" label="FLEXI_FILTER_SLIDER_CUSTOM_LABELS" description="FLEXI_FILTER_SLIDER_CUSTOM_LABELS_DESC" depend_class="filt-as-slider-s filt-as-slider-custom-s"/>
+			<field name="slider_custom_labels_jtext_s" type="radio" default="0" label="FLEXI_FILTER_SLIDER_CUSTOM_LABELS_ARE_LANG_STRING" description="FLEXI_FILTER_SLIDER_CUSTOM_LABELS_ARE_LANG_STRING_DESC" depend_class="filt-as-slider-s filt-as-slider-custom-s" class="btn-group btn-group-yesno">
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+
+		</fieldset>
+		
+	</fields>
+	</config>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_flexicontent_fields_coreprops.ini</language>
+	</languages>
+	
+</extension>

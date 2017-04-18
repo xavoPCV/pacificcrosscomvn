@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#0040f9; Headline text color" name="mp-customizable-color">
+        <meta content="#0040f8; Subheadline text color" name="mp-customizable-color">
+        <meta content="#f9fbfd; Box Background" name="mp-customizable-color">
+        <meta content="#015D88; Box Headline" name="mp-customizable-color">
+        <meta content="#585858; Box Content" name="mp-customizable-color">
+        <meta content="#FBCD50; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#FBBD03; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#15b800; Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#bd7f00; Download Button Text" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;}
+            img{max-width: 100%}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+
+            button.submit{width:310px;margin:10px auto;font-size:14px;padding:15px 10px;color:#fffff2  ;}
+            button.submit{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);-webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#fbcc4d),color-stop(1,#fbbe08));background:-moz-linear-gradient(center top,#fbcc4d 5%,#fbbe08 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbcc4d',endColorstr='#fbbe08');background-color:#fbcc4d;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:1px solid #db1414;display:inline-block;font-weight:bold;text-decoration:none;position:relative}
+            button.submit:hover{background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#fbbe08),color-stop(1,#fbcc4d));background:-moz-linear-gradient(center top,#fbbe08 5%,#fbcc4d 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbe08',endColorstr='#fbcc4d');background-color:#fbbe08}
+            button.submit:active{position:relative;top:1px}
+            .content-post{-moz-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);-webkit-box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);box-shadow:inset 0px 1px 0px 0px rgba(255,255,255,0.7);background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f7f7f7),color-stop(1,#e8e8e8));background:-moz-linear-gradient(center top,#f7f7f7 5%,#e8e8e8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',endColorstr='#e8e8e8');background-color:#f7f7f7;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:4px;display:inline-block;font-weight:bold;text-decoration:none;position:relative}
+
+
+            .wrapper{max-width: 950px; margin:0 auto;}
+            .container {width: 100%; margin:0 auto;}
+            .left,.right{width: 50%;float: left; text-align: center;}
+            .clear {clear: both;}
+            .header{text-align: center;}
+            .logo{padding: 25px 0}
+            .title{color: #0040f9;margin-bottom: 0}
+            .subtitle{color: #0040f8;margin-top: 0}
+            .top-content h1{font-size: 28px}
+            .top-content h3{margin:0;}
+
+            #post-1{color: #2e70d2}
+
+
+            .listing-post {
+                text-align: center;
+            }
+            @media only screen and (max-width: 1200px) {
+                .wrapper{width: 90%}
+
+            }
+
+
+            @media only screen and (max-width: 767px) {
+                .left,.right{width: 100%;text-align: center}
+                .right img{padding: 20px; }
+
+
+            }
+            @media only screen and (max-width: 420px){
+
+            }
+
+            a.submit{
+                width:60%;
+                margin:10px auto;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 38px;
+                padding:20px 0;
+                color: #bd7f00;
+            }
+
+
+            a.submit
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #15b800;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                moz-border-radius: 6px;
+                moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                webkit-border-radius: 6px;
+                webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+            }
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+            .footer {
+                text-align: center;
+                margin: 30px 0;
+                color: black;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 17px;
+            }
+            .footer #copyright .footer_text {
+                color: black;
+                text-decoration: none;
+            }
+            .top {
+                display: inline-block;
+                border-radius: 6px 6px 0 0;
+                background-color: #f9fbfd;
+                padding: 5% 10%;
+                width: 77%;
+                border-bottom: 1px solid #e7e7e7;
+            }
+            .top .left {
+                display: inline;
+                width: 52%;
+                float: left;
+            }
+
+            .top .right {
+                float: right;
+                width: 41%;
+                padding: 0;
+                text-align: left;
+                margin-top: -40px;
+            }
+            .top .left img {
+                border: 0 none;
+                height: auto;
+                max-width: 100%;
+                vertical-align: middle;
+
+            }
+            h1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 41px;
+                text-align: center;
+                color: #015D88;
+                font-family: 'Source Sans Pro',sans-serif;
+                padding: 0 2% 3% 2%;
+                float: left;
+                width: 96%;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+            .top .right p {
+                font-size: 16px;
+                color: #585858;
+
+                padding: 0px;
+                line-height: 19px;
+                font-family: 'Source Sans Pro',sans-serif;
+            }
+            .download{
+                float: left;
+                width: 100%;
+                border-top: 2px solid #e7e7e7;
+                text-align: center;
+            }
+            .listing-post{
+                width: 75%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            @media only screen and (max-width: 1050px){
+                .top .left {
+                    display: inline;
+                    width: 100%;
+                    float: left;}
+                .top .right {
+                    float: right;
+                    width: 100%;
+                    padding: 0;
+                    text-align: left;
+                    margin-top: 0px;
+                }
+            }
+            @media only screen and (max-width: 900px){
+                a.submit {
+                    font-size: 30px;
+                }
+            }
+            @media only screen and (max-width: 755px){
+                a.submit {
+                    font-size: 25px;
+                }
+            }
+            @media only screen and (max-width: 630px){
+                a.submit {
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (max-width: 504px){
+                a.submit {
+                    font-size: 15px;
+                }
+            }
+            @media only screen and (max-width: 383px){
+                a.submit {
+                    font-size: 10px;
+                }
+            }
+
+            .video-holder {
+                width: 90%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 570px !important;
+            }
+
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 54%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+        </style>
+        
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo">
+                    <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link editable-optional link-only" data-lb-id="Logo-link"><img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image max-image-size=188"></a>
+                </div>
+                <h1 class="title" data-lb-name="Headline" data-lb="editable-rich-text editable-optional" data-lb-id="title">THANK YOU</h1>
+                <h3 class="subtitle" data-lb-name="Subheadline" data-lb="editable-rich-text editable-optional" data-lb-id="subtitle">Subheadline text goes here</h3>
+                <section data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=855 video-height=580" class="video-holder flex-video">
+                <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                    <img data-lb-id="video-image" data-lb="editable-image max-image-size=855" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                    </a>
+                </section>
+            </div>
+            <div class="listing-post">
+                <div class="top">
+                    <div class="top-image">
+                        <div class="left">
+                            <a href="#" data-lb-id="main-image-link" data-lb="editable-link editable-optional link-only" data-lb-comment="Recommended image size is 283px" data-lb-name="Main image link " style="cursor: pointer;display:block">
+                                <img src="{LOCAL_URL}/thankyou-avatar.jpg" data-lb-comment="Change your main image here. Recommended img size 283px" data-lb-name="Main Image" data-lb-id="big-img" alt="" data-lb="editable-image max-image-size=283">
+                            </a>
+                        </div>
+
+                        <div class="right">
+                            <h1 data-lb-name="Box Headline" data-lb-comment="Enter your headline here." data-lb="editable-rich-text editable-optional" data-lb-id="headline">ALL SET!</h1>
+                            <p data-lb-name="Box Content" data-lb-comment="Enter your content here." data-lb="editable-rich-text editable-optional" data-lb-id="box-content">Your email has been verified and everything will be sent to you shortly.<br><br>We&#8217;ve emailed you all the details about what we can help you with specifically, and <strong>how to improve your landing page conversions.</strong><br><br>The email I&#8217;ve sent you contains a PDF, which you can also download by <a href="#">clicking the button below</a>.</p>
+                        </div>
+
+                    </div>
+                    <div class="download">                 
+                        <a  id="data-reveal-id" href="#" data-lb-id="submit-button" data-lb="editable-link editable-optional" data-lb-name="Submit Button" class="submit">Download Now &#187</a>
+                    </div>
+                </div>
+
+                <div class="footer" >
+                    <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>

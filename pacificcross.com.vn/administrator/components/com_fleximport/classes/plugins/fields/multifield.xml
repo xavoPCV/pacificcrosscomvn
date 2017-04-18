@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Multifield</name>
+	<author>NetAssoPro</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>(C) 2008-2014 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Multifield field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="multifield_separator" type="text" default="=" label="COM_FLEXIMPORT_FIELD_MULTIFIELD_SEPARATOR" description="COM_FLEXIMPORT_FIELD_MULTIFIELD_SEPARATOR_DESC" />
+				<field name="multifield_separator_field" type="text" default="||" label="COM_FLEXIMPORT_FIELD_MULTIFIELD_SEPARATOR_VALUE" description="COM_FLEXIMPORT_FIELD_MULTIFIELD_SEPARATOR_VALUE_DESC" />
+			</fieldset>
+		</fields>
+	</form>
+</install>

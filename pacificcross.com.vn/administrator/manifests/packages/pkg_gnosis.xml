@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="package" method="upgrade">
+    <packagename>Gnosis</packagename>
+    <packager>Lander Compton</packager>
+    <name>Gnosis</name>
+    <author>Lander Compton</author>
+    <creationDate>July 2013</creationDate>
+    <copyright>This extension is released under the GNU/GPL License.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html
+        GNU/GPL
+    </license>
+    <authorEmail>lander083077@gmail.com</authorEmail>
+    <authorUrl>www.hypermodern.org</authorUrl>
+    <version>1.1.0</version>
+    <files>
+        <file id="com_gnosis" type="component">com_gnosis1.1.0.zip</file>
+
+        <file id="plg_gnosis" type="plugin" group="content" client="site">gnosisplg1.0.9b.zip</file>
+    </files>
+
+</extension>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#1f1f1f; Top Background Color" name="mp-customizable-color">
+         <meta content="#fefefe; Top Headline Color" name="mp-customizable-color">
+        <meta content="#e1e1e1; Top Subheadline" name="mp-customizable-color">    
+        <meta content="#fdfdfd; Middle Background Color" name="mp-customizable-color">
+        <meta content="#dd1414; Main Video Headline" name="mp-customizable-color">
+        <meta content="#e8e8e8; Main Video Background Color" name="mp-customizable-color">
+        <meta content="#5094c2; Middle Content Right Background Color" name="mp-customizable-color">
+        <meta content="#1a4f75; Middle Content Divider Color" name="mp-customizable-color">
+        <meta content="#7bb3db; Video Box Background Color" name="mp-customizable-color">
+        <meta content="#efefef; Bottom Background Color" name="mp-customizable-color">
+         <meta content="#555551; Footer Text" name="mp-customizable-color">
+
+        <style type="text/css">
+            body{
+                font-size:18px;
+                font-family:'Arial',sans-serif;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .container
+            {
+                width: 100%;
+            }
+			
+            #top_wrap{
+                background: #1f1f1f;
+                padding: 10px 0 40px;
+            }
+
+            .top-content
+            {
+               margin: 0 auto;
+               text-align: center;
+            }
+
+            .top-content h2
+            {
+                color: #fefefe;
+                font-size: 48px;
+                margin: 0;
+                padding: 20px 0 10px 0;
+            }
+		  
+		   .top-content h4
+            {
+                text-align: center;
+                font-size: 22px;
+                color: #e1e1e1;
+				margin: 0;
+                padding: 10px 0 50px 0;
+            }
+
+            .middle-content
+            {
+                background: #fffffe;
+                text-align: center;
+                padding-bottom: 260px;
+            }
+
+            .middle-content h4
+            {
+                color: #ff0001;
+                font-size: 30px;
+            }
+
+            .bottom-content
+            {
+                text-align: center;
+            }
+
+            .video-list
+            {
+                margin: 0;
+                padding: 0;
+            }
+
+            .video-list li
+            {
+                display: block;
+                list-style: none;
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+                background: #7bb3db;
+            }
+
+            .video-list li img:hover,.video-list li.active img
+            {
+                -webkit-filter: drop-shadow(0px 0px 15px rgba(255,255,255,0.8));
+                -ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#fff');
+                filter: drop-shadow(0px 0px 15px rgba(255,255,255,0.8));
+            }
+
+            .video-list li h4{
+                margin: 0 0 10px;
+                color: #fff;
+            }
+
+            .video-list li img
+            {
+                cursor: pointer;
+                width: 200px;
+                height: 132px;
+                transition: all 0.8s;
+            }
+
+            a.submit:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('https://lh6.googleusercontent.com/-FSPREKZ0gbY/U4DnViDHQCI/AAAAAAAAABU/YBt10O4qGIQ/s31/arrow.png?gl=US') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            a.submit
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #b84100;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                -moz-border-radius: 6px;
+                -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                width:670px;
+                margin:10px auto;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 38px;
+                padding:20px 0;
+                color: #2C2C2C;
+                word-wrap: break-word;
+            }
+
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+
+            #copyright
+            {
+				padding: 50px 0;
+                text-align: center;
+            }
+
+            #copyright a,#copyright span
+            {
+                text-decoration: none;
+
+            }
+
+            #copyright a:hover
+            {
+                text-decoration: none;
+            }
+
+            .bottom
+            {
+                margin: 20px 0;
+            }
+
+            .social-comments
+            {
+                position: relative;
+            }
+
+            .middle_wrap{
+				background: #fdfdfd;
+			    /*background-image: url("{LOCAL_URL}sales-bgcolor-01212015/pattern2.jpg");*/
+ 			   background-repeat: repeat;
+			   margin-bottom: -80px;
+            }
+
+            .middle_content{
+                width: 1024px;
+                margin: 0 auto;
+                background: #5094c2;
+				top: -57px;
+				border-radius: 20px;
+				position: relative;
+				border: 1px solid #bcc0bf;
+            }
+
+            .middle_left_content{
+                float: left;
+                width: 70%;
+                text-align: center;
+                background: #e8e8e8;
+                border-right: 2px solid #1a4f75;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				padding-bottom: 4px;
+            }
+
+            .middle_left_content h2{
+                color: #dd1414;
+            }
+
+            .middle_left_content h2:last-of-type{
+                color: #333333;
+            }
+
+            .middle_left_content p{
+                margin-top: 0;
+            }
+
+            .middle_right_content{
+                float: right;
+                width: 29.5%;
+            }
+
+            .hr{
+                border-color: rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+                -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+                margin-bottom: 20px;
+            }
+
+
+            .video-holder {
+                width: 90%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+                position: relative;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 430px !important;
+            }
+
+            .video-holder img
+            {
+                width: 100%;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 53%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 9%;
+                left: 5%;
+                width: 90% !important;
+                height: 80% !important;
+            } 
+
+            .video-container
+            {
+                width: 100%;
+            }
+			
+			.bottom-content
+            {
+               margin: 0 auto;
+               text-align: center;
+			   width: 500px;
+            }
+
+			#bottom_wrap {
+			background-color:#efefef;
+			}
+			
+			 #bottom_wrap #copyright * {
+                font-weight: normal;
+                font-size: 14px;
+                color: #555551;
+				margin: 0 auto;
+            }
+            #bottom_wrap #copyright #bottom_wrap_text{
+                color: #555551;
+                text-decoration: none;
+			}
+
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+                a.submit
+                {
+                    width: 90%;
+                }
+            }
+
+            @media only screen and (max-width: 1024px)
+            {
+                .video-container,.middle_right_content,.middle_left_content
+                {
+                    width: 100%;
+                }
+
+                .middle_content{
+                    width: 95%;
+                }
+            }
+
+            .row-fluid .span4:nth-of-type(3n+1)
+            {
+                margin-left: 0;
+            }
+
+            .clear{
+                clear: both;
+            }
+
+        </style>
+        
+        <script>
+            var hash = window.location.hash;
+            var current_url = window.location.href.replace(hash, '');
+
+            $(document).ready(function()
+            {
+                $('.video-selector').each(function(i)
+                {
+                    if (typeof itps_input_data != 'undefined')
+                    {
+                        var video_href = itps_input_data['video-source-' + (i + 1)];
+                        $(this).attr('video-href', video_href);
+                    }
+
+                    if ($(this).attr('playable') === 'false' && !$(this).attr('video-href'))
+                    {
+                        $(this).css('opacity', '0.5');
+                    }
+                });
+
+                $('.video-selector').click(function()
+                {
+                    $('.video-selector').removeClass('active');
+                    $(this).addClass('active');
+                    if ($(this).attr('playable') === 'true' && $(this).attr('video-href')) {
+                        $('#video-holder').html('<iframe width="853" height="480" src="' + $(this).attr('video-href') + '?autoplay=1" frameborder="0" allowfullscreen></iframe>').fadeIn();
+                        var url = current_url + '#' + $(this).index();
+                        window.history.pushState('Object', 'Title', url);
+                        $('.social-comments').find('.fb-comments').attr('data-href', url);
+                        FB.XFBML.parse($(".social-comments")[0]);
+                    } else {
+                        $(this).removeClass('active');
+                    }
+                });
+            });
+
+            $(function() {
+                $(".fb-comments").attr('data-href', $(location).attr('href'));
+                if (typeof itps_input_data != 'undefined')
+                {
+                    $('.fb-like').attr('data-href', "" + itps_input_data['facebooklikeurl']);
+                    if (itps_input_data['facebookcomments'] != '')
+                        $('.fb-comments').attr('data-href', "" + itps_input_data['facebookcomments']);
+                    $('.fb-comments').attr('data-num-posts', "" + itps_input_data['facebookcommentsposts']);
+                }
+                !(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id))
+                        return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=719478438075635";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            });
+            $(window).resize(function() {
+
+                var width = $(".social-comments").width();
+                if ($(window).width() <= 980) {
+                    $(".fb-comments").attr("data-width", width);
+                    FB.XFBML.parse($(".social-comments")[0]);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+      	  <div id="top_wrap">
+            <div class="top-content">
+                <h2 data-lb-id="headline" data-lb="editable-rich-text editable-optional" data-lb-name="Headline">Twitter PPC (Sneak Peek)</h2>
+                <h4 data-lb-id="subline" data-lb="editable-rich-text editable-optional" data-lb-name="Subheadine">Lead magnet strategies and the secrets to driving massive traffic through Twitter.</h4>
+            </div>
+            </div>
+            <div class="middle_wrap">
+                <div class="middle_content">
+                    <div class="middle_right_content">
+                        <ul class="video-list">
+                            <li class="video-selector" playable="true">
+                                <h4 data-lb-id="video-title-1" data-lb="editable-rich-text editable-optional" data-lb-name="Video Title 1"><span style="color: #e2f3ff">Video #1:</span> Title here</h4>
+                                <img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 1" data-lb-id="video-image-1" data-lb="editable-image editable-optional max-image-width=200 max-image-height=132" src="https://lh4.googleusercontent.com/-FtQHnVbzUfI/U5eh5VrDkdI/AAAAAAAAAQg/5ZdeoX52JSo/s200/video1tn.png">
+                            </li>
+                            <li class="video-selector" playable="true">
+                                <h4 data-lb-id="video-title-2" data-lb="editable-rich-text editable-optional" data-lb-name="Video Title 2"><span style="color: #e2f3ff">Video #2:</span> Title here</h4>
+                                <img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 2" data-lb-id="video-image-2" data-lb="editable-image editable-optional max-image-width=200 max-image-height=132" src="https://lh5.googleusercontent.com/-ccfyQcnmR_4/U5eh5S74uHI/AAAAAAAAAQg/Hp-IYUUqK_Y/s200/video2tn.png">
+                            </li>
+                            <li class="video-selector" playable="true">
+                                <h4 data-lb-id="video-title-3" data-lb="editable-rich-text editable-optional" data-lb-name="Video Title 3"><span style="color: #e2f3ff">Video #3:</span> Title here</h4>
+                                <img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 3" data-lb-id="video-image-3" data-lb="editable-image editable-optional max-image-width=200 max-image-height=132" src="https://lh6.googleusercontent.com/-i7NX3g1Rc_Y/U5eh5UGRKgI/AAAAAAAAAQg/IIESKv4dW1A/s200/video3tn.png">
+                            </li>
+                            <li class="video-selector" playable="true">
+                                <h4 data-lb-id="video-title-4" data-lb="editable-rich-text editable-optional" data-lb-name="Video Title 4"><span style="color: #e2f3ff">Video #4:</span> Title here</h4>
+                                <img data-lb-comment="Recommended image width: 200px Recommended image height: 132px" data-lb-name="Video Image 4" data-lb-id="video-image-4" data-lb="editable-image editable-optional max-image-width=200 max-image-height=132" src="https://lh3.googleusercontent.com/-x1-Y2LDw7js/U5eh6HV7KtI/AAAAAAAAAQg/EGfX-GWTjLI/s200/video4tn.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle_left_content">
+                        <h2 data-lb-id="video-headline" data-lb="editable-rich-text editable-optional" data-lb-name="Video Headline">Setup Twitter cards and website cards to create massive traffic for your business!</h2>
+                        <div data-lb-name="Video" data-lb-id="video" data-lb="editable-video editable-optional video-width=820 video-height=553" class="video-holder flex-video" id="video-holder" style="cursor: pointer;"> 
+                            <img data-lb-id="video-image" data-lb="editable-image max-image-size=820" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png">
+                        </div>
+                        <p data-lb-id="video-subheadline" data-lb="editable-rich-text editable-optional" data-lb-name="Video Sub Headline">Video Sub Headline here</p>
+                        <hr class="hr"/>
+                        <h2 data-lb-id="comment-headline" data-lb="editable-rich-text editable-optional" data-lb-name="Comment Headline">Comment Headline Here</h2>
+                        <hr class="hr"/>
+                        <div data-lb-name="Hide Social Comments Column" data-lb="editable-optional" class="social-comments" data-lb-id="hide-social">
+                            <div data-width="600" data-show-faces="true" data-send="true" data-font="arial" class="fb-like" data-href=""></div>
+                            <div data-width="600" data-num-posts="8" class="fb-comments" data-href=""></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+                      <div id="bottom_wrap">
+                      <div class="bottom-content">
+                       <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a href="#">AdvisorLead</a></span>
+                    </div>
+                    </div>
+            </div>
+        <div id="fb-root"></div>
+    </body>
+</html>

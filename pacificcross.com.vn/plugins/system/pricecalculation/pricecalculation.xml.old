@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+<name>Hearth Insurance Price</name>
+<creationDate>September 2015</creationDate>
+<author>Minhcom</author>
+<authorEmail>QuangNH@gmail.com</authorEmail>
+<authorUrl>www.minhcom.com</authorUrl>
+<copyright>Copyright Minhcom</copyright>
+<license>License GNU/GPL</license>
+<version>1.0.0</version>
+<description>Pacific Insurance Plugin for Joomla</description>
+<files>
+   <filename plugin="pricecalculation">pricecalculation.php</filename>
+</files>
+<languages>
+   <language tag="en-GB">language/en-GB/en-GB.plg_system_pricecalculation.ini</language>
+</languages>
+
+<config>
+		<fields name="params">
+                <fieldset name="Gobal-Setting">
+                        <field name="config_m1" type="text"
+					default="28.35"
+					description="JFIELD_PI_CONFIGM1_LABEL"
+					label="JFIELD_PI_CONFIGM1_LABEL"
+					size="200"/>
+                         <field name="config_m1usd" type="text"
+					default="1.26"
+					description="JFIELD_PI_CONFIGM1USD_LABEL"
+					label="JFIELD_PI_CONFIGM1USD_LABEL"
+					size="200"/>
+                         <field name="config_mm1" type="text"
+					default="28.35"
+					description="JFIELD_PI_CONFIGMM1_LABEL"
+					label="JFIELD_PI_CONFIGMM1_LABEL"
+					size="200"/>
+                         
+                           <field name="config_mm1usd" type="text"
+					default="28.35"
+					description="JFIELD_PI_CONFIGMM1USD_LABEL"
+					label="JFIELD_PI_CONFIGMM1USD_LABEL"
+					size="200"/>
+                           
+                             <field name="config_m2" type="text"
+					default="20000000"
+					description="JFIELD_PI_CONFIGM2_LABEL"
+					label="JFIELD_PI_CONFIGM2_LABEL"
+					size="200"/>
+                             
+                               <field name="config_m2usd" type="text"
+					default="889"
+					description="JFIELD_PI_CONFIGM2USD_LABEL"
+					label="JFIELD_PI_CONFIGM2USD_LABEL"
+					size="200"/>
+                               
+                                 <field name="config_disout" type="text"
+					default="0.3"
+					description="JFIELD_PI_CINFIGDISOUT_LABEL"
+					label="JFIELD_PI_CINFIGDISOUT_LABEL"
+					size="200"/>
+                                 
+                                    <field name="config_semi" type="text"
+					default="0.52"
+					description="JFIELD_PI_CONFIGSEMI_LABEL"
+					label="JFIELD_PI_CONFIGSEMI_LABEL"
+					size="200"/>
+                                    
+                                     <field name="config_travel" type="text"
+					default="1785000"
+					description="JFIELD_PI_CONFIGTRAVEL_LABEL"
+					label="JFIELD_PI_CONFIGTRAVEL_LABEL"
+					size="200"/>
+                                     
+                                     
+                                     <field name="config_travelusd" type="text"
+					default="79"
+					description="JFIELD_PI_CONFIGTRAVELUSD_LABEL"
+					label="JFIELD_PI_CONFIGTRAVELUSD_LABEL"
+					size="200"/>
+                                     
+                                     <field name="config_smoker" type="text"
+					default="0.15"
+					description="JFIELD_PI_CONFIGSMOKER_DESC"
+					label="JFIELD_PI_CONFIGSMOKER_DESC"
+					size="200"/>
+                                     
+                                     
+                                     
+                                      <field name="config_maxbenefit" type="text"
+					default="5513000"
+					description="JFIELD_PI_MAXBENER_DESC"
+					label="JFIELD_PI_MAXBENER_LABEL"
+					size="200"/>
+                                      
+                                       <field name="config_maxbenefitusd" type="text"
+					default="245"
+					description="JFIELD_PI_MAXBENERUSD_DESC"
+					label="JFIELD_PI_MAXBENERUSD_LABEL"
+					size="200"/>
+                                       
+                                       
+                                       <field name="config_rental" type="text"
+					default="1575000"
+					description="JFIELD_PI_RENTAL_DESC"
+					label="JFIELD_PI_RENTAL_LABEL"
+					size="200"/>
+                                       
+                                       
+                                       <field name="config_rentalusd" type="text"
+					default="70"
+					description="JFIELD_PI_RENTALUSD_DESC"
+					label="JFIELD_PI_RENTALUSD_LABEL"
+					size="200"/>
+                                       
+                                       
+                                        <field name="group_discount_3_4" type="text"
+					default="0.05"
+					description="JFIELD_PI_GRODIS_3_4_DESC"
+					label="JFIELD_PI_GRODIS_3_4_LABEL"
+					size="200"/>
+                                        
+                                        <field name="group_discount_5_10" type="text"
+					default="0.1"
+					description="JFIELD_PI_GRODIS_5_10_DESC"
+					label="JFIELD_PI_GRODIS_5_10_LABEL"
+					size="200"/>
+                                        
+                                        <field name="group_discount_11_20" type="text"
+					default="0.15"
+					description="JFIELD_PI_GRODIS_11_20_DESC"
+					label="JFIELD_PI_GRODIS_11_20_LABEL"
+					size="200"/>
+                                        
+                                        <field name="group_discount_21" type="text"
+					default="0.2"
+					description="JFIELD_PI_GRODIS_21_DESC"
+					label="JFIELD_PI_GRODIS_21_LABEL"
+					size="200"/>
+                                      
+                                       
+                                       
+                             
+                             
+                </fieldset>
+		<fieldset name="Foundation-Standard">
+                    
+                    <field name="fd_benefit1" type="text"
+					default="2100"
+					description="JFIELD_PI_DENTAL1"
+					label="JFIELD_PI_DENTAL1"
+					size="200"/>
+                    <field name="fd_benefit2" type="text"
+					default="3780"
+					description="JFIELD_PI_DENTAL2"
+					label="JFIELD_PI_DENTAL2"
+					size="200"/>
+                    
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan1fs_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan1fs_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan1fs_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan1fs_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan1fs_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan1fs_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan1fs_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan1fs_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan1fs_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan1fs_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan1fs_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan1fs_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan1fs_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan1fs_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan1fs_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan1fs_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                 <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan1fs_fsoutpatient_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_OUTPA_0_3_DESC"
+					label="JFIELD_PI_OUTPA_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan1fs_fsoutpatient_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_OUTPA_4_18_DESC"
+                       label="JFIELD_PI_OUTPA_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan1fs_fsoutpatient_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_OUTPA_19_25_DESC"
+                       label="JFIELD_PI_OUTPA_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan1fs_fsoutpatient_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_OUTPA_26_30_DESC"
+                       label="JFIELD_PI_OUTPA_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan1fs_fsoutpatient_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_OUTPA_31_35_DESC"
+                       label="JFIELD_PI_OUTPA_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan1fs_fsoutpatient_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_OUTPA_36_40_DESC"
+                       label="JFIELD_PI_OUTPA_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan1fs_fsoutpatient_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_OUTPA_41_45_DESC"
+                       label="JFIELD_PI_OUTPA_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan1fs_fsoutpatient_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_OUTPA_46_50_DESC"
+                       label="JFIELD_PI_OUTPA_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan1fs_fsoutpatient_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_OUTPA_51_55_DESC"
+                       label="JFIELD_PI_OUTPA_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan1fs_fsoutpatient_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_OUTPA_56_60_DESC"
+                       label="JFIELD_PI_OUTPA_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan1fs_fsoutpatient_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_OUTPA_61_65_DESC"
+                       label="JFIELD_PI_OUTPA_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan1fs_fsoutpatient_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_66_70_DESC"
+                       label="JFIELD_PI_OUTPA_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan1fs_fsoutpatient_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_71_75_DESC"
+                       label="JFIELD_PI_OUTPA_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan1fs_fsoutpatient_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_76_80_DESC"
+                       label="JFIELD_PI_OUTPA_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan1fs_fsoutpatient_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_81_85_DESC"
+                       label="JFIELD_PI_OUTPA_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan1fs_fsoutpatient_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_86_90_DESC"
+                       label="JFIELD_PI_OUTPA_86_90_LABEL"
+                       size="200"/>
+                
+                        </fieldset>
+                <fieldset name="Foundation-Executive">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan2fs_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan2fs_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan2fs_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan2fs_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan2fs_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan2fs_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan2fs_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan2fs_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan2fs_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan2fs_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan2fs_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan2fs_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan2fs_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan2fs_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan2fs_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan2fs_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                 <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan2fs_fsoutpatient_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_OUTPA_0_3_DESC"
+					label="JFIELD_PI_OUTPA_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan2fs_fsoutpatient_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_OUTPA_4_18_DESC"
+                       label="JFIELD_PI_OUTPA_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan2fs_fsoutpatient_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_OUTPA_19_25_DESC"
+                       label="JFIELD_PI_OUTPA_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan2fs_fsoutpatient_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_OUTPA_26_30_DESC"
+                       label="JFIELD_PI_OUTPA_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan2fs_fsoutpatient_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_OUTPA_31_35_DESC"
+                       label="JFIELD_PI_OUTPA_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan2fs_fsoutpatient_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_OUTPA_36_40_DESC"
+                       label="JFIELD_PI_OUTPA_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan2fs_fsoutpatient_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_OUTPA_41_45_DESC"
+                       label="JFIELD_PI_OUTPA_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan2fs_fsoutpatient_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_OUTPA_46_50_DESC"
+                       label="JFIELD_PI_OUTPA_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan2fs_fsoutpatient_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_OUTPA_51_55_DESC"
+                       label="JFIELD_PI_OUTPA_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan2fs_fsoutpatient_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_OUTPA_56_60_DESC"
+                       label="JFIELD_PI_OUTPA_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan2fs_fsoutpatient_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_OUTPA_61_65_DESC"
+                       label="JFIELD_PI_OUTPA_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan2fs_fsoutpatient_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_66_70_DESC"
+                       label="JFIELD_PI_OUTPA_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan2fs_fsoutpatient_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_71_75_DESC"
+                       label="JFIELD_PI_OUTPA_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan2fs_fsoutpatient_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_76_80_DESC"
+                       label="JFIELD_PI_OUTPA_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan2fs_fsoutpatient_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_81_85_DESC"
+                       label="JFIELD_PI_OUTPA_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan2fs_fsoutpatient_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_86_90_DESC"
+                       label="JFIELD_PI_OUTPA_86_90_LABEL"
+                       size="200"/>
+                
+                        </fieldset>
+                <fieldset name="Foundation-Premier">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan3fs_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan3fs_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan3fs_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan3fs_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan3fs_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan3fs_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan3fs_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan3fs_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan3fs_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan3fs_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan3fs_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan3fs_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan3fs_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan3fs_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan3fs_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan3fs_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                 <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan3fs_fsoutpatient_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_OUTPA_0_3_DESC"
+					label="JFIELD_PI_OUTPA_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan3fs_fsoutpatient_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_OUTPA_4_18_DESC"
+                       label="JFIELD_PI_OUTPA_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan3fs_fsoutpatient_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_OUTPA_19_25_DESC"
+                       label="JFIELD_PI_OUTPA_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan3fs_fsoutpatient_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_OUTPA_26_30_DESC"
+                       label="JFIELD_PI_OUTPA_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan3fs_fsoutpatient_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_OUTPA_31_35_DESC"
+                       label="JFIELD_PI_OUTPA_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan3fs_fsoutpatient_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_OUTPA_36_40_DESC"
+                       label="JFIELD_PI_OUTPA_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan3fs_fsoutpatient_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_OUTPA_41_45_DESC"
+                       label="JFIELD_PI_OUTPA_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan3fs_fsoutpatient_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_OUTPA_46_50_DESC"
+                       label="JFIELD_PI_OUTPA_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan3fs_fsoutpatient_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_OUTPA_51_55_DESC"
+                       label="JFIELD_PI_OUTPA_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan3fs_fsoutpatient_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_OUTPA_56_60_DESC"
+                       label="JFIELD_PI_OUTPA_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan3fs_fsoutpatient_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_OUTPA_61_65_DESC"
+                       label="JFIELD_PI_OUTPA_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan3fs_fsoutpatient_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_66_70_DESC"
+                       label="JFIELD_PI_OUTPA_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan3fs_fsoutpatient_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_71_75_DESC"
+                       label="JFIELD_PI_OUTPA_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan3fs_fsoutpatient_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_76_80_DESC"
+                       label="JFIELD_PI_OUTPA_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan3fs_fsoutpatient_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_81_85_DESC"
+                       label="JFIELD_PI_OUTPA_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan3fs_fsoutpatient_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_OUTPA_86_90_DESC"
+                       label="JFIELD_PI_OUTPA_86_90_LABEL"
+                       size="200"/>
+                
+                        </fieldset>
+                 <fieldset name="Master-M1">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan1m_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan1m_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan1m_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan1m_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan1m_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan1m_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan1m_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan1m_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan1m_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan1m_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan1m_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan1m_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan1m_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan1m_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan1m_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan1m_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                <field name="plan1mup_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_M1_UPDATE_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_M1_UPDATE_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan1mup_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan1mup_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan1mup_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan1mup_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan1mup_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan1mup_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan1mup_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan1mup_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan1mup_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan1mup_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan1mup_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan1mup_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan1mup_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan1mup_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan1mup_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_M1_UPDATE_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_M1_UPDATE_ANNUAL_86_90_LABEL"
+                       size="200"/>
+                
+                        </fieldset>    
+                  <fieldset name="Master-M2">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan2m_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan2m_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan2m_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan2m_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan2m_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan2m_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan2m_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan2m_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan2m_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan2m_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan2m_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan2m_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan2m_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan2m_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan2m_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan2m_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                
+                        </fieldset>    
+                        
+                  <fieldset name="Master-M3">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan3m_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan3m_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan3m_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan3m_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan3m_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan3m_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan3m_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan3m_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan3m_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan3m_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan3m_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan3m_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan3m_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan3m_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan3m_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan3m_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                
+                        </fieldset>  
+                        
+                        
+                         <fieldset name="Senior_Plan_SM1">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan1sp_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan1sp_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan1sp_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan1sp_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan1sp_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan1sp_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan1sp_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan1sp_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan1sp_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan1sp_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan1sp_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan1sp_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan1sp_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan1sp_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan1sp_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan1sp_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                
+                        </fieldset>  
+                         <fieldset name="Senior_Plan_SM2">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan2sp_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan2sp_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan2sp_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan2sp_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan2sp_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan2sp_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan2sp_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan2sp_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan2sp_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan2sp_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan2sp_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan2sp_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan2sp_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan2sp_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan2sp_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan2sp_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                
+                        </fieldset>  
+                        
+                                        <fieldset name="Senior_Plan_SM3">
+                <!-- Basic Annual Premium 0-3 year ago -->
+		<field name="plan3sp_0_3" type="text"
+					default="1339"
+					description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_DESC"
+					label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_0_3_LABEL"
+					size="200"/>
+
+                <!-- Basic Annual Premium 4-18 year ago -->
+                <field name="plan3sp_4_18" type="text"
+                       default="1339"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_4_18_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 19-25 year ago -->
+                <field name="plan3sp_19_25" type="text"
+                       default="2411"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_19_25_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 26-30 year ago -->
+                <field name="plan3sp_26_30" type="text"
+                       default="2582"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_26_30_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 31-35 year ago -->
+                <field name="plan3sp_31_35" type="text"
+                       default="2756"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_31_35_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 36-40 year ago -->
+                <field name="plan3sp_36_40" type="text"
+                       default="2926"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_36_40_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 41-45 year ago -->
+                <field name="plan3sp_41_45" type="text"
+                       default="3186"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_41_45_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 46-50 year ago -->
+                <field name="plan3sp_46_50" type="text"
+                       default="3364"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_46_50_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 51-55 year ago -->
+                <field name="plan3sp_51_55" type="text"
+                       default="3945"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_51_55_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 56-60 year ago -->
+                <field name="plan3sp_56_60" type="text"
+                       default="4481"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_56_60_LABEL"
+                       size="200"/>
+
+                <!-- Basic Annual Premium 61-65 year ago -->
+                <field name="plan3sp_61_65" type="text"
+                       default="5739"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_61_65_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 66-70 year ago -->
+                <field name="plan3sp_66_70" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_66_70_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 71-75 year ago -->
+                <field name="plan3sp_71_75" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_71_75_LABEL"
+                       size="200"/>
+                  <!-- Basic Annual Premium 76-80 year ago -->
+                <field name="plan3sp_76_80" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_76_80_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 81-85 year ago -->
+                <field name="plan3sp_81_85" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_81_85_LABEL"
+                       size="200"/>
+                <!-- Basic Annual Premium 86-90 year ago -->
+                <field name="plan3sp_86_90" type="text"
+                       default="10000"
+                       description="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_DESC"
+                       label="JFIELD_PI_PACIFIC_STANDARD_BASIC_ANNUAL_86_90_LABEL"
+                       size="200"/>
+
+                
+                        </fieldset>               
+		</fields>
+                
+                
+                
+	</config>
+	
+</extension>

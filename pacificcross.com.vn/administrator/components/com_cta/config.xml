@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="cta"
+		label="Setting"
+	>
+		<field name="linkedin_key"
+			type="hidden"
+		/>
+		<field name="SQL_SERVER_HOST"
+			type="text"
+			label="Server Name"
+			class="inputbox"
+			size="40"
+			default="192.168.77.5"
+		/>
+		<field name="SQL_SERVER_DATABASE"
+			type="text"
+			label="DB Name"
+			class="inputbox"
+			size="40"
+			default="Advisorsites"
+		/>
+		<field name="SQL_SERVER_USERNAME"
+			type="text"
+			label="DB User"
+			class="inputbox"
+			size="40"
+			default="jwebuser"
+		/>
+		<field name="SQL_SERVER_PASSWORD"
+			type="text"
+			label="DB Password"
+			class="inputbox"
+			size="40"
+			default="J0om1)Smd!"
+		/>
+		<field name="VIDEO_BASE_URL"
+			type="text"
+			label="Video URL"
+			class="inputbox"
+			size="40"
+			default="http://backoffice1.advisorsites.com/CTAvideos"
+		/>
+		<field name="IMG_BASE_URL"
+			type="text"
+			label="Image CTA URL"
+			class="inputbox"
+			size="40"
+			default="http://backoffice1.advisorsites.com/CTAvideos/ctaimage"
+		/>
+		<field name="IMG_VIDEO_BASE_URL"
+			type="text"
+			label="Image Video URL"
+			class="inputbox"
+			size="40"
+			default="http://backoffice1.advisorsites.com/CTAvideos/videoimage"
+		/>
+		
+		
+		<field name="constant_contact_secret"
+			type="hidden"
+			default="pjPjkThcdY3mHczREJgTpTdn"
+		/>
+		<field name="constant_contact_key"
+			type="hidden"
+			default="3fpfy8g92zydfmr7g7p9rz8c"
+		/>
+		<field name="send_to_email" 
+			label="Send to Email"
+			type="hidden"
+			size="40"
+		/>
+	</fieldset>
+	<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL"
+	>
+		<field name="rules" type="rules"
+			component="com_contentclient"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+</config>

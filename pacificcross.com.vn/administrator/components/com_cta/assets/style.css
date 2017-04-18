@@ -1,0 +1,41 @@
+/* CSS Document */
+.preview_video {
+	width:762px;
+	height:360px;
+	background:url(preview.jpg) center center no-repeat #000;
+	position:relative;
+}
+.preview_video img {
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.social_icon16 {
+	display:inline-block;
+	width:52px;
+	height:16px;
+	background:url(social_icon16.png) top left no-repeat;
+	margin-left:10px;
+}
+.social_icon32 {
+	display:inline-block;
+	width:100px;
+	height:32px;
+	background:url(social_icon32.png) top left no-repeat;
+	margin-left:10px;
+}
+.social_icon64 {
+	display:inline-block;
+	width:196px;
+	height:64px;
+	background:url(social_icon64.png) top left no-repeat;
+	margin-left:10px;
+}
+.subscribe_field label {
+	float:left;
+	width:110px;
+}
+
+#jform_params_videos input {
+	clear:left;
+}

@@ -1,0 +1,37 @@
+/** header icons **/
+.icon-48-fleximport,#icon-48-fleximport i	{ background-image: url(../images/icon-48-fleximport.png); }
+.icon-48-fields,#icon-48-fields i	{ background-image: url(../images/icon-48-fields.png); }
+.icon-48-types,#icon-48-types i	{ background-image: url(../images/icon-48-types.png); }
+.icon-48-import,#icon-48-import i	{ background-image: url(../images/icon-48-import.png); }
+.icon-48-export,#icon-48-export i { background-image: url(../images/icon-48-export.png); }
+.icon-48-logs,#icon-48-logs i { background-image: url(../images/icon-48-logs.png); }
+.icon-48-plugins,#icon-48-plugins i { background-image: url(../images/icon-48-plugins.png); }
+
+/* Toolbar Icons */
+.icon-32-export-selection { background-image: url(../images/icon-32-export_selection.png);}
+.icon-32-export-all { background-image: url(../images/icon-32-export_all.png);}
+.icon-32-export-filter { background-image: url(../images/icon-32-filter.png);}
+.icon-32-export-restorefilter { background-image: url(../images/icon-32-restore_filter.png);}
+.icon-32-export-savefilter { background-image: url(../images/icon-32-save_filter.png);}
+.icon-32-import {background-image: url(../images/icon-32-upload.png);}
+
+.adminformlist .spacer{
+	font-weight:bold;
+	font-size:1.2em;
+}
+.ajaxload{
+	text-align:center;
+	padding:20px;
+}
+.clear{
+	clear:both;
+}
+#import_return,#import_errors,#import_progress{
+	display:none;
+	overflow: auto;
+	word-break: break-word;
+	max-height:500px;
+}
+table.xdebug-error.xe-warning{
+	display:block !important;
+}

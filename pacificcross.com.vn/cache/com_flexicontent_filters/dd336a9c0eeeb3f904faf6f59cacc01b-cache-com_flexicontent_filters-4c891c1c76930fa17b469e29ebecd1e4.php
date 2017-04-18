@@ -1,0 +1,1 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";s:0:"";s:6:"result";a:2:{s:8:"Thailand";O:8:"stdClass":2:{s:5:"value";s:8:"Thailand";s:4:"text";s:8:"Thailand";}s:7:"Vietnam";O:8:"stdClass":2:{s:5:"value";s:7:"Vietnam";s:4:"text";s:7:"Vietnam";}}}

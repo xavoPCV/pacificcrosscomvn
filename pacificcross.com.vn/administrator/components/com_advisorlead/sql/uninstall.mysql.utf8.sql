@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__advisorlead_categories`;
+DROP TABLE IF EXISTS `#__advisorlead_cta`;
+DROP TABLE IF EXISTS `#__advisorlead_options`;
+DROP TABLE IF EXISTS `#__advisorlead_pages`;
+DROP TABLE IF EXISTS `#__advisorlead_templates`;
+DROP TABLE IF EXISTS `#__advisorlead_template_category`;
+DROP TABLE IF EXISTS `#__advisorlead_tracking`;
+DROP TABLE IF EXISTS `#__advisorlead_user_images`;
+DROP TABLE IF EXISTS `#__advisorlead_user_meta`;
+DROP TABLE IF EXISTS `#__advisorlead_video`;
+DROP TABLE IF EXISTS `#__advisorlead_video_category`;

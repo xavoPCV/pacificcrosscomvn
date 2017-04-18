@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Date</name>
+	<author>NetAssoPro</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Date field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="date_format" type="list" default="1" label="COM_FLEXIMPORT_FIELD_DATE_FORMAT" description="COM_FLEXIMPORT_FIELD_DATE_FORMAT_DESC">
+					<option value="1">d m Y</option>
+					<option value="2">m d Y</option>
+					<option value="3">Y m d</option>
+					<option value="4">j n y</option>
+					<option value="5">n j y</option>
+					<option value="6">y n j</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

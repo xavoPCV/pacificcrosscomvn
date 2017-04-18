@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_GNOSIS_TITLE_LIST_VIEW_TAGS" option="View">
+        <message>
+            <![CDATA[COM_GNOSIS_TITLE_LIST_VIEW_TAGS_DESC]]>
+        </message>
+    </layout>
+	    <fields name="params">
+        <fieldset name="basic" label="COM_GNOSIS_FIELDSET_ITEM_ID_SELECT_LABEL">
+				<field name="tags" type="tag" label="JTAG" description="JTAG_DESC" mode="nested" class="inputbox span12 small" multiple="false" custom="deny" />
+        </fieldset>
+    </fields>
+</metadata>

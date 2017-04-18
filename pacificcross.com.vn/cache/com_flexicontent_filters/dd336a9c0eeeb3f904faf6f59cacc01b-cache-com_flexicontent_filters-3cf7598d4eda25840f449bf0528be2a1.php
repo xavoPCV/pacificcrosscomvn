@@ -1,0 +1,1 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";s:0:"";s:6:"result";a:2:{s:3:"Yes";O:8:"stdClass":4:{s:5:"value";s:3:"Yes";s:4:"text";s:3:"Yes";s:5:"image";N;s:8:"valgroup";N;}s:2:"No";O:8:"stdClass":4:{s:5:"value";s:2:"No";s:4:"text";s:2:"No";s:5:"image";N;s:8:"valgroup";N;}}}

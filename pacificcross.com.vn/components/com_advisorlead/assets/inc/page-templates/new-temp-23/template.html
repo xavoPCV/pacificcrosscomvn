@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Template Kit</title>
+        <style>@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');</style>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+       
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+          
+          <style>
+              body{
+    width: 100%;
+    margin: 0;
+    font-family: open sans;
+}
+.fullpage{
+    width: 100%;
+}
+.top{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table td[class*=col-]
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.border-dt{
+    border-bottom: 1px dotted #ccc;
+    position: absolute;
+    width: 800px;
+    top: 57px;
+    left: 14%;
+    z-index: -1000;
+}
+.br-position
+{
+    position: relative;
+}
+.bg-content{
+    background-color: #f8f8f8;
+    color: #828282;
+    border: 1px solid #828282;
+    border-left: 2px solid #36688b;
+    box-sizing: border-box;
+    padding-left: 30px !important;
+}
+
+.bg-title{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #828282;
+    margin-bottom: 35px;
+    margin-top: -80px;
+}
+.top2-img img
+{
+    width: 100%;
+}
+.bg-ct{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.bg-ul ul li span:nth-child(1){
+    padding-right: 10px;
+}
+.bg-ul ul li{
+    font-size: 15px;
+    list-style: none;
+}
+.bg-link a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #36688b;
+    padding: 15px 85px;
+
+}
+.bg-link{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.row-page
+{
+    width: 100%;
+    float: left;
+}
+.header{
+    width: 100%;
+    max-width: 1094px;
+    margin: 0 auto;
+}
+.top3-title{
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 533px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #37698e;
+    border-bottom: 1px solid #828282;
+    text-align: center;
+    text-transform: capitalize;
+}
+.icon-blue{
+    background-color: #4aa9c9;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 55px;
+    text-align: center;
+    padding: 25px;
+    float: none !important;
+    display: inline-block;
+}
+.col-xs-6.col-sm-3
+{
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize ;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 50px;
+}
+.top-4{
+    background-color: #36688b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.phone-page{
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: left;
+}
+.phone-page div
+{
+    margin-left: 10px;
+    color: #fff;
+    padding: 0px !important;
+}
+.phone-number{
+    font-size: 25px;
+    font-weight: bold;
+}
+.test1
+
+{
+    min-height: 235px;
+    border: 1px solid #ccc;
+    width: 48%;
+    margin-right: 2%;
+    color: #828282;
+    padding: 20px;
+    margin-bottom: 80px;
+    padding-right: 59px !important;
+}
+.test1:nth-child(2)
+{
+    margin-left: 2%;
+    margin-right: 0% !important;
+}
+.bg-test{
+    background-color: #366889;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 42px;
+    padding: 15px;
+    margin-bottom: 20px;
+    float: left;
+}
+.bg-text
+{font-weight: bold;
+ font-size: 15px;
+ padding-left: 20px;
+ color: #366889;
+ display: table-cell;
+ padding-top: 15px;
+}
+.test-ct{
+    color: #6a6a6a;
+    font-style:italic;
+    line-height: 160%;
+    width: 100%;
+    float: left;
+}
+.test1 ul{
+    -webkit-padding-start: 0px;
+}
+.top-6 img
+{
+    width: 14%;
+}
+.top-6
+{
+    background-color: #f8f8f8;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top:  1px solid #ccc;
+}
+.footer{
+    background-color: #36688b;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.footer a
+{
+    color: #fff;
+}
+.border-blue{
+    width: 112px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4aa9c9;
+}
+.border-blue1{
+    width: 112px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4aa9c9;
+}
+@media only screen and (max-width: 1303px) {
+    .bg-title{
+        margin-top: 0px !important;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    .header
+    {
+        width: 100% !important;
+    }
+    .bg-title{
+        margin-top: 0px !important
+    }
+    .bg-link{
+        margin-top: 10px;
+    }
+    .bg-title
+    {
+        margin-bottom: 20px;
+    }
+    .top-6 img{
+        width: 13% !important;
+    }
+    .phone-page div{
+        margin-left: 10px !important;
+    }
+    .bg-ct{
+       margin-bottom: 10px !important; 
+    }
+    
+    
+
+}
+@media only screen and (max-width: 800px) {
+    [class*="col-"] {
+        width: 100% !important;
+    }
+    .col-sm-3{
+        width: 100% !important;
+        float: left;
+    }
+    .icon-blue{
+        float: none;
+        margin-left:0px !important;
+    }
+    .border-dt{
+        width: 100% !important;
+        left:0% !important;
+    }
+    .top-6 span
+    {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .top-6 img{
+        width: auto !important;
+    }
+    .bg-content{
+        padding-bottom: 30px !important;
+        padding-top: 30px !important;
+
+    }
+    table td[class*=col-]
+    {
+        float: left !important;
+    }
+}
+@media only screen and (max-width: 410px) {
+    
+.top img
+{
+    width: 100% !important;
+}
+.phone-page div
+{
+    margin-left: 0px !important;
+}
+.test1:nth-child(2)
+{
+    margin-left: 0% !important;
+}
+.test1{
+    margin-right: 0% !important;
+    padding-left: 20px;
+    padding-right: 20px !important;
+    box-sizing: border-box;
+      margin-bottom: 20px !important;
+}
+
+.top3-title{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.bg-ct ul
+{
+   -webkit-padding-start: 0px; 
+}
+.bg-content{
+     padding-left: 10px !important ;
+}
+
+}
+/* box popup begin */
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+            :first-child{ margin-top:0;}
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/new-temp-22/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+              
+          </style>
+          <script>
+            
+             $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                     
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                 });
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="fullpage">
+            <div class="top" data-lead-id="mid-1" >
+                <img data-lb-name="Logo 1" data-lb-id="logo-1"  data-lb="editable-image editable-optional  max-image-size=450px"   src="{LOCAL_URL}/new-temp-23/your-logo.png">
+            </div>
+            <div  data-lb-name="block1" data-lb-id="block1" data-lb="editable-s1 editable-optional" class="top-2 row-page" data-lead-id="mid-2">
+                <table>
+                    <tr>
+                        <td class="col-md-6 top2-img"><img data-lb-name="img1" data-lb-id="img1"  data-lb="editable-image editable-optional  max-image-size=950px"  src="{LOCAL_URL}/new-temp-23/bg-design2.jpg"></td>
+                        <td class="col-md-6 bg-content" data-lead-id="mid-8">
+                            <div class="bg-title" data-lead-id="mid-19"><span  data-lb-name="Header 1" data-lb="editable-rich-text editable-optional" data-lb-id="Header 1"  >Get The Right Medicare Plan For You</span><div class="border-blue1"></div></div>
+                            <div class="bg-ct"   data-lb-name="Content 1" data-lb="editable-rich-text editable-optional" data-lb-id="Content 1" >We help you learn about Medicare Supplement Insurance & Part D Prescription Drug Plans</div>
+                            <div class="bg-ul" data-lead-id="mid-9" data-lb-name="Content 2" data-lb="editable-rich-text editable-optional" data-lb-id="Content 2" >
+                                <ul>
+                                    <li><span><img data-lead-id="img1" src="{LOCAL_URL}/new-temp-23/check.png"></span><span data-lead-id="text-box18">Medicare Supplement Insurance</span></li>
+                                    <li><span><img data-lead-id="img2" src="{LOCAL_URL}/new-temp-23/check.png"></span><span data-lead-id="text-box19">Medicare Advantage Plans</span></li>
+                                    <li><span><img data-lead-id="img3" src="{LOCAL_URL}/new-temp-23/check.png"></span><span data-lead-id="text-box20">Part D Prescription Drug Plans</span></li>
+                                </ul>
+                            </div>
+                            <div class="bg-link">
+                                <a href="#myModal" id="data-reveal-id" class="click fancybox-pop menu-login" > SIGN UP NOW</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="top-3 row-page" data-lb-name="block2" data-lb-id="block2" data-lb="editable-s1 editable-optional"  >
+                <div class="header">
+                    <div class="row-page">
+                        <div class="top3-title" data-lead-id="mid-10">
+                            <span data-lb-name="Header 2" data-lb="editable-rich-text editable-optional" data-lb-id="Header 2" data-lead-id="text-box3"> our easy step by step process</span>
+                            <div class="border-blue"> </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row-page br-position" >
+                         <div class="border-dt"></div>
+                        <div class="col-xs-6 col-sm-3" data-lead-id="mid-11">
+                            <div class="row-page icon-blue">
+                                <img data-lb-name="img3" data-lb-id="img3"  data-lb="editable-image editable-optional  max-image-size=220px" src="{LOCAL_URL}/new-temp-23/user.png">
+                            </div>
+                            
+                            <div class="row-page"  data-lb-name="Content 2" data-lb="editable-rich-text editable-optional" data-lb-id="Content 2"  >
+                                Determine Your Eligibility
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" data-lead-id="mid-12">
+                            <div class="row-page icon-blue">
+                                <img data-lb-name="img4" data-lb-id="img4"  data-lb="editable-image editable-optional  max-image-size=220px"  data-lead-id="img5" src="{LOCAL_URL}/new-temp-23/check-list.png">
+                            </div>
+                            <div class="row-page"   data-lb-name="Content 3" data-lb="editable-rich-text editable-optional" data-lb-id="Content 3"  >
+                                understand your options
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" data-lead-id="mid-13">
+                            <div class="row-page icon-blue">
+                                <img data-lb-name="img5" data-lb-id="img5"  data-lb="editable-image editable-optional  max-image-size=220px"  data-lead-id="img6" src="{LOCAL_URL}/new-temp-23/checked.png">
+                            </div>
+                            <div class="row-page"   data-lb-name="Content 4" data-lb="editable-rich-text editable-optional" data-lb-id="Content 4"  >
+                                enroll in the perfect plan
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" data-lead-id="mid-14">
+                            <div class="row-page icon-blue">
+                                <img data-lb-name="img6" data-lb-id="img6"  data-lb="editable-image editable-optional  max-image-size=220px"  data-lead-id="img7" src="{LOCAL_URL}/new-temp-23/iphone.png">
+                            </div>
+                            <div class="row-page"   data-lb-name="Content 5" data-lb="editable-rich-text editable-optional" data-lb-id="Content 5"  >
+                                Continued client support
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-page top-4" data-lb-name="block3" data-lb-id="block3" data-lb="editable-s1 editable-optional" >
+                <div class="phone-page">
+                    <div class="col-md-12">
+                        <table>
+                            <tr>
+                                <td><img data-lead-id="img8" src="{LOCAL_URL}/new-temp-23/phone2.png"></td>
+                                <td><div class="phone-number"  data-lb-name="Content 6" data-lb="editable-rich-text editable-optional" data-lb-id="Content 6"  >561-900-7877</div><div class="phone-text"   data-lb-name="Content 7" data-lb="editable-rich-text editable-optional" data-lb-id="Content 7"  >SPEAK TO A LICENSED AGENT</div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row-page top-5" data-lb-name="block4" data-lb-id="block4" data-lb="editable-s1 editable-optional"  >
+                <div class="header">
+                    <div class="top3-title" data-lead-id="mid-15">
+                        <span   data-lb-name="Content 8" data-lb="editable-rich-text editable-optional" data-lb-id="Content 8"  >Testimonials</span>
+                        <div class="border-blue">
+                        </div>
+                    </div>
+                    <div class="row-page">
+                        <div class="col-md-6 test1" data-lead-id="mid-16">
+                            <div class="row-page" >
+                                <span class="bg-test"   data-lb-name="Content 8" data-lb="editable-rich-text editable-optional" data-lb-id="Content 8"  >G</span><span class="bg-text"   data-lb-name="Content 9" data-lb="editable-rich-text editable-optional" data-lb-id="Content 9"  >Grace, 74, Huntington NY</span>
+                            </div>
+                            <div class="test-ct"   data-lb-name="Content 10" data-lb="editable-rich-text editable-optional" data-lb-id="Content 10"  >
+                                My husband and i have the highest approval of Brian Krantz. Thanks to his expertise we were able to have the proper plan for medical and drug coverage. his advised will save you time, work and money.
+                            </div>
+                        </div>
+                        <div class="col-md-6 test1" data-lead-id="mid-17">
+                            <div class="row-page">
+                                <span class="bg-test"   data-lb-name="Content 11" data-lb="editable-rich-text editable-optional" data-lb-id="Content 11"  >M</span><span class="bg-text"   data-lb-name="Content 12" data-lb="editable-rich-text editable-optional" data-lb-id="Content 12" >Mitchell, 75, Melville NY</span>
+                            </div>
+                            <div class="test-ct"   data-lb-name="Content 13" data-lb="editable-rich-text editable-optional" data-lb-id="Content 13" >
+                                I have had the opportunity to know Brian for a good few years. he has always reviewed the coverage for my wife and myself and gave us the best program available. That is how we are currently with plan Medicare and look forward to working with Brian for many years to come...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-page top-6" data-lead-id="mid-6">
+                <div class="header">
+                    <span><img data-lb-name="img3" data-lb-id="img3"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img9" src="{LOCAL_URL}/new-temp-23/sam-sample-logo.png"></span>
+                    <span><img data-lb-name="img4" data-lb-id="img4"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img10" src="{LOCAL_URL}/new-temp-23/sample-logo23-350x63.png"></span>
+                    <span><img data-lb-name="img5" data-lb-id="img5"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img11" src="{LOCAL_URL}/new-temp-23/sample-logo-black16-300x58.png"></span>
+                    <span><img data-lb-name="img6" data-lb-id="img6"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img12" src="{LOCAL_URL}/new-temp-23/sample_logo.png"></span>
+                    <span><img data-lb-name="img7" data-lb-id="img7"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img13" src="{LOCAL_URL}/new-temp-23/pattern-sample-logo-c-1.png"></span>
+                    <span><img data-lb-name="img8" data-lb-id="img8"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img14" src="{LOCAL_URL}/new-temp-23/images.png"></span>
+                    <span><img data-lb-name="img9" data-lb-id="img9"  data-lb="editable-image editable-optional  max-image-size=220px" data-lead-id="img15" src="{LOCAL_URL}/new-temp-23/ippolitaLogo_0_0.PNG"></span>
+                </div>
+            </div>
+            <div class="row-page footer" data-lead-id="mid-7"  data-lb-name="Content 18" data-lb="editable-rich-text editable-optional" data-lb-id="Content 18"  >
+                <span  data-lead-id="text-box17" >Copyright © Planmedicare. All Rights Reserved.</span> <a data-lead-id="name-terms1">Terms of Use</a> | <a data-lead-id="name-policy1">Privacy Policy</a>
+            </div>
+        </div>
+
+<div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <div class="illust">
+                    <img src="{LOCAL_URL}/book.png" data-lb-comment="Recommended image size 192 x 279 pixels" data-lb-name="Popup Book Image" data-lb-id="book-image-pop" alt="" data-lb="editable-image max-image-size=279 editable-optional">
+                </div>
+                <form data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" class="content" method="post">
+                    <p data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline">Subscribe To My Newsletter To Get<br>A <strong>100% Free</strong> Chapter From The Book.</p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="name">
+                    </p>
+                    <p class="inp-fix">
+                        <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }" type="text" id="email">
+                    </p>
+                    <p class="inp-fix">
+                        <input type="text" id="phone" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" style="cursor: pointer; display: none;">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn subscribe_button">
+                            <span data-lb-name="Popup Subscribe Button" data-lb="editable-rich-text editable-optional" data-lb-id="button-pop">Click here to Subscribe &#187</span>
+                        </button>
+                    </p>
+                    <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

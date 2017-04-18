@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+          <script src="js/html5shiv.js"></script>
+          <script src="js/jquery-1.9.1.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/functions.js"></script>
+       
+
+        <style>
+
+            body{
+                width: 100%;
+                margin: 0;
+                font-family: open sans;
+            }
+            .fullpage{
+                width: 100%;
+            }
+            .site-show{
+                text-align: center;  
+                margin: 0 auto;
+                width: 1024px;
+            }
+            @media only screen and (max-width: 800px) {
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+                .site-show{
+                    width: 100%;
+                }
+            }
+
+            .phone {
+                background: url('img/phone-icon.png');
+                background-position: left ;
+                padding-left: 25px;
+                background-repeat: no-repeat;
+                color: #3d6c8e;
+                font-size: 30px;
+                width: 268px;
+                float: right;
+            }
+            .background-top img{
+                width: 100%;
+            }
+            .background-top {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1000;
+            }
+            .top{
+                border-top: #49A7C9 4px solid;
+            }
+            .top_1{
+                margin-top: 50px;
+                margin-bottom:  70px;
+            }
+            .contact {
+                float: right;
+                text-align: right;
+            }
+            .contact h3{
+                font-size: 20px;
+                margin-top: 3px;
+            }
+            .logo img{
+                width: 100%;
+            }
+            .top_2 img{
+                width: 100%;
+            }
+            .intro{
+                padding: 25px;
+            }
+            .box-sign-up{
+                background-color: #bde4f3;
+                border: 3px #fff solid;
+                border-radius: 8px;
+                text-align: left;
+            }
+            .box-sign-up button{
+                width: 100%;
+                height: 54px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 21px;
+                border: none;
+                background: #ff9000;
+            }
+            .box-header{
+                font-size: 33px;
+
+                margin-bottom: 25px;
+            }
+            .box-content{
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            .box-list{
+                font-size: 18px;
+                font-weight: normal;
+                color: #666;
+                line-height: 36px;
+            }
+            .box-list li{
+                list-style-image: url('img/check.png');
+            }
+            .mid-1.col-md-12
+            {
+                margin-top: 80px;
+                background: #f3f1f2;
+                padding-bottom: 45px;
+            }
+            .site-show .mid1-slide img{
+                margin-top: 45px;
+            }
+            .mid1-h1
+            {
+                color: #504e4f;
+            }
+            .mid1-con
+            {
+                font-size: 22px;  
+                color: #666;
+            }
+            .col-md-3-text2
+            {
+                color: #666;
+            }
+            .mid1-slide
+            {
+                width: 25%;
+                float: left;
+            }
+            .mid-2
+            {
+                width: 100%;
+                float:left;
+                background: #4baaca;
+                color: #fff;
+                padding-bottom: 140px;
+            }
+            .mid2-h1
+            {
+                color: #fff;
+            }
+            .mid2-con
+            {
+                font-size: 22px;
+            }
+            .inside-h1
+            {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            .inside-con
+            {
+                font-size: 19px;
+                text-align: left;
+            }
+            .inside-link a{
+                margin-top: 20px;
+                text-align: left;
+                float: left;
+                color: #fff !important;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            .mid-3
+            {
+                width: 100%;
+                float: left;
+            }
+            .mid-3 .mid3-box
+            {
+                width: 100%;
+                float: left;
+                margin-top: 40px;
+            }
+            .mid-3 .col-md-9
+            {
+                font-size: 18px;
+                float: right;
+                text-align: left;
+                line-height: 160%;
+                padding: 20px;
+                border: 2px solid #4baaca;
+                border-radius: 5px;
+            }
+
+            .mid-3 .col-md-3
+            {
+                width: 25% !important;
+            }
+            .col-md-3-text1
+            {
+                font-size: 18px;
+            }
+            .col-md-3-text2
+            {
+                font-size: 20px; 
+            }
+            .mid-3 button.b2{
+                width: 290px;
+                border: 3px solid #36688b;
+                background: #fff;
+                height: 70px;
+                color: #36688b;
+                margin-top: 40px;
+                border-radius: 7px;
+                font-size: 20px;
+            }
+            .mid-4-row
+            {
+                width: 1024px;
+                /* float: left; */
+                margin: 0 auto;
+                text-align: center;
+                color: #fff;
+            }
+            .mid-4
+            {
+                width:100%;
+                float: left;
+                background: #36688b;
+                margin-top: 100px;
+                padding-bottom: 150px;
+            }
+            .footer
+            {
+                width: 100%;
+                color: #666;
+                float: left;
+                text-align: center;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                font-size: 20px;
+            }
+            .footer a{
+                color: #4baaca;
+            }
+            .mid-4-row img{
+                margin-top: 50px;
+            }
+            .mid-4-row .mid2-con
+            {
+                margin-bottom: 60px;
+            }
+            .step
+            {
+                font-size: 30px;
+                height: 70px;
+                margin: 0 auto;
+                width: 70px;
+                text-align: center;
+                border-radius: 70px;
+                padding-top: 13px;
+                background: #4baaca;
+                border: 2px solid #7ba8c9;  
+                font-family: monospace;
+            }
+            .inside2 .inside2-title
+            {
+                margin-bottom: 25px;
+                font-size: 22px;
+            }
+            .inside2 .inside2-content
+            {
+                font-size: 15px;
+                text-align: left;
+            }
+            .col-md-9
+            {
+                position: relative;
+                background: #fff;
+            }
+
+            .col-md-9:before{
+                top: 30px;
+                bottom: auto;
+                left: -26px;
+                border-width: 0px 25px 29px 0;
+                border-color: transparent #4baaca;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                display: block;
+                width: 0;
+            }
+            .col-md-9:after{
+                top: 31px;
+                bottom: auto;
+                left: -19px;
+                border-width: 0px 21px 26px 0;
+                border-color: transparent #fff;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                display: block;
+                width: 0;
+            }
+            .mid1-top-img, .inside img
+            {
+                margin-top: 45px;
+            }
+
+        </style>
+
+    
+    </head>
+    <body>
+        <div class="fullpage">
+            <div class="top">
+                <div class="site-show" >
+                    <div class="background-top"><img  data-lead-id="background-top"  data-lb-comment="Recommended image width: 1903px" data-lb="editable-image editable-optional max-image-size=1903" src="img/header-sky.png" /></div>
+                    <div class="top_1 col-md-12">
+                        <div class="logo col-md-5" ><img data-lb-name="Logo Image" data-lead-id="logo-img"  data-lb-comment="Recommended image width: 384px" data-lb="editable-image editable-optional max-image-size=384" src="img/your-logo.png" /> </div>
+                        <div class="contact col-md-5"  > 
+                            <div class="phone col-md-12" data-lb-name="phone"   data-lead-id="phone"  data-lb="editable-rich-text editable-optional">
+                                567 - 900 - 7877
+                            </div>
+                            <h3 class="col-md-12"  data-lb-name="phone-text"   data-lead-id="phone-text"  data-lb="editable-rich-text editable-optional">Call Us and speack to a licensed agent</h3>
+                        </div>
+                    </div>
+                    <div class="top_2">
+                        <div class="col-md-7">
+                            <img data-lb-name="new-temp" data-lead-id="new-temp"  data-lb-comment="Recommended image width: 568px" data-lb="editable-image editable-optional max-image-size=568" src="img/couple.png" />
+                        </div>
+                        <div class="col-md-5">
+                            <div class="box-sign-up">
+                                <div class="intro">
+                                    <h1 class="box-header" data-lb-name=" box-header1"   data-lead-id="box-header1"  data-lb="editable-rich-text editable-optional" > Get The Right Medicare Plan For You</h1>
+                                    <div class="box-content" data-lb-name=" box-content1"   data-lead-id="box-content1"  data-lb="editable-rich-text editable-optional">
+                                        We help you learn about Medicare Supplement Insurance & Part D Precirption Drug Plan
+                                    </div>
+                                    <div class="box-list" >
+                                        <ul>
+                                            <li data-lb-name="box-list1"   data-lead-id="box-list1"  data-lb="editable-rich-text editable-optional">Mediacare Supplement Insurance</li>
+                                            <li data-lb-name="box-list2"   data-lead-id="box-list2"  data-lb="editable-rich-text editable-optional">Medicare Advantage Plans</li>
+                                            <li data-lb-name="box-list2"   data-lead-id="box-list3"  data-lb="editable-rich-text editable-optional">Part D Prescription Drug Plans</li>
+                                        </ul>
+                                    </div>
+                                    <button class="b1" data-lb-name="sign up now" data-lead-id="sign-up-now" data-lb="editable-button   editable-optional"> SIGN UP NOW </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-1 col-md-12" data-lb-name="Companies we work with" data-lead-id="top-1" data-lb="editable-s1 editable-optional">
+                <div class="site-show" >
+                    <div style="mid1-top" class="mid1-top-img" >
+                        <img data-lb-name="img1" data-lead-id="img1"  data-lb-comment="Recommended image width: 44px" data-lb="editable-image editable-optional max-image-size=44" src="img/briefcase.png" />
+                        <h1 class="mid1-h1" data-lb-name="text-box1"   data-lead-id="text-box1"  data-lb="editable-rich-text editable-optional" > Companies we work with </h1>
+                        <div class="mid1-con" data-lb-name=" text-box2"   data-lead-id="text-box2"  data-lb="editable-rich-text editable-optional" > We work only with reliable companies </div>
+                    </div>
+                    <div class="mid1-slide">
+                        <img data-lb-name="img2" data-lead-id="img2"  data-lb-comment="Recommended image width: 209px" data-lb="editable-image editable-optional max-image-size=209" src="img/logo1.jpg" />
+                    </div>
+                    <div class="mid1-slide">
+                        <img data-lb-name="img3" data-lead-id="img3"  data-lb-comment="Recommended image width: 134px" data-lb="editable-image editable-optional max-image-size=134" src="img/logo2.jpg" />
+                    </div>
+                    <div class="mid1-slide">
+                        <img data-lb-name="img4" data-lead-id="img4"  data-lb-comment="Recommended image width: 165px" data-lb="editable-image editable-optional max-image-size=165" src="img/logo3.jpg" />
+                    </div>
+                    <div class="mid1-slide">
+                        <img data-lb-name="img5" data-lead-id="img5"  data-lb-comment="Recommended image width: 138px" data-lb="editable-image editable-optional max-image-size=138" src="img/logo4.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="mid-2" data-lb-name="Learn About Medicare Plan" data-lead-id="mid-2" data-lb="editable-s1 editable-optional">
+                <div class="site-show" >
+                    <div style="mid2-top" class="mid1-top-img">
+                        <img data-lb-name="img6" data-lead-id="img6"  data-lb-comment="Recommended image width: 32px" data-lb="editable-image editable-optional max-image-size=32" src="img/report.png" />
+                        <h1 class="mid2-h1" data-lb-name="text-box1"   data-lead-id="text-box1"  data-lb="editable-rich-text editable-optional" > Learn About Medicare Plan </h1>
+                        <div class="mid2-con" data-lb-name=" text-box2"   data-lead-id="text-box2"  data-lb="editable-rich-text editable-optional" > Find a Medicare plan that is right for you </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="inside">
+                            <img data-lb-name="img6" data-lead-id="img6"  data-lb-comment="Recommended image width: 52px" data-lb="editable-image editable-optional max-image-size=52" src="img/icon1.png" />
+                            <h1 class="inside-h1" data-lb-name=" text-box3"   data-lead-id="text-box3"  data-lb="editable-rich-text editable-optional"  > Medicare Supplement Insurance </h1>
+                            <div class="inside-con" data-lb-name=" text-box4"   data-lead-id="text-box4"  data-lb="editable-rich-text editable-optional" >  Medicare Supplement Insurance olasn are offered to those enrolled in medicare Part A and B </div>
+                            <div class="inside-link"> <a style="inside-link" data-lb-name="inside-link1" data-lead-id="inside-link1" data-lb="editable-link   editable-optional">Learn more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="inside">
+                            <img data-lb-name="img7" data-lead-id="img7"  data-lb-comment="Recommended image width: 200px" data-lb="editable-image editable-optional max-image-size=964"  src="img/icon2.png" />
+                            <h1 class="inside-h1" data-lb-name=" text-box5"   data-lead-id="text-box5"  data-lb="editable-rich-text editable-optional"> Medicare Supplement Insurance </h1>
+                            <div class="inside-con" data-lb-name=" text-box6"   data-lead-id="text-box6"  data-lb="editable-rich-text editable-optional">  Medicare Supplement Insurance olasn are offered to those enrolled in medicare Part A and B </div>
+                            <div class="inside-link"> <a style="inside-link" data-lb-name="inside-link2" data-lead-id="inside-link2" data-lb="editable-link   editable-optional">Learn more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="inside">
+                            <img data-lb-name="img8" data-lead-id="img8"  data-lb-comment="Recommended image width: 200px" data-lb="editable-image editable-optional max-image-size=964"  src="img/icon3.png" />
+                            <h1 class="inside-h1" data-lb-name=" text-box7"   data-lead-id="text-box7"  data-lb="editable-rich-text editable-optional"> Medicare Supplement Insurance </h1>
+                            <div class="inside-con" data-lb-name="text-box8"   data-lead-id="text-box8"  data-lb="editable-rich-text editable-optional">  Medicare Supplement Insurance olasn are offered to those enrolled in medicare Part A and B </div>
+                            <div class="inside-link"> <a style="inside-link" data-lb-name="inside-link3" data-lead-id="inside-link3" data-lb="editable-link   editable-optional">Learn more</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mid-3" data-lb-name="What Our Customers Think of Us" data-lead-id="mid-3" data-lb="editable-s1 editable-optional">
+                <div class="site-show" >
+                    <div style="mid1-top" class="mid1-top-img" >
+                        <img data-lb-name="chat" data-lead-id="img9"  data-lb-comment="Recommended image width: 49px" data-lb="editable-image editable-optional max-image-size=49" src="img/chat.png" />
+                        <h1 class="mid1-h1" data-lb-name="text-box9"   data-lead-id=" text-box9"  data-lb="editable-rich-text editable-optional"  > What Our Customers Think of Us </h1>
+                        <div class="mid1-con" data-lb-name="  text-box10"   data-lead-id=" text-box10"  data-lb="editable-rich-text editable-optional" > More than 3 million people choose a Plan Medicare  </div>
+                    </div>
+                    <div class="mid3-box">
+                        <div class="col-md-3">
+                            <span class="col-md-3-text1" data-lb-name="text-box11"   data-lead-id="text-box11"  data-lb="editable-rich-text editable-optional" >Elda ,67</span> <br>
+                            <span class="col-md-3-text2" data-lb-name="text-box12"   data-lead-id="text-box12"  data-lb="editable-rich-text editable-optional" >Hicksvile NY</span></div>
+                        <div class="col-md-9" data-lb-name="text-box13"   data-lead-id="text-box13"  data-lb="editable-rich-text editable-optional">
+                            Hi, I have been using Brian Krantz's expertise for the last three years. I was overwhelmed with information and Brian helped me patiently find a plan that fits my need. I have had no problems with the palan i choose. I have recommended four other people and each had the same experience. Do yourself a favor and call him. It saves you alot of scree and grief! 
+                        </div>
+                    </div>
+                    <div class="mid3-box">
+                        <div class="col-md-3">
+                            <span class="col-md-3-text1" data-lb-name="text-box13"   data-lead-id="text-box13"  data-lb="editable-rich-text editable-optional">Mitchell , 75 </span><br> 
+                            <span class="col-md-3-text2" data-lb-name="text-box14"   data-lead-id="text-box14"  data-lb="editable-rich-text editable-optional">Meivlle NY</span></div>
+                        <div class="col-md-9" data-lb-name="text-box15"   data-lead-id="text-box15"  data-lb="editable-rich-text editable-optional">
+                            I have had the opportunity to know Brian for a good few years, He has always reviewed the coverages for my wife and myself and gave us the best programs available. That is how we are currently with plan Medicare and look forward to working with Brian for many years to come. 
+                        </div>
+                    </div>
+                    <button class="b2" data-lb-name="Read All Testimonials" data-lead-id="b2-name" data-lb="editable-button   editable-optional"> Read All Testimonials </button>
+                </div>
+            </div>
+
+            <div class="mid-4" data-lb-name="Learn About Medicare Plan" data-lead-id="mid-4" data-lb="editable-s1 editable-optional">
+                <div class="mid-4-row">
+                    <div style="mid2-top" >
+                        <img data-lb-name="step" data-lead-id="img10"  data-lb-comment="Recommended image width: 37px" data-lb="editable-image editable-optional max-image-size=37" src="img/step.png" />
+                        <h1 class="mid2-h1" data-lb-name="text-box14"   data-lead-id="text-box14"  data-lb="editable-rich-text editable-optional" > Learn About Medicare Plan </h1>
+                        <div class="mid2-con" data-lb-name="text-box15"   data-lead-id="text-box15"  data-lb="editable-rich-text editable-optional"> Find a Medicare plan that is right for you </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inside2">
+                            <div class="step" data-lb-name="text-box16"   data-lead-id="text-box16"  data-lb="editable-rich-text editable-optional"> 1 </div>
+                            <div class="inside2-title" data-lb-name="text-box17"   data-lead-id="text-box17"  data-lb="editable-rich-text editable-optional"> Determine Your Eligibility </div>
+                            <div class="inside2-content" data-lb-name="text-box18"   data-lead-id="text-box18"  data-lb="editable-rich-text editable-optional"> Learn about enrollment period and gather all of the proper materials you will need to get started with Medicare.  </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inside2">
+                            <div class="step" data-lb-name="text-box19"   data-lead-id="text-box19"  data-lb="editable-rich-text editable-optional"> 2 </div>
+                            <div class="inside2-title" data-lb-name="text-box20"   data-lead-id="text-box20"  data-lb="editable-rich-text editable-optional"> Determine Your Eligibility </div>
+                            <div class="inside2-content" data-lb-name="text-box21"   data-lead-id="text-box21"  data-lb="editable-rich-text editable-optional"> Learn about enrollment period and gather all of the proper materials you will need to get started with Medicare.  </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inside2">
+                            <div class="step" data-lb-name="text-box22"   data-lead-id="text-box22"  data-lb="editable-rich-text editable-optional"> 3 </div>
+                            <div class="inside2-title" data-lb-name="text-box23"   data-lead-id="text-box23"  data-lb="editable-rich-text editable-optional"> Determine Your Eligibility </div>
+                            <div class="inside2-content" data-lb-name="text-box24"   data-lead-id="text-box24"  data-lb="editable-rich-text editable-optional"> Learn about enrollment period and gather all of the proper materials you will need to get started with Medicare.  </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inside2">
+                            <div class="step" data-lb-name="text-box25"   data-lead-id="text-box25"  data-lb="editable-rich-text editable-optional"> 4 </div>
+                            <div class="inside2-title" data-lb-name="text-box26"   data-lead-id="text-box26"  data-lb="editable-rich-text editable-optional"> Determine Your Eligibility </div>
+                            <div class="inside2-content" data-lb-name="text-box27"   data-lead-id="text-box27"  data-lb="editable-rich-text editable-optional"> Learn about enrollment period and gather all of the proper materials you will need to get started with Medicare.  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" data-lb-name="Copyright © Planmedicare. All Rights Reserved." data-lead-id="footer" data-lb="editable-s1 editable-optional" >
+                <div data-lb-name="text-box28"   data-lead-id="text-box28"  data-lb="editable-rich-text editable-optional"> Copyright © Planmedicare. All Rights Reserved. <br> <a data-lb-name="Terms of Use" data-lead-id="name-terms" data-lb="editable-link   editable-optional">Terms of Use</a> | <a data-lb-name="I Privacy Policy" data-lead-id="name-policy" data-lb="editable-link   editable-optional"> I Privacy Policy</a>  </div>
+            </div>
+        </div>
+
+    </body>
+</html>

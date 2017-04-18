@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+  <name>novel</name>
+  <creationDate>10/08/2015</creationDate>
+  <author>lunarthemes.com</author>
+  <authorEmail>team@lunarthemes.com</authorEmail>
+  <authorUrl>http://www.lunarthemes.com</authorUrl>
+  <copyright>2014 lunarthemes.com -- all rights reserved</copyright>
+  <license>Commercial</license>
+  <version>3.4.3 10.08.2015</version>
+  <description>
+  
+&lt;p style='text-align:left;clear:both;width:100%;'&gt;&lt;img src='../templates/novel/template_thumbnail.png' style='text-align:left;float:none;' /&gt;&lt;/p&gt;
+    &lt;p style='font-size:13px;line-height:18px;'&gt;
+    Joomla template developed and released by &lt;a href='http://www.energizethemes.com/'&gt;www.energizethemes.com&lt;/a&gt;. This Joomla template is not free or public and can not be resold or redistributed. By downloading and using this template you have agreed to use the template in accordance with the terms of service outlined at &lt;a href='http://www.energizethemes.com/'&gt;www.energizethemes.com&lt;/a&gt; &lt;/p&gt; &lt;p style='font-size:13px;line-height:20px;'&gt;
+    - Looking for support? Go to &lt;a href='http://www.energizethemes.com/Support.html' target='blank'&gt;energizethemes.com Support&lt;/a&gt; and open a ticket &lt;br /&gt;
+    - &lt;a href='http://www.energizethemes.com/' target='blank'&gt;energizethemes.com &lt;/a&gt; for templates news, template upgrades and much more ... &lt;br /&gt;
+    &lt;/p&gt;
+  
+    <![CDATA[
+	
+<style type="text/css">.row-fluid.form-horizontal-desktop .span6,#details .span3,#details .span9{float:none !important;width:100% !important;margin:0px !important;}.form-horizontal .control-group{margin-bottom:0px !important;padding:8px 0px;border-bottom:1px solid #dddddd;}@media (max-width:480px){.spacer .inline-help label{width:180px !important;min-width:180px !important;}label{width:100% !important; max-width:100%; min-width:100%;}}@media (min-width:481px) and (max-width:767px){.spacer .inline-help label{width:380px !important;min-width:380px !important;}label,.control-label,.controls{display:inline-block !important;}.control-label{padding-right:5px !important;}}@media (min-width:768px){.nav-tabs{width:21%;margin-right:0;float:left;border-bottom:none;position:absolute;margin-top:10px;}.nav-tabs>li{float:none !important; margin-bottom:3px;}.nav-tabs>li>a{border:none; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#f5f5f5;margin:0px !important;}.nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus{color:#ffffff;background-color:#2b80c1;border:none;}.tab-content{background:#ffffff;width:75%;float:left;margin-left:23%;padding:5px 1% 20px 1%;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.18);-moz-box-shadow:0px 0px 5pxx rgba(0,0,0,0.18);box-shadow:0px 0px 5px rgba(0,0,0,0.18);border:1px solid #dddddd;min-height:360px;}}@media (max-width:767px){.nav-tabs{border-bottom:none;}.nav-tabs>li{float:none !important;margin-bottom:3px;}.nav-tabs>li>a{border:none; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#f5f5f5;margin:0px !important;}.nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus{color:#ffffff;background-color:#2b80c1;border:none;}}@media (min-width:768px) and (max-width:979px){.spacer .inline-help label{width:460px !important;min-width:460px !important;}label,.control-label,.controls{display:inline-block !important;}.control-label{padding-right:5px !important;}}@media (min-width:980px){.spacer .inline-help label{width:610px !important;min-width:610px !important;}label,.control-label,.controls{display:inline-block !important;}.control-label{padding-right:5px !important;}}.spacer .inline-help label{display:block; padding:14px 20px !important; margin:0px 0px 5px 0px !important; background:#2b80c1; color:#ffffff; text-shadow:-1px -1px 0px rgba(0,0,0,0.2);box-shadow:2px 2px 3px rgba(0,0,0,0.18);-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.18);-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.18);border-bottom-left-radius:3px 3px;border-bottom-right-radius:3px 3px;border-top-left-radius:3px 3px !important;border-top-right-radius:3px 3px !important;-moz-border-radius:3px 3px 3px 3px;}div.label{display:block !important;background:#f5f5f5 !important;border:1px solid #eeeeee;padding:10px;width:400px !important;min-width:400px !important;max-width:400px !important;-webkit-box-shadow:#dedede 0px 0px 0px 1px,rgba(0,0,0,0.296875) 1px 2px 5px;box-shadow:#dedede 0px 0px 0px 1px,rgba(0,0,0,0.296875) 1px 2px 5px;}label{width:160px !important; max-width:160px; min-width:160px;}
+	.input-color { padding: 3px !important; font-size: 12px;background-image: url(../templates/novel/images/color_wheel.png);background-position: 4px 5px;background-repeat: no-repeat;cursor: pointer;text-transform: uppercase;border: 1px solid #CCC !important;border-bottom-left-radius: 5px 5px !important;border-bottom-right-radius: 5px 5px !important;border-top-left-radius: 5px 5px !important;border-top-right-radius: 5px 5px !important;padding: 5px 5px 5px 26px !important;}
+	.input-text {background-image: #ffffff;border: 1px solid #CCC !important;border-bottom-left-radius: 5px 5px !important;border-bottom-right-radius: 5px 5px !important;border-top-left-radius: 5px 5px !important;border-top-right-radius: 5px 5px !important;padding: 5px 5px 5px 5px !important;}
+	.pane-sliders {padding: 6px;background: #ffffff;box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.28);-moz-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.28);-webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.28);border-bottom-left-radius: 6px 6px;border-bottom-right-radius: 6px 6px;border-top-left-radius: 6px 6px !important;border-top-right-radius: 6px 6px !important;-moz-border-radius:6px 6px 6px 6px;}
+	.pane-sliders .panel h3 {font-size: 15px;margin-bottom: 5px;text-transform: uppercase;font-weight: normal;padding: 9px 9px;text-shadow: 1px 1px 3px rgba(0,0,0, 0.4);border: 1px solid #cccccc !important;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.18);-moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.18);-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.18);border-bottom-left-radius: 3px 3px;border-bottom-right-radius: 3px 3px;border-top-left-radius: 3px 3px !important;border-top-right-radius: 3px 3px !important;-moz-border-radius:3px 3px 3px 3px;}
+	.pane-sliders .panel h3 a {color: #444444;}
+	.pane-sliders .panel {border: 0px;}
+	ul.adminformlist, ul.adminformlist li {clear: both; padding: 5px 0px !important;display:block !important;height:100%; }
+	.switch{cursor: pointer;display: inline-block;overflow: hidden;position: relative;width: 105px;height: 30px;vertical-align: middle;}
+	.switch .background {background: url('../templates/novel/utils/images/switch-background.png');display: block;position: absolute;top: 0;left: 0;width: 160px;height: 30px;}
+	.switch .mask {background: url('../templates/novel/utils/images/switch-mask.png');display: block;position: absolute;top: 0;left: 0;width: 105px;height: 30px;}
+    </style>
+	
+	<link rel="stylesheet" type="text/css" href="../templates/novel/utils/css/style.css" />
+	<script type="text/javascript" src="../templates/novel/utils/admin-js.js"></script>
+	
+	
+	
+	
+	]]>
+  </description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>conf-modules.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<folder>css/</folder>
+		<folder>utils/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>language/</folder>
+		<folder>js/</folder>
+	</files>
+	<positions>
+            
+            
+            <position>language</position>
+		<position>header-1</position>
+		<position>header-2</position>
+		<position>header-3</position>
+		<position>header-4</position>
+		<position>header-5</position>
+		<position>header-6</position>
+		<position>top-left-1</position>
+		<position>top-left-2</position>
+		<position>left</position>
+		<position>position-7</position>
+		<position>bottom-left-1</position>
+		<position>bottom-left-2</position>
+		<position>top-right-1</position>
+		<position>top-right-2</position>
+		<position>right</position>
+		<position>position-6</position>
+		<position>bottom-right-1</position>
+		<position>bottom-right-2</position>
+		<position>built-in-slideshow</position>
+		<position>slideshow</position>
+		<position>top-long</position>
+		<position>top-1</position>
+		<position>top-2</position>
+		<position>top-3</position>
+		<position>top-4</position>
+		<position>top-5</position>
+		<position>top-6</position>
+		<position>top-7</position>
+		<position>top-8</position>
+		<position>top-9</position>
+		<position>top-10</position>
+		<position>top-11</position>
+		<position>top-12</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>top-c</position>
+		<position>top-d</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>bottom-c</position>
+		<position>bottom-d</position>
+		<position>loginform</position>
+		<position>position-4</position>
+		<position>position-3</position>
+		<position>position-2</position>
+		<position>position-1</position>
+		<position>position-0</position>
+		<position>bottom-long</position>
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>bottom-3</position>
+		<position>bottom-4</position>
+		<position>bottom-5</position>
+		<position>bottom-6</position>
+		<position>bottom-7</position>
+		<position>bottom-8</position>
+		<position>bottom-9</position>
+		<position>bottom-10</position>
+		<position>bottom-11</position>
+		<position>bottom-12</position>
+		<position>bottom-e</position>
+		<position>bottom-f</position>
+		<position>bottom-g</position>
+		<position>bottom-h</position>
+		<position>bottom-i</position>
+		<position>bottom-j</position>
+		<position>footer</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-left</position>
+		<position>footer-right</position>
+		<position>debug</position>
+	</positions>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_novel.ini</language>
+    <language tag="en-GB">en-GB/en-GB.tpl_novel.sys.ini</language>
+  </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basics" label="TPL_NOVEL_FONTS_SETTINGS_TAB">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_WELCOME_LABEL" />
+				<field name="contentfontsize" class="input-text" type="text" default="13px" label="TPL_NOVEL_CONTENTFONTSIZE_LABEL" description="TPL_NOVEL_CONTENTFONTSIZE_DESC" size="60" />
+			</fieldset>
+			<fieldset name="sitename" label="TPL_NOVEL_SITENAME_SETTINGS_TAB">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_SITENAMEIMAGE_HELP" />
+				<field name="H1Title" type="textarea" filter="raw" class="input-text" label="TPL_NOVEL_H1TITLE_LABEL" description="TPL_NOVEL_H1TITLE_DESC" rows="2" cols="35" />
+				<field name="logoLinked" class="switch" type="checkbox" label="TPL_NOVEL_LOGOLINKED_LABEL" description="TPL_NOVEL_LOGOLINKED_DESC" value="true" />
+				<field name="H1TitleImgText" class="switch" type="checkbox" label="TPL_NOVEL_H1TITLEIMGTEXT_LABEL" description="TPL_NOVEL_H1TITLEIMGTEXT_DESC" value="true" />
+				<field class="input-color" name="sitenamecolor" type="color" default="#2a2a2a" label="TPL_NOVEL_SITENAMECOLOR_LABEL" description="TPL_NOVEL_SITENAMECOLOR_DESC" size="7" />
+				<field name="sitenamefontsize" class="input-text" type="text" default="30px" label="TPL_NOVEL_SITENAMEFONTSIZE_LABEL" description="TPL_NOVEL_SITENAMEFONTSIZE_DESC" size="60" />
+				<field name="H1Titleimage" label="TPL_NOVEL_H1TITLEIMAGE_LABEL" type="media" directory="images" description="TPL_NOVEL_H1TITLEIMAGE_DESC" />
+				<field name="H1TitlePositionX" default="center" class="input-text" type="text" label="TPL_NOVEL_H1TITLEPOSITIONX_LABEL" description="TPL_NOVEL_H1TITLEPOSITIONX_DESC" size="60" />
+				<field name="H1TitlePositionY" default="10" class="input-text" type="text" label="TPL_NOVEL_H1TITLEPOSITIONY_LABEL" description="TPL_NOVEL_H1TITLEPOSITIONY_DESC" size="60" />
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_SLOGAN_HELP" />
+				<field name="H2Title" class="input-text" filter="raw" type="textarea" label="TPL_NOVEL_SLOGAN_LABEL" description="TPL_NOVEL_SLOGAN_DESC" rows="2" cols="35" />
+				<field class="input-color" name="slogancolor" type="color" default="#2a2a2a" label="TPL_NOVEL_SLOGAN_COLOR_LABEL" description="TPL_NOVEL_SLOGAN_COLOR_DESC" size="7" />
+				<field name="sloganfontsize" class="input-text" type="text" default="10px" label="TPL_NOVEL_SLOGANFONTSIZE_LABEL" description="TPL_NOVEL_SLOGANFONTSIZE_DESC" size="60" />
+				<field name="H2TitlePositionX" default="center" class="input-text" type="text" label="TPL_NOVEL_H2TITLEPOSITIONX_LABEL" description="TPL_NOVEL_H2TITLEPOSITIONX_DESC" size="60" />
+				<field name="H2TitlePositionY" default="44" class="input-text" type="text" label="TPL_NOVEL_H2TITLEPOSITIONY_LABEL" description="TPL_NOVEL_H2TITLEPOSITIONY_DESC" size="60" />
+				<field name="H2TitleImgText" class="switch" type="checkbox" label="TPL_NOVEL_H2TITLEIMGTEXT_LABEL" description="TPL_NOVEL_H2TITLEIMGTEXT_DESC" value="true" />			
+				<field name="H2Titleimage" label="TPL_NOVEL_H2TITLEIMAGE_LABEL" type="media" directory="images" description="TPL_NOVEL_H2TITLEIMAGE_DESC" />
+				<field name="topheight" type="text" class="input-text" label="TPL_NOVEL_TOPHEIGHT_LABEL" default="60" description="TPL_NOVEL_TOPHEIGHT_DESC" size="60" />
+			</fieldset>
+			<fieldset name="communitysettings" label="TPL_NOVEL_COMMUNITYSETTINGS">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_COMMUNITYSETTINGS_HELP" />
+				<field name="twitter" class="input-text" type="text" label="TPL_NOVEL_TWITTER_LABEL" description="TPL_NOVEL_TWITTER_DESC" size="60" />
+				<field name="twitterON" class="switch" type="checkbox" label="TPL_NOVEL_TWITTERON_LABEL" description="TPL_NOVEL_TWITTERON_DESC" value="true" />
+				<field name="gplus" class="input-text" type="text" label="TPL_NOVEL_GPLUS_LABEL" description="TPL_NOVEL_GPLUE_DESC" size="60" />
+				<field name="gplusON" class="switch" type="checkbox" label="TPL_NOVEL_GPLUSON_LABEL" description="TPL_NOVEL_GPLUEON_DESC" value="true" />
+				<field name="facebook" class="input-text" type="text" label="TPL_NOVEL_FACEBOOK_LABEL" description="TPL_NOVEL_FACEBOOK_DESC" size="60" />
+				<field name="facebookON" class="switch" type="checkbox" label="TPL_NOVEL_FACEBOOKON_LABEL" description="TPL_NOVEL_FACEBOOKON_DESC" value="true" />
+				<field name="RSS" class="input-text" type="text" label="TPL_NOVEL_RSS_LABEL" description="TPL_NOVEL_RSS_DESC" size="60" />
+				<field name="RSSON" class="switch" type="checkbox" label="TPL_NOVEL_RSSON_LABEL" description="TPL_NOVEL_RSSON_DESC" value="true" />
+				<field name="linkedin" class="input-text" type="text" label="TPL_NOVEL_LINKEDIN_LABEL" description="TPL_NOVEL_LINKEDIN_DESC" size="60" />
+				<field name="linkedinON" class="switch" type="checkbox" label="TPL_NOVEL_LINKEDINON_LABEL" description="TPL_NOVEL_LINKEDINON_DESC" value="true" />
+				<field name="pin" class="input-text" type="text" label="TPL_NOVEL_PIN_LABEL" description="TPL_NOVEL_PIN_DESC" size="60" />
+				<field name="pinON" class="switch" type="checkbox" label="TPL_NOVEL_PINON_LABEL" description="TPL_NOVEL_PINON_DESC" value="true" />
+				<field name="vimeo" class="input-text" type="text" label="TPL_NOVEL_VIMEO_LABEL" description="TPL_NOVEL_VIMEO_DESC" size="60" />
+				<field name="vimeoON" class="switch" type="checkbox" label="TPL_NOVEL_VIMEOON_LABEL" description="TPL_NOVEL_VIMEOON_DESC" value="true" />
+				<field name="stumbleupon" class="input-text" type="text" label="TPL_NOVEL_STUMBLEUPON_LABEL" description="TPL_NOVEL_STUMBLEUPON_DESC" size="60" />
+				<field name="stumbleuponON" class="switch" type="checkbox" label="TPL_NOVEL_STUMBLEUPONON_LABEL" description="TPL_NOVEL_STUMBLEUPONON_DESC" value="true" />
+				<field name="digg" class="input-text" type="text" label="TPL_NOVEL_DIGG_LABEL" description="TPL_NOVEL_DIGG_DESC" size="60" />
+				<field name="diggON" class="switch" type="checkbox" label="TPL_NOVEL_DIGGON_LABEL" description="TPL_NOVEL_DIGGON_DESC" value="true" />
+				<field name="yt" class="input-text" type="text" label="TPL_NOVEL_YT_LABEL" description="TPL_NOVEL_YT_DESC" size="60" />
+				<field name="ytON" class="switch" type="checkbox" label="TPL_NOVEL_YTON_LABEL" description="TPL_NOVEL_YTON_DESC" value="true" />
+			</fieldset>
+			<fieldset name="DropDownMenuSettings" label="TPL_NOVEL_DROPDOWNMENUSETTINGS">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_DROPDOWNMENUSETTINGS_HELP" />
+				<field name="usedropdown" class="switch" type="checkbox" label="TPL_NOVEL_USEDROPDOWN_LABEL" description="" value="true" />
+				<field name="dropopacity" class="switch" type="checkbox" label="TPL_NOVEL_DROPOPACITY_LABEL" description="" value="true" />
+				<field name="dropheight" class="switch" type="checkbox" label="TPL_NOVEL_DROPHEIGHT_LABEL" description="" value="true" />
+				<field name="dropwidth" class="switch" type="checkbox" label="TPL_NOVEL_DROPWIDTH_LABEL" description="" value="true" />
+				<field name="dropspeed" class="input-text" type="list" default="normal" label="TPL_NOVEL_DROPSPEED_LABEL" description="">
+					<option value="slow">TPL_NOVEL_DROPSPEED_SLOW</option>
+					<option value="normal">TPL_NOVEL_DROPSPEED_NORMAL</option>
+					<option value="fast">TPL_NOVEL_DROPSPEED_FAST</option>
+				</field>
+				<field name="dropdownhandler1" class="input-text" type="text" label="TPL_NOVEL_DROPDOWNHANDLER1_LABEL" default="18" description="TPL_NOVEL_DROPDOWNHANDLER1_DESC" size="60"></field>
+				<field name="dropdownhandler2" class="input-text" type="text" label="TPL_NOVEL_DROPDOWNHANDLER2_LABEL" default="360" description="TPL_NOVEL_DROPDOWNHANDLER2_DESC" size="60"></field>
+				<field name="dropdownhandler3" class="input-text" type="text" label="TPL_NOVEL_DROPDOWNHANDLER3_LABEL" default="500" description="TPL_NOVEL_DROPDOWNHANDLER3_DESC" size="60"></field>
+				<field name="dropdownhandler4" class="input-text" type="text" label="TPL_NOVEL_DROPDOWNHANDLER4_LABEL" default="660" description="TPL_NOVEL_DROPDOWNHANDLER4_DESC" size="60"></field>
+				<field name="dropdownhandler5" class="input-text" type="text" label="TPL_NOVEL_DROPDOWNHANDLER5_LABEL" default="860" description="TPL_NOVEL_DROPDOWNHANDLER5_DESC" size="60"></field>
+			</fieldset>
+			<fieldset name="customcode" label="TPL_NOVEL_CUSTOMCODE">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_CUSTOMCODE_HELP" />
+				<field name="headcode" type="textarea" filter="raw" class="input-text" label="TPL_NOVEL_HEADCODE_LABEL" description="TPL_NOVEL_HEADCODE_DESC" rows="10" cols="35" />
+				<field name="footercode" type="textarea" filter="raw" class="input-text" label="TPL_NOVEL_FOOTERCODE_LABEL" description="TPL_NOVEL_FOOTERCODE_DESC" rows="10" cols="35" />
+			</fieldset>
+			<fieldset name="slideshowsettings" label="TPL_NOVEL_SLIDESHOWSETTINGS_LABEL">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_SLIDESHOWSETTINGS_HELP" />
+				<field name="cam_turnOn" class="switch" type="checkbox" label="TPL_NOVEL_CAM_TURNON_LABEL" description="TPL_NOVEL_CAM_TURNON_DESC" value="true" />
+				<field name="cam_autoAdvance" class="switch" type="checkbox" label="TPL_NOVEL_CAM_AUTOADVANCE_LABEL" description="TPL_NOVEL_CAM_AUTOADVANCE_DESC" value="true" />
+				<field name="cam_mobileAutoAdvance" class="switch" type="checkbox" label="TPL_NOVEL_CAM_MOBILEAUTOADVANCE_LABEL" description="TPL_NOVEL_CAM_MOBILEAUTOADVANCE_DESC" value="true" />
+				<field name="cam_thumbnails" class="switch" type="checkbox" label="TPL_NOVEL_CAM_THUMBNAILS_LABEL" description="TPL_NOVEL_CAM_THUMBNAILS_DESC" value="true" />
+				<field name="cam_time" class="input-text" type="text" default="7000" label="TPL_NOVEL_CAM_TIME_LABEL" description="TPL_NOVEL_CAM_TIME_DESC" size="60" />
+				<field name="cam_transPeriod" class="input-text" type="text" default="1500" label="TPL_NOVEL_CAM_TRANSPERIOD_LABEL" description="TPL_NOVEL_CAM_TRANSPERIOD_DESC" size="60" />
+				<field name="cam_cols" class="input-text" type="text" default="10" label="TPL_NOVEL_CAM_COLS_LABEL" description="TPL_NOVEL_CAM_COLS_DESC" size="60" />
+				<field name="cam_rows" class="input-text" type="text" default="10" label="TPL_NOVEL_CAM_ROWS_LABEL" description="TPL_NOVEL_CAM_ROWS_DESC" size="60" />
+				<field name="cam_slicedCols" class="input-text" type="text" default="10" label="TPL_NOVEL_CAM_SLICEDCOLS_LABEL" description="TPL_NOVEL_CAM_SLICEDCOLS_DESC" size="60" />
+				<field name="cam_slicedRows" class="input-text" type="text" default="10" label="TPL_NOVEL_CAM_SLICEDROWS_LABEL" description="TPL_NOVEL_CAM_SLICEDROWS_DESC" size="60" />
+				<field name="cam_gridDifference" class="input-text" type="text" default="250" label="TPL_NOVEL_CAM_GRIDDIFFERENCE_LABEL" description="TPL_NOVEL_CAM_GRIDDIFFERENCE_DESC" size="60" />
+				<field name="cam_height" class="input-text" type="text" default="50%" label="TPL_NOVEL_CAM_HEIGHT_LABEL" description="TPL_NOVEL_CAM_HEIGHT_DESC" size="60" />
+				<field name="cam_minHeight" class="input-text" type="text" default="400px" label="TPL_NOVEL_CAM_MINHEIGHT_LABEL" description="TPL_NOVEL_CAM_MINHEIGHT_DESC" size="60" />
+				<field name="cam_hover" class="switch" type="checkbox" label="TPL_NOVEL_CAM_HOVER_LABEL" description="TPL_NOVEL_CAM_HOVER_DESC" value="true" />
+				<field name="cam_loader" class="input-text" type="list" default="pie" label="TPL_NOVEL_CAM_LOADER_LABEL" description="TPL_NOVEL_CAM_LOADER_DESC">
+					<option value="pie">TPL_NOVEL_CAM_LOADER_PIE</option>
+					<option value="bar">TPL_NOVEL_CAM_LOADER_BAR</option>
+					<option value="none">TPL_NOVEL_CAM_LOADER_NONE</option>
+				</field>
+				<field name="cam_barDirection" class="input-text" type="list" default="leftToRight" label="TPL_NOVEL_CAM_BARDIRECTION_LABEL" description="TPL_NOVEL_CAM_BARDIRECTION_DESC">
+					<option value="leftToRight">TPL_NOVEL_CAM_BARDIRECTION_LEFTTORIGHT</option>
+					<option value="rightToLeft">TPL_NOVEL_CAM_BARDIRECTION_RIGHTTOLEFT</option>
+					<option value="topToBottom">TPL_NOVEL_CAM_BARDIRECTION_TOPTOBOTTOM</option>
+					<option value="bottomToTop">TPL_NOVEL_CAM_BARDIRECTION_BOTTOMTOTOP</option>
+				</field>
+				<field name="cam_barPosition" class="input-text" type="list" default="bottom" label="TPL_NOVEL_CAM_BARPOSITION_LABEL" description="TPL_NOVEL_CAM_BARPOSITION_DESC">
+					<option value="bottom">TPL_NOVEL_CAM_BARPOSITION_BOTTOM</option>
+					<option value="left">TPL_NOVEL_CAM_BARPOSITION_LEFT</option>
+					<option value="top">TPL_NOVEL_CAM_BARPOSITION_TOP</option>
+					<option value="right">TPL_NOVEL_CAM_BARPOSITION_RIGHT</option>
+				</field>
+				<field name="cam_pieDiameter" class="input-text" type="text" default="38" label="TPL_NOVEL_CAM_PIEDIAMETER_LABEL" description="TPL_NOVEL_CAM_PIEDIAMETER_DESC" size="60" />
+				<field name="cam_piePosition" class="input-text" type="list" default="rightTop" label="TPL_NOVEL_CAM_PIEPOSITION_LABEL" description="TPL_NOVEL_CAM_PIEPOSITION_DESC">
+					<option value="rightTop">TPL_NOVEL_CAM_PIEPOSITION_RIGHTTOP</option>
+					<option value="leftTop">TPL_NOVEL_CAM_PIEPOSITION_LEFTTOP</option>
+					<option value="leftBottom">TPL_NOVEL_CAM_PIEPOSITION_LEFTBOTTOM</option>
+					<option value="rightBottom">TPL_NOVEL_CAM_PIEPOSITION_RIGHTBOTTOM</option>
+				</field>
+				<field name="cam_loaderColor" class="input-color" type="color" default="#eeeeee" label="TPL_NOVEL_CAM_LOADERCOLOR_LABEL" description="TPL_NOVEL_CAM_LOADERCOLOR_DESC" size="7" />
+				<field name="cam_loaderBgColor" class="input-color" type="color" default="#222222" label="TPL_NOVEL_CAM_LOADERBGCOLOR_LABEL" description="TPL_NOVEL_CAM_LOADERBGCOLOR_DESC" size="7" />
+				<field name="cam_loaderOpacity" type="text" class="input-text" label="TPL_NOVEL_CAM_LOADEROPACITY_LABEL" default="0.8" description="TPL_NOVEL_CAM_LOADEROPACITY_DESC" />
+				<field name="cam_loaderPadding" type="text" class="input-text" label="TPL_NOVEL_CAM_LOADERPADDING_LABEL" default="1" description="TPL_NOVEL_CAM_LOADERPADDING_DESC" />
+				<field name="cam_loaderStroke" type="text" class="input-text" label="TPL_NOVEL_CAM_LOADERSTROKE_LABEL" default="5" description="TPL_NOVEL_CAM_LOADERSTROKE_DESC" />
+				<field name="cam_navigation" class="switch" type="checkbox" label="TPL_NOVEL_CAM_NAVIGATION_LABEL" description="TPL_NOVEL_CAM_NAVIGATION_DESC" value="true" />
+				<field name="cam_playPause" class="switch" type="checkbox" label="TPL_NOVEL_CAM_PLAYPAUSE_LABEL" description="TPL_NOVEL_CAM_PLAYPAUSE_DESC" value="true" />
+				<field name="cam_navigationHover" class="switch" type="checkbox" label="TPL_NOVEL_CAM_NAVIGATIONHOVER_LABEL" description="TPL_NOVEL_CAM_NAVIGATIONHOVER_DESC" value="true" />
+				<field name="cam_mobileNavHover" class="switch" type="checkbox" label="TPL_NOVEL_CAM_MOBILENAVHOVER_LABEL" description="TPL_NOVEL_CAM_MOBILENAVHOVER_DESC" value="true" />
+				<field name="cam_opacityOnGrid" class="switch" type="checkbox" label="TPL_NOVEL_CAM_OPACITYONGRID_LABEL" description="TPL_NOVEL_CAM_OPACITYONGRID_DESC" value="true" />
+				<field name="cam_pagination" class="switch" type="checkbox" label="TPL_NOVEL_CAM_PAGINATION_LABEL" description="TPL_NOVEL_CAM_PAGINATION_DESC" value="true" />
+				<field name="cam_pauseOnClick" class="switch" type="checkbox" label="TPL_NOVEL_CAM_PAUSEONCLICK_LABEL" description="TPL_NOVEL_CAM_PAUSEONCLICK_DESC" value="true" />
+				<field name="cam_portrait" class="switch" type="checkbox" label="TPL_NOVEL_CAM_PORTRAIT_LABEL" description="TPL_NOVEL_CAM_PORTRAIT_DESC" value="true" />
+				<field name="cam_caption_y_position" class="input-text" default="26%" type="text" label="TPL_NOVEL_CAM_CAPTION_Y_POSITION_LABEL" description="TPL_NOVEL_CAM_CAPTION_Y_POSITION_DESC" />
+				<field name="cam_caption_width" class="input-text" default="48%" type="text" label="TPL_NOVEL_CAM_CAPTION_WIDTH_LABEL" description="TPL_NOVEL_CAM_CAPTION_WIDTH_DESC" />
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_SLIDESHOWSETTINGS_SES" />
+				<field name="cam_slideOn" class="input-text" type="list" default="random" label="TPL_NOVEL_CAM_SLIDEON_LABEL" description="TPL_NOVEL_CAM_SLIDEON_DESC">
+					<option value="random">TPL_NOVEL_CAM_SLIDEON_RANDOM</option>
+					<option value="next">TPL_NOVEL_CAM_SLIDEON_NEXT</option>
+					<option value="prev">TPL_NOVEL_CAM_SLIDEON_PREV</option>
+				</field>
+				<field name="cam_fx" class="input-text" type="list" default="random" label="TPL_NOVEL_CAM_FX_LABEL" description="TPL_NOVEL_CAM_FX_DESC">
+					<option value="random">TPL_NOVEL_CAM_FX_RANDOM</option>
+					<option value="simpleFade">TPL_NOVEL_CAM_FX_SIMPLEFADE</option>
+					<option value="curtainTopLeft">TPL_NOVEL_CAM_FX_CURTAINTOPLEFT</option>
+					<option value="curtainTopRight">TPL_NOVEL_CAM_FX_CURTAINTOPRIGHT</option>
+					<option value="curtainBottomLeft">TPL_NOVEL_CAM_FX_CURTAINBOTTOMLEFT</option>
+					<option value="curtainBottomRight">TPL_NOVEL_CAM_FX_CURTAINBOTTOMRIGHT</option>
+					<option value="curtainSliceLeft">TPL_NOVEL_CAM_FX_CURTAINSLICELEFT</option>
+					<option value="curtainSliceRight">TPL_NOVEL_CAM_FX_CURTAINSLICERIGHT</option>
+					<option value="blindCurtainTopLeft">TPL_NOVEL_CAM_FX_BLINDCURTAINTOPLEFT</option>
+					<option value="blindCurtainTopRight">TPL_NOVEL_CAM_FX_BLINDCURTAINTOPRIGHT</option>
+					<option value="blindCurtainBottomLeft">TPL_NOVEL_CAM_FX_BLINDCURTAINBOTTOMLEFT</option>
+					<option value="blindCurtainBottomRight">TPL_NOVEL_CAM_FX_BLINDCURTAINBOTTOMRIGHT</option>
+					<option value="blindCurtainSliceBottom">TPL_NOVEL_CAM_FX_BLINDCURTAINSLICEBOTTOM</option>
+					<option value="blindCurtainSliceTop">TPL_NOVEL_CAM_FX_BLINDCURTAINSLICETOP</option>
+					<option value="stampede">TPL_NOVEL_CAM_FX_STAMPEDE</option>
+					<option value="mosaic">TPL_NOVEL_CAM_FX_MOSAIC</option>
+					<option value="mosaicReverse">TPL_NOVEL_CAM_FX_MOSAICREVERSE</option>
+					<option value="mosaicRandom">TPL_NOVEL_CAM_FX_MOSAICRANDOM</option>
+					<option value="mosaicSpiral">TPL_NOVEL_CAM_FX_MOSAICSPIRAL</option>
+					<option value="mosaicSpiralReverse">TPL_NOVEL_CAM_FX_MOSAICSPIRALREVERSE</option>
+					<option value="topLeftBottomRight">TPL_NOVEL_CAM_FX_TOPLEFTBOTTOMRIGHT</option>
+					<option value="bottomRightTopLeft">TPL_NOVEL_CAM_FX_BOTTOMRIGHTTOPLEFT</option>
+					<option value="bottomLeftTopRight">TPL_NOVEL_CAM_FX_BOTTOMLEFTTOPRIGHT</option>
+					<option value="scrollLeft">TPL_NOVEL_CAM_FX_SCROLLLEFT</option>
+					<option value="scrollRight">TPL_NOVEL_CAM_FX_SCROLLRIGHT</option>
+					<option value="scrollHorz">TPL_NOVEL_CAM_FX_SCROLLHORZ</option>
+					<option value="scrollBottom">TPL_NOVEL_CAM_FX_SCROLLBOTTOM</option>
+					<option value="scrollTop">TPL_NOVEL_CAM_FX_SCROLLTOP</option>
+				</field>
+				<field name="cam_fx_multiple_on" class="switch" type="checkbox" label="TPL_NOVEL_CAM_FX_MULTIPLE_ON_LABEL" description="TPL_NOVEL_CAM_FX_MULTIPLE_ON_DESC" value="true" />
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_CAM_FX_MULTIPLE_HELP" />
+				<field name="cam_fx_multi" type="textarea" filter="raw" class="input-text" label="TPL_NOVEL_CAM_FX_MULTI_LABEL" description="TPL_NOVEL_CAM_FX_MULTI_DESC" rows="3" cols="35" />
+				
+			</fieldset>
+
+			
+			<fieldset name="k2itemsslider" label="K2 Items Slider Settings">
+			
+				<field name="k2pagination" class="switch" type="checkbox" label="Pagination" description="" value="true" />
+			
+				<field name="k2sl_items" class="input-text" type="text" default="8" label="Default Items Number" description="" size="6" />
+				
+				<field name="k2sl_itemsDesktop" class="input-text" type="text" default="7" label="Desktop Items Number" description="" size="6" />
+				
+				<field name="k2sl_itemsDesktopSmall" class="input-text" type="text" default="6" label="Laptop Items Number" description="" size="6" />
+				
+				<field name="k2sl_itemsTablet" class="input-text" type="text" default="4" label="Tablet Items Number" description="" size="6" />
+				
+				<field name="k2sl_itemsTabletSmall" class="input-text" type="text" default="3" label="Small Tablet Items Number" description="" size="6" />
+				
+				<field name="k2sl_itemsMobile" class="input-text" type="text" default="2" label="Mobile Phones Items Number" description="" size="6" />
+
+			</fieldset>
+			
+		  <fieldset name="vmttestimonialsslider" label="Testimonials Slider Settings">
+			
+				<field name="testi_title" class="input-text" type="text" default="Our happy customers said..." label="Testimonials Box Label" description="Type label visible under testimonials" size="6" />
+				<field name="testisl_items" class="input-text" type="text" default="1" label="Default Number of items" description="This variable allows you to set the maximum amount of items displayed at a time with the widest browser width" size="6" />
+				
+				<field name="testisl_itemsDesktop" class="input-text" type="text" default="1" label="Default Number of items (Desktops)" description="Set for devices smaller than 1600px of width" size="6" />
+				<field name="testisl_itemsDesktopSmall" class="input-text" type="text" default="1" label="Default Number of items (Laptops)" description="Set for devices smaller than 1260px of width" size="6" />
+				<field name="testisl_itemsTablet" class="input-text" type="text" default="1" label="Default Number of items (Tablets)" description="Set for devices smaller than 1000px of width" size="6" />
+				<field name="testisl_itemsTabletSmall" class="input-text" type="text" default="1" label="Default Number of items (Small Tablets/Phones)" description="Set for devices smaller than 768px of width" size="6" />
+				<field name="testisl_itemsMobile" class="input-text" type="text" default="1" label="Default Number of items (Phones)" description="Set for devices smaller than 480px of width" size="6" />
+		  
+				<field name="testisl_pagination" class="switch" type="checkbox" label="Turn ON/OFF Pagination" description="Turn ON/OFF Pagination" value="true" />
+				<field name="testisl_paginationSpeed" class="input-text" type="text" default="800" label="Pagination speed in milliseconds" description="Pagination speed in milliseconds" size="6" />
+				
+				<field name="testisl_autoPlay" class="input-text" type="text" default="false" label="Auto Play" description="Auto Play speed in milliseconds. Keep 'false' to turn off auto play" size="6" />
+				
+				<field name="testisl_slideSpeed" class="input-text" type="text" default="200" label="Slide speed in milliseconds" description="Slide speed in milliseconds" size="6" />
+				<field name="testisl_rewindSpeed" class="input-text" type="text" default="1000" label="Rewind speed in milliseconds" description="Rewind speed in milliseconds" size="6" />
+
+				<field name="testisl_stopOnHover" class="switch" type="checkbox" label="Turn ON/OFF autoplay on mouse hover" description="" value="true" />
+				<field name="testisl_navigation" class="switch" type="checkbox" label="Turn ON/OFF navigation" description="" value="true" />
+				<field name="testisl_scrollPerPage" class="switch" type="checkbox" label="Turn ON/OFF scroll per page not per item" description="" value="true" />
+				<field name="testisl_paginationNumbers" class="switch" type="checkbox" label="Turn ON/OFF numbers inside pagination buttons" description="" value="true" />
+				<field name="testisl_responsive" class="switch" type="checkbox" label="Turn ON/OFF responsive mode" description="" value="true" />
+				<field name="testisl_responsiveRefreshRate" class="input-text" type="text" default="150" label="Window Refresh Rate" description="Check window width changes every 200ms for responsive actions" size="6" />
+					
+				<field name="testisl_dragBeforeAnimFinish" class="switch" type="checkbox" label="Turn ON/OFF Drag during animations" description="Ignore whether a transition is done or not (only dragging)" value="true" />
+				<field name="testisl_mouseDrag" class="switch" type="checkbox" label="Turn ON/OFF mouse drag" description="" value="true" />
+				<field name="testisl_touchDrag" class="switch" type="checkbox" label="Turn ON/OFF touch drag " description="" value="true" />
+		  
+
+		  
+		  </fieldset>
+			
+			<fieldset name="themesettings" label="TPL_NOVEL_THEMESETTINGS">
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_THEMESETTINGS_INTRO" />
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_THEMESETTINGS_BITS" />
+				<field name="bodybackgroundimage" label="TPL_NOVEL_BODYBACKGROUNDIMAGE_LABEL" type="media" directory="images" description="TPL_NOVEL_BODYBACKGROUNDIMAGE_DESC" />
+				<field name="usetheme" class="switch" type="checkbox" label="TPL_NOVEL_USETHEME_LABEL" description="TPL_NOVEL_USETHEME_DESC" value="true" />
+				<field name="choosetheme" type="list" default="style3" label="TPL_NOVEL_CHOOSETHEME_LABEL" description="">
+					<option value="style1">TPL_NOVEL_STYLE1</option>
+					<option value="style2">TPL_NOVEL_STYLE2</option>
+					<option value="style3">TPL_NOVEL_STYLE3</option>
+					<option value="style4">TPL_NOVEL_STYLE4</option>
+					<option value="style5">TPL_NOVEL_STYLE5</option>
+					<option value="style6">TPL_NOVEL_STYLE6</option>
+				</field>
+				<field type="spacer" class="inline-help" label="TPL_NOVEL_THEMESETTINGS_CCS" />
+
+				<field class="input-color" name="bodybackground" type="color" default="#ffffff" label="Body Background Color" description="" size="7"></field>
+				<field class="input-color" name="bodytextcolor" type="color" default="#484848" label="Body Text Color" description="" size="7"></field>
+				<field class="input-color" name="linkscolor" type="color" default="#0093c9" label="Links Color" description="" size="7"></field>
+				<field class="input-color" name="customcolor1" type="color" default="#0093c9" label="Custom Color 1" description="" size="7"></field>
+				<field class="input-color" name="customcolor2" type="color" default="#c0c0c0" label="Custom Color 2" description="" size="7"></field>
+				<field class="input-color" name="customcolor3" type="color" default="#0093c9" label="Custom Color 3" description="" size="7"></field>
+				<field class="input-color" name="buttonLabel" type="color" default="#ffffff" label="Button Label" description="" size="7"></field>
+				<field class="input-color" name="buttonbg" type="color" default="#0093c9" label="Button Background" description="" size="7"></field>
+				<field class="input-color" name="buttonHLabel" type="color" default="#ffffff" label="Button Mouse Over Label" description="" size="7"></field>
+				<field class="input-color" name="buttonHbg" type="color" default="#006e96" label="Button Mouse Over Background" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="TOP AREA" />
+
+				<field class="input-color" name="top_handler_bg" type="color" default="#ffffff" label="Top handler background" description="" size="7"></field>
+				<field class="input-color" name="top_handler_border" type="color" default="#0093c9" label="Top Handler Bprder" description="" size="7"></field>
+				<field class="input-color" name="quick_menu_li_a" type="color" default="#787878" label="Quick Menu Menu Item" description="" size="7"></field>
+				<field class="input-color" name="quick_menu_li_a_bg_hover" type="color" default="#0093c9" label="Quick Menu Item Active BAckground" description="" size="7"></field>
+				<field class="input-color" name="quick_menu_li_a_hover" type="color" default="#ffffff" label="Quick Menu Item Active Color" description="" size="7"></field>
+				<field class="input-color" name="searchbg" type="color" default="#ffffff" label="Search Background" description="" size="7"></field>
+				<field class="input-color" name="searchborder" type="color" default="#c0c0c0" label="Search Border" description="" size="7"></field>
+				<field class="input-color" name="searchcolor" type="color" default="#808080" label="Search Color" description="" size="7"></field>
+				<field class="input-color" name="search_button_hover" type="color" default="#0093c9" label="Search Button Active" description="" size="7"></field>
+				<field class="input-color" name="social_links_li_a_hover" type="color" default="#0093c9" label="Social Links Active" description="" size="7"></field>
+				<field class="input-color" name="responsive_menu_button" type="color" default="#0093c9" label="Responsive Menu Button" description="" size="7"></field>
+				<field class="input-color" name="responsive_menu_button_hover" type="color" default="#555555" label="Responsive Menu Button Active" description="" size="7"></field>
+				<field class="input-color" name="responsive_menu_button_icon" type="color" default="#ffffff" label="Responsive Menu Button Icon" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="SLIDESHOW" />
+
+				<field class="input-color" name="slideshow_handler_bg" type="color" default="#f7f7f7" label="Slideshow Handler Background" description="" size="7"></field>
+				<field class="input-color" name="slideshow_handler_bg_border" type="color" default="#c0c0c0" label="Slideshow Handler Border" description="" size="7"></field>
+				<field class="input-color" name="camera_arrows" type="color" default="#ffffff" label="Slideshow Arrows Background" description="" size="7"></field>
+				<field class="input-color" name="camera_arrows_hover" type="color" default="#0093c9" label="Slideshow Active Arrows Background" description="" size="7"></field>
+				<field class="input-color" name="camera_pagination_bg" type="color" default="#ffffff" label="Slideshow Pagination Background" description="" size="7"></field>
+				<field class="input-color" name="camera_commands" type="color" default="#ffffff" label="Slideshow Navigation Background" description="" size="7"></field>
+				<field class="input-color" name="camera_pagination_bg_hover" type="color" default="#0093c9" label="Slideshow Active Pagination Background" description="" size="7"></field>
+				<field class="input-color" name="camera_thumbs_cont" type="color" default="#2f2f2f" label="Slideshow Thumbnails Border" description="" size="7"></field>
+				<field class="input-color" name="camera_caption" type="color" default="#484848" label="Slideshow Caption Text" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="TOP MENU" />
+
+				<field class="input-color" name="nav_handler" type="color" default="#f5f5f5" label="Top Menu Background" description="" size="7"></field>
+				<field class="input-color" name="menu_nav_li_a" type="color" default="#414141" label="Top Menu Item" description="" size="7"></field>
+				<field class="input-color" name="menu_li_active_a" type="color" default="#0093c9" label="Top Menu Active Item" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_a_hover_bg" type="color" default="#0093c9" label="Top Menu Drop Down Active Link Background" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_a_hover_color" type="color" default="#ffffff" label="Top Menu Drop Down Active Link" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_a_arrow" type="color" default="#484848" label="Arrows" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_a_arrow_hover" type="color" default="#ffffff" label="Active Arrows" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_dropdown_bg" type="color" default="#ffffff" label="Drop Down Handler Background" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_dropdown_border" type="color" default="#eeeeee" label="Drop Down Handler Border" description="" size="7"></field>
+				<field class="input-color" name="menu_ul_dropdown_item_active_bg" type="color" default="#0093c9" label="Drop Down Item Active Background" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="CONTENT" />
+
+				<field class="input-color" name="default_borders" type="color" default="#eeeeee" label="Default Borders" description="" size="7"></field>
+				<field class="input-color" name="blog_featured_active" type="color" default="#0093c9" label="Front Page Blog Top Border" description="" size="7"></field>
+				<field class="input-color" name="blog_featured_border" type="color" default="#eeeeee" label="Front Page Blog Border" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="MODULES" />
+
+				<field class="input-color" name="module_link" type="color" default="#0093c9" label="Module Link Color" description="" size="7"></field>
+				<field class="input-color" name="module_menu_item_sep" type="color" default="#e6e6e6" label="Module Menu Item Separator" description="" size="7"></field>
+				<field class="input-color" name="module_menu_item_color" type="color" default="#7d7d7d" label="Module Menu Item Color" description="" size="7"></field>
+				<field class="input-color" name="module_menu_item_active_bg" type="color" default="#0093c9" label="Module Menu Active Item Background" description="" size="7"></field>
+				<field class="input-color" name="module_menu_item_active_color" type="color" default="#ffffff" label="Module Menu Active Item Color" description="" size="7"></field>
+				<field class="input-color" name="module_style1_bg" type="color" default="#f7f7f7" label="Module Style 1 Background" description="" size="7"></field>
+				<field class="input-color" name="module_style1_color" type="color" default="#484848" label="Module Style 1 Color" description="" size="7"></field>
+				<field class="input-color" name="module_style1_border" type="color" default="#c0c0c0" label="Module Style 1 Border" description="" size="7"></field>
+				<field class="input-color" name="module_style1_link" type="color" default="#0093c9" label="Module Style 1 Link" description="" size="7"></field>
+				<field class="input-color" name="module_style2_bg" type="color" default="#0093c9" label="Module Style 2 Background" description="" size="7"></field>
+				<field class="input-color" name="module_style2_color" type="color" default="#ffffff" label="Module Style 2 Color" description="" size="7"></field>
+				<field class="input-color" name="module_style2_link" type="color" default="#ffffff" label="Module Style 2 Link" description="" size="7"></field>
+				<field class="input-color" name="module_style3_bg" type="color" default="#0093c9" label="Module Style 3 Background" description="" size="7"></field>
+				<field class="input-color" name="module_style3_color" type="color" default="#ffffff" label="Module Style 3 Color" description="" size="7"></field>
+				<field class="input-color" name="module_style3_link" type="color" default="#ffffff" label="Module Style 3 Link" description="" size="7"></field>
+				<field class="input-color" name="module_style3_bg_hover" type="color" default="#484848" label="Module Style 3 Background Hover" description="" size="7"></field>
+				<field class="input-color" name="module_style4_bg_hover" type="color" default="#0093c9" label="Module Style 4 Mouse Over Background" description="" size="7"></field>
+				<field class="input-color" name="module_style4_textcolor_hover" type="color" default="#ffffff" label="Module Style 4 Mouse Over text color" description="" size="7"></field>
+
+				<field type="spacer" class="inline-help" label="BOTTOM AREA" />
+
+				<field class="input-color" name="bottom_modules_area_bg" type="color" default="#eeeeee" label="Bottom modules area background" description="" size="7"></field>
+				<field class="input-color" name="bottom_modules_area_text_color" type="color" default="#484848" label="Bottom modules area text color" description="" size="7"></field>
+				<field class="input-color" name="bottom_modules_area_link_color" type="color" default="#0093c9" label="Bottom modules area link color" description="" size="7"></field>
+				<field class="input-color" name="bottom_modules2_area_bg" type="color" default="#ffffff" label="Bottom modules area 2 background" description="" size="7"></field>
+				<field class="input-color" name="bottom_modules2_area_text_color" type="color" default="#c0c0c0" label="Bottom modules area 2 text color" description="" size="7"></field>
+				<field class="input-color" name="bottom_modules2_area_link" type="color" default="#85bcd0" label="Bottom modules area 2 link color" description="" size="7"></field>
+				<field class="input-color" name="footer_text_color" type="color" default="#9d9d9d" label="Footer Text Color" description="" size="7"></field>
+				<field class="input-color" name="footer_link_color" type="color" default="#85bcd0" label="Footer Link Color" description="" size="7"></field>
+				<field class="input-color" name="footer_link_hover_color" type="color" default="#85bcd0" label="Footer Link Active Color" description="" size="7"></field>
+			
+				<field type="spacer" name="colours_handlers" label="If you are getting any troubles with the custom colors please at first make sure you set OFF for Built-in Theme option." />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

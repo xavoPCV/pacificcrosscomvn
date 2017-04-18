@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="mp-customizable-color" content="#ffffff; Headline">
+        <meta name="mp-customizable-color" content="#fffff4; Sub Headline">
+        <meta name="mp-customizable-color" content="#fcff00; Headline Right">
+        <meta name="mp-customizable-color" content="#fffff2; Sub Headline Right">
+        <meta name="mp-customizable-color" content="#fffff3; Description">
+        <meta name="mp-customizable-color" content="#fffff1; Button Text">
+        <style type="text/css">
+            body
+            {
+                overflow: hidden;
+                font-size: 18px;
+                color: #fafafa;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                font: normal 14px/24px Arial,"Helvetica Neue",Helvetica,sans-serif;
+            }
+            body, html {
+                height: 100%;
+                width: 100%;
+            }
+
+            .container
+            {
+                position: absolute;
+                z-index: 5;
+                overflow: auto;
+                height: 100%;
+                width: 100%;
+            }
+            p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+            .content{
+
+                width: 1060px;
+                margin:0 auto;
+                text-align: center;
+            }
+            .sub_text{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-family: arial;
+                font-weight: bold;
+                color: red;
+
+            }
+            .clear{
+                clear:both;
+            }
+            .logo{
+                padding: 10px 0 0;
+                font-family: arial;
+                font-size: 30px;
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                width: 65%;
+                margin: 0 auto;
+            }
+            .content_right{
+                border: 1px solid gray;
+                width: 325px;
+                height:420px;
+                border-radius: 5px;
+                background: #2a2a2a;
+                margin: 5px auto;
+            }
+            .title_right{
+                border-radius: 5px 5px 0px 0px;
+                background: #232323;
+                color: yellow;
+                text-align: center;
+                font-family: arial;
+                font-size: 30px;
+                height:100px;
+                line-height:100px;
+
+            }
+            .content_r{
+
+                height: 130px;
+                text-align: center;
+                color: white;
+                font-family: arial;
+                font-weight: bold;
+                margin-top: 25px;
+                font-size: 14px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .input_text{
+                width:305px;
+                height:55px;
+                margin-left: 5px;
+                text-align: center;
+                font-size: 18px;
+            }
+            input[type='submit']{
+
+                width: 310px;
+                height:50px;
+                margin-left: 5px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                background: #15b800;
+                border:1px solid  #15b800;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+            #bgimg{
+                position: absolute;
+                z-index: -1;
+            }
+            .header_text,.subheader_text{
+                font-size: 40px;
+                margin: 10px auto 30px;
+                line-height: 1.2;
+                width: 60%;
+                font-weight: bold;
+                color: #ffffff;
+                text-align: center;
+                text-shadow: 0px 1px 1px #000;
+                text-transform: capitalize;
+            }
+            .subheader_text
+            {
+                font-size: 35px;
+
+            }
+
+            .btn {
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                padding: 20px 55px;
+                font-size: 28px;
+                line-height: 32px;
+                background: rgb(68,147,67);
+                color: #fffff1;
+                font-weight: bold;
+                text-shadow: 0px 2px 0px rgba(32,107,26,0.5);
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-transition: background .25s;
+                -moz-transition: background .25s;
+                -ms-transition: background .25s;
+                -o-transition: background .25s;
+                transition: background .25s;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+            .btn:hover
+            {
+                background: rgba(68,147,67,0.8)
+            }
+            .btn:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('{LOCAL_URL}/arrow.png') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            .video-holder {
+                width: 55%;
+                text-align: center;
+                float: left;
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+            .tablet{
+                max-width: 100%;
+            }
+            #box
+            {
+                position: relative;
+                margin: 0 auto 0 auto;
+                z-index: 2;
+            }
+            #box-top {
+                margin: 0 auto;
+                background: #232323;
+                -webkit-border-radius: 8px 8px 0px 0px;
+                border-radius: 8px 8px 0px 0px;
+            }
+            #box-bottom {
+                position: relative;
+                margin: 0 auto;
+                -webkit-border-radius: 0px 0px 8px 8px;
+                border-radius: 0px 0px 8px 8px;
+                padding: 1px;
+                background: #3f3f3f;
+                background: -moz-linear-gradient(top,#3f3f3f 0%,#292929 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#3f3f3f),color-stop(100%,#292929));
+                background: -webkit-linear-gradient(top,#3f3f3f 0%,#292929 100%);
+                background: -o-linear-gradient(top,#3f3f3f 0%,#292929 100%);
+                background: -ms-linear-gradient(top,#3f3f3f 0%,#292929 100%);
+                background: linear-gradient(to bottom,#3f3f3f 0%,#292929 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f3f3f',endColorstr='#292929',GradientType=0);
+            }
+            #box .subheadline {
+                font-family: 'Source Sans Pro',sans-serif;
+                font-size: 16px;
+                color: #fefefe;
+                text-align: center;
+                text-shadow: 1px 1px 2px #222222;
+                font-weight: 600;
+                letter-spacing: -.5px;
+                padding: 0 20px;
+            }
+            #box h1, #box h2, #box p, #submit-btn, #footer p a, #footer .note span {
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+            }
+            .right{
+                float: right;
+                width: 30%;
+            }
+            #box .subheadline {
+                font-size: 16px;
+                color: #fffff2;
+                text-align: center;
+                text-shadow: 1px 1px 2px #222222;
+                font-weight: 600;
+                letter-spacing: -.5px;
+                padding: 0 20px;
+            }
+            #box p {
+                font-size: 18px;
+                text-align: center;
+                text-shadow: 1px 1px 2px #222222;
+                font-weight: 400;
+                letter-spacing: -.5px;
+                color: #fffff3;
+                padding: 0 20px;
+                margin: 10px 0;
+            }
+            #box .headline {
+                font-weight: bold !important;
+                padding: 35px 10px;
+                margin: 0 auto;
+                font-size: 28px;
+                color: #fcff00;
+                text-align: center;
+                text-shadow: 1px 1px 2px #222222;
+                font-weight: 600;
+                letter-spacing: -.5px;
+                line-height: 36px;
+            }
+            #form {
+                margin: 20px auto;
+                text-align: center;
+                padding: 5px 0px;
+            }
+            #email, #name {
+                width: 94%;
+                padding: 15px 0;
+                box-shadow: inset 0px 1px 10px 0px rgba(0,0,0,0.3);
+                text-align: center;
+                border: 4px solid #5a8cfa;
+                color: #777777;
+                font-size: 18px;
+            }
+            #submit-btn {
+                position: relative;
+                width: 94%;
+                margin-top: 10px;
+                background: #15b800;
+                border: 1px solid rgba(0,0,0,0.1);
+                color: #fffff1;
+                font-size: 23px;
+                cursor: pointer;
+                border-radius: 4px;
+                box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                padding: 10px 10px 5px;
+            }
+            .arrow {
+                margin-left: 10px;
+                padding: 0;
+                width: 15px;
+                height: 21px;
+                background: url('{LOCAL_URL}/arrow.png') no-repeat;
+                background-size: 15px;
+                vertical-align: sub;
+            }
+            .footer{
+                color: #fffff2;
+                font-family: arial;
+                font-size: 16px;
+                font-weight: bold;
+                float: left;
+                width: 1060px;
+                margin: 30px auto;
+                text-align: center;
+            }
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .footer #copyright .footer_text{
+                color: #fff;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright{
+                color: #108cef;
+            }
+            .footer #copyright .footer_link_copyright:hover{
+                color: #ffdb4d;
+                text-decoration: none;
+            }
+            @media only screen and (max-width: 964px){
+                .content {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                .video-holder {
+                    width: 100%; 
+                    margin: 0 auto;
+                }
+
+                .right
+                {
+                    width: 100%;
+                    margin:0 auto 50px auto;
+                }
+            }
+        </style>
+        
+        <script>
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 1100, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1366, height: 768, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+        </script>
+    </head>
+    <body>
+    <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image max-image-size=1366" data-lb-id="background" data-lb-comment="Tip: Recommended image size 1366 x 768 pixels. Background aligned to the top left of browser and scales proportionally to fit width." src="{LOCAL_URL}/centered-video-sales-page-bg.png" style="width: 1366px; height: 100%;"/>
+
+    <div class="container">
+        <div class="logo">
+            <a data-lb="editable-link link-only editable-optional" border="0" data-lb-id="logo" data-lb-name="Logo" data-lb-comment="Recommended max image size: width 185px" href="#">
+                <img src="http://107.170.3.129/advisorlead/wp-content/themes/jupiter/images/your-logo.png" data-lb="editable-image max-image-size=185" data-lb-id="logo-image" alt="Logo" data-lb-name="Logo Image">
+            </a>
+        </div>
+        <p data-lb-id="headline" class="header_text" data-lb="editable-text editable-optional" data-lb-name="Headline">Discover These Lead Generating Secrets For Your Home Business</p>
+        <p data-lb-id="subheadline" class="subheader_text" data-lb="editable-text editable-optional" data-lb-name="Sub Headline">Your sub headline</p>
+        <div class="content">
+            <section data-lb-id="video" class="video-holder" data-lb="editable-video editable-optional video-width=540 video-height=304" data-lb-name="Video">
+                <img class="tablet" src="{LOCAL_URL}/tablet2.png"/>
+            </section>
+            <div class="right">
+                <section id="box">
+                    <div id="box-top">
+                        <p data-lb-id="headline-right" class="headline" data-lb="editable-rich-text editable-optional" data-lb-name="Headline Right">My Secret Strategies</p>
+                    </div>
+                    <div id="box-bottom">
+                        <p data-lb-id="subheadline-right" class="subheadline" data-lb="editable-rich-text editable-optional" data-lb-name="Sub Headline Right">"I Can't Beleive These Lead Secrets"</p>
+                        <p data-lb-id="description" data-lb="editable-rich-text editable-optional" data-lb-name="Description">Enter your email address below:</p>
+                        <div id="form">
+                            <form data-lb-id="opt-in" method="post" data-lb="editable-opt-in-form" data-lb-name="Opt-in Form Integration" action="#">
+                                <input type="text" id="name" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Name Text" value="Enter Your First Name Here" data-lb="editable-text-input opt-in-name" data-lb-id="opt-in-name" title="Enter Your First Name Here" name="name" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="display: none">
+                                <input type="text" id="email" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Email Text" value="Enter a Valid Email Here" data-lb="editable-text-input opt-in-mail" data-lb-id="opt-in-email" title="Enter a Valid Email Here" name="email" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" >
+                                <input type="text" id="phone" onfocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                    jQuery(this).val('')
+                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if (jQuery(this).val() == '') {
+                    jQuery(this).val(jQuery(this).attr('title'));
+                }" style="cursor: pointer; display: none;">
+
+
+                                <button id="submit-btn" type="submit"><span data-lb-id="opt-in-submit" data-lb="editable-text" data-lb-name="Button Text">Download the Report</span><span class="arrow">&nbsp;&nbsp;&nbsp;</span></button>
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="footer" >
+            <div id="copyright">
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

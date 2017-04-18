@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Language</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Language field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="language" type="contentlanguage" default="*" label="FLEXI_Content_language" description="FLEXI_PARAMCONTENTLANGUAGE" >
+					<option value="*">JALL</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

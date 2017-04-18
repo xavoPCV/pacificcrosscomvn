@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="mp-customizable-color" content="#000001; Subheadline">
+        <meta content="#ffffff; Body Background Color" name="mp-customizable-color">
+        <meta content="#bb0001; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#6d0102; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#ccacac; Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#fffff2; Submit Button Text" name="mp-customizable-color">
+        <meta content="#616161; Footer Text" name="mp-customizable-color">
+        <meta content="#108cef; Footer Link" name="mp-customizable-color">
+
+        <style type="text/css">
+            body
+            {
+                color: #fafafa;
+                font: normal 14px/24px 'Arial',"Helvetica Neue",Helvetica,sans-serif;
+                font-size: 18px;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                width: 100%;
+            }
+            body, html
+            {
+                height: 100%;
+                width: 100%;
+            }
+            img
+            {
+                /*width: 100%;*/
+                max-width: 100%;
+            }
+            .container
+            {
+                height: 100%;
+                overflow: auto;
+                position: absolute;
+                width: 100%;
+                z-index: 5;
+            }
+            .content
+            {
+                margin: 65px auto 65px auto;
+                text-align: center;
+                width: 950px;
+            }
+            #bgimg
+            {
+                position: absolute;
+                z-index: -1;
+            }
+            #form
+            {
+                margin: 20px auto;
+                padding: 5px 0px;
+                text-align: left;
+            }
+            #box-bottom a.submit
+            {
+                color: #fffff2;
+                font-size: 14px;
+                margin: 0 auto;
+                padding: 15px 10px;
+            }
+            #box-bottom a.submit
+            {
+                background: -moz-linear-gradient(center top,#bb0001 5%,#6d0102 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#bb0001),color-stop(1,#6d0102));
+                background-color: #bb0001;
+                border: 1px solid #ccacac;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb0001',endColorstr='#6d0102');
+                font-weight: bold;
+                moz-border-radius: 6px;
+                moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                webkit-border-radius: 6px;
+                webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                margin: 0 auto;
+                margin-bottom: 10px;
+                width: 75%;
+            }
+            #box-bottom a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#6d0102 5%,#bb0001 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#6d0102),color-stop(1,#bb0001));
+                background-color: #6d0102;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d0102',endColorstr='#bb0001');
+            }
+            #box-top{height: 154px;display: flex}
+            #box-top p
+            {
+                color: #000001;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            #box-top p.title
+            {
+                color: #fd0000;
+                font-size: 46px;
+                line-height: 46px;
+                margin-bottom: 0;
+                margin-top: -120px;
+            }
+            #box-bottom{                               
+                text-align: center; 
+                width: 95%;
+                background-size: 100%;
+                margin: 0 auto;
+                margin-bottom: 2%;
+            }
+            .content-box-bottom{
+                background: #ffffff;
+                box-shadow: 0 0 30px #000;}
+            #box-bottom a
+            {
+                color: #fff;
+                text-decoration: none;
+            }
+            #box-bottom a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+            #box-bottom p{font-size: 26px;color: #000001;font-weight:bold; margin: 0; padding: 20px 0 10px 0;}
+            .footer
+            {
+                color: #616161;
+                font-family: Arial;
+                font-weight: 400;
+                letter-spacing: -.5px;
+                margin: 0 25px;
+                text-align: center;
+            }
+            .footer #copyright
+            {
+                clear: both;
+                font-size: 16px;
+                font-weight: normal;
+                padding: 20px 0;
+            }
+            .footer #copyright .footer_text
+            {
+                color: #616161;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright
+            {
+                color: #108cef;
+            }
+            .footer #copyright .footer_link_copyright:hover
+            {
+                color: #bb0001;
+                text-decoration: none;
+            }
+            .bottom {
+                margin-top: 20px;
+            }
+
+            @media only screen and (max-width: 964px)
+            { .content
+              {
+                  width: 100%;
+              }
+            }
+            @media only screen and (max-width: 786px){
+            }
+            @media only screen and (max-width: 568px)
+            {
+
+            }
+            @media only screen and (max-width: 480px)
+            {
+            }
+            @media only screen and (max-width: 320px){
+            }   
+            #box-bottom form, #box-bottom .bottom, #box-bottom .footer {
+                margin: 0 auto;
+                width: 75%;
+            }
+
+            .video-holder {
+                width: 75%;
+                height: auto;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                background: url({LOCAL_URL}/tablet-big.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .video-holder div
+            {
+                width: 99.5% !important;
+                height: 400px !important;
+            }
+
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 45%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                width: 90%;
+                height: 80%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+        </style>
+        
+        <script>
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 1100, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1366, height: 768, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+
+        </script>
+    </head>
+    <body>
+    <img class="bg" alt="" data-lb-name="Background Image" id="bgimg" data-lb="editable-image max-image-size=1366" data-lb-id="background" data-lb-comment="Tip: Recommended image size 1366 x 768 pixels. Background aligned to the top left of browser and scales proportionally to fit width." src="https://lh3.googleusercontent.com/-qDYo0LV_iyA/U4DnbF3aqeI/AAAAAAAAACk/9C9QiSiefZI/s800/bg-gray.jpg?gl=US" style="width: 1366px; height: 100%;"/>
+    <div class="container">
+        <div class="content">
+            <div id="box-top">
+                <a href="#" data-lb-id="header-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Header Image">
+                    <img data-lb-comment="Recommended image width: 950px" data-lb-name="Header Image" data-lb-id="header-image" data-lb="editable-image image-size=950" src="https://lh4.googleusercontent.com/-DUl5S-iMZCo/U4DnaU7uqeI/AAAAAAAAACI/7vuO1BzTMdA/s952/bg-header.jpg?gl=US">
+                </a>
+            </div>
+            <div id="box-bottom">
+                <div class="content-box-bottom">
+                    <p class="date" data-lb-name="Subheadline" data-lb="editable-text" data-lb-id="time">Webinar Date: August 29th 6PM Pacific Time - Space Is Limited</p>
+                    <section data-lb-id="video" class="video-holder flex-video" data-lb="editable-video editable-optional video-width=676 video-height=496" data-lb-name="Video">
+                        <a href="#" data-lb-id="video-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Video Image Link">
+                            <img data-lb-id="video-image" data-lb="editable-image max-image-size=676" data-lb-name="Video Image" src="{LOCAL_URL}/tablet-big.png"/>
+                        </a>
+                    </section>
+                    <section data-lb-name="Timed Release Button" data-lb="editable-fadein-box" data-lb-id="opt-in-box">
+                        <a id="data-reveal-id" href="#" data-lb-id="join-link" data-lb="editable-link editable-optional" data-lb-name="Join Link" class="submit">Click Here To Register For The GoToMeeting Webinar</a>
+                        <div class="bottom">
+                            <a href="#" data-lb-id="guaranteed-image-link" data-lb="editable-link editable-optional link-only" data-lb-name="Guaranteed Image" style="cursor: pointer;display:block">
+                                <img data-lb-comment="Recommended image width: 661px" data-lb-name="Guaranteed Image" data-lb-id="guaranteed-image" data-lb="editable-image editable-optional max-image-size=661" src="https://lh4.googleusercontent.com/-U5NtPDJ-Iiw/U4FQj0oLjNI/AAAAAAAAAKk/WsZC___GAL8/s661/guaranteed.png?gl=US">
+                            </a>
+                        </div>
+                    </section>
+                    <div class="footer">
+                        <div id="copyright">
+                            <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                            <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                            <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

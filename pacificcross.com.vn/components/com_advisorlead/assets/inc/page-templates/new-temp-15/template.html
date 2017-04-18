@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <script>
+             $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                     
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                 });
+                 
+                    function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+        <style>
+
+            body{
+                width: 100%;
+                margin: 0;
+                font-family: open sans;
+            }
+            .fullpage{
+                width: 100%;
+            }
+            .site-show{
+                text-align: center;  
+                margin: 0 auto;
+                width: 1024px;
+            }
+            @media only screen and (max-width: 800px) {
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+                .site-show{
+                    width: 100%;
+                }
+            }
+
+
+            .background-top img{
+                width: 100%;
+            }
+
+            .top{
+                border-top: #49A7C9 4px solid;
+            }
+            .top_1{
+                margin-top: 50px;
+                margin-bottom:  70px;
+            }
+
+            .top_2 img{
+                width: 100%;
+            }
+
+            .box-sign-up{
+                background-color: #bde4f3;
+                border: 3px #fff solid;
+                border-radius: 8px;
+                text-align: left;
+            }
+            .box-sign-up button{
+                width: 100%;
+                height: 54px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 21px;
+                border: none;
+                background: #ff9000;
+            }
+            .box-header{
+                font-size: 33px;
+
+                margin-bottom: 25px;
+            }
+            .box-content{
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            .top-1
+            {
+             
+                margin: 0 auto;
+            }
+            .top-1 .logo
+            {
+                margin-top: 30px;
+           
+            }
+            .top-1 .phone-page
+            {
+                margin-top: 30px;
+                   margin-bottom: 0px;
+            }
+            .top-1 .contact h3
+            {
+             
+                font-size: 16px;
+                color: #666;
+                text-align: right;
+                    margin-top: 0px;
+            }
+            .site-show-page
+            {
+                   background: url('{LOCAL_URL}new-temp-15/bg-design4.jpg');
+                    background-size:  auto 100%;
+                    background-repeat: no-repeat;
+                    height: 584px;
+                    width: 100%;
+                    float: left;
+                    box-shadow: 7px 0px 8px rgba(0, 0, 0, 0.3) inset, -4px 1px 3px rgba(0, 0, 0, 0.3) inset;
+            }
+            .phone-page {
+                background: url('{LOCAL_URL}new-temp-15/phone-icon.png');
+                background-position: left ;
+                padding-left: 43px;
+                background-repeat: no-repeat;
+                color: #3d6c8e;
+                font-size: 30px;
+                font-weight: bold;
+                width: 250px;
+                float: right;
+
+            }
+            .pg-position
+            {
+                width: 1255px;
+                height: 400px;
+                margin: 95px auto;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.1) ;
+            }
+            .pg-position h1
+            {
+                padding-top: 20px;
+                font-size: 46px;
+                margin-bottom: 10px;
+            }
+            .pg-position h1 .page-color1
+            {
+                color: #4baaca
+            }
+            .pg-position h1 .page-color2
+            {
+                color: #36688b;
+                font-weight: bold;
+            }
+            .pg-title
+            {
+                width:510px;
+                margin: 0 auto;
+            }
+            .pg-position .box-content
+            {
+                color:#413f40;
+            }
+            .btnsignup
+            {
+                background: #36688b;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+                padding: 35px 85px;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+            .row, .top-page2
+
+            {
+                width: 100%;
+                float: left;
+
+            }
+            .top-page2 .top-1 .logo
+            {
+                text-align: center;
+            }
+            .top-page2 .logo img
+            {
+                    margin-bottom: 15px;
+            }
+            .top-3
+            {
+                    float: none;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .top-3 h1
+            {
+                text-transform: uppercase;
+                color: #36688b;
+                margin-top: 60px;
+            }
+            .top-3 h1 span{
+                font-weight: bold;
+            }
+            .row1
+            {
+                width: 50%;
+                float: left;
+            }
+            .col-md-top3
+            {
+             
+                float: left;
+            }
+            .col-md-top9
+            {   
+                 position: relative;
+                 margin-top: 20px;
+    margin-bottom: 25px;
+                 background: #e7e7e7;
+                 float: right;
+                 padding: 40px;
+                 padding-bottom: 20px !important;
+                 text-align: left;
+                 font-size: 16px;
+                 line-height: 160%;
+            }
+            .col-md-top3 img
+            {
+                width: 136px;
+                height: 136px;
+                border: 3px solid #36688b;
+                border-radius: 137px;
+                box-sizing: border-box;
+            }
+
+            .col-md-top9:before{
+                top: 55px;
+                bottom: auto;
+                left: -18px;
+                border-width: 13px 18px 13px 0;
+                border-color: transparent #e7e7e7;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                display: block;
+                width: 0;
+            }
+            .iconbottom :after{
+                right: 0px;
+                bottom: 0px;
+              
+                border-width: 0px 0px 25px 25px;
+                border-color: transparent #999;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                display: block;
+                width: 0;
+            }
+             .iconbottom :before{
+                right: 0px;
+                bottom: 0px;
+              
+                border-width: 25px 25px 0px 0px;
+                border-color: transparent #fff;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                display: block;
+                width: 0;
+            }
+            
+            .top-3 .row1
+            {
+                width: 47%;
+                float: left;
+                margin-right: 3%;
+            }
+            .top9-text1
+            {
+                color: #449dbd;
+            }
+            .top9-text2
+
+            {
+                color: #333;
+                font-weight: 500;
+            }
+            .top-4
+            {
+                padding-top: 90px;
+                margin: 0 auto;
+                text-align: center;
+                background: #4baaca;
+                color: #fff;
+                padding-bottom: 90px;
+                margin-top: 100px;
+            }
+            .top-4 h1{
+                text-transform: uppercase;
+            }
+            .fa-facebook-square:before{
+                content: "\f082";
+            }
+            .fa:after{
+                content: " ";
+                background: #fff;
+                width: 21px;
+                height: 22px;
+                position: absolute;
+                top: 6px;
+                left: 3px;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+            }
+            .fa-google-plus-square:before
+            {
+                content: "\f0d4";
+            }
+            .fa-twitter-square:before{content: "\f081";}
+
+            .footer
+            {
+                margin: 0 auto;
+                text-align: left;
+              float: none;
+                color: #666;
+                padding-top: 25px;
+                padding-bottom: 35px;
+
+            }
+            ul.cus_socialmedia li{
+                background: none;
+                margin: 0px;
+                height: 22px;
+                padding: 1px 0px 0px 0px !important;
+                float: left;
+            }
+            .cus_socialmedia .fa
+            {
+                font-size: 30px !important;
+            }
+            ul.cus_socialmedia li a
+            {
+                text-indent: 0 !important;
+                background-color: transparent !important;
+            }
+            .fa
+            {
+
+                position: relative;
+                overflow: hidden;
+                color:#000;
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome !important;
+            }
+            ul li a{
+                text-indent: 0 !important;
+                background-color: transparent !important;
+            }
+            .mid1-slide
+            {
+               
+             
+                margin-bottom: 15px;
+                 margin-top: 30px;
+            }
+            .mid1-slide img{
+                width: 95%;
+            }
+            .mid1-slide img.img-width{
+                width: 97%;
+            }
+           
+            .col-md-4 img{
+                width: 100%;
+                  margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .border-bt
+            {
+                width: 160px;
+                margin: 0 auto;
+                border: 1px solid #4baaca;
+                margin-bottom: 40px !important;
+            }
+            .border-bt1
+            {
+                width: 160px;
+                margin: 0 auto;
+                border: 1px solid #fff;
+            }
+            a{
+                color: #666;
+
+            }
+            .col-md-top9
+            {
+                position: relative;
+            }
+            .col-md-top9 span img
+            {
+                position: absolute;
+                top: -20px;
+                left: 30px;
+                width: 13%;
+            }
+             .fa-icon {
+                       color: #aaa;
+                    border: 4px solid #ccc;
+                    border-radius: 50%;
+                    margin: 7px;
+                        height: 55px;
+                    width: 55px;
+                    text-align: center;
+                    padding-top: 10px;
+                    position: inherit;
+            }
+            .fa-icon:hover{
+                  color: blue;
+                  border: 4px solid blue;
+            }
+           
+              @media only screen and (max-width: 800px) {
+                /* For mobile phones: */
+               .top-1 .contact h3 {
+  
+                     text-align: center;
+
+                }
+                .top-1 .phone-page {
+                       float: none;
+                         margin: auto;
+            }
+            .pg-position {
+                width: 100%;
+                height: auto;
+            }
+            .logo-footer{
+                float: none;
+            }
+              }
+        </style>
+        <style>
+            
+
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+          
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url('{LOCAL_URL}/icon-popup.png');
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="fullpage">
+            <div class="top-page2">
+                <div class="top-1 col-md-12">
+                    <div class="logo col-md-5" ><img data-lb-comment="Recommended image width: 200px" data-lb-name="Logo Image" data-lb-id="logo-img"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/your-logo.png" /> </div>
+                    <div class="contact col-md-5"  > 
+                        <div data-lb-name="Phone" data-lb="editable-rich-text editable-optional"   data-name="Text" data-lb-id="custom-landing-page_10_Text_text" class="phone-page col-md-12">
+                            561-900-7877
+                        </div>
+                        <h3 class="col-md-12" data-lb-name="Header phone text" data-lb="editable-rich-text editable-optional"  data-lb-id="header-phone-text" >speack to a licensed agent</h3>
+                    </div>
+                </div>
+                <div class="site-show-page" >
+                    <div class="pg-position">
+                        <div class="row">
+                            <div class="pg-title">
+                                <h1 data-lb-name="Header text box" data-lb="editable-richtext-area editable-optional"  data-lb-id="header-box-text"   class="box-header"> 
+                                    <span class="page-color1">Get The</span><span class="page-color2"> Right Medicare Plan</span><span class="page-color1"> For You</span></h1> 
+                                <div data-lb-name="text box" data-lb="editable-rich-text editable-optional"  data-lb-id="box-text1" class="box-content">
+
+                                    We help you learn about Medicare Supplement Insurance & Part D Precirption Drug Plans
+                                </div>
+                                <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">     <button data-lb-name="Sign Up Button" data-lb="editable-button   editable-optional"  data-lb-id="button-1" class="btnsignup" > SIGN UP NOW </button> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="top-3 col-md-8">
+                        <h1  data-lb-name="Header 2" data-lb="editable-richtext-area editable-optional"  data-lb-id="header-2"   class="box-header"> what <span> our customers </span> think of us </h1>
+                        <div class="border-bt"></div>
+                        <div class="col-md-6">
+                            <div class="col-md-top3 col-md-3">
+                                <img data-lb-comment="Recommended image width: 100px" data-lb-name="Customer 1" data-lb-id="p1"  data-lb="editable-image editable-optional"  src="{LOCAL_URL}new-temp-15/customer1.png" />
+                            </div>
+                            <div  data-lb-name="Customer text box 1" data-lb="editable-rich-text editable-optional"  data-lb-id="customer-box-text1"  class="col-md-top9 col-md-8 iconbottom">
+
+                                I have had the opportunity to know Brian for a good few years.He has always reviewed th converages for my wife and myself and gave us the best programs available. That is how we are currently to working with Brian for many years to come..<br><br>
+                                <span class="top9-text1">Mitchell,</span> <span class="top9-text2">75, Melville NY</span>
+                                <span>
+                                    <img src="{LOCAL_URL}new-temp-15/quote-icon.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6" >
+                            <div class="col-md-top3 col-md-3">
+                                <img data-lb-comment="Recommended image width: 100px" data-lb-name="Customer 2" data-lb-id="p2"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/customer2.png" />
+                            </div>
+                            <div data-lb-name="Customer text box 2" data-lb="editable-rich-text editable-optional"  data-lb-id="customer-box-text2" class="col-md-top9 col-md-8 iconbottom">
+                                My husband and i have the highest approval of Brian Krantz. Thanks to his expertise we were able to have the proper plan for medical and drug coverage. His advise will save you time, word and money.<br><br><br>
+                                <span class="top9-text1">Grace,</span><span class="top9-text2"> 74, Huntington Ny</span>
+                                <span>
+                                    <img src="{LOCAL_URL}new-temp-15/quote-icon.png" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div   data-lb-name="Block Logo " data-lb-id="block-logo"  data-lb="editable-s1 editable-optional"  class="row top-4">
+                    <div class="col-md-8" style="    float: none;    margin: 0 auto;" >
+
+                        <h1 class="box-header" data-lb-name="Header 3" data-lb="editable-richtext-area editable-optional"  data-lb-id="header-3"  > A reputaion you can trust </h1>
+                        <div class="border-bt1"></div>
+                        <div class="col-md-12" >
+                            <div class="mid1-slide col-md-3">
+                                <img  data-lb-comment="Recommended image width: 200px" data-lb-name="Image 1" data-lb-id="img-1"  data-lb="editable-image editable-optional"  class="img-width" src="{LOCAL_URL}new-temp-15/1.jpg" />
+                            </div>
+                            <div class="mid1-slide col-md-3">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 2" data-lb-id="img-2"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/2.jpg" />
+                            </div>
+                            <div class="mid1-slide col-md-3 ">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 3" data-lb-id="img-3"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/3.jpg" />
+                            </div>
+                            <div class="mid1-slide col-md-3">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 4" data-lb-id="img-4"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/4.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-md-9" style="    float: none;    margin: 0 auto;" >
+                            <div class="col-md-4">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 5" data-lb-id="img-5"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/5.jpg" />
+                            </div>
+                            <div class="col-md-4">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 6" data-lb-id="img-6"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/6.jpg" />
+                            </div>
+                            <div class="col-md-4">
+                                <img data-lb-comment="Recommended image width: 200px" data-lb-name="Image 7" data-lb-id="img-7"  data-lb="editable-image editable-optional" src="{LOCAL_URL}new-temp-15/7.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer col-md-8" >
+
+                    <div data-lb-name="Footer" data-lb="editable-richtext-area editable-optional"  data-lb-id="footer"  class="col-md-12" style="margin-top:30px;"> Copyright © Planmedicare. All Rights Reserved. <a>Terms of Use</a> | <a> Privacy Policy</a>  </div>
+
+                    <div class="col-md-6">
+                        <ul class="cus_socialmedia" >
+                            <li id="li_item_twitter" style="padding: 0; list-style-type: none; min-width: 30px; min-height: 30px; display: inline-block">
+                                <a  data-lb-name="Twitter" data-lb="editable-link link-only editable-optional"  data-lb-id="twitter"  target="_blank" href="https://twitter.com/" title="Twitter" style="width: 30px; height: 30px">
+                                    <i class="fa fa-twitter fa-icon "></i>
+                                </a>
+                            </li><li id="li_item_google-plus" style="padding: 0; list-style-type: none; min-width: 30px; min-height: 30px; display: inline-block">
+                                <a data-lb-name="Google" data-lb="editable-link link-only editable-optional"  data-lb-id="google"  target="_blank" href="http://google.com" title="Google Plus" style="width: 30px; height: 30px">
+                                    <i class="fa fa-google-plus fa-icon"></i>
+                                </a>
+                            </li><li id="li_item_facebook" style="padding: 0; list-style-type: none; min-width: 30px; min-height: 30px; display: inline-block">
+                                <a data-lb-name="Facebook" data-lb="editable-link link-only editable-optional"  data-lb-id="facebook"  target="_blank" href="http://facebook.com" title="Facebook" style="width: 30px; height: 30px">
+                                    <i class="fa fa-facebook fa-icon "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6" >
+                        <img data-lb-comment="Recommended image width: 200px" data-lb-name="Logo Image Footer" data-lb-id="logo-img-footer"  data-lb="editable-image editable-optional" class="logo-footer" style="float: right;" src="{LOCAL_URL}new-temp-15/logo-footer.jpg" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>     
+        
+        <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <style>
+                    #form-header-text, #leadpages-form-header-text {
+                    padding-top: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid #dadada;
+                    padding-bottom: 5px;
+                    margin-left: 62px;
+                    margin-right: 57px;
+                        font-family: Helvetica, Arial, sans-serif;
+                    font-size: 10pt;
+                    letter-spacing: 0em;
+                                }
+                                #form-image, #leadpages-form-image {
+                    margin: 0 15px 0 0;
+                        vertical-align: middle;
+                }
+                .leadbox-content-wrapper, #form-preview fieldset, fieldset {
+                width: 450px;
+                max-width: 100%;
+                padding: 0;
+            }
+            .form12 fieldset{
+                     display: inline-block;
+                    text-align: left;
+                    vertical-align: middle;
+                    margin: 0 auto;
+                    max-width: 400pt;
+                    padding: 0 10pt;
+                    border: none;
+                    width: 450px;
+                    max-width: 100%;
+                    padding: 0;
+    
+            }
+            .form12 fieldset #form-fields {
+                    padding: 0;
+                    margin: 0 0 10px 25px;
+                    margin-left: 0;
+                    list-style: none;
+                    padding-top: 10px;
+            }
+            .form12 fieldset #form-fields li {
+                       line-height: 20px;
+                       margin-bottom: 10px;
+                           margin: 1em 0;
+    position: relative;
+            }
+            .form12 fieldset #form-fields  input {
+                     padding: 13px;
+                    color: #201D1D;
+                    background: white;
+                    border: 1pt solid #C9D7DD;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    -o-transition: none;
+                    transition: none;
+                    width: 422px;
+                    box-sizing: content-box;
+            }
+            .form12 button[type=submit] {
+    margin: 0.2em auto 0;
+    padding: 0.9em;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 100%;
+    text-shadow: 2px 2px 0 #1285dd;
+    max-width: none;
+    
+    outline-offset: 5pt;
+}
+#submit-button{
+    width: 100%;font-size: 14pt; border: 0pt solid rgb(255, 180, 3); letter-spacing: 0em; font-family: Helvetica, Arial, sans-serif; text-shadow: rgb(18, 133, 221) 2px 2px 0px; background-color: rgb(255, 203, 1);text-align: center;
+}
+                </style>
+               
+                <form  data-lb-id="form-popup-headline" data-lb-name="Form Popup" data-lb="editable-opt-in-form editable-optional" id="form" class="editable form12" style="background-color: #ffffff;border-color: #ffffff;border-width: 1pt;border-style: solid;">
+               
+                
+                <div id="form-header">
+                    
+                        <img  data-lb-comment="Recommended image size 850 x 50  pixels" data-lb-name="Popup Status Bar" data-lb-id="status-image-pop" alt="" data-lb="editable-image max-image-size=850 editable-optional"  id="form-header-image" class="editable" src="{LOCAL_URL}leadbox_status_bar_gray3.gif" data-id="default">
+                    
+                     <div data-lb-name="Popup Status Text" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-status-text" id="form-header-text" class="editable" style="font-family: Helvetica, Arial, sans-serif; font-size: 10pt; letter-spacing: 0em;    margin-bottom: 36px;">
+                    Almost there! Please complete this form and click
+                    the button below to gain instant access.</div>
+                </div>
+                
+                <img ata-lb-comment="Recommended image size 256 x 256  pixels" data-lb-name="Popup Leadbox Bar" data-lb-id=";eadbox-image-pop" alt="" data-lb="editable-image max-image-size=256 editable-optional"  id="form-image" class="editable" src="{LOCAL_URL}leadbox-image-placeholder3.png" data-id="default">
+                <fieldset>
+                    <div data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline"  id="form-title" class="editable" style="font-size:18pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <div style="text-align: center"><strong>Enter your email address below to be notified when we launch!</strong></div>
+                    </div>
+                    <ul id="form-fields" class="unstyled ui-sortable">
+                    <li class="control-group editable draggable" id="custom-field-LP-NONE"><div class="controls">
+                            <input  onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="text" placeholder="Name">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable required" id="custom-field-LP-NONE1"><div class="controls">
+                            <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="email" placeholder="E-mail">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable" id="custom-field-LP-NONE2"><div class="controls">
+                            <input type="text" placeholder="Phone Number" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" >
+                       
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li></ul>
+                    <button  data-lb-name="Popup Subscribe Button" data-lb="editable-button editable-optional" data-lb-id="button-pop" id="submit-button" type="submit" class="editable" style="width: 100%;font-size: 14pt; border: 0pt solid rgb(255, 180, 3); letter-spacing: 0em; font-family: Helvetica, Arial, sans-serif; text-shadow: rgb(18, 133, 221) 2px 2px 0px; background-color: rgb(255, 203, 1);text-align: center;">
+                        <div   style="">Join Now!</div>
+                    </button>
+                    <br>
+                    <div id="privacy-policy" class="editable" style="margin-top: 15px;font-size:12pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text  editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

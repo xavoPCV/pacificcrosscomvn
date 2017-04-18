@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_GNOSIS_TITLE_LIST_VIEW_CATEGORY" option="View">
+        <message>
+            <![CDATA[COM_GNOSIS_TITLE_LIST_VIEW_CATEGORY_DESC]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset
+                name="basic"
+                label="COM_GNOSIS_FIELDSET_ITEM_ID_SELECT_LABEL">
+            <field
+                    name="cat_id"
+                    query="SELECT `id`, `category_name` FROM #__gnosis_category ORDER BY `id`"
+                    type="sql"
+                    key_field="id"
+                    value_field="category_name"
+                    label="COM_GNOSIS_CATEGORY_ID_SELECT_LABEL"
+                    require="true"
+                    description="COM_GNOSIS_CATEGORY_ID_SELECT_DESC">
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

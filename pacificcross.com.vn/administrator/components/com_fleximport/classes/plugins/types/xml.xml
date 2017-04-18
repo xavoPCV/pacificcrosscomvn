@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_type">
+	<name>XML</name>
+	<author>NetAssoPro</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>XML import model for flexIMPORT</description>
+	<form>
+	<fields name="params">
+		<fieldset name="fleximport">
+			<field name="xml_root" type="text" default="root" label="COM_FLEXIMPORT_TYPE_IMPORT_XML_ROOT" description="COM_FLEXIMPORT_TYPE_IMPORT_XML_ROOT_DESC" />
+			<field name="xml_key" type="text" default="item" label="COM_FLEXIMPORT_TYPE_IMPORT_XML_KEY" description="COM_FLEXIMPORT_TYPE_IMPORT_XML_KEY_DESC" />
+			<field name="xml_namespace" type="text" label="COM_FLEXIMPORT_TYPE_IMPORT_XML_NAMESPACE" description="COM_FLEXIMPORT_TYPE_IMPORT_XML_NAMESPACE_DESC" />
+		</fieldset>
+	</fields>
+	</form>
+</install>

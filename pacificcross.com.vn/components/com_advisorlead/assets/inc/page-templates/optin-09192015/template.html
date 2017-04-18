@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+
+        <meta name="mp-customizable-color" content="#fffffe; Background Color">
+        <meta name="mp-customizable-color" content="#ffffff; Box Background Color">
+        <meta name="mp-customizable-color" content="#aaaaaa; Left Bracket Color">
+        <meta name="mp-customizable-color" content="#aaaaab; Right Bracket Color">
+
+        <meta name="mp-customizable-color" content="#ffc604; Button Background Start Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#ffd74f; Button Background End Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#ffc605; Button Border Top Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#ffc606; Button Border Bottom Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#ffc607; Button Border Left Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#ffc608; Button Border Right Color" button_id="button1">
+        <meta name="mp-customizable-color" content="#fffff5; Button Text Color" button_id="button1">
+
+        <meta name="mp-customizable-color" content="#ffc604; Button Background Start Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#ffd74f; Button Background End Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#ffc605; Button Border Top Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#ffc606; Button Border Bottom Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#ffc607; Button Border Left Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#ffc608; Button Border Right Color" button_id="button2">
+        <meta name="mp-customizable-color" content="#fffff5; Button Text Color" button_id="button2">
+
+        <meta name="mp-customizable-color" content="#3DB1D3; Popup Button Background Start Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#246a7e; Popup Button Background End Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#49d2fa; Popup Button Border Top Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#49d2fb; Popup Button Border Bottom Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#49d2fc; Popup Button Border Left Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#49d2fd; Popup Button Border Right Color" button_id="button-pop">
+        <meta name="mp-customizable-color" content="#fffff3; Popup Button Text Color" button_id="button-pop">
+
+        <style type="text/css">
+
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            html,body{
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                font-size: 16px;
+                font-family:'Arial',sans-serif;
+                color: #333;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                background: #fffffe;
+            }
+
+            h1{
+                font-size: 28px;
+                text-align: left;
+                font-weight: normal;
+            }
+
+            h2{
+                font-weight: normal;
+                margin-bottom: 0;
+                text-align: center;
+            }
+
+            hr{
+                border: none;
+                margin: 15px 0;
+                background: url('{LOCAL_URL}/hr1.png');
+                height: 21px;
+            }
+
+            p{
+                line-height: 1.5;
+            }         
+
+            #header_wrap{
+                background: #1EA1ED;
+                padding: 10px 0 5px;
+            }
+
+            .container .content{
+                max-width: 960px;
+                margin: 0 auto;
+            }
+
+            .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .col_12 {
+                width: 100%;
+            }
+            .col_11 {
+                width: 91.66666667%;
+            }
+            .col_10 {
+                width: 83.33333333%;
+            }
+            .col_9 {
+                width: 75%;
+            }
+            .col_8 {
+                width: 66.66666667%;
+            }
+            .col_7 {
+                width: 58.33333333%;
+            }
+            .col_6 {
+                width: 50%;
+            }
+            .col_5 {
+                width: 41.66666667%;
+            }
+            .col_4 {
+                width: 33.33333333%;
+            }
+            .col_3 {
+                width: 25%;
+            }
+            .col_2 {
+                width: 16.66666667%;
+            }
+            .col_1 {
+                width: 8.33333333%;
+            }
+
+            span.small{
+                font-size: 12px;
+            }
+
+            label>span:first-child{
+                color: #c00;
+            }
+
+            .btn {
+                background: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 0 auto 20px;
+                max-width: 100%;
+                width: 90%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                display: block;
+                text-align: center;
+            }
+
+
+            .btn>span {
+
+                font-weight: bold;
+                position: relative;
+                display: inline-block;
+                padding: 15px 5%;
+                font-size: 24px;
+                line-height: 26px;
+
+                color: #fffff5;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                transition: 0.5s all;
+
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+                filter: dropshadow(color=rgba(0,0,0,0.2),offx=1,offy=1);
+
+                border: solid 1px;
+                border-top-color: #ffc605;
+                border-bottom-color: #ffc606;
+                border-left-color: #ffc607;
+                border-right-color: #ffc608;
+
+                background: -webkit-linear-gradient(#ffc604,#ffd74f);
+                background: -moz-linear-gradient(#ffc604,#ffd74f);
+                background: -o-linear-gradient(#ffc604,#ffd74f);
+                background: linear-gradient(#ffc604,#ffd74f);
+                background-size: 100%;
+            }
+
+            .btn>span:hover {
+                background-size: 200%;
+            }
+
+            #footer_wrap .content{
+                max-width: 1200px;
+                padding: 30px 60px;
+                margin: 0 auto;
+            }
+
+            #copyright{
+                text-align: center;
+            }
+
+            #copyright span{
+                padding-right: 20px;
+            }
+
+            #copyright a{
+                color: #357ebe;
+                margin-right: 15px;
+                text-decoration: none;
+            }
+
+            #copyright>a:after{
+                content: " ";
+                border-right: 1px solid #357ebe;
+                margin-left: 15px;
+            }
+
+            .clear{
+                clear: both;
+            }
+
+            .sub_wrap{
+                position: relative;
+                margin: 20px 0 40px;
+            }
+
+            .sub_wrap p{
+                margin: 2% 30px;
+            }
+
+            #video-holder
+            {
+                border: 5px solid #fffffc;
+                margin: 0 2%;
+            }
+
+            #video-holder img
+            {
+                width: 100%;
+            }
+
+            #video-holder div
+            {
+                width: 99.5% !important;
+                height: 338px !important;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 58%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .popup_content{
+                padding: 3% 15%;
+                text-align: center;
+            }
+
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+
+            .box-popup .top_image,.box-popup .top_image img{
+                max-width: 100%;
+            }
+
+            .box-popup .privacy{
+                line-height:18px;
+                font-size: 14px;
+            }
+
+            .box-popup .btn>span {
+                background: #3DB1D3;
+                border-radius: 0;
+                color: #fffff3;
+                line-height: 1;
+
+                border: solid 1px;
+                border-top-color: #49d2fa;
+                border-bottom-color: #49d2fb;
+                border-left-color: #49d2fc;
+                border-right-color: #49d2fd;
+
+                background: -webkit-linear-gradient(#3DB1D3,#246a7e);
+                background: -moz-linear-gradient(#3DB1D3,#246a7e);
+                background: -o-linear-gradient(#3DB1D3,#246a7e);
+                background: linear-gradient(#3DB1D3,#246a7e);
+                background-size: 100%;
+            }
+
+            .box-popup .btn>span:hover {
+                background-position: 200%;
+            }
+
+            .box-popup p.small_header{
+                font-size: 13px;
+                margin: 10px 0 0;
+            }
+
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: 700;
+                margin: 0 0 1em;
+            }
+
+            .box-popup input{
+                display: block;
+                width: 100%;
+                font-size: 16px;
+                color: #404040;
+                padding: 20px 10px;
+                outline: none;
+                transition: 0.5s all;
+                border: 1px solid #ccc;
+                -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.67),inset 0 1px 3px rgba(5,5,5,.13);
+                -moz-box-shadow: 0 1px 0 rgba(255,255,255,.67),inset 0 1px 3px rgba(5,5,5,.13);
+                box-shadow: 0 1px 0 rgba(255,255,255,.67),inset 0 1px 3px rgba(5,5,5,.13);
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                background: #FCFCFC;
+            }
+
+            .box-popup input:focus,.box-popup input:active{
+                border-color: #0076c2;
+                -webkit-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                -moz-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+            }
+
+            .img_border{              
+                margin-left: 4%;
+                float: right;
+                width: 155px;
+            }
+
+            .img_border *{
+                text-align: center;
+                margin: 5px 0;
+                line-height: 1;
+                font-weight: bold;
+            }
+
+            .img_border img{
+                border: 5px solid #F5F5F6;
+                max-width: 100%;
+            }
+
+            .option_wrap{
+                border: 1px solid #d0d0d0;
+                background-color: #fff;
+                margin-top: 30px;
+            }
+
+            .option_wrap .option_header{
+                background-color: #345C81;
+                text-align: center;
+                padding: 10px 0;
+                color: #FFF;
+                margin: 0 0 11px 0;
+            }
+
+            .option_wrap .option_header h2{
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .calendar_wrap{
+                margin-bottom: 20px;
+            }
+
+            .calendar_wrap .top{
+                padding: 3px 0;
+                border-radius: 3px 3px 0 0;
+                -webkit-border-radius: 3px 3px 0 0;
+                -moz-border-radius: 3px 3px 0 0;
+                background-color: #1fa2ed;
+            }
+
+            .calendar_wrap .top p{
+                margin: 0;
+                padding: 0;
+                color: #FDFFFE;
+                font-weight: bold;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .calendar_wrap .bottom{
+                background: url('{LOCAL_URL}/calendar_body.png') no-repeat;
+                width: 100%;
+                height: 90px;
+            }
+
+            .calendar_wrap .bottom p{
+                margin: 0;
+                padding: 0;
+                color: #375d80;
+                font-weight: bold;
+                text-align: center;
+                font-size: 55px;
+            }
+
+            .time_list{
+                padding: 0 0 0 10px;
+            }
+
+            .time_list li{
+                list-style: none;
+            }
+
+            .time_list li:before{
+                content: '\2022';
+                display: inline-block;
+                position: relative;
+                left: -10px;
+                top: 0;
+                color: #1FA0E6;
+                font-size: 30px;
+                vertical-align: middle;
+            }
+
+            .countdown{
+                text-align: center;
+                padding: 0;
+            }
+
+            .countdown li{
+                background: url('{LOCAL_URL}/countdown.png') no-repeat;
+                background-size: 100%;
+                width: 65px;
+                height: 75px;
+                display: inline-block;
+                margin: 1px;
+                position: relative;
+            }
+
+            .countdown li {
+                color: #3b312d;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 70px;
+            }
+
+            .countdown li span.time_title{
+                margin: auto;
+                color: #555556;
+                font-size: 14px;
+                display: block;
+                line-height: 1.5;
+            }
+
+            .list_text{
+                list-style: none;
+                padding: 0;
+            }
+
+            .list_text li{
+                margin-bottom: 15px;
+                line-height: 25px;
+                height: 60px;
+            }
+
+            .list_text li:after{
+                content: " ";
+                display: table-cell;
+                clear: both;
+            }
+
+            .list_text li img{
+                float: left;
+                width: 43px;
+                margin-right: 5%;
+            }
+
+            .list_text li p{
+                float: left;
+                width: 90%;
+                margin: 0;
+            }
+
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+
+            }
+
+            @media only screen and (max-width: 768px){
+                .container .content{
+                    padding: 1% 5%;
+                }
+
+                .popup_content{
+                    padding: 3% 5%;
+                }
+
+                .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+                    width: 100%;   
+                }
+            }
+
+            @media only screen and (max-width: 920px){
+                .columns{
+                    margin: 1% 0;
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+        <script>
+            var handler, amount, api_key, description;
+
+            $(document).ready(function() {
+
+                $('[dynamic-content]').each(function() {
+                    var key = $(this).attr('dynamic-content');
+
+                    if (itps_input_data[key]) {
+                        var d = new Date(itps_input_data[key]);
+                        var date = (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+                        var rm = /([6-9]{1}[0-9]{1}:)/;
+                        var rs = /([6-9]{1}[0-9]{1}\ )/;
+                        $(this).countdown(date.replace(rm, '59:').replace(rs, '59 '), function(event) {
+                            var $this = $(this);
+                            switch (event.type) {
+                                case"seconds":
+                                case"minutes":
+                                case"hours":
+                                case"days":
+                                    $this.find('span.' + event.type).html(event.value);
+                                    break;
+                                case"finished":
+                                    break;
+                            }
+                        });
+                    }
+                });
+
+                api_key = itps_input_data['stripe_key'];
+                amount = parseInt(itps_input_data['stripe_amount']) * 100;
+                description = itps_input_data['stripe_description'];
+
+                handler = StripeCheckout.configure({
+                    key: api_key,
+                    locale: 'auto',
+                    token: function(token) {
+                        var finalURL = current_url + '/payment?params=' + JSON.stringify(token) + '&amount=' + amount + '&description=' + description;
+                        var image = document.createElement("img");
+                        image.src = finalURL;
+                    }
+                });
+
+                $('a.checkout_btn').on('click', function(e) {
+
+                    handler.open({
+                        name: itps_input_data['stripe_title'],
+                        description: description,
+                        amount: amount,
+                    });
+                    e.preventDefault();
+                });
+            });
+
+            (function(h) {
+                h.fn.countdown = function(a, l) {
+                    function m(a, d) {
+                        return function() {
+                            return d.call(a)
+                        }
+                    }
+                    var k = "seconds minutes hours days weeks daysLeft".split(" ");
+                    return this.each(function() {
+                        function j() {
+                            if (0 === e.closest("html").length)
+                                clearInterval(f), d("removed");
+                            else {
+                                c--;
+                                0 > c && (c = 0);
+                                g = {seconds: c % 60, minutes: Math.floor(c / 60) % 60, hours: Math.floor(c / 60 / 60) % 24, days: Math.floor(c / 60 / 60 / 24), weeks: Math.floor(c / 60 / 60 / 24 / 7), daysLeft: Math.floor(c / 60 / 60 / 24) % 7};
+                                for (var a = 0; a < k.length; a++) {
+                                    var b = k[a];
+                                    i[b] != g[b] && (i[b] = g[b], d(b))
+                                }
+                                0 == c && (clearInterval(f), d("finished"))
+                            }
+                        }
+                        function d(d) {
+                            var b = h.Event(d);
+                            b.date = new Date((new Date).valueOf() + c);
+                            b.value = i[d] || "0";
+                            b.toDate = a;
+                            b.lasting = g;
+                            switch (d) {
+                                case"seconds":
+                                case"minutes":
+                                case"hours":
+                                    b.value = 10 > b.value ? "0" + b.value.toString() : b.value.toString();
+                                    break;
+                                default:
+                                    b.value && (b.value = b.value.toString())
+                            }
+                            l.call(e, b)
+                        }
+                        if (!(a instanceof Date))
+                            if (String(a).match(/^[0-9]*$/))
+                                a = new Date(a);
+                            else if (a.match(/([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{2,4})\s([0-9]{1,2})\:([0-9]{2})\:([0-9]{2})/) || a.match(/([0-9]{2,4})\/([0-9]{1,2})\/([0-9]{1,2})\s([0-9]{1,2})\:([0-9]{2})\:([0-9]{2})/))
+                                a = new Date(a);
+                            else if (a.match(/([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{2,4})/) || a.match(/([0-9]{2,4})\/([0-9]{1,2})\/([0-9]{1,2})/))
+                                a = new Date(a);
+                            else
+                                throw Error("Doesn't seen to be a valid date object or string");
+                        var e = h(this), i = {}, g = {}, f = e.data("countdownInterval"), c = Math.floor((a.valueOf() - (new Date).valueOf()) / 1E3);
+                        j();
+                        f && clearInterval(f);
+                        e.data("countdownInterval", setInterval(m(e, j), 1E3));
+                        f = e.data("countdownInterval")
+                    })
+                }
+            })(jQuery);
+
+            // Close Checkout on page navigation
+            $(window).on('popstate', function() {
+                handler.close();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header_wrap" class="container">
+            <div class="content">
+                <div class="col_7">
+                    <h1 data-lb-id="headline1" data-lb="editable-rich-text editable-optional" data-lb-name="HeadLine 1">
+                        <span style="color: #BAE6FF; font-size: 30px;">Live Online Event</span>
+                    </h1>
+                    <h1 data-lb-id="headline2" data-lb="editable-rich-text editable-optional" data-lb-name="HeadLine 2">
+                        <span style="color: #FEFEFE; font-size: 48px; font-weight: bold">How to Build a Winning Mastermind</span>
+                    </h1>
+                </div>
+                <div class="col_5">
+                    <div class="img_border">
+                        <img src="{LOCAL_URL}/avatar.jpg" data-lb-comment="Recommended image size 157 x 157 pixels" data-lb-name="Host Image 1" data-lb-id="arrow-image-1" data-lb="editable-image max-image-size=157 editable-optional">
+                        <p data-lb-id="host-title-2" data-lb="editable-rich-text editable-optional" data-lb-name="Host Title 2" style="color: #BAE5FF">Special Guest</p>
+                        <p data-lb-id="host-name-2" data-lb="editable-rich-text editable-optional" data-lb-name="Host Name 2" style="color: #FAFFFF">Host Name 2</p>
+                    </div>
+                    <div class="img_border">
+                        <img src="{LOCAL_URL}/avatar.jpg" data-lb-comment="Recommended image size 157 x 157 pixels" data-lb-name="Host Image 2" data-lb-id="arrow-image-2" data-lb="editable-image max-image-size=157 editable-optional">
+                        <p data-lb-id="host-title-1" data-lb="editable-rich-text editable-optional" data-lb-name="Host Title 1" style="color: #BAE5FF">Host</p>
+                        <p data-lb-id="host-name-1" data-lb="editable-rich-text editable-optional" data-lb-name="Host Name 1" style="color: #FAFFFF">Host Name 1</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="body_wrap" class="container">
+            <div class="content">
+                <h2 data-lb-id="subheadline1" data-lb="editable-rich-text editable-optional" data-lb-name="Sub HeadLine 1" style="color: #1DA2ED; font-weight: bold; font-size: 30px;">FREE Slidedeck Download of Mastermind Presentation</h2>
+                <h2 data-lb-id="subheadline2" data-lb="editable-rich-text editable-optional" data-lb-name="Sub HeadLine 2" style="font-size: 18px; color: #333">With <b>Pat Flynn</b> and <b>Chris Ducker</b></h2>
+                <div class="col_6">
+                    <div class="option_wrap">
+                        <div class="option_header">
+                            <h2 data-lb-id="option-headline-1" data-lb="editable-rich-text editable-optional" data-lb-name="Option HeadLine 1">Option #1:</h2>
+                        </div>
+                        <div class="option_content">
+                            <div class="col_4">
+                                <div class="calendar_wrap">
+                                    <div class="top">
+                                        <p data-lb-id="calendar-month-1" data-lb="editable-rich-text editable-optional" data-lb-name="Calendar Month 1">September</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <p data-lb-id="calendar-day-1" data-lb="editable-rich-text editable-optional" data-lb-name="Calendar Day 1">22</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_8">
+                                <p data-lb-id="event-title-1" data-lb="editable-rich-text editable-optional" data-lb-name="Event Title 1" style="color: #1F9FED; font-size: 16px;">Tuesday, <b>September 22 (5pm PST)</b></p>
+                                <ul class="time_list" data-lb-id="time-list-1" data-lb="editable-rich-text editable-optional" data-lb-name="Time List 1" style="color: #333; font-size: 14px;">
+                                    <li>5:00PM - 6:30PM <b>Pacific (Los Angeles)</b></li>
+                                    <li>7:00PM - 8:30PM <b>Central (Chicago)</b></li>
+                                    <li>8:00PM - 9:30PM <b>Eastern (New York)</b></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <a href="#" class="checkout_btn btn">
+                                <span data-lb-name="Download Button 1" data-lb="editable-button editable-optional" data-lb-id="button1">Reserve Your Spot</span>
+                            </a>
+                            <p data-lb-id="time-title-1" data-lb="editable-rich-text editable-optional" data-lb-name="Time Title 1" style="text-align: center">This webinar will start in:</p>
+                            <ul class="countdown" dynamic-content="countdown1">
+                                <li>
+                                    <span class="days">0</span>
+                                    <span class="time_title">Days</span>
+                                </li>
+                                <li>
+                                    <span class="hours">0</span>
+                                    <span class="time_title">Hours</span>
+                                </li>
+                                <li>
+                                    <span class="minutes">0</span>
+                                    <span class="time_title">Minutes</span>
+                                </li>
+                                <li>
+                                    <span class="seconds">0</span>
+                                    <span class="time_title">Seconds</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_6">
+                    <div class="option_wrap">
+                        <div class="option_header">
+                            <h2 data-lb-id="option-headline-2" data-lb="editable-rich-text editable-optional" data-lb-name="Option HeadLine 2">Option #2:</h2>
+                        </div>
+                        <div class="option_content">
+                            <div class="col_4">
+                                <div class="calendar_wrap">
+                                    <div class="top">
+                                        <p data-lb-id="calendar-month-2" data-lb="editable-rich-text editable-optional" data-lb-name="Calendar Month 2">September</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <p data-lb-id="calendar-day-2" data-lb="editable-rich-text editable-optional" data-lb-name="Calendar Day 2">22</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_8">
+                                <p data-lb-id="event-title-2" data-lb="editable-rich-text editable-optional" data-lb-name="Event Title 2" style="color: #1F9FED; font-size: 16px;">Tuesday, <b>September 22 (5pm PST)</b></p>
+                                <ul class="time_list" data-lb-id="time-list-2" data-lb="editable-rich-text editable-optional" data-lb-name="Time List 2" style="color: #333; font-size: 14px;">
+                                    <li>5:00PM - 6:30PM <b>Pacific (Los Angeles)</b></li>
+                                    <li>7:00PM - 8:30PM <b>Central (Chicago)</b></li>
+                                    <li>8:00PM - 9:30PM <b>Eastern (New York)</b></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <a href="#" class="checkout_btn btn">
+                                <span data-lb-name="Download Button 2" data-lb="editable-button editable-optional" data-lb-id="button2">Reserve Your Spot</span>
+                            </a>
+                            <p data-lb-id="time-title-2" data-lb="editable-rich-text editable-optional" data-lb-name="Time Title 2" style="text-align: center">This webinar will start in:</p>
+                            <ul class="countdown" dynamic-content="countdown2">
+                                <li>
+                                    <span class="days">0</span>
+                                    <span class="time_title">Days</span>
+                                </li>
+                                <li>
+                                    <span class="hours">0</span>
+                                    <span class="time_title">Hours</span>
+                                </li>
+                                <li>
+                                    <span class="minutes">0</span>
+                                    <span class="time_title">Minutes</span>
+                                </li>
+                                <li>
+                                    <span class="seconds">0</span>
+                                    <span class="time_title">Seconds</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <p data-lb-id="text-1" data-lb="editable-rich-text editable-optional" data-lb-name="Text 1" style="text-align: center;">You will be sent the MASTERMIND Slide Deck (PDF) PLUS the recording of this event<br/> AFTER the presentation is finished.</p>
+                <hr />
+                <ul class="list_text">
+                    <li>
+                        <img src="{LOCAL_URL}/list_number1.png" data-lb-name="List Image 1" data-lb-id="list-image-1" data-lb="editable-image max-image-size=43 editable-optional"/>
+                        <p data-lb-id="list-text-1" data-lb="editable-rich-text editable-optional" data-lb-name="List Text 1">Why joining a mastermind group can mean the difference between building an incredibly successful business that thrives, and one that dies.</p>
+                    </li>
+                    <li>
+                        <img src="{LOCAL_URL}/list_number2.png" data-lb-name="List Image 2" data-lb-id="list-image-2" data-lb="editable-image max-image-size=43 editable-optional"/>
+                        <p data-lb-id="list-text-2" data-lb="editable-rich-text editable-optional" data-lb-name="List Text 2">The exact structure and format of a solid mastermind group.</p>
+                    </li>
+                    <li>
+                        <img src="{LOCAL_URL}/list_number3.png" data-lb-name="List Image 3" data-lb-id="list-image-3" data-lb="editable-image max-image-size=43 editable-optional"/>
+                        <p data-lb-id="list-text-3" data-lb="editable-rich-text editable-optional" data-lb-name="List Text 3">How to find a mastermind group to join or how to start your own.</p>
+                    </li>
+                    <li>
+                        <img src="{LOCAL_URL}/list_number4.png" data-lb-name="List Image 4" data-lb-id="list-image-4" data-lb="editable-image max-image-size=43 editable-optional"/>
+                        <p data-lb-id="list-text-4" data-lb="editable-rich-text editable-optional" data-lb-name="List Text 4">The mandatory characteristics of group members that everyone needs to bring to the group to have a successful mastermind experience.</p>
+                    </li>
+                    <li>
+                        <img src="{LOCAL_URL}/list_number5.png" data-lb-name="List Image 5" data-lb-id="list-image-5" data-lb="editable-image max-image-size=43 editable-optional"/>
+                        <p data-lb-id="list-text-5" data-lb="editable-rich-text editable-optional" data-lb-name="List Text 5">10 can't miss tips for getting the most out of your experience with a mastermind group.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="content">
+                <div id="copyright">
+                    <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy</a>
+                    <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions</a>
+                    <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2015 <a class="footer_link_copyright" href="#">AdvisorLead</a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

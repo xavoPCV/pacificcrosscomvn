@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>MainText</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Main text field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="maintext_start" type="textarea" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_MAINTEXT_START" description="COM_FLEXIMPORT_FIELD_MAINTEXT_START_DESC" />
+				<field name="maintext_end" type="textarea" rows="5" cols="25" label="COM_FLEXIMPORT_FIELD_MAINTEXT_END" description="COM_FLEXIMPORT_FIELD_MAINTEXT_END_DESC" />
+				<field name="maintext_html" type="list" default="0" label="COM_FLEXIMPORT_FIELD_MAINTEXT_HTML" description="COM_FLEXIMPORT_FIELD_MAINTEXT_HTML_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="maintext_separator" type="text" size="20" default="{readmore}" label="COM_FLEXIMPORT_FIELD_MAINTEXT_SEPARATOR" description="COM_FLEXIMPORT_FIELD_MAINTEXT_SEPARATOR_DESC" />
+				<field name="maintext_convert_return" type="list" default="1" label="COM_FLEXIMPORT_FIELD_MAINTEXT_CONVERT_RETURN" description="COM_FLEXIMPORT_FIELD_MAINTEXT_CONVERT_RETURN_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

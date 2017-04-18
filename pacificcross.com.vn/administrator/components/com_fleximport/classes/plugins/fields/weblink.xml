@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Weblink</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Weblink field plugin model for flexIMPORT</description>
+	<form>
+		<fields name="params">
+			<fieldset name="fleximport">
+				<field name="weblink_separator" type="text" default="::" label="COM_FLEXIMPORT_FIELD_WEBLINK_SEPARATOR" description="COM_FLEXIMPORT_FIELD_WEBLINK_SEPARATOR_DESC" />
+				<field name="weblink_export" type="list" default="1" label="COM_FLEXIMPORT_FIELD_WEBLINK_EXPORT" description="COM_FLEXIMPORT_FIELD_WEBLINK_EXPORT_DESC" >
+					<option value="1">COM_FLEXIMPORT_FIELD_WEBLINK_EXPORT_LINK</option>
+					<option value="2">COM_FLEXIMPORT_FIELD_WEBLINK_EXPORT_LINK_TITLE</option>
+					<option value="3">COM_FLEXIMPORT_FIELD_WEBLINK_EXPORT_LINK_TITLE_HIT</option>
+				</field>
+				<field name="weblink_explode" type="list" default="0" label="COM_FLEXIMPORT_FIELD_WEBLINK_EXPLODE" description="COM_FLEXIMPORT_FIELD_WEBLINK_EXPLODE_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</form>
+</install>

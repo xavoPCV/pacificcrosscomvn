@@ -1,0 +1,2 @@
+[Mon Jan 09 10:50:55.548375 2017] [ssl:warn] [pid 30450] AH01909: RSA certificate configured for pacificcross.com.vn:443 does NOT include an ID which matches the server name
+[Mon Jan 09 10:50:55.588212 2017] [ssl:warn] [pid 30450] AH01909: RSA certificate configured for pacificcross.com.vn:443 does NOT include an ID which matches the server name

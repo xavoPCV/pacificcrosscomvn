@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta content="#f0f0f0; Body Background" name="mp-customizable-color">
+        <meta content="#222222; Header Menu" name="mp-customizable-color">
+        <meta content="#ffffff; Home-Link" name="mp-customizable-color">
+        <meta content="#fffff1; Setup Account Background" name="mp-customizable-color">
+        <meta content="#0741ff; Setup Account Background Top" name="mp-customizable-color">
+        <meta content="#1d1d1d; Setup Account" name="mp-customizable-color">
+        <meta content="#fffff4; Opt-in Email" name="mp-customizable-color">
+        <meta content="#2C2C2C; Submit Button Color" name="mp-customizable-color">
+        <meta content="#FBCD50; Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#FBBD03; Submit Button Color End" name="mp-customizable-color">
+        <meta content="#f6b33d; Popup Submit Button Color Start" name="mp-customizable-color">
+        <meta content="#fbbd04; Popup Submit Button Color End" name="mp-customizable-color">
+        <meta content="#15b800; Submit Button Border Color" name="mp-customizable-color">
+        <meta content="#f9f9f9; Blog Post Background" name="mp-customizable-color">
+        <meta content="#000001; Blog Post Title" name="mp-customizable-color">
+        <meta content="#cccccd; Blog Post Content" name="mp-customizable-color">
+        <meta content="#ff0303; Read More" name="mp-customizable-color">
+        <meta name="mp-customizable-color" content="#4a4a4a; Footer Text">
+
+        <style type="text/css">
+            body{font-size:18px; font-family:'Arial',sans-serif;background: #f0f0f0;}
+            .header-menu{background:#222222; float: left; width: 100%;}
+            .home-link{width:100%;}
+            a.home-img{float:left;border-right: #000000 solid 2px;text-decoration:none}
+            .hometop .header_text{padding-left: 20px;float:left; padding-top: 15px;}
+            .link123{padding-right: 30px;float:right;padding-top: 15px;}
+            .link123 .header_text{float:left;margin-left: 13px;}
+            .header_text{color: #ffffff;}
+            a.link{color: white;margin-left: 30px;text-decoration:none}
+            img{max-width: 100%}
+            form {margin: 20px auto;text-align: left;padding: 5px 0px;}
+            button.submit{ margin:0 auto;font-size:14px; padding:15px 10px;color:#fffff2;}
+            .content-post{background-color:#f9f9f9;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:4px;display:inline-block;font-weight:bold;text-decoration:none;position:relative}
+            .wrapper{max-width: 950px; margin:0 auto;}
+            .container {width: 100%;overflow: hidden;}
+            .left,.right{width: 50%;float: left;}
+            .clear {clear: both;}
+            .logo{padding: 25px 0}
+            .title{color: #1d1d1d}
+            .subtitle{color: #000020}
+            .content{padding: 20px 0;width: 100%;}
+            #blue-top{height: 20px; background: #0741ff}
+            .host-name .right .setup-account{background: #fffff4;width: 90%; margin: 10px auto;}
+            .content h1{font-size: 26px;text-align:center;}
+            .content h3{margin:0;}
+            form {margin: 0 auto;}
+            input[type=text], input[type=email] {width: 85%;
+                                                 height: 50px;
+                                                 border: 1px solid rgba(0,0,0,0.09);
+                                                 text-align: left;
+                                                 font-family: 'Arial',sans-serif;
+                                                 font-weight: 400;
+                                                 font-size: 20px;
+                                                 color: #4f4f4f;
+                                                 font-style: italic;
+                                                 margin: 5px 15px;
+                                                 background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f0f0f1),color-stop(1,#f7f7f7));
+                                                 padding-left: 20px;
+            }
+            .btn {-moz-box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+                  box-shadow: inset 0px 1px 0px 0px rgba(250,250,250,0.7);
+
+                  -moz-border-radius: 3px;
+                  -webkit-border-radius: 3px;
+                  border-radius: 3px;
+                  border: 1px solid rgba(0,0,0,0.05);
+                  display: inline-block;
+                  color: #fffff0;
+                  font-family: 'Arial',sans-serif;
+                  font-size: 20px;
+                  font-weight: bold;
+                  padding: 10px 0;
+                  text-decoration: none;
+                  width: 50%;
+                  text-align: center;
+                  margin: 10px 15px;
+                  background-color: #f6b33d;
+                  background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                  background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+            }
+            .btn:hover {background-color: #EE9411;}
+            .content-post{width: 98%;margin: 20px 0;overflow: hidden;padding: 10px}
+            .content-post a{text-align: left;margin-top:5px;font-size: 26px;margin-bottom: 10px}
+            #post-color{color: #000001}
+            .content-post .read-more{color: #ff0303;font-size: 18px}
+            .content-post p{color: #cccccd;font-size: 18px}
+            .content-post .left{text-align: left;}
+            .content-post .right{text-align: right;}
+            .content-left{padding-left:20px;}
+            .video-holder {height: auto;
+                           display: inline-block;
+                           margin: 0 auto;
+                           text-align: center;
+                           width: 100%;
+            }
+            .video-holder-post {width: 438px;
+                                height: 316px;
+                                display: inline-block;
+                                margin: 0 auto;
+                                text-align: center;
+            }
+            .right img{width: 440px;height: 316px}
+            .footer{text-align: center;
+                    margin: 30px 0;
+                    color: #4a4a4a;
+                    font-family: Arial;
+                    font-size: 16px;
+                    font-weight: bold;}
+            .footer #copyright {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .footer #copyright .footer_text{
+                color: #4a4a4a;
+                text-decoration: none;
+            }
+            .footer #copyright .footer_link_copyright{color:#108cef;}
+            .footer #copyright .footer_link_copyright:hover{
+                color: #ffdb4d;
+                text-decoration: none;
+            }
+            @media only screen and (max-width: 1200px) {
+                .wrapper{width: 90%}
+
+            }
+            @media only screen and (max-width: 964px){
+                .content-post a{font-size: 20px}
+                .content-post p{font-size: 14px}
+                .video-holder { width: 90%;}
+                .video-holder-post { width: 90%;}
+                input[type=text], input[type=email]{width: 82%}
+            }
+            @media only screen and (max-width: 763px) {
+                .left,.right{width: 100%;text-align: center}
+                .content-left{padding: 0;}
+                .right img{padding: 0;}
+                .content-post a{font-size: 20px}
+                .content-post p{font-size: 14px}
+                .content-post .read-more{font-size: 14px}
+                .content-post .right{text-align: center;}
+                input[type=text], input[type=email]{width: 80%;font-size: 16px;}
+                .btn{font-size: 16px;width: 85%;}
+                .link123{padding-right: 7px;}
+            }
+            @media only screen and (max-width: 480px){
+                .footer{margin: 10px 0 30px}
+                .footer #copyright{font-size: 11px;}
+            }
+            @media only screen and (max-width: 320px) {
+                input[type=text], input[type=email]{width: 80%;font-size: 16px;}
+                .btn{width: 89%;}
+                .link123{padding-right: 0;
+                         padding-bottom: 15px;
+                         background: #222222;
+                         width: 100%;}
+            }
+            /* Chad */
+            a.submit{
+                width:79%;
+                margin:5%;
+                font-size: 36px;
+                font-weight: bold;
+                text-align:center;
+                line-height: 38px;
+                padding:5%;
+                color: #2C2C2C;
+            }
+            /*a.submit:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background: url('{LOCAL_URL}/arrow.png') no-repeat;
+                margin-left: 15px;
+                background-size: 25px;
+                margin-bottom: 4px;
+            }*/
+
+            a.submit
+            {
+                background: -moz-linear-gradient(center top,#FBCD50 5%, #FBBD03 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#FBCD50),color-stop(1,#FBBD03));
+                background-color: #FBCD50;
+                border: 1px solid #15b800;
+                border-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                display: inline-block;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBCD50',endColorstr='#FBBD03');
+                font-weight: bold;
+                moz-border-radius: 6px;
+                moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+                position: relative;
+                text-decoration: none;
+                webkit-border-radius: 6px;
+                webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.7);
+            }
+            a.submit:hover
+            {
+                background: -moz-linear-gradient(center top,#FBBD03 5%,#FBCD50 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#FBBD03), color-stop(1,#FBCD50));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBBD03',endColorstr='#FBCD50');
+            }
+            a.submit:active
+            {
+                position: relative;
+                top: 1px;
+            }
+            /* .content-post p:hover{
+                 background-color: #faf8c7;
+             }*/
+
+
+            .box-popup {
+                position:relative;
+                text-align:center;
+            }
+            .box-popup p {
+                margin:0 0 10px;
+            }
+            .box-popup p strong {
+                color:#108cef;
+            }
+            .box-popup .illust {
+                display:inline-block;
+                max-width:205px;
+                vertical-align:middle;
+                margin-right:10px;
+            }
+            .box-popup .content {
+                display:inline-block;
+                max-width:400px;
+                text-align:center;
+                vertical-align:middle;
+            }
+            .box-popup .desc {
+                font-size:22px;
+                line-height:26px;
+                font-weight:bold;
+                margin:0 0 1em;
+            }
+            .box-popup .btn {
+                display:block;
+                width:96%;
+                margin-left: 10px;
+            }
+            .box-popup .btn span {
+                font-size:26px;
+            }
+            .box-popup .privacy {
+                line-height:18px;
+                padding:0 40px;
+            }
+            .box-popup .reset {
+                margin:0;
+            }
+            :first-child {
+                margin-top:0;
+            }
+            .thickboxOpen iframe {
+                display:none;
+            }
+            #sk-box-overlay {
+                position:fixed;
+                z-index:990;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                min-height:100%;
+                background-color:#000;
+                opacity:.7;
+                filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+                padding:0;
+                overflow:hidden;
+            }
+            #sk-box-window {
+                z-index:999;
+                position:absolute;
+                top:10px;
+                left:50%;
+                width:400px;
+                margin-left:-200px;
+                margin-top:20px;
+                padding-bottom:20px;
+                color:#000;
+            }
+            #sk-box-window a {
+                color:#000;
+            }
+            * html #sk-box-window {
+                position:absolute;
+            }
+            #sk-content {
+                min-height:90px;
+                padding:15px;
+                text-align:left;
+                background:#fff;
+                position:relative;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+            #sk-content iframe {
+                display:block;
+                margin:0 auto;
+            }
+            .loading #sk-content {
+                background:#fff ;
+                min-height:250px;
+            }
+            #sk-box-title {
+                margin:0 0 .25em;
+            }
+            #sk-box-image {
+                display:block;
+                padding:0;
+                text-align:center;
+            }
+            #sk-box-image img {
+                max-width:100%;
+            }
+            #sk-box-pages {
+                display:none!important;
+            }
+            #sk-box-pager {
+                margin:0;
+                text-align:center;
+            }
+            #sk-box-pager #sk-box-prev,#sk-box-pager #sk-box-next {
+                font:0/0 a;
+                color:transparent;
+                position:absolute;
+                left:0;
+                top:0;
+                bottom:0;
+                width:120px;
+            }
+            #sk-box-pager #sk-box-prev span,#sk-box-pager #sk-box-next span {
+                font:0/0 a;
+                color:transparent;
+                text-decoration:none;
+                width:35px;
+                height:35px;
+                position:absolute;
+                left:-17px;
+                top:50%;
+                margin-top:-17px;
+                ;
+                -webkit-transition:left .25s,right .25s;
+                -moz-transition:left .25s,right .25s;
+                -ms-transition:left .25s,right .25s;
+                -o-transition:left .25s,right .25s;
+                transition:left .25s,right .25s;
+            }
+            #sk-box-pager #sk-box-prev:hover span,#sk-box-pager #sk-box-next:hover span {
+                left:-10px;
+            }
+            #sk-box-pager #sk-box-next {
+                right:0;
+                left:auto;
+            }
+            #sk-box-pager #sk-box-next span {
+                background-position:-200px 0;
+                left:auto;
+                right:-17px;
+            }
+            #sk-box-pager #sk-box-next:hover span {
+                left:auto;
+                right:-10px;
+            }
+            #sk-box-close {
+                font:0/0 a;
+                color:transparent;
+                text-decoration:none;
+                width:35px;
+                height:35px;
+                position:absolute;
+                right:-17px;
+                top:-17px;
+
+            }
+            #sk-box-HideSelect {
+                z-index:99;
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background-color:#fff;
+                border:none;
+                opacity:0;
+                filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                margin:0;
+            }
+            #sk-box-close {
+                top:-9px;
+                right:-9px;
+            }
+            .box-popup .illust {
+                position:relative;
+                display:block;
+                margin:0 auto;
+                float:left;
+            }
+            .box-popup .illust img {
+                max-width:100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {
+                z-index:8030;
+            }
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {
+                position:relative;
+            }
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {
+                -webkit-overflow-scrolling:touch;
+            }
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url({LOCAL_URL}/icon-popup.png);
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {
+                left:0;
+            }
+            .fancybox-next {
+                right:0;
+            }
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {
+                visibility:visible;
+            }
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url({LOCAL_URL}/background_1.png);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {
+                visibility:visible;
+            }
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {
+                padding-top:10px;
+            }
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+
+            #fancybox-loading div {
+
+                background-size:24px 24px;
+            }
+            .fancybox-wrap {
+                position:absolute;
+            }
+
+            .flex-video {
+                position: relative;
+                padding-top: 25px;
+                padding-bottom: 67.5%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+
+            .flex-video.widescreen { padding-bottom: 57.25%; }
+            .flex-video.vimeo { padding-top: 0; }
+
+            .flex-video iframe,
+            .flex-video object,
+            .flex-video embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+                .flex-video { padding-top: 0; }
+            }
+
+            .row-fluid .span4:nth-of-type(3n+1)
+            {
+                margin-left: 0;
+            }
+
+        </style>
+        
+        <script>
+
+            $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                        if (typeof(FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof(FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+            });
+
+            function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+
+            (function($) {
+                $.fn.fullscreenr = function(options) {
+                    if (options.height === undefined)
+                        alert('Please supply the background image height, default values will now be used. These may be very inaccurate.');
+                    if (options.width === undefined)
+                        alert('Please supply the background image width, default values will now be used. These may be very inaccurate.');
+                    if (options.bgID === undefined)
+                        alert('Please supply the background image ID, default #bgimg will now be used.');
+                    var defaults = {width: 1440, height: 1100, bgID: 'bgimg'};
+                    var options = $.extend({}, defaults, options);
+                    $(document).ready(function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    $(window).bind("resize", function() {
+                        $(options.bgID).fullscreenrResizer(options);
+                    });
+                    return this;
+                };
+                $.fn.fullscreenrResizer = function(options) {
+                    var ratio = options.height / options.width;
+                    var browserwidth = $(window).width();
+                    var browserheight = $(window).height();
+                    if ((browserheight / browserwidth) > ratio) {
+                        $(this).height(browserheight);
+                        $(this).width(browserheight / ratio);
+                    } else {
+                        $(this).width(browserwidth);
+                        $(this).height(browserwidth * ratio);
+                    }
+                };
+            })(jQuery);
+
+            $(function() {
+                var FullscreenrOptions = {width: 1366, height: 768, bgID: '#bgimg'};
+                jQuery.fn.fullscreenr(FullscreenrOptions);
+            });
+        </script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header-menu">
+                    <a class="home-img" href="#" data-lb-name="Home" data-lb-comment="Recommended image width: 60px" data-lb="editable-link editable-optional link-only" data-lb-id="home">
+                        <img src="{LOCAL_URL}/home-bottom.png" data-lb-comment="Recommended image width: 60px" data-lb-name="Home Image" data-lb-id="home-link-img" alt="home-img" data-lb="editable-image max-image-size=60" >
+                    </a>
+                    <div class="home-link" >
+                        <div class="hometop">
+                            <a data-lb-id="home-link" class="header_text" data-lb="editable-text editable-optional" data-lb-name="Home-Link">Home Link</a>
+                        </div>
+                        <div class="link123">
+                            <a data-lb-id="link1" class="header_text" data-lb="editable-link editable-optional" data-lb-name="Link1">Link 1</a>
+                            <a data-lb-id="link2" class="header_text" data-lb="editable-link editable-optional" data-lb-name="link2">Link 2</a>
+                            <a data-lb-id="link3" class="header_text" data-lb="editable-link editable-optional" data-lb-name="Link3">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a data-lb-name="Logo" href="#" data-lb-comment="Recommended image width: 188px" data-lb="editable-link editable-optional link-only" data-lb-id="Logo-link"><img src="{LOCAL_URL}/your-logo.png" border="0" data-lb-comment="Recommended image width: 188px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image max-image-size=188"></a>
+                </div>
+            </div>
+            <div class="content host-name">
+                <div class="container">
+                    <div class="left">
+                        <section data-lb-id="video" class="video-holder flex-video" data-lb="editable-video editable-optional video-width=480 video-height=316" data-lb-name="Video">
+                            <img class="tablet" src="{LOCAL_URL}/tablet480.png"/>
+                        </section>
+                    </div>
+                    <div class="right">
+                        <div class="setup-account">
+                            <div id="blue-top"></div>
+
+                            <h1 class="title" data-lb-name="Title Color" data-lb="editable-text" data-lb-id="title">Setup Your Account Today!</h1>
+                            <div data-lb-name="Timed Release Button" data-lb="editable-fadein-box" data-lb-id="opt-in-box">
+                                <a data-lb="optin-form-trigger" data-lb-id="optin"  class="submit btn" >Get Free Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-post">
+                <div class="content-post clear" data-lb-name="Listing Post 1" data-lb-id="listing-post-1" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 1" data-lb="editable-link" data-lb-id="post-title-1">Blog Post Title 1</a>
+                            <p class="expert" data-lb-name="Blog Post Text 1" data-lb="editable-rich-text" data-lb-id="expert-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="right">
+                        <section data-lb-id="video1" class="video-holder-post" data-lb="editable-video editable-optional video-width=438 video-height=316" data-lb-name="Video Post 1">
+                            <img class="tablet" src="https://lh3.googleusercontent.com/-7svmhHvQ9oQ/U4f2Wn6t7RI/AAAAAAAAANA/z0SO_tlG7Q4/s480/video480.png"/>
+                        </section>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 2" data-lb-id="listing-post-2" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 2" data-lb="editable-link" data-lb-id="post-title-2">Blog Post Title 2</a>
+                            <p class="expert" data-lb-name="Blog Post Text 2" data-lb="editable-rich-text" data-lb-id="expert-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="right">
+                        <section data-lb-id="video2" class="video-holder-post" data-lb="editable-video editable-optional video-width=438 video-height=316" data-lb-name="Video Post 2">
+                            <img class="tablet" src="https://lh3.googleusercontent.com/-7svmhHvQ9oQ/U4f2Wn6t7RI/AAAAAAAAANA/z0SO_tlG7Q4/s480/video480.png"/>
+                        </section>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 3" data-lb-id="listing-post-3" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 3" data-lb="editable-link" data-lb-id="post-title-3">Blog Post Title 3</a>
+                            <p class="expert" data-lb-name="Blog Post Text 3" data-lb="editable-rich-text" data-lb-id="expert-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="right">
+                        <section data-lb-id="video3" class="video-holder-post" data-lb="editable-video editable-optional video-width=438 video-height=316" data-lb-name="Video Post 3">
+                            <img class="tablet" src="https://lh3.googleusercontent.com/-7svmhHvQ9oQ/U4f2Wn6t7RI/AAAAAAAAANA/z0SO_tlG7Q4/s480/video480.png"/>
+                        </section>
+                    </div>   
+                </div>
+                <div class="content-post clear" data-lb-name="Listing Post 4" data-lb-id="listing-post-4" data-lb="editable-optional">
+                    <div class="left">
+                        <div class="content-left">
+                            <a class="post-title" id="post-color" data-lb-name="Blog Post Title 4" data-lb="editable-link" data-lb-id="post-title-4">Blog Post Title 4</a>
+                            <p class="expert" data-lb-name="Blog Post Text 4" data-lb="editable-rich-text" data-lb-id="expert-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nulla tellus, sit amet sollicitudin arcu vehicula vitae. Donec et mattis tellus. In iaculis volutpat urna auctor iaculis. Aenean nec quam nisl. Mauris aliquam felis sed turpis sollicitudin, sed luctus odio elementum. Ut at consequat sem, id aliquam justo. Cras dapibus erat vitae lorem egestas... <a class="read-more" href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="right">
+                        <section data-lb-id="video4" class="video-holder-post" data-lb="editable-video editable-optional video-width=438 video-height=316" data-lb-name="Video Post 4">
+                            <img class="tablet" src="https://lh3.googleusercontent.com/-7svmhHvQ9oQ/U4f2Wn6t7RI/AAAAAAAAANA/z0SO_tlG7Q4/s480/video480.png"/>
+                        </section>
+                    </div>   
+                </div>
+                <div class="footer" >
+                    <div id="copyright">
+                        <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Privacy Policy" class="footer_text">Privacy Policy |</a>
+                        <a href="#" data-lb-id="submit-copyright-2" data-lb="editable-link editable-optional" data-lb-name="Terms and Conditions" class="footer_text">Terms & Conditions |</a>
+                        <span data-lb-name="Copyright" data-lb="editable-rich-text editable-optional" data-lb-id="submit-copyright-3"> Copyright 2014 <a class="footer_link_copyright" href="#">AdvisorLead</a></span><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

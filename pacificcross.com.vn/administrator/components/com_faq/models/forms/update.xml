@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_FAQ_FORM_LBL_FAQ_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_FAQ_FORM_LBL_FAQ_CREATED_BY"
+            description="COM_FAQ_FORM_DESC_FAQ_CREATED_BY"  /> 
+
+       <field name="update_category_id" type="category"
+            label="Category"
+            description=""   
+            required="true" 
+            extension="com_faq.faqs.faq_category_id"
+            filter="raw" /> 
+
+       <field name="update_title" type="text"
+            label="Title"
+            description=""   
+            filter="safehtml" /> 
+
+       <field name="update_desc" type="editor" 
+            label="Description"
+            description="" 
+            filter="safehtml" /> 
+
+       <field name="update_date" type="calendar"
+                
+            label="COM_FAQ_FORM_LBL_FAQ_FAQ_DATE"
+            description="COM_FAQ_FORM_DESC_FAQ_FAQ_DATE"       
+       /> 
+
+        <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

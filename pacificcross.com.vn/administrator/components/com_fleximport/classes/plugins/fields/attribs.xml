@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="fleximport_field">
+	<name>Attribs</name>
+	<author>NetAssoPro</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2008-2013 NetAssopro</copyright>
+	<license>Free</license>
+	<authorEmail>contact@netassopro.com</authorEmail>
+	<authorUrl>extensions.netassopro.com</authorUrl>
+	<version>2.0</version>
+	<description>Attrib field plugin model for flexIMPORT</description>
+	<system>true</system>
+	<form>
+	<fields name="params">
+		<fieldset name="fleximport" addfieldpath="/administrator/components/com_flexicontent/elements">
+			<field name="" type="separator" default="FLEXI_PARAMETERS_ICONS" description="..." level="level2" />
+			<field name="show_print_icon" type="list" label="FLEXI_PRINT_ICON" description="FLEXI_PRINT_ICON_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_HIDE</option>
+				<option value="1">FLEXI_SHOW</option>
+			</field>
+			<field name="show_email_icon" type="list" label="FLEXI_EMAIL_ICON" description="FLEXI_EMAIL_ICON_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_HIDE</option>
+				<option value="1">FLEXI_SHOW</option>
+			</field>
+			<field name="" type="separator" default="FLEXI_PARAMETERS_CONTENT" description="..." level="level2" />
+			<field name="show_title" type="list" label="FLEXI_SHOWTITLE" description="FLEXI_SHOWTITLE_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_HIDE</option>
+				<option value="1">FLEXI_SHOW</option>
+			</field>
+			<field name="show_intro" type="list" label="FLEXI_SHOW_INTROTXT" description="FLEXI_SHOW_INTROTXT_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_HIDE</option>
+				<option value="1">FLEXI_SHOW</option>
+			</field>
+			<field name="readmore" type="text" size="30" label="Alternative Read more text" description="PARAMALTREADMORE" class="fcfield_textval" />
+			<field name="" type="separator" default="FLEXI_ADVANCED" description="..." level="level2" />
+			<field name="comments" type="list" label="FLEXI_ENABLE_COMMENTS" description="FLEXI_ENABLE_COMMENTS_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_JCOMMENTS</option>
+				<option value="2">FLEXI_JOMCOMMENTS</option>
+			</field>
+			<field name="automatic_pathways" type="list" label="FLEXI_CREATE_PATHWAYS_AUTOMATICALLY" description="FLEXI_CREATE_PATHWAYS_AUTOMATICALLY_DESC" >
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="override_title" type="list" label="FLEXI_OVERRIDE_PAGETTITLE" description="FLEXI_OVERRIDE_PAGETTITLE_DESC" >
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="custom_ititle" type="text" size="30" label="FLEXI_CUSTOM_TITLE" description="FLEXI_CUSTOM_TITLE_DESC" class="fcfield_textval" />
+			<field name="addcat_title" type="list" label="FLEXI_ADDCAT_PAGETTITLE" description="FLEXI_ADDCAT_PAGETTITLE_DESC" >
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="add_canonical" type="list" label="FLEXI_ADD_CANONICAL" description="FLEXI_ADD_CANONICAL_DESC">
+				<option value="">FLEXI_USE_GLOBAL</option>
+				<option value="0">FLEXI_NO</option>
+				<option value="1">FLEXI_YES</option>
+			</field>
+			<field name="" type="separator" default="Images (Joomla Built-in Views and modules)" description="..." level="level2" />
+			<field name="" type="separator" default="Intro Images (Joomla category/featured/etc views)" description="..." level="level3" />
+			<field name="image_intro" type="media" label="COM_CONTENT_FIELD_INTRO_LABEL" description="COM_CONTENT_FIELD_INTRO_DESC" />
+			<field name="float_intro" type="list" label="COM_CONTENT_FLOAT_LABEL" description="COM_CONTENT_FLOAT_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="right">COM_CONTENT_RIGHT</option>
+				<option value="left">COM_CONTENT_LEFT</option>
+				<option value="none">COM_CONTENT_NONE</option>
+			</field>
+			<field name="image_intro_alt" type="text" label="COM_CONTENT_FIELD_IMAGE_ALT_LABEL" description="COM_CONTENT_FIELD_IMAGE_ALT_DESC" class="inputbox" size="20" />
+			<field name="image_intro_caption" type="text" label="COM_CONTENT_FIELD_IMAGE_CAPTION_LABEL" description="COM_CONTENT_FIELD_IMAGE_CAPTION_DESC" class="inputbox" size="20" />
+			<field name="" type="separator" default="Full Images (Joomla article view)" description="..." level="level3" />
+			<field name="image_fulltext" type="media" label="COM_CONTENT_FIELD_FULL_LABEL" description="COM_CONTENT_FIELD_FULL_DESC" />
+			<field name="float_fulltext" type="list" label="COM_CONTENT_FLOAT_LABEL" description="COM_CONTENT_FLOAT_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="right">COM_CONTENT_RIGHT</option>
+				<option value="left">COM_CONTENT_LEFT</option>
+				<option value="none">COM_CONTENT_NONE</option>
+			</field>
+			<field name="image_fulltext_alt" type="text" label="COM_CONTENT_FIELD_IMAGE_ALT_LABEL" description="COM_CONTENT_FIELD_IMAGE_ALT_DESC" class="inputbox" size="20" />
+			<field name="image_fulltext_caption" type="text" label="COM_CONTENT_FIELD_IMAGE_CAPTION_LABEL" description="COM_CONTENT_FIELD_IMAGE_CAPTION_DESC" class="inputbox" size="20" />
+			<field name="" type="separator" default="Links (Joomla built-in views and modules)" description="..." level="level2" />
+			<field name="" type="separator" default="Link A" description="..." level="level3" />
+			<field name="urla" type="url" validate="url" filter="url" label="COM_CONTENT_FIELD_URLA_LABEL" description="COM_CONTENT_FIELD_URL_DESC" />
+			<field name="urlatext" type="text" label="COM_CONTENT_FIELD_URLA_LINK_TEXT_LABEL" description="COM_CONTENT_FIELD_URL_LINK_TEXT_DESC" class="inputbox" size="20" />
+			<field name="targeta" type="list" label="COM_CONTENT_URL_FIELD_BROWSERNAV_LABEL" description="COM_CONTENT_URL_FIELD_BROWSERNAV_DESC" filter="options" class="inputbox">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JBROWSERTARGET_PARENT</option>
+				<option value="1">JBROWSERTARGET_NEW</option>
+				<option value="2">JBROWSERTARGET_POPUP</option>
+				<option value="3">JBROWSERTARGET_MODAL</option>
+			</field>
+			<field name="" type="separator" default="Link B" description="..." level="level3" />
+			<field name="urlb" type="url" validate="url" filter="url" label="COM_CONTENT_FIELD_URLB_LABEL" description="COM_CONTENT_FIELD_URL_DESC" />
+			<field name="urlbtext" type="text" label="COM_CONTENT_FIELD_URLB_LINK_TEXT_LABEL" description="COM_CONTENT_FIELD_URL_LINK_TEXT_DESC" class="inputbox" size="20" />
+			<field name="targetb" type="list" label="COM_CONTENT_URL_FIELD_BROWSERNAV_LABEL" description="COM_CONTENT_URL_FIELD_BROWSERNAV_DESC" filter="options" class="inputbox">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JBROWSERTARGET_PARENT</option>
+				<option value="1">JBROWSERTARGET_NEW</option>
+				<option value="2">JBROWSERTARGET_POPUP</option>
+				<option value="3">JBROWSERTARGET_MODAL</option>
+			</field>
+			<field name="" type="separator" default="Link C" description="..." level="level3" />
+			<field name="urlc" type="url" validate="url" filter="url" label="COM_CONTENT_FIELD_URLC_LABEL" description="COM_CONTENT_FIELD_URL_DESC" />
+			<field name="urlctext" type="text" label="COM_CONTENT_FIELD_URLC_LINK_TEXT_LABEL" description="COM_CONTENT_FIELD_URL_LINK_TEXT_DESC" class="inputbox" size="20" />
+			<field name="targetc" type="list" label="COM_CONTENT_URL_FIELD_BROWSERNAV_LABEL" description="COM_CONTENT_URL_FIELD_BROWSERNAV_DESC" filter="options" class="inputbox">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JBROWSERTARGET_PARENT</option>
+				<option value="1">JBROWSERTARGET_NEW</option>
+				<option value="2">JBROWSERTARGET_POPUP</option>
+				<option value="3">JBROWSERTARGET_MODAL</option>
+			</field>
+			<field name="ilayout" type="itemlayout" label="FLEXI_CHOOSE_SPECIFIC_ITEM_LAYOUT" description="FLEXI_CHOOSE_SPECIFIC_ITEM_LAYOUT_DESC" class="use_select2_lib" onchange="activatePanel(this.value);" />
+			<field name="ilayout_mobile" type="itemlayout" skipparams="1" enableparam="use_mobile_layouts" firstoption="FLEXI_USE_DESKTOP" label="FLEXI_CHOOSE_SPECIFIC_MOBILE_LAYOUT" description="FLEXI_CHOOSE_SPECIFIC_MOBILE_LAYOUT_DESC" class="use_select2_lib" />
+		</fieldset>
+	</fields>
+	</form>
+</install>

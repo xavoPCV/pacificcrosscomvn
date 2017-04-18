@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params"  addfieldpath="/administrator/components/com_fleximport/models/fields">
+		<field name="params_type" type="fitype" label="COM_FLEXIMPORT_EXPORT_TYPE" description="COM_FLEXIMPORT_EXPORT_TYPE_DESC" required="true" class="required" />
+		<field name="params_record" default="1" type="list" label="COM_FLEXIMPORT_EXPORT_RECORD" description="COM_FLEXIMPORT_EXPORT_RECORD_DESC">
+			<option value="1">JNO</option>
+			<option value="2">JYES</option>
+		</field>
+		<field name="params_export_attachment" default="1" type="list" label="COM_FLEXIMPORT_EXPORT_ATTACHMENT" description="COM_FLEXIMPORT_EXPORT_ATTACHMENT_DESC">
+			<option value="1">JNO</option>
+			<option value="2">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="filters" addfieldpath="/administrator/components/com_fleximport/models/fields">
+		<field type="spacer" label="COM_FLEXIMPORT_EXPORT_INFO" />
+		<field type="spacer" hr="true" />
+		<field name="filter_added" default="all" type="list" label="COM_FLEXIMPORT_FILTER_ADDED" description="COM_FLEXIMPORT_FILTER_ADDED_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_modified" default="all" type="list" label="COM_FLEXIMPORT_FILTER_MODIFIED" description="COM_FLEXIMPORT_FILTER_MODIFIED_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+        <field name="filter_addedormodified" default="all" type="list" label="COM_FLEXIMPORT_FILTER_ADDEDORMODIFIED" description="COM_FLEXIMPORT_FILTER_ADDEDORMODIFIED_DESC">
+            <option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+            <option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+            <option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+        </field>
+
+        <field name="filter_noexported" type="calendar" label="COM_FLEXIMPORT_FILTER_NOEXPORTED" description="COM_FLEXIMPORT_FILTER_NOEXPORTED_DESC" />
+		<field type="spacer" hr="true" />
+		<field name="filter_scope" default="1" type="radio" label="COM_FLEXIMPORT_FILTER_TEXT" description="COM_FLEXIMPORT_FILTER_TEXT_DESC">
+			<option value="1">FLEXI_TITLE</option>
+			<option value="2">FLEXI_INTROTEXT</option>
+			<option value="3">FLEXI_INDEXED_CONTENT</option>
+		</field>
+		<field name="filter_scope_include" default="all" type="radio" label="">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_search" type="text" label="" size="60" />
+		<field type="spacer" hr="true" />
+		<field name="filter_state_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_STATE" description="COM_FLEXIMPORT_FILTER_STATE_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_state" default="1" type="list" label="">
+			<option value="-1">FLEXI_ARCHIVED</option>
+			<option value="1">FLEXI_PUBLISHED</option>
+			<option value="0">FLEXI_UNPUBLISHED</option>
+			<option value="-3">FLEXI_PENDING</option>
+			<option value="-4">FLEXI_TO_WRITE</option>
+			<option value="-5">FLEXI_IN_PROGRESS</option>
+		</field>
+		<field type="spacer" hr="true" />
+		<field name="filter_maincats_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_MAINCATEGORY" description="COM_FLEXIMPORT_FILTER_MAINCATEGORY_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_maincats" type="ficategories" label="" multiple="true" size="10" />
+		<field type="spacer" hr="true" />
+		<field name="filter_cats_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_CATEGORIES" description="COM_FLEXIMPORT_FILTER_CATEGORIES_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_cats" type="ficategories" label="" multiple="true" size="10" />
+		<field type="spacer" hr="true" />
+		<field name="filter_authors_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_AUTHOR" description="COM_FLEXIMPORT_FILTER_AUTHOR_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_authors" type="fiauthors" label="" multiple="true" />
+		<field type="spacer" hr="true" />
+		<field name="filter_date" default="1" type="radio" label="COM_FLEXIMPORT_FILTER_DATE" description="COM_FLEXIMPORT_FILTER_DATE_DESC">
+			<option value="1">FLEXI_CREATED</option>
+			<option value="2">FLEXI_REVISED</option>
+			<option value="3">FLEXI_PUBLISHED</option>
+		</field>
+		<field name="filter_startdate" type="calendar" label="FLEXI_FROM" />
+		<field name="filter_enddate" type="calendar" label="FLEXI_TO" />
+		<field type="spacer" hr="true" />
+		<field name="filter_tags_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_TAG" description="COM_FLEXIMPORT_FILTER_TAG_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_tags" type="FIflexitags" label="" multiple="true" />
+		<field type="spacer" hr="true" />
+		<field name="filter_lang_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_LANGUAGE" description="COM_FLEXIMPORT_FILTER_LANGUAGE_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_lang" type="language" label="">
+			<option value="">COM_FLEXIMPORT_FILTER_ALL</option>
+		</field>
+		<field type="spacer" hr="true" />
+		<field name="filter_id_include" default="all" type="radio" label="COM_FLEXIMPORT_FILTER_ID" description="COM_FLEXIMPORT_FILTER_ID_DESC">
+			<option value="all">COM_FLEXIMPORT_FILTER_ALL</option>
+			<option value="include">COM_FLEXIMPORT_FILTER_INCLUDE</option>
+			<option value="exclude">COM_FLEXIMPORT_FILTER_EXCLUDE</option>
+		</field>
+		<field name="filter_id" type="text" label="" size="60" />
+	</fieldset>
+</form>

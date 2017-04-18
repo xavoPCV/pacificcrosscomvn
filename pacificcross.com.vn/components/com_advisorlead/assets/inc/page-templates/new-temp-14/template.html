@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400:700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+   
+        
+        <style>
+            .rrssb-buttons{box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;height:36px;margin:0;padding:0;width:100%}.rrssb-buttons:after{clear:both}.rrssb-buttons:after,.rrssb-buttons:before{content:' ';display:table}.rrssb-buttons li{box-sizing:border-box;float:left;height:100%;line-height:13px;list-style:none;margin:0;padding:0 2px}.rrssb-buttons li.rrssb-email a{background-color:#0a88ff}.rrssb-buttons li.rrssb-email a:hover{background-color:#006ed6}.rrssb-buttons li.rrssb-facebook a{background-color:#306199}.rrssb-buttons li.rrssb-facebook a:hover{background-color:#244872}.rrssb-buttons li.rrssb-tumblr a{background-color:#32506d}.rrssb-buttons li.rrssb-tumblr a:hover{background-color:#22364a}.rrssb-buttons li.rrssb-linkedin a{background-color:#007bb6}.rrssb-buttons li.rrssb-linkedin a:hover{background-color:#005983}.rrssb-buttons li.rrssb-twitter a{background-color:#26c4f1}.rrssb-buttons li.rrssb-twitter a:hover{background-color:#0eaad6}.rrssb-buttons li.rrssb-googleplus a{background-color:#e93f2e}.rrssb-buttons li.rrssb-googleplus a:hover{background-color:#ce2616}.rrssb-buttons li.rrssb-youtube a{background-color:#df1c31}.rrssb-buttons li.rrssb-youtube a:hover{background-color:#b21627}.rrssb-buttons li.rrssb-reddit a{background-color:#8bbbe3}.rrssb-buttons li.rrssb-reddit a:hover{background-color:#62a3d9}.rrssb-buttons li.rrssb-pinterest a{background-color:#b81621}.rrssb-buttons li.rrssb-pinterest a:hover{background-color:#8a1119}.rrssb-buttons li.rrssb-pocket a{background-color:#ed4054}.rrssb-buttons li.rrssb-pocket a:hover{background-color:#e4162d}.rrssb-buttons li.rrssb-github a{background-color:#444}.rrssb-buttons li.rrssb-github a:hover{background-color:#2b2b2b}.rrssb-buttons li.rrssb-instagram a{background-color:#517fa4}.rrssb-buttons li.rrssb-instagram a:hover{background-color:#406582}.rrssb-buttons li.rrssb-delicious a{background-color:#0B79E5}.rrssb-buttons li.rrssb-delicious a:hover{background-color:#095fb4}.rrssb-buttons li.rrssb-vk a{background-color:#4d71a9}.rrssb-buttons li.rrssb-vk a:hover{background-color:#3d5a86}.rrssb-buttons li.rrssb-hackernews a{background-color:#f60}.rrssb-buttons li.rrssb-hackernews a:hover{background-color:#cc5200}.rrssb-buttons li a{background-color:#ccc;border-radius:2px;box-sizing:border-box;display:block;font-size:11px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-weight:700;height:100%;padding:11px 7px 12px 27px;position:relative;text-align:center;text-decoration:none;text-transform:uppercase;-webkit-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out;width:100%}.rrssb-buttons li a .rrssb-icon{display:block;left:10px;padding-top:9px;position:absolute;top:0;width:10%}.rrssb-buttons li a .rrssb-icon svg{height:17px;width:17px}.rrssb-buttons li a .rrssb-icon svg path{fill:#fff}.rrssb-buttons li a .rrssb-text{color:#fff}.rrssb-buttons li a:active{box-shadow:inset 1px 3px 15px 0 rgba(22,0,0,.25)}.rrssb-buttons li.small a{padding:0}.rrssb-buttons li.small a .rrssb-icon{left:auto;margin:0 auto;overflow:hidden;position:relative;top:auto;width:100%}.rrssb-buttons li.small a .rrssb-text{visibility:hidden}.rrssb-buttons.large-format,.rrssb-buttons.large-format li{height:auto}.rrssb-buttons.large-format li:first-child:nth-last-child(1) a{font-size:20px;font-size:4vw}.rrssb-buttons.large-format li:first-child:nth-last-child(2) a,.rrssb-buttons.large-format li:first-child:nth-last-child(2)~li a{font-size:16px;font-size:2vw}.rrssb-buttons.large-format li:first-child:nth-last-child(3) a,.rrssb-buttons.large-format li:first-child:nth-last-child(3)~li a{font-size:14px;font-size:1.7vw}.rrssb-buttons.large-format li:first-child:nth-last-child(4) a,.rrssb-buttons.large-format li:first-child:nth-last-child(4)~li a{font-size:13px;font-size:1.4vw}.rrssb-buttons.large-format li:first-child:nth-last-child(5) a,.rrssb-buttons.large-format li:first-child:nth-last-child(5)~li a{font-size:13px;font-size:1.2vw}.rrssb-buttons.large-format li:first-child:nth-last-child(6) a,.rrssb-buttons.large-format li:first-child:nth-last-child(6)~li a{font-size:12px;font-size:1.05vw}.rrssb-buttons.large-format li:first-child:nth-last-child(7) a,.rrssb-buttons.large-format li:first-child:nth-last-child(7)~li a{font-size:11px;font-size:.9vw}.rrssb-buttons.large-format li:first-child:nth-last-child(8) a,.rrssb-buttons.large-format li:first-child:nth-last-child(8)~li a{font-size:11px;font-size:.8vw}.rrssb-buttons.large-format li:first-child:nth-last-child(9) a,.rrssb-buttons.large-format li:first-child:nth-last-child(9)~li a{font-size:11px;font-size:.7vw}.rrssb-buttons.large-format li:first-child:nth-last-child(10) a,.rrssb-buttons.large-format li:first-child:nth-last-child(10)~li a{font-size:11px;font-size:.6vw}.rrssb-buttons.large-format li:first-child:nth-last-child(11) a,.rrssb-buttons.large-format li:first-child:nth-last-child(11)~li a{font-size:11px;font-size:.5vw}.rrssb-buttons.large-format li a{-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:.2em;padding:8.5% 0 8.5% 12%}.rrssb-buttons.large-format li a .rrssb-icon{height:100%;left:7%;padding-top:0;width:12%}.rrssb-buttons.large-format li a .rrssb-icon svg{height:100%;position:absolute;top:0;width:100%}.rrssb-buttons.large-format li a .rrssb-text{-webkit-backface-visibility:hidden;backface-visibility:hidden}.rrssb-buttons.small-format{padding-top:5px}.rrssb-buttons.small-format li{height:80%;padding:0 1px}.rrssb-buttons.small-format li a .rrssb-icon{height:100%;padding-top:0}.rrssb-buttons.small-format li a .rrssb-icon svg{height:48%;position:relative;top:6px;width:80%}.rrssb-buttons.tiny-format{height:22px;position:relative}.rrssb-buttons.tiny-format li{padding-right:7px}.rrssb-buttons.tiny-format li a{background-color:transparent;padding:0}.rrssb-buttons.tiny-format li a .rrssb-icon svg{height:70%;width:100%}.rrssb-buttons.tiny-format li a:active,.rrssb-buttons.tiny-format li a:hover{background-color:transparent}.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon svg path{fill:#0a88ff}.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon:hover .rrssb-icon svg path{fill:#0054a3}.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon svg path{fill:#306199}.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon:hover .rrssb-icon svg path{fill:#18304b}.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon svg path{fill:#32506d}.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon:hover .rrssb-icon svg path{fill:#121d27}.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon svg path{fill:#007bb6}.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon:hover .rrssb-icon svg path{fill:#003650}.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon svg path{fill:#26c4f1}.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon:hover .rrssb-icon svg path{fill:#0b84a6}.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon svg path{fill:#e93f2e}.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon:hover .rrssb-icon svg path{fill:#a01e11}.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon svg path{fill:#df1c31}.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon:hover .rrssb-icon svg path{fill:#84111d}.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon svg path{fill:#8bbbe3}.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon:hover .rrssb-icon svg path{fill:#398bcf}.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon svg path{fill:#b81621}.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon:hover .rrssb-icon svg path{fill:#5d0b11}.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon svg path{fill:#ed4054}.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon:hover .rrssb-icon svg path{fill:#b61124}.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon svg path{fill:#444}.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon:hover .rrssb-icon svg path{fill:#111}.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon svg path{fill:#517fa4}.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon:hover .rrssb-icon svg path{fill:#2f4a60}.rrssb-buttons.tiny-format li.rrssb-delicious a .rrssb-icon svg path{fill:#0B79E5}.rrssb-buttons.tiny-format li.rrssb-delicious a .rrssb-icon:hover .rrssb-icon svg path{fill:#064684}.rrssb-buttons.tiny-format li.rrssb-vk a .rrssb-icon svg path{fill:#4d71a9}.rrssb-buttons.tiny-format li.rrssb-vk a .rrssb-icon:hover .rrssb-icon svg path{fill:#2d4263}.rrssb-buttons.tiny-format li.rrssb-hackernews a .rrssb-icon svg path{fill:#f60}.rrssb-buttons.tiny-format li.rrssb-hackernews a .rrssb-icon:hover .rrssb-icon svg path{fill:#993d00}.flip-clock-wrapper *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden}.flip-clock-wrapper{padding:30px 30px 50px 30px;background-color:rgba(0,0,0,.1)}.flip-clock-wrapper a{cursor:pointer;text-decoration:none;color:#ccc}.flip-clock-wrapper a:hover{color:#fff}.flip-clock-wrapper ul{list-style:none}.flip-clock-wrapper.clearfix:before,.flip-clock-wrapper.clearfix:after{content:" ";display:table}.flip-clock-wrapper.clearfix:after{clear:both}.flip-clock-wrapper.clearfix{*zoom:1}.flip-clock-wrapper{font:normal 11px "Helvetica Neue",Helvetica,sans-serif;-webkit-user-select:none}.flip-clock-meridium{background:none!important;box-shadow:0 0 0!important;font-size:36px!important}.flip-clock-meridium a{color:#313333}.flip-clock-wrapper{text-align:center;position:relative;display:inline-block;margin:10px 10px 20px 10px}.flip-clock-wrapper:before,.flip-clock-wrapper:after{content:" ";display:table}.flip-clock-wrapper:after{clear:both}.flip-clock-wrapper ul{position:relative;float:left;margin:5px;width:60px;height:90px;font-size:80px;font-weight:bold;line-height:87px;background:#000}.flip-clock-wrapper ul li{z-index:1;position:absolute;left:0;top:0;width:100%;height:100%;line-height:87px;text-decoration:none!important}.flip-clock-wrapper ul li:first-child{z-index:2}.flip-clock-wrapper ul li a{display:block;height:100%;-webkit-perspective:200px;-moz-perspective:200px;perspective:200px;margin:0!important;overflow:visible!important;cursor:default!important}.flip-clock-wrapper ul li a div{z-index:1;position:absolute;left:0;width:100%;height:50%;font-size:80px;overflow:hidden;outline:1px solid transparent}.flip-clock-wrapper ul li a div .shadow{position:absolute;width:100%;height:100%;z-index:2}.flip-clock-wrapper ul li a div.up{-webkit-transform-origin:50% 100%;-moz-transform-origin:50% 100%;-ms-transform-origin:50% 100%;-o-transform-origin:50% 100%;transform-origin:50% 100%;top:0}.flip-clock-wrapper ul li a div.up:after{content:"";position:absolute;top:44px;left:0;z-index:5;width:100%;height:3px;background-color:#000;background-color:rgba(0,0,0,0.4)}.flip-clock-wrapper ul li a div.down{-webkit-transform-origin:50% 0;-moz-transform-origin:50% 0;-ms-transform-origin:50% 0;-o-transform-origin:50% 0;transform-origin:50% 0;bottom:0}.flip-clock-wrapper ul li a div div.inn{position:absolute;left:0;z-index:1;width:100%;height:200%;color:#cccccc;text-shadow:0 1px 2px #000;text-align:center;background-color:#333333;font-size:70px}.flip-clock-wrapper ul li a div.up div.inn{top:0}.flip-clock-wrapper ul li a div.down div.inn{bottom:0}.flip-clock-wrapper ul.play li.flip-clock-before{z-index:3}.flip-clock-wrapper .flip{box-shadow:0 2px 5px rgba(0,0,0,0)}.flip-clock-wrapper ul.play li.flip-clock-active{-webkit-animation:asd 0.5s 0.5s linear both;-moz-animation:asd 0.5s 0.5s linear both;animation:asd 0.5s 0.5s linear both;z-index:5}.flip-clock-divider{float:left;display:inline-block;position:relative;width:20px;height:100px}.flip-clock-divider:first-child{width:0}.flip-clock-dot{display:block;background:#323434;width:10px;height:10px;position:absolute;border-radius:50%;left:5px}.flip-clock-divider .flip-clock-label{position:absolute;bottom:-2em;color:rgb(204,204,204);font-size:16px;text-shadow:none;color:#333332}.flip-clock-divider.days .flip-clock-label{width:140px}.flip-clock-divider.minutes .flip-clock-label,.flip-clock-divider.hours .flip-clock-label,.flip-clock-divider.seconds .flip-clock-label{width:160px}.hide+.flip-clock-divider{width:0}.hide+.flip-clock-divider .flip-clock-label{width:140px}.flip-clock-dot.top{top:30px}.flip-clock-dot.bottom{bottom:30px}@-webkit-keyframes asd{0%{z-index:2}20%{z-index:4}100%{z-index:4}}@-moz-keyframes asd{0%{z-index:2}20%{z-index:4}100%{z-index:4}}@-o-keyframes asd{0%{z-index:2}20%{z-index:4}100%{z-index:4}}@keyframes asd{0%{z-index:2}20%{z-index:4}100%{z-index:4}}.flip-clock-wrapper ul.play li.flip-clock-active .down{z-index:2;-webkit-animation:turn 0.5s 0.5s linear both;-moz-animation:turn 0.5s 0.5s linear both;animation:turn 0.5s 0.5s linear both}@-webkit-keyframes turn{0%{-webkit-transform:rotateX(90deg)}100%{-webkit-transform:rotateX(0deg)}}@-moz-keyframes turn{0%{-moz-transform:rotateX(90deg)}100%{-moz-transform:rotateX(0deg)}}@-o-keyframes turn{0%{-o-transform:rotateX(90deg)}100%{-o-transform:rotateX(0deg)}}@keyframes turn{0%{transform:rotateX(90deg)}100%{transform:rotateX(0deg)}}.flip-clock-wrapper ul.play li.flip-clock-before .up{z-index:2;-webkit-animation:turn2 0.5s linear both;-moz-animation:turn2 0.5s linear both;animation:turn2 0.5s linear both}@-webkit-keyframes turn2{0%{-webkit-transform:rotateX(0deg)}100%{-webkit-transform:rotateX(-90deg)}}@-moz-keyframes turn2{0%{-moz-transform:rotateX(0deg)}100%{-moz-transform:rotateX(-90deg)}}@-o-keyframes turn2{0%{-o-transform:rotateX(0deg)}100%{-o-transform:rotateX(-90deg)}}@keyframes turn2{0%{transform:rotateX(0deg)}100%{transform:rotateX(-90deg)}}.flip-clock-wrapper ul li.flip-clock-active{z-index:3}.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow{background:-moz-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0.1)),color-stop(100%,black));background:linear,top,rgba(0,0,0,0.1) 0%,black 100%;background:-o-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:-ms-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:linear,to bottom,rgba(0,0,0,0.1) 0%,black 100%;-webkit-animation:show 0.5s linear both;-moz-animation:show 0.5s linear both;animation:show 0.5s linear both}.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow{background:-moz-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0.1)),color-stop(100%,black));background:linear,top,rgba(0,0,0,0.1) 0%,black 100%;background:-o-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:-ms-linear-gradient(top,rgba(0,0,0,0.1) 0%,black 100%);background:linear,to bottom,rgba(0,0,0,0.1) 0%,black 100%;-webkit-animation:hide 0.5s 0.3s linear both;-moz-animation:hide 0.5s 0.3s linear both;animation:hide 0.5s 0.3s linear both}.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow{background:-moz-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,black),color-stop(100%,rgba(0,0,0,0.1)));background:linear,top,black 0%,rgba(0,0,0,0.1) 100%;background:-o-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:-ms-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:linear,to bottom,black 0%,rgba(0,0,0,0.1) 100%;-webkit-animation:show 0.5s linear both;-moz-animation:show 0.5s linear both;animation:show 0.5s linear both}.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow{background:-moz-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,black),color-stop(100%,rgba(0,0,0,0.1)));background:linear,top,black 0%,rgba(0,0,0,0.1) 100%;background:-o-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:-ms-linear-gradient(top,black 0%,rgba(0,0,0,0.1) 100%);background:linear,to bottom,black 0%,rgba(0,0,0,0.1) 100%;-webkit-animation:hide 0.5s 0.3s linear both;-moz-animation:hide 0.5s 0.3s linear both;animation:hide 0.5s 0.2s linear both}@-webkit-keyframes show{0%{opacity:0}100%{opacity:1}}@-moz-keyframes show{0%{opacity:0}100%{opacity:1}}@-o-keyframes show{0%{opacity:0}100%{opacity:1}}@keyframes show{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes hide{0%{opacity:1}100%{opacity:0}}@-moz-keyframes hide{0%{opacity:1}100%{opacity:0}}@-o-keyframes hide{0%{opacity:1}100%{opacity:0}}@keyframes hide{0%{opacity:1}100%{opacity:0}}@media (max-width:690px){.flip-clock-wrapper{margin-left:0px}.flip{margin-bottom:45px!important}}@media (max-width:480px){body{overflow-y:scroll}.replacement-button{margin-bottom:40px}.inner.info img{margin-top:30px}.flip-clock-wrapper .flip{margin-bottom:43px}.flip-clock-divider.minutes{}.flip-clock-divider.minutes .flip-clock-label{width:155px}}@media (max-width:320px){.flip-clock-wrapper ul{width:47px}}.flip-clock-wrapper{padding:30px 30px 50px 30px}@media (max-width:730px){.flip-clock-wrapper{padding:10px 0px 0px 10px;padding:30px 30px 50px 30px;margin-left:10px}.flip-clock-divider.minutes .flip-clock-label{bottom:-2em}}@media (max-width:568px){.flip-clock-wrapper ul{width:50px}}@media (max-width:730px){.flip-clock-wrapper{padding:10px}.flip-clock-wrapper ul{width:40px}.flip-clock-wrapper ul li a div div.inn{font-size:40px}.flip-clock-wrapper ul{height:50px}.flip-clock-wrapper ul li{line-height:50px}.flip-clock-divider{height:60px;width:8px}.flip-clock-dot.top{top:18px}.flip-clock-dot.bottom{bottom:18px}.flip-clock-dot{width:8px;height:8px;left:0}.flip-clock-divider.days .flip-clock-label{width:106px}.flip-clock-divider.hours .flip-clock-label{width:112px}.flip-clock-divider.minutes .flip-clock-label{width:112px}.flip-clock-divider.seconds .flip-clock-label{width:112px}}@media (min-width:691px) and (max-width:730px){.flip-clock-wrapper{padding:10px 10px 50px 10px}}@media (max-width:545px){.flip-clock-wrapper{padding:3px}.flip+.flip-clock-divider{width:10px;margin-left:-10px}.flip-clock-wrapper ul{width:35px;margin:2px}.flip-clock-label{font-size:12px!important}.flip-clock-divider.days .flip-clock-label{width:78px}.flip-clock-divider.hours .flip-clock-label{width:86px}.flip-clock-divider.minutes .flip-clock-label{width:86px}.flip-clock-divider.seconds .flip-clock-label{width:86px}}@media (max-width:363px){.flip-clock-wrapper ul{width:29px}.flip-clock-divider.days .flip-clock-label{width:70px}.flip-clock-divider.hours .flip-clock-label{width:80px}.flip-clock-divider.minutes .flip-clock-label{width:78px}.flip-clock-divider.seconds .flip-clock-label{width:80px}}.control-panel-container{position:fixed;right:-341px;box-shadow:0 3px 10px rgba(0,0,0,.2);z-index:999999999;padding:15px;background:rgba(0,0,0,.2);top:0;max-width:341px}.control-panel-toggle{width:45px;height:45px;background:#ffc208;left:-45px;position:absolute;box-shadow:-3px 3px 10px rgba(0,0,0,.2);top:71px}.control-panel-toggle:hover{background-color:#e5ae01;cursor:pointer}.control-panel-title{padding:15px;font-size:17px;color:#444444;background:#eeeeee}.control-panel-title span{display:block;padding-left:6px;font-size:20px;letter-spacing:8.43px}.control-panel-title img{width:280px}.control-panel-controls{list-style:none;background-color:#fff;color:#333;margin-bottom:0;padding:0;max-height:600px;overflow-x:hidden;overflow-y:scroll}.control-panel-controls li.settings-button{padding:20px;cursor:pointer!important;line-height:20px}li.settings-button:hover{background:#eee}.control-panel-controls ul{margin:0;padding:0}.control-panel-controls ul li{padding:12px 20px;margin:0;list-style:none;border:0;color:#777777}.settings-panel ul#drag-drop-menu li{cursor:-webkit-grab!important}.control-panel-controls ul#drag-drop-menu li:hover{background:transparent;background-color:rgba(0,0,0,.045)}.settings-panel{padding:0!important;background-color:#eee;box-shadow:inset 0 0 3px rgba(0,0,0,.2)}span.float-right{color:rgba(0,0,0,0);font-size:11px}.control-panel-controls ul li:hover span.float-right,li.settings-button:hover span{color:#e5ae00}.control-panel-controls ul li:hover span.float-right{padding-top:5px}.control-panel-controls ul .well{padding:12px;border-radius:0;border-bottom:0;margin-top:0px;margin-bottom:0;background-color:#eee;border:0;box-shadow:0 0 0}.control-panel-controls ul .well:hover{background-color:rgba(0,0,0,.045)}.btn-group{width:100%}.btn-group .btn{background:#ffc200;border-color:#e5ae00;border:0}.btn-group.four .btn{width:25%}.btn-group.four .btn{padding:6px 6px}.background-tabs.btn-group.four .btn{padding:6px 3px}.btn-group.three .btn{width:33%}.btn-group.two .btn{width:50%}.btn-group .btn+.btn{margin-left:0}.form-control{border:1px solid #eee;color:#777;box-shadow:inset 0 1px 1px rgba(0,0,0,.275);-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.275)}select{margin-bottom:20px}.form-control:focus{border:1px solid #ffc200;box-shadow:inset 0 0px 0px rgba(0,0,0,0)}#clock-settings-menu p{margin-bottom:5px}#clock-settings-menu .small{color:rgba(0,0,0,.4)}#clock-settings-menu .form-group{margin:0 0 .4em}.datepicker{margin-top:10px}.ui-datepicker{padding:0;width:100%}.ui-widget-content{background:none;border:0;color:#777}.ui-widget-header{background-color:#ffc200;border:none;color:#fff;font-weight:normal}.ui-datepicker-prev:before,.ui-datepicker-next:before{font-family:'FontAwesome';color:#fff;line-height:27px;font-size:16px;font-weight:normal}.ui-datepicker-prev:hover,.ui-datepicker-next:hover{text-decoration:none!important;cursor:pointer}.ui-datepicker-prev:before{margin-left:8px;content:"\f100"}.ui-datepicker-next:before{content:"\f101";margin-left:10px}.ui-state-default{font-weight:normal;background-color:transparent}.ui-datepicker-today .ui-state-active{background-color:#ffc200;border-color:#ffc200}tbody .ui-state-default.ui-state-hover{color:#333;font-weight:bold}.modal-header{background-color:#eeeeee;border-radius:6px;border-bottom:0}.slider{box-shadow:inset 0 0 3px rgba(0,0,0,.2);margin-bottom:45px;margin-top:20px;width:250px;margin-left:10px;border-radius:20px;border-bottom:1px solid #f8f8f8;background-color:#ffc200;height:8px}.slider:before{content:'0';font-size:16px;color:#777;position:absolute;top:16px;left:-4px}.slider:after{content:'1';font-size:16px;color:#777;position:absolute;top:16px;right:-4px}.ui-slider-handle{background-color:#fff;border-color:#fff!important;border-radius:100%;box-shadow:0 1px 2px rgba(0,0,0,.2);top:-6px!important}.ui-slider-handle:hover,.ui-slider-handle:active{background-color:#ffc200;border-color:#ffc200!important;background-color:#fff;border-color:#fff!important}.ui-slider-handle:focus{outline:0}.selectable li div{cursor:pointer}.ui-selectee{background:#333}#image .ui-selectee:hover div{opacity:.6}.ui-selectee .selectable-cover{background-color:rgba(0,0,0,0);width:130px;height:87px}.ui-selectee:hover .selectable-cover{background-color:rgba(0,0,0,.2)}.ui-selected div{opacity:.6}.ui-selected{position:relative;background:#333}.ui-selected:after{content:'\f14a';position:absolute;font-family:'FontAwesome';font-size:40px;left:50%;color:#ffc200;margin-left:-17px;top:15px}#background-settings-menu div.background-image,#background-settings-menu div.video-image{width:130px;height:87px;background-size:cover}#background-settings-menu .tab-content li{float:left;padding:0;width:130px;margin-right:5px;margin-bottom:10px}#background-settings-menu .tab-content li:nth-child(2n+2){margin-right:0;margin-left:5px;width:130px}#background-settings-menu .tab-content ul{overflow:auto;width:270px}#background-settings-menu p{margin-bottom:5px}#texture li div{width:130px;height:87px;background-repeat:repeat;background-position:center}.color-swatch{width:130px;height:87px}.color-1{background-color:#000000}.color-2{background-color:#ffffff}.color-3{background-color:#333333}.color-4{background-color:#f5f5f5}.color-5{background-color:#777777}.color-6{background-color:#f1f1f1}.color-7{background-color:#C91100}.color-8{background-color:#B91100}.color-9{background-color:#A91100}.color-10{background-color:#991100}.color-11{background-color:#891100}.color-12{background-color:#F38630}.color-13{background-color:#FA6900}.color-14{background-color:#C75233}.color-15{background-color:#FF8A00}.color-16{background-color:#FF6600}.color-17{background-color:#ffc200}.color-18{background-color:#F8CA00}.color-19{background-color:#F9D423}.color-20{background-color:#ECBE13}.color-21{background-color:#FFE545}.color-22{background-color:#D1E751}.color-23{background-color:#88C425}.color-24{background-color:#519548}.color-25{background-color:#A8DBA8}.color-26{background-color:#789048}.color-27{background-color:#26ADE4}.color-28{background-color:#4DBCE9}.color-29{background-color:#0B486B}.color-30{background-color:#03BCE5}.color-31{background-color:#98EDFC}.color-32{background-color:#774F38}.color-33{background-color:#755C3B}.color-34{background-color:#A37E58}.color-35{background-color:#CDBB99}.color-36{background-color:#805841}.color-37{background-color:#563444}.color-38{background-color:#6A5E72}.color-39{background-color:#571B3C}.color-40{background-color:#7A1E48}.color-41{background-color:#d8d8d8}.color-42{background-color:#e8e8e8}.color-43{background-color:#bcbcbc}.color-44{background-color:#e7e7e9}.color-45{background-color:#b5b1ae}.color-46{background-color:#e1e1e1}.color-47{background-color:#fafafa}.color-48{background-color:#313131}.color-49{background-color:#acacac}.color-50{background-color:#eaeaea}.color-51{background-color:#d3d1d2}.color-52{background-color:#565455}.color-53{background-color:#f7f7f7}.color-54{background-color:#e204a9}.color-55{background-color:#58595b}.color-56{background-color:#eeeeee}.color-57{background-color:#343333}.color-58{background-color:#e1009c}.color-59{background-color:#0262a6}.color-60{background-color:#e6e8e8}.color-61{background-color:#e1009c}.color-62{background-color:#a0a0a1}.color-63{background-color:#fa7840}#animations-settings-menu .sub-section select:last-child{margin-bottom:0px}#animations-settings-menu .sub-section{padding-bottom:10px}#animations-settings-menu .tab-pane#animations-on{padding-top:10px}#animations-settings-menu p{margin-bottom:5px}#animations-settings-menu .btn{margin-bottom:0}.env-production .control-panel-container{display:none}.env-preview .control-panel-container,.env-local .control-panel-container{}.placeholder{height:44px;z-index:1}.ui-sortable-helper{}.page-cover{position:fixed;top:0;left:0;bottom:0;right:0;background-color:#fff;z-index:99999999999}.env-local .page-cover,.env-builder .page-cover,.env-preview .page-cover{display:block}.margin-top-10{margin-top:10px}.margin-bottom-10{margin-bottom:10px}.margin-bottom-20{margin-bottom:20px}.margin-bottom-0{margin-bottom:0}@font-face{font-family:'FontAwesome';src:url('https://my.leadpages.net/f/pSj0kQkukLnmtDDTc6gy1BNwyDRdSfRBj1HTSKX3pj/AVhpiftMLYUbsxWCdkCCZAKTzkD0lQvSWvF%252B1z4P4SMQ7xHdWg3vNZHUcOUMKnCkNsf0Lk2G8tg%253D%253D%7Cfonts/fontawesome.ttf')}.fa-cog,.fa-clock,.fa-grab,.fa-image,.fa-heat-map,.fa-chevron-right,.fa-lock,.fa-chevron-up,.fa-video,.fa-chevron-down,.fa-magic,.fa-external-link-square,.fa-circle{float:left;display:block;font-size:70px;font-family:'FontAwesome'}.fa-cog:before,.fa-cog{content:"\f013";color:#fff;line-height:25px;font-size:25px;margin-top:12px;margin-left:6px}.float-right{float:right}.fa-clock,.fa-grab,.fa-image,.fa-heat-map,.fa-chevron-right,.fa-lock,.fa-chevron-up,.fa-video,.fa-chevron-down,.fa-magic,.fa-external-link-square{line-height:20px;color:#ffc200;margin-right:10px}.fa-clock:before,.fa-clock{content:"\f017";font-size:20px}.fa-image:before,.fa-image{content:"\f03e";font-size:16px}.fa-grab:before,.fa-grab{content:"\f047";font-size:17px}.fa-video:before,.fa-video{content:"\f03d";font-size:17px}.fa-heat-map:before,.fa-heat-map{content:"\f20e";font-size:17px}.fa-magic:before,.fa-magic{content:"\f0d0";font-size:17px}.fa-external-link-square:before,.fa-external-link-square{content:"\f14c";font-size:17px}.fa-chevron-right:before,.fa-chevron-right{content:"\f054";font-size:38px}.fa-chevron-down:before,.fa-chevron-down{content:"\f078";font-size:30px;font-style:normal;margin-right:0;float:none;color:#e204a9;padding-bottom:20px}.fa-chevron-up:before,.fa-chevron-up{content:"\f077";font-size:24px;font-style:normal;margin-right:0}.to-the-top{position:fixed;z-index:99999;right:0;bottom:0;padding:10px;background-color:rgba(0,0,0,.3)}.fa-lock:before,.fa-lock{content:"\f023";font-size:22px;float:none;display:inline-block;vertical-align:text-top}.fa-check:before{content:"\f00c";margin-right:10px;margin-left:-35px;font-family:'FontAwesome';font-size:25px;color:#e1009c}.fa-circle:before{content:"\f192";margin-right:10px;margin-left:-32px;font-family:'FontAwesome';font-size:25px;color:#e1009c;position:absolute}.hide{display:none}html,body{height:100%}body{color:#333}.custom-background{position:absolute;top:0;left:0;bottom:0;right:0;z-index:0;background-size:cover;background-position:center;overflow:hidden}.custom-background img{width:100%!important;height:100%!important;max-height:100%!important;max-width:100%!important}.background{position:absolute;top:0;left:0;bottom:0;right:0;z-index:0;background-size:cover;background-position:center;overflow:hidden}.parallax-wrap{position:absolute;clip:rect(auto,auto,auto,auto);top:0;bottom:0;right:0;left:0}.overlay{position:absolute;top:0;left:0;bottom:0;right:0;z-index:1;background-color:#000;opacity:0}.center-background{position:absolute;top:-50%;left:-50%;width:200%;height:200%;z-index:1}iframe.youtube-player{position:absolute;top:-50%}.modal-header{background-color:#eeeeee;border-radius:0px;border-bottom:0}.modal.in{z-index:9999999999}.modal-backdrop.in{z-index:999999999}.btn-primary{background-color:#ffc200;border:0}.btn-primary:hover{background-color:#e5ae01}.btn-primary:focus,.btn-primary:active{background-color:#e5ae01;outline:0!important}.container{max-width:970px;max-width:960px;position:relative;z-index:2}.menu-bar .container{max-width:970px}@media (max-width:990px){}.container.full-width{width:100%;max-width:100%;padding-left:15px;padding-right:15px}.container.full-width .col-md-3,.container.full-width .col-md-9{padding:30px;padding:30px}.container.full-width .col-md-3 p{line-height:22px}.section{padding:60px 0;font-weight:200;line-height:21px;position:relative;overflow:hidden}.section.replacement-purple-background img{width:400px!important}.footer{padding:20px 0}.footer p{margin:0}.right-arrow{position:absolute;top:100px;right:-30px}img{max-width:100%!important}.btn-primary{background-color:#ffc200;border:0}.btn-primary:hover,.btn-primary.active{background-color:#e5ae01}.arrow-after:after{content:'';width:30px;height:30px;background:inherit;position:absolute;left:50%;margin-left:-15px;bottom:-15px;-webkit-transform:rotate(45deg);transform:rotate(45deg);z-index:1}ul{list-style-type:decimal}.row.flexible{display:flex;-webkit-flex:1;justify-content:center}@media (max-width:990px){.row.flexible{display:block}.section{padding:15px 0;padding:30px 15px}.right-arrow{display:none}.row div.col-md-3,.row div.col-md-4,.row div.col-md-6{margin-bottom:0px}.row div.col-md-4{}.full-width .row div.col-md-3,.row div.col-md-3:last-child,.row div.col-md-4:last-child,.row div.col-md-6:last-child{margin-bottom:0}}blockquote{padding:0;margin-top:20px;display:inline-block;border-left:0}.testimonial h3{text-align:left;padding-left:65px;margin-bottom:0;font-size:20px;margin-top:0}.testimonial p.small{padding-left:65px;font-size:14px}.five-stars{text-align:center;margin-top:20px}.five-stars img{max-width:200px!important;float:none}.divider-20{height:20px}.sub-section{padding:10px;padding-bottom:0;background-color:rgba(0,0,0,.05)}#clock-settings-menu .sub-section{padding-bottom:10px}#clock-settings-menu .sub-section p:last-child{background-color:#eeeeee;padding:10px;margin-bottom:0!important;margin-top:10px;border-radius:6px}#background-settings-menu .tab-content li,#background-settings-menu .tab-content li:nth-child(2n+2),#texture li div,#background-settings-menu div.video-image,.color-swatch,.ui-selectee .selectable-cover{width:120px}#background-settings-menu div.background-image{width:120px}.slider{width:231px}.section.light{background-color:#333333}.section.dark{background-color:#fffffe}.light{color:#fffffe}.dark{color:#333333}.section .btn{color:inherit}body{font-family:'Century Gothic','Open Sans',sans-serif;color:#3b3b3b}a{color:#444443}a:hover{color:#7b7b7b;text-decoration:none}a:active,a:focus{color:#444444;text-decoration:none}ul{list-style:none;padding-left:0}.page-container .btn,.modal .btn{border-radius:3px!important;border:0;background-color:#00d0a5;padding:12px 30px;font-size:30px;color:#ffffff!important;white-space:inherit}.page-container .btn.white{background:#e3d9e5;color:#e204a9!important}.page-container .btn.white:hover{background-color:#e3d9e5}.page-container .navbar .btn{color:#ffffff}.page-container .btn+.btn{margin-left:15px}.btn-large{width:100%}.btn.purple{background-color:#927ef7}.page-container .btn:hover,.modal .btn:hover{background:#00b592}.btn.purple:hover{background-color:#7a6acb}h1:first-child{margin-bottom:0px;margin-top:0}@media (max-width:990px){h1:first-child{margin-top:0}}.position-relative{position:relative}.map.section{padding:0}.map iframe{margin-bottom:-8px;border:0;filter:url("data:image/svg+xml;utf8,<svgxmlns=\'http://www.w3.org/2000/svg\'><filterid=\'grayscale\'><feColorMatrixtype=\'matrix\'values=\'0.33330.33330.3333000.33330.33330.3333000.33330.33330.33330000010\'/></filter></svg>#grayscale");filter:gray;-webkit-filter:grayscale(0%);-webkit-backface-visibility:hidden}.map-overlay{position:absolute;left:0;right:0;top:0;bottom:-1px}.contact .sortable-container{padding:40px;left:0;right:0;top:0;bottom:0;text-align:center}.env-builder .animated{opacity:1}.animated{opacity:0}.animated.visible{opacity:1}.replacement-counter-digits{background:#e5e5e5;background:-moz-linear-gradient(top,#00e8bb 0%,#00e8bb 50%,#00d0a9 50%,#00d0a9 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#00e8bb),color-stop(50%,#00e8bb),color-stop(50%,#00d0a9),color-stop(100%,#00d0a9));background:-webkit-linear-gradient(top,#00e8bb 0%,#00e8bb 50%,#00d0a9 50%,#00d0a9 100%);background:-o-linear-gradient(top,#00e8bb 0%,#00e8bb 50%,#00d0a9 50%,#00d0a9 100%);background:-ms-linear-gradient(top,#00e8bb 0%,#00e8bb 50%,#00d0a9 50%,#00d0a9 100%);background:linear-gradient(to bottom,#00e8bb 0%,#00e8bb 50%,#00d0a9 50%,#00d0a9 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='##00e8bb',endColorstr='##00d0a9',GradientType=0)}.counter .colon{font-size:28px;font-weight:700;line-height:39px;margin-left:-8px!important;vertical-align:top;width:20px;padding-left:11px;color:#fff}.counter{padding-left:50px}#countdown .replacement-call-to-action-text{font-size:27px;display:inline-block;text-align:center;vertical-align:top;color:#313434;background:#f8f8f2;padding:12px 20px 0px 10px}.days2{padding-left:9px}.hours2{padding-left:9px}.minutes2{padding-left:1px}.list-inline>li{display:inline-block;padding-right:0px!important;padding-left:0px!important;font-size:27px;text-align:center;vertical-align:top;color:#3b3b3b;background:#f8f8f2}.counter .digit,.leadstyle-countdown ul.countdown li span{overflow:hidden;height:47px;font-size:28px;line-height:45px;font-weight:bold;color:#fff;width:54px;display:inline-block}.menu-bar{padding-top:10px;padding-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.2);-moz-box-shadow:0 1px 3px rgba(0,0,0,.2);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);z-index:4;width:100%}.menu-bar:first-child{position:fixed}.menu-bar ul{margin:0;display:inline-block}.menu-bar ul:last-child,.menu-bar .logo-container:last-child{list-style:none;padding-left:0}.menu-bar ul li{float:left;margin-top:10px;margin-right:10px}.page-container .menu-bar+.section:nth-child(2){padding-top:75px}@media (max-width:34em){.page-container .menu-bar+.section:nth-child(2){padding-top:190px}}.mobile-toggle{display:none}.navbar{margin-bottom:0}.navbar-default{background-color:transparent;border:0}.navbar-toggle{margin-right:0;margin-bottom:0;margin-top:13px;border-radius:0;background-color:#000;border:0}.navbar-collapse{padding-left:0;padding-right:0;float:right}.navbar-toggle .icon-bar{background-color:#ffffff!important}.nav>li>a{padding:10px 10px}@media (max-width:990px){.navbar-collapse{margin-top:5px;float:none}.logo-container{max-width:80%;margin-top:5px}.navbar ul li{float:none;border-bottom:3px solid transparent;margin-top:6px}.navbar-collapse,.menu-bar ul li a{padding-right:0;padding-left:0}.navbar ul li:last-child{margin-bottom:10px}.navbar li:last-child a{padding-top:9px;padding-bottom:9px}.navbar-toggle{display:block}.navbar-header{float:none}}.pricing .well{box-shadow:0 0 0}.pricing h2{font-size:36px}.pricing h3{padding:10px 0px}.pricing .btn{width:100%}@media (max-width:990px){.pricing .well{padding:10px;margin-bottom:0px}.pricing .col-md-4{margin-bottom:30px!important}.pricing .col-md-4:last-child{margin-bottom:0!important}}.testimonials .container img{border-radius:100%;max-height:150px!important}.testimonials .col-md-3{text-align:center!important}.testimonials .quote{position:absolute;border:0;top:-10px}.testimonials .col-md-9:first-child,.testimonials .col-md-3:last-child{text-align:right}.testimonials .col-md-9:first-child .quote{right:-45px}.testimonials p{margin-top:100px;padding-left:50px}@media (max-width:990px){.testimonials{text-align:center}.testimonials p{padding-left:0;margin-top:30px}.quote{left:-30px;display:none}.testimonials .col-md-9:first-child,.testimonials .col-md-3:last-child{text-align:center}.testimonials .col-md-9:first-child p{margin-top:60px}.testimonials .col-md-3:last-child img{margin-bottom:60px}}.footer{padding-top:15px;padding-bottom:15px;text-align:center}.footer ul{float:none;display:inline-block;margin:0}.footer ul li{margin:0;padding-left:5px;padding-right:5px;font-size:16px;float:left}@media (max-width:480px){.footer ul li{float:none;font-size:12px}.pipe{display:none}}.line-through{text-decoration:line-through}.expired{transition:all 300ms ease-in-out;-webkit-transition:all 300ms ease-in-out;-moz-transition:all 300ms ease-in-out}.page-container.sortable-container{height:100%}@media (max-width:990px){.header+.section{padding-top:20px}}.card,.table{margin-bottom:0}.sticky-header+.section{padding-top:117px}@media (max-width:24em){.sticky-header+.section{padding-top:125px}}@media (min-width:25em) and (max-width:34em){.sticky-header+.section{padding-top:90px}}body{font-size:15px}.pink-font{color:#e1009c!important}.red-font{color:#84015c!important}@font-face{font-family:EyeCatching;src:url(https://my.leadpages.net/f/pSj0kQkukLnmtDDTc6gy1BNwyDRdSfRBj1HTSKX3pj%252BzK%252B3dJxWDkFSQroJ0/keO7JaRPua55tSKMDFq9cFftN4T64gtjdSEfk%252BxVEXSE1ZLEtOrbLpo/T3QNyPtTrgi%7Cfonts/eye-catching-webfont.ttf)}.menu-bar{}.menu-bar li a{font-size:14px;padding-right:0}.menu-bar li{margin-right:20px!important}.menu-bar li:last-child{padding-right:0;display:inline-block}@media (min-width:990px){.navbar-collapse.collapse{display:block!important;height:auto!important}}@media (max-width:34em){.list-inline>li{margin-bottom:10px}ul{margin-bottom:0px}.counter .colon{display:none}}@media (max-width:48em){}.navbar{margin-bottom:0;padding:0}.navbar-default{background-color:transparent;border:0}.navbar-toggle{margin-right:0;margin-bottom:0;margin-top:0px;border-radius:0;border:0;display:none}.navbar-collapse{padding-left:0;padding-right:0;float:right}.navbar-toggle .icon-bar{background-color:#ffffff!important;display:block;width:22px;height:2px;border-radius:1px;margin-bottom:3px}.navbar-toggle .icon-bar:last-child{margin-bottom:0}.nav>li>a{padding:10px 5px}@media (max-width:990px){.navbar-collapse{margin-top:5px;float:none}.logo-container{max-width:80%;margin-top:5px}.navbar ul li{float:none;border-bottom:3px solid transparent;margin-top:6px}.navbar-collapse,.menu-bar ul li a{padding-right:0;padding-left:0}.navbar ul li:last-child{margin-bottom:10px}.navbar li:last-child a{padding-top:9px;padding-bottom:9px}.navbar-toggle{display:block;padding:10px;float:right}.navbar-header{float:none}}.menu-bar .navbar{background-color:transparent}.menu-bar ul li{margin-top:0!important}.menu-bar .navbar-nav .nav-item+.nav-item{margin-left:0px}.menu-bar .btn{display:block;width:100%!important;display:block!important}.menu-bar .nav{float:right}.menu-bar{width:100%;z-index:4;box-shadow:0 3px 2px rgba(0,0,0,.1);top:0}.menu-bar:first-child{position:fixed}.menu-bar .btn{padding:10px 20px;font-size:14px}.menu-bar .btn:hover{background-color:#333!important;color:#ffffff!important}.menu-bar ul li{margin-top:5px}.menu-bar ul li a{padding-bottom:7px}.menu-bar li:last-child{margin-top:6px;margin-right:0!important}.menu-bar .navbar-light .navbar-nav .current>.nav-link{color:#000000;opacity:1}.menu-bar .navbar-light .navbar-nav .nav-link{color:#000000}.menu-bar .btn{opacity:1!important}@media (max-width:34em){}@media (max-width:48em){}.menu-bar{}.menu-bar .col-md-4{}.menu-bar h2,.menu-bar p{margin-bottom:0px}.menu-bar p{}.menu-bar .logo-container{display:inline-block;float:left}.menu-bar .menu-container{display:inline-block;padding-left:10px}@media (max-width:34em){.menu-bar .col-md-6{text-align:center}.menu-bar .logo-container{float:none}}@media (max-width:48em){}.header{padding-bottom:0px}.header .col-md-6{padding:0px;border-left:1px solid #fff;border-right:1px solid #fff}@media (max-width:34em){}@media (max-width:48em){}.section-1{padding:40px 0px}.triangle{position:absolute;left:50%;top:50%;margin-top:-215px;margin-left:-66px}.triangle2{position:absolute;left:50%;top:50%;margin-top:-273px;margin-left:-67px}@media (max-width:34em){.triangle,.triangle2{display:none}}@media (max-width:48em){}.section-2{color:#fff}.section-2 h1{padding-bottom:30px;padding-top:10px}.section-2 .btn{margin-top:30px}@media (max-width:34em){.section-2 h1{padding-bottom:20px}}@media (max-width:48em){}.section-3{padding:0px}.section-3 .col-md-4{padding:0px;border-left:1px solid #fff;border-right:1px solid #fff}@media (max-width:34em){}@media (max-width:48em){}.section-4{padding:60px 0px!important}.section-4 .line{padding-bottom:30px;padding-top:10px}@media (max-width:34em){.section-4{text-align:center;padding:20px 0px!important}.section-4 .btn{margin-bottom:20px}}@media (max-width:48em){}.section-4-5{}.section-4-5 .line{padding-bottom:30px;padding-top:10px}.section-4-5 .first{padding-bottom:20px}.table td{text-align:center;padding:40px;border:1px solid #eceeef}.table td img{padding-bottom:20px}@media (max-width:34em){.section-4-5 .first{margin-bottom:0px}}@media (max-width:48em){}.section-5{color:#fff}.section-5 h1{padding-bottom:30px;padding-top:10px}.section-5 .btn{margin-top:30px}@media (max-width:34em){.section-5 h1{padding-bottom:20px;margin-bottom:0px}li:last-child{margin-bottom:0px}}@media (max-width:48em){}.section-6{padding:0px}@media (max-width:34em){}@media (max-width:48em){}.section-7{}.section-7 .container .first{padding-bottom:30px;padding-top:10px}.section-7 .sortable-container h1{padding-bottom:20px}.section-7 .btn{margin-top:40px}@media (max-width:34em){}@media (max-width:48em){}.section-8{color:#fff}.section-8 h1{padding-bottom:30px;color:#00d0a5;padding-top:10px}.section-8 .btn{margin-top:10px}.section-8 .container img:last-child{border-radius:100%;max-height:275px!important}@media (max-width:34em){.section-8{text-align:center}.section-8 .col-md-4{padding-bottom:20px}}@media (max-width:48em){}.footer{}@media (max-width:34em){}@media (max-width:48em){}@font-face{font-family:'FontAwesome';src:url('https://my.leadpages.net/f/pSj0kQkukLnmtDDTc6gy1BNwyDRdSfRBj1HTSKX3pj/AVhpiftMLYUbsxWCdkCCZAKTzkD0lQvSWvF%252B1z4P4SMQ7xHdWg3vNZHUcOUMKnCkNsf0Lk2G8tg%253D%253D%7Cfonts/fontawesome.ttf')}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}ul.socialstudies{margin-bottom:0;display:inline-block}ul.socialstudies li{float:left}ul.socialstudies li:last-child a{margin-right:0}a.share{display:inline-block;text-align:center;padding:11px;color:#333333;font-size:30px;min-width:56px;border-radius:100%;margin:0 6px;opacity:1}a.share:hover{cursor:pointer;opacity:.8}a.share:first-child{margin-left:0}a.share.twitter{background:#28aae1;background:#ffffff}.fa-twitter:before{content:"\f099"}a.share.facebook{background:#3460a1;background:#ffffff}.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}a.share.linkedin{background:#136d9d;background:#ffffff}.fa-linkedin:before{content:"\f0e1"}a.share.googleplus{background:#de5543;background:#ffffff}.fa-google-plus:before{content:"\f0d5"}@media (max-width:34em){a.share{padding:9px;min-width:48px}}.env-builder a.share.googleplus,.env-production a.share.googleplus,.env-builder a.share.linkedin,.env-production a.share.linkedin,.env-builder a.share.facebook,.env-production a.share.facebook,.env-builder a.share.twitter,.env-production a.share.twitter{background:#ffffcb!important;color:#333333!important}.section{background-color:#fffffe}.env-production .page-container .btn,.env-builder .page-container .btn{background-color:#00d0a4!important;color:#ffffef!important}.env-production .page-container .btn:hover,.env-builder .page-container .btn:hover{background-color:#00d0a3!important;color:#ffffee!important}.env-production .section-3 .col-md-4,.env-builder .section-3 .col-md-4{border-left:1px solid #ffffed;border-right:1px solid #ffffed}.env-production .table td,.env-builder .table td{border:1px solid #eceeef;border-top:1px solid #eceeef}.env-production .header .col-md-6,.env-builder .header .col-md-6{border-left:1px solid #ffffed;border-right:1px solid #ffffed}.env-production .replacement-counter-digits,.env-builder .replacement-counter-digits{background:linear-gradient(to bottom,#00e8ba 0%,#00e8ba 50%,#00d0a8 50%,#00d0a8 100%)}.env-production .header,.env-builder .header,.header{background-color:#fffffd!important;color:#3b3b3a!important}.env-production .section-1,.env-builder .section-1,.section-1{background-color:#fffffc!important;color:#3b3b39!important}.env-production .section-2,.env-builder .section-2,.section-2{background-color:#fffffb!important;color:#fffffa!important}.env-production .section-3,.env-builder .section-3,.section-3{background-color:#fffff9!important;color:#3b3b36!important}.env-production .section-4,.env-builder .section-4,.section-4{background-color:#fffff8!important;color:#3b3b35!important}.env-production .section-4-5,.env-builder .section-4-5,.section-4-5{background-color:#fffff7!important;color:#3b3b34!important}.env-production .section-5,.env-builder .section-5,.section-5{background-color:#fffff6!important;color:#fffff5!important}.env-production .section-6,.env-builder .section-6,.section-6{background-color:#fffff4!important;color:#3b3b31!important}.env-production .section-7,.env-builder .section-7,.section-7{background-color:#fffff3!important;color:#3b3b30!important}.env-production .section-8,.env-builder .section-8,.section-8{background-color:#fffff2!important;color:#fffff1!important}.env-production .footer,.env-builder .footer,.footer{background-color:#fffff0!important;color:#3b3b2d!important}
+            .table-responsive {
+                    min-height: .01%;
+                        overflow-x: inherit!important;
+                }
+        </style>
+           
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+         <script>
+             $(document).ready(function() {
+
+                $(".fancybox").fancybox({'afterLoad': function() {
+                     
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                $(".fancybox-pop").fancybox({'scrolling': 'visible', 'afterLoad': function() {
+                        if (typeof (FB) != 'undefined') {
+                            FB.Canvas.scrollTo(0, 0);
+                            $("#fancybox-wrap").css({'top': '100px', 'bottom': 'auto'});
+                        }
+                    }});
+                 });
+                 
+                    function fadeInBox(id, timeout) {
+                setTimeout(function() {
+                    $('#' + id).fadeIn(800);
+                }, timeout);
+            }
+        </script>
+        <style>
+            
+
+            .box-popup {
+                position: relative;
+                text-align: center;
+            }
+            .box-popup p {margin: 0 0 10px;}
+            .box-popup p strong {color: #108cef;}
+            .box-popup .illust {
+                display: inline-block;
+                max-width: 205px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .box-popup .content {
+                display: inline-block;
+                max-width: 400px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .box-popup .desc {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: bold;
+                margin: 0 0 1em;
+            }
+            .box-popup .btn {
+                display: block;
+                width: 100%;
+            }
+            .box-popup .btn span {font-size: 26px;}
+            .box-popup .privacy {
+                line-height: 18px;
+                padding: 0 20px;
+            }
+            .box-popup .reset {margin: 0;}
+          
+            .box-popup .illust {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: left;
+            }
+            .box-popup .illust img {
+                max-width: 100%;
+                margin-top: -15px;
+            }
+            .box-popup .content {
+                padding-left:0;
+                margin-top: 0px;
+            }
+            .box-popup .btn > span{
+                background: -moz-linear-gradient(center top,#f6b33d 5%, #fbbd04 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f6b33d),color-stop(1,#fbbd04));
+                background-color: #f6b33d;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d',endColorstr='#fbbd04');
+                color: #000001; 
+            }.box-popup .btn > span:hover{
+                background: -moz-linear-gradient(center top,#fbbd04 5%,#f6b33d 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#fbbd04), color-stop(1,#f6b33d));
+                background-color: #FBBD03;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbbd04',endColorstr='#f6b33d');
+            }
+            @media only screen and (max-width: 725px){
+                .box-popup .illust {float: none}
+                .box-popup .btn span {font-size: 20px;}
+            }
+            @media only screen and (max-width: 500px){
+                .box-popup .btn span {font-size: 15px;}
+            }
+            @media only screen and (max-width: 415px){
+                .box-popup .btn span {font-size: 10px;}
+            }
+            @media only screen and (max-width: 330px){
+                .box-popup .btn span {font-size: 8px;}
+            }
+            .fancybox-skin {
+                background:#fff!important;
+                padding:0!important;
+            }
+            .pop {
+                background:#fff;
+                border-radius:4px;
+                padding:20px;
+            }
+            .fancybox-inner {
+                width:auto!important;
+            }
+            @media (max-width:860px) {
+                .fancybox-inner{ width:auto!important;}
+            }
+            .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
+                padding:0;
+                margin:0;
+                border:0;
+                outline:none;
+                vertical-align:top;
+            }
+            .fancybox-wrap {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:8020;
+            }
+            .fancybox-skin {
+                position:relative;
+                background:#fff;
+                color:#444445;
+                text-shadow:none;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                border-radius:4px;
+            }
+            .fancybox-opened {z-index:8030;}
+            .fancybox-opened .fancybox-skin {
+                -webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                -moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+                box-shadow:0 10px 25px rgba(0,0,0,0.5);
+            }
+            .fancybox-outer,.fancybox-inner {position:relative;}
+            .fancybox-inner {
+                overflow:hidden;
+                height:100% !important;
+            }
+            .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling:touch;}
+            .fancybox-error {
+                color:#444;
+                font:14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                margin:0;
+                padding:15px;
+                white-space:nowrap;
+            }
+            .fancybox-image,.fancybox-iframe {
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            .fancybox-image {
+                max-width:100%;
+                max-height:100%;
+            }
+            #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
+                background-image:url('{LOCAL_URL}/icon-popup.png');
+            }
+            #fancybox-loading {
+                position:fixed;
+                top:50%;
+                left:50%;
+                margin-top:-22px;
+                margin-left:-22px;
+                background-position:0 -108px;
+                opacity:0.8;
+                cursor:pointer;
+                z-index:8060;
+            }
+            #fancybox-loading div {
+                width:44px;
+                height:44px;
+
+            }
+            .fancybox-close {
+                position:absolute;
+                top:-18px;
+                right:-18px;
+                width:36px;
+                height:36px;
+                cursor:pointer;
+                z-index:8040;
+            }
+            .fancybox-nav {
+                position:absolute;
+                top:0;
+                width:40%;
+                height:100%;
+                cursor:pointer;
+                text-decoration:none;
+                background:transparent;
+                -webkit-tap-highlight-color:rgba(0,0,0,0);
+                z-index:8040;
+            }
+            .fancybox-prev {left:0;}
+            .fancybox-next {right:0;}
+            .fancybox-nav span {
+                position:absolute;
+                top:50%;
+                width:36px;
+                height:34px;
+                margin-top:-18px;
+                cursor:pointer;
+                z-index:8040;
+                visibility:hidden;
+            }
+            .fancybox-prev span {
+                left:10px;
+                background-position:0 -36px;
+            }
+            .fancybox-next span {
+                right:10px;
+                background-position:0 -72px;
+            }
+            .fancybox-nav:hover span {visibility:visible;}
+            .fancybox-tmp {
+                position:absolute;
+                top:-99999px;
+                left:-99999px;
+                visibility:hidden;
+                max-width:99999px;
+                max-height:99999px;
+                overflow:visible!important;
+            }
+            .fancybox-lock {
+                overflow:hidden!important;
+                width:auto;
+            }
+            .fancybox-lock body {
+                overflow:hidden!important;
+            }
+            .fancybox-lock-test {
+                overflow-y:hidden!important;
+            }
+            .fancybox-overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                overflow:hidden;
+                display:none;
+                z-index:8010;
+                background:url(https://lh3.googleusercontent.com/-Vzc9Psb_7yw/U4I0DA-wL5I/AAAAAAAAALI/qox0NTyP9b4/s128/background_1.png?gl=US);
+            }
+            .fancybox-overlay-fixed {
+                position:fixed;
+                bottom:0;
+                right:0;
+            }
+            .fancybox-lock .fancybox-overlay {
+                overflow:auto;
+                overflow-y:scroll;
+            }
+            .fancybox-title {
+                visibility:hidden;
+                font:normal 13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                position:relative;
+                text-shadow:none;
+                z-index:8050;
+            }
+            .fancybox-opened .fancybox-title {visibility:visible;}
+            .fancybox-title-float-wrap {
+                position:absolute;
+                bottom:0;
+                right:50%;
+                margin-bottom:-35px;
+                z-index:8050;
+                text-align:center;
+            }
+            .fancybox-title-float-wrap .child {
+                display:inline-block;
+                margin-right:-100%;
+                padding:2px 20px;
+                background:transparent;
+                background:rgba(0,0,0,0.8);
+                -webkit-border-radius:15px;
+                -moz-border-radius:15px;
+                border-radius:15px;
+                text-shadow:0 1px 2px #222;
+                color:#FFF;
+                font-weight:bold;
+                line-height:24px;
+                white-space:nowrap;
+            }
+            .fancybox-title-outside-wrap {
+                position:relative;
+                margin-top:10px;
+                color:#fff;
+            }
+            .fancybox-title-inside-wrap {padding-top:10px;}
+            .fancybox-title-over-wrap {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:#fff;
+                padding:10px;
+                background:#000;
+                background:rgba(0,0,0,.8);
+            }
+            #fancybox-loading div {background-size:24px 24px;}
+            .inp-fix {
+                position:relative;
+                display:block;
+                padding:0 22px 0 0;
+            }
+            .inp-fix .inp-text {
+                width:80%;
+                margin:0 -22px 0 0;
+                color:#B4B4B4;
+                height: 40px;
+            }
+            
+        </style>
+    </head>
+   <body class="env-preview" style="overflow: scroll; height: 1000px;">
+		<div class="page-cover" style="display: none;"></div>
+		
+		<div class="modal fade" id="demoVideo" tabindex="-1" role="dialog" aria-labelledby="modalLabel1">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header text-center">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		        <a href="https://www.templatelauncher.com" target="_blank"><img src="{LOCAL_URL}new-temp-14/templatelauncher-logo.png" width="280px"></a>
+		      </div>
+		     
+		    </div>
+		  </div>
+		</div>
+		<div class="sortable-container page-container" data-name="Page Container" data-sortable-parent="0">
+			
+			
+		<div id="menu-bar" class="section menu-bar" data-name="Menu Bar" data-lead-id="custom-landing-page_0_Menu-Bar_container" data-layout-order="0">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_1_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_2_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_3_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container">
+					<div>
+						<div data-name="Column 1" data-lead-id="custom-landing-page_4_Column-1_container" class="col-md-3"></div>
+						<div data-name="Column 2" data-lead-id="custom-landing-page_5_Column-2_container" class="col-md-6">
+							<div class="logo-container" data-lead-id="custom-landing-page_6_Image_image-link" data-name="Image">
+								<img data-lb-comment="Recommended image width: 200px" data-lb-name="Logo Image" data-lb-id="logo-img" alt="logo" data-lb="editable-image editable-optional" data-name="Image" data-lead-id="custom-landing-page_7_Image_image" src="{LOCAL_URL}new-temp-14/logo.png">
+							</div>
+							<div class="menu-container " data-name="Menu-Container" data-lead-id="custom-landing-page_8_Menu-Container_container">
+								<h2 data-lb-name="Header title text" data-lb="editable-rich-text editable-optional"    data-name="Title" data-lb-id="custom-landing-page_9_Title_text">Contact Us Today </h2>
+								<p data-lb-name="Header phone text" data-lb="editable-rich-text editable-optional"   data-name="Text" data-lb-id="custom-landing-page_10_Text_text">555	-555-2000 | buy@templatelauncher.com</p>
+							</div>
+						</div>
+						<div data-name="Column 3" data-lead-id="custom-landing-page_11_Column-3_container" class="col-md-3"></div>
+					</div>
+				</div>
+			</div><div id="header" class="section header" data-name="Header" data-lead-id="custom-landing-page_12_Header_container" data-layout-order="1">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_13_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_14_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_15_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>
+				
+					<div class="row flexible sortable-container" data-sortable-parent="1">
+						
+						
+				<div data-name="Column 1" data-lead-id="custom-landing-page_16_Column-1_container" class="col-md-6 visible" data-layout-order="0" data-animation="fadeInDown">
+							<img  data-lb-comment="Recommended image width: 964px" data-lb-name="Banner Left"   data-lb="editable-image editable-optional max-image-size=964" data-name="Image" data-lb-id="custom-landing-page_17_Image_image" src="{LOCAL_URL}new-temp-14/banner_left.jpg"  style="    width: 964px;    height: 643px;">
+						</div><div data-name="Column 2" data-lead-id="custom-landing-page_18_Column-2_container" class="col-md-6 visible" data-layout-order="1" data-animation="fadeInDown">
+							<img  data-lb-comment="Recommended image width: 964px" data-lb-name="Banner Right"   data-lb="editable-image editable-optional max-image-size=964" data-name="Image" data-lb-id="custom-landing-page_19_Image_image" src="{LOCAL_URL}new-temp-14/banner_right.jpg"  style="    width: 964px;    height: 643px;" >
+						</div></div>
+			</div><div id="section-1" class="section section-1" data-name="Section 1" data-lead-id="custom-landing-page_20_Section-1_container" data-layout-order="2">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_21_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_22_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_23_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container">
+							<h1  data-lb-name="Custom landing page title text" data-lb="editable-rich-text editable-optional"   class="text-center visible" data-name="Title" data-lb-id="custom-landing-page_24_Title_text" data-animation="fadeInDown">14288 Luxembourg City, Luxembourg - $980,000</h1>
+			
+				</div>
+			</div>
+                    
+                    <div data-lb-name="Block Count Down 1" data-lb="editable-s1 editable-optional"  id="section-2" class="section section-2" data-name="Section 2" data-lb-id="custom-landing-page_25_Section-2_container" data-layout-order="3">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_26_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_27_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_28_Background_container" style="position: absolute; background: rgb(59, 59, 59);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container position-relative">
+					<img class="triangle" data-name="Image" data-lead-id="custom-landing-page_29_Image_image" src="{LOCAL_URL}new-temp-14/triangle.png">
+							<h1  data-lb-name="Header coundown 1 text" data-lb="editable-rich-text editable-optional"   class="text-center" data-name="Title" data-lb-id="custom-landing-page_30_Title_text">Next Open House In</h1>
+					<div class="sortable-container text-center" data-sortable-parent="2">
+							
+							
+					<div data-name="Clock" data-lead-id="custom-landing-page_31_Clock_container" class="clock visible" data-layout-order="0" data-animation="fadeInDown">
+								<div class="counter" data-name="Countdown" data-lead-id="custom-landing-page_32_Countdown_countdown">
+									<ul class="countdown list-inline" id="countdown">
+									<li>
+										<div class="digit replacement-counter-digits">
+                                                                                    <span data-lb-name=" coundown 1 Day" data-lb="editable-rich-text editable-optional"  data-lb-id="day1"  class="days">24</span></div>
+										<div class="replacement-call-to-action-text days2">Days</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 1 hour" data-lb="editable-rich-text editable-optional"  data-lb-id="hour1" class="digit replacement-counter-digits"><span class="hours">8</span></div>
+										<div  class="replacement-call-to-action-text hours2">Hours</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 1 minutes" data-lb="editable-rich-text editable-optional"  data-lb-id="minutes1" class="digit replacement-counter-digits"><span class="minutes">10</span></div>
+										<div class="replacement-call-to-action-text minutes2">Minutes</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 1 seconds" data-lb="editable-rich-text editable-optional"  data-lb-id="seconds1"  class="digit replacement-counter-digits"><span class="seconds">59</span></div>
+										<div class="replacement-call-to-action-text">Seconds</div>
+									</li>
+								</ul>
+								</div>
+							</div>
+                                            
+                                            
+                                            <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">   <div data-lb-name="Header coundown 1 link" data-lb="editable-button   editable-optional"  data-name="Link" data-lb-id="custom-landing-page_33_Link_link" href="#" target="_blank" class="btn btn-default visible" data-layout-order="1" data-animation="fadeInDown">Request a Showing</div> </a>
+                                        
+                                        
+                                        </div>
+				</div>
+			</div>
+                    
+                    
+            <div data-lb-name="Block Floor Plan" data-lb="editable-s1 editable-optional" id="section-3" class="section section-3" data-name="Section 3" data-lb-id="custom-landing-page_34_Section-3_container" data-layout-order="4">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_35_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_36_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_37_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>	
+					<div class="row flexible sortable-container" data-sortable-parent="3">
+						
+						
+						
+				<div data-name="Column 1" data-lead-id="custom-landing-page_38_Column-1_container" class="col-md-4 visible" data-layout-order="0" data-animation="fadeInDown">
+			 <img  data-lb-comment="Recommended image width: 550px" data-lb-name="Slide img 1"   data-lb="editable-image editable-optional max-image-size=550"  data-name="Image" data-lb-id="custom-landing-page_39_Image_image" src="{LOCAL_URL}new-temp-14/img5.jpg">
+						</div><div data-name="Column 2" data-lead-id="custom-landing-page_40_Column-2_container" class="col-md-4 visible" data-layout-order="1" data-animation="fadeInDown">
+			<img  data-lb-comment="Recommended image width: 550px" data-lb-name="Slide img 2"   data-lb="editable-image editable-optional max-image-size=550" data-name="Image" data-lb-id="custom-landing-page_41_Image_image" src="{LOCAL_URL}new-temp-14/img6.jpg">
+						</div><div data-name="Column 3" data-lead-id="custom-landing-page_42_Column-3_container" class="col-md-4 visible" data-layout-order="2" data-animation="fadeInDown">
+			<img  data-lb-comment="Recommended image width: 550px" data-lb-name="Slide img 3"   data-lb="editable-image editable-optional max-image-size=550" data-name="Image" data-lb-id="custom-landing-page_43_Image_image" src="{LOCAL_URL}new-temp-14/img8.jpg">
+						</div></div>
+			</div><div id="section-4" class="section section-4" data-name="Section 4" data-lead-id="custom-landing-page_44_Section-4_container" data-layout-order="5">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_45_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_46_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_47_Background_container" style="position: absolute; background: rgb(241, 241, 241);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container">
+					<div class="row flexible sortable-container" data-sortable-parent="4">
+						
+						
+					<div data-name="Column 1" data-lead-id="custom-landing-page_48_Column-1_container" class="col-md-6 visible" data-layout-order="0" data-animation="fadeInDown">
+							<h1   data-lb-name="Header Floor plan text" data-lb="editable-rich-text editable-optional" data-name="Title" data-lb-id="custom-landing-page_49_Title_text">Floor Plan</h1>
+							<img class="line" data-name="Image" data-lead-id="custom-landing-page_50_Image_image" src="{LOCAL_URL}new-temp-14/line.png">
+							<h3  data-lb-name="Header 2 Floor plan text" data-lb="editable-rich-text editable-optional" data-name="Text" data-lb-id="custom-landing-page_51_Text_text">3 Bedroom 2 Bath</h3>
+							<p  data-lb-name="Content Floor plan text" data-lb="editable-rich-text editable-optional" data-name="Text" data-lb-id="custom-landing-page_52_Text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                                                        <a href="#myModal" id="data-reveal-id" class="click fancybox-pop"> <div  data-lb-name="Header Floor plan link" data-lb="editable-button   editable-optional"  data-name="Link" data-lb-id="custom-landing-page_53_Link_link" href="https://www.templatelauncher.com" target="_blank" class="btn btn-default">Request a Showing</div></a>
+						</div><div data-name="Column 2" data-lead-id="custom-landing-page_54_Column-2_container" class="col-md-6 visible" data-layout-order="1" data-animation="fadeInDown">
+				<img data-lb-comment="Recommended image width: 450px" data-lb-name="Floor plan img"   data-lb="editable-image editable-optional max-image-size=450" data-name="Image" data-lb-id="custom-landing-page_55_Image_image" src="{LOCAL_URL}new-temp-14/floorplan.png">
+						</div></div>
+				</div>
+			</div><div id="section-4-5" class="section section-4-5" data-name="Section 4-5" data-lead-id="custom-landing-page_56_Section-4-5_container" data-layout-order="6">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_57_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_58_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_59_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container text-center">
+					<div data-name="Column 1" data-lead-id="custom-landing-page_60_Column-1_container" class="col-md-1 visible" data-animation="fadeInDown"></div>
+					<div data-name="Column 1" data-lead-id="custom-landing-page_61_Column-1_container" class="col-md-10 visible" data-animation="fadeInDown">
+					<h1  data-lb-name="Header Features text" data-lb="editable-rich-text editable-optional" data-name="Title" data-lb-id="custom-landing-page_62_Title_text">Features</h1>
+					<img class="line" data-name="Image" data-lead-id="custom-landing-page_63_Image_image" src="{LOCAL_URL}new-temp-14/line.png" >
+					<h3 data-lb-name="Header 2 Features  text" data-lb="editable-rich-text editable-optional" data-name="Title" data-name="Text" data-lb-id="custom-landing-page_64_Text_text">Amazing Amenities</h3>
+					<p data-lb-name="Header Features content text" data-lb="editable-rich-text editable-optional" data-name="Title" class="first" data-name="Text" data-lb-id="custom-landing-page_65_Text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+					</div>
+					<div data-name="Column 1" data-lead-id="custom-landing-page_66_Column-1_container" class="col-md-1 visible" data-animation="fadeInDown"></div>
+					<div class="table-responsive">
+					<table data-lb-name="Header Features content text" data-lb="editable-richtext-area editable-optional" data-lb-id="custom-landing-page_67_Table_container" data-name="Table" class="table">
+				
+					<tbody>
+							<tr class="text-center" data-lead-id="custom-landing-page_68_Row_container" data-name="Row">
+								<td class="text-left" data-lead-id="custom-landing-page_69_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_70_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature1.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_71_Text_text">2 Parking Spaces</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_72_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_73_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature2.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_74_Text_text">Lots of Restaurants</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_75_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_76_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature3.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_77_Text_text">Fast Internet</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_78_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_79_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature4.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_80_Text_text">Quick Freeway Access</p>
+								</td>
+							</tr>
+							<tr class="text-center" data-lead-id="custom-landing-page_81_Row_container" data-name="Row">
+						
+								<td class="text-left" data-lead-id="custom-landing-page_82_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_83_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature2.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_84_Text_text">Lots of Restaurants</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_85_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_86_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature4.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_87_Text_text">Quick Freeway Access</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_88_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_89_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature1.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_90_Text_text">2 Parking Spaces</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_91_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_92_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature3.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_93_Text_text">Fast Internet</p>
+								</td>
+					
+							</tr>
+							<tr class="text-center" data-lead-id="custom-landing-page_94_Row_container" data-name="Row">
+						
+								<td class="text-left" data-lead-id="custom-landing-page_95_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_96_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature2.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_97_Text_text">Lots of Restaurants</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_98_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_99_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature1.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_100_Text_text">2 Parking Spaces</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_101_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_102_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature3.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_103_Text_text">Fast Internet</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_104_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_105_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature4.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_106_Text_text">Quick Freeway Access</p>
+								</td>
+							</tr>
+							<tr class="text-center" data-lead-id="custom-landing-page_107_Row_container" data-name="Row">
+								<td class="text-left" data-lead-id="custom-landing-page_108_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_109_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature1.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_110_Text_text">2 Parking Spaces</p>
+								</td>
+						
+								<td class="text-left" data-lead-id="custom-landing-page_111_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_112_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature4.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_113_Text_text">Quick Freeway Access</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_114_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_115_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature2.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_116_Text_text">Lots of Restaurants</p>
+								</td>
+								<td class="text-left" data-lead-id="custom-landing-page_117_Text_container" data-name="Text">
+									<img data-name="Image" data-lead-id="custom-landing-page_118_Image_image_Choose-Image_500_500" src="{LOCAL_URL}new-temp-14/feature3.png">
+									<p data-name="Text" data-lead-id="custom-landing-page_119_Text_text">Fast Internet</p>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+                    
+                    
+                    <div ata-lb-name="Block Count Down 2" data-lb="editable-s1 editable-optional"  id="section-5" class="section section-5" data-name="Section 5" data-lb-id="custom-landing-page_120_Section-5_container" data-layout-order="7">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_121_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_122_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_123_Background_container" style="position: absolute; background: rgb(59, 59, 59);"></div>
+				<div class="overlay" style="opacity: 0;"></div>
+				<div class="container text-center position-relative">
+					<img class="triangle" data-name="Image" data-lead-id="custom-landing-page_124_Image_image" src="{LOCAL_URL}new-temp-14/triangle.png">
+						<h1 data-lb-name="Header coundown 2 text" data-lb="editable-rich-text editable-optional"  class="visible" data-name="Title" data-lb-id="custom-landing-page_125_Title_text" data-animation="fadeInDown">Next Open House In</h1>
+				<div class="sortable-container text-center" data-sortable-parent="5">
+						
+						
+					<div data-name="Clock" data-lead-id="custom-landing-page_126_Clock_container" class="clock visible" data-layout-order="0" data-animation="fadeInDown">
+							<div class="counter" data-name="Countdown" data-lead-id="custom-landing-page_127_Countdown_countdown">
+								<ul class="countdown list-inline" id="countdown">
+									<li>
+										<div class="digit replacement-counter-digits">
+                                                                                    <span data-lb-name=" coundown 2 Day" data-lb="editable-rich-text editable-optional"  data-lb-id="day2"  class="days">24</span></div>
+										<div class="replacement-call-to-action-text days2">Days</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 2 hour" data-lb="editable-rich-text editable-optional"  data-lb-id="hour2" class="digit replacement-counter-digits"><span class="hours">8</span></div>
+										<div  class="replacement-call-to-action-text hours2">Hours</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 2 minutes" data-lb="editable-rich-text editable-optional"  data-lb-id="minutes2" class="digit replacement-counter-digits"><span class="minutes">10</span></div>
+										<div class="replacement-call-to-action-text minutes2">Minutes</div>
+									</li>
+									<li class="colon replacement-colon"></li>
+									<li>
+										<div data-lb-name=" coundown 2 seconds" data-lb="editable-rich-text editable-optional"  data-lb-id="seconds2"  class="digit replacement-counter-digits"><span class="seconds">59</span></div>
+										<div class="replacement-call-to-action-text">Seconds</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+                                    <a href="#myModal" id="data-reveal-id" class="click fancybox-pop">   <div   data-lb-name="Header coundown 2 link" data-lb="editable-button  editable-optional"  data-name="Link" data-lb-id="custom-landing-page_128_Link_link" href="#" target="_blank" class="btn btn-default visible" data-layout-order="1" data-animation="fadeInDown">Request a Showing</div> </a>
+                                </div>
+				</div>
+			</div><div id="section-6" class="section section-6" data-name="Section 6" data-lead-id="custom-landing-page_129_Section-6_container" data-layout-order="8">
+				<div class="custom-background" data-name="Custom Background" data-lead-id="custom-landing-page_130_Custom-Background_container" style="position: absolute; background-size: cover;">
+					<img data-name="Image" data-lead-id="custom-landing-page_131_Image_image_Choose-Image_1600_900" src="{LOCAL_URL}new-temp-14/custom-background.png">
+				</div>
+				<div class="background" data-name="Background" data-lead-id="custom-landing-page_132_Background_container" style="position: absolute; background: rgb(255, 255, 255);"></div>
+				<div  data-lb-name="Maps" data-lb="editable-embed-area editable-optional" data-lb-id="custom-landing-page_133_Map-Embed_embed"    data-name="Map-Embed"  class="map">
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659076.3405664267!2d5.572894113405096!3d49.81394836641038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479545b9ca212147%3A0x64db60f602d392ef!2sLuxembourg!5e0!3m2!1sen!2sus!4v1452894721648" width="1500px" height="350px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+					
+				</div>
+			</div>
+                    
+
+<div style="position: absolute; bottom: 0px; top: 0px; right: 0px; left: 0px; z-index: 2147483646; width: 100%; opacity: 0.5; display: none; height: 1000px; background: black;"></div>
+                
+                 <div style="display: none;" id="myModal" class="pop">
+            <div class="box-popup">
+                <style>
+                    #form-header-text, #leadpages-form-header-text {
+                    padding-top: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid #dadada;
+                    padding-bottom: 5px;
+                    margin-left: 62px;
+                    margin-right: 57px;
+                        font-family: Helvetica, Arial, sans-serif;
+                    font-size: 10pt;
+                    letter-spacing: 0em;
+                                }
+                                #form-image, #leadpages-form-image {
+                    margin: 0 15px 0 0;
+                        vertical-align: middle;
+                }
+                .leadbox-content-wrapper, #form-preview fieldset, fieldset {
+                width: 450px;
+                max-width: 100%;
+                padding: 0;
+            }
+            .form12 fieldset{
+                     display: inline-block;
+                    text-align: left;
+                    vertical-align: middle;
+                    margin: 0 auto;
+                    max-width: 400pt;
+                    padding: 0 10pt;
+                    border: none;
+                    width: 450px;
+                    max-width: 100%;
+                    padding: 0;
+    
+            }
+            .form12 fieldset #form-fields {
+                    padding: 0;
+                    margin: 0 0 10px 25px;
+                    margin-left: 0;
+                    list-style: none;
+                    padding-top: 10px;
+            }
+            .form12 fieldset #form-fields li {
+                       line-height: 20px;
+                       margin-bottom: 10px;
+                           margin: 1em 0;
+    position: relative;
+            }
+            .form12 fieldset #form-fields  input {
+                     padding: 13px;
+                    color: #201D1D;
+                    background: white;
+                    border: 1pt solid #C9D7DD;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    -o-transition: none;
+                    transition: none;
+                    width: 422px;
+                    box-sizing: content-box;
+            }
+            .form12 button[type=submit] {
+    margin: 0.2em auto 0;
+    padding: 0.9em;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 100%;
+    text-shadow: 2px 2px 0 #1285dd;
+    max-width: none;
+    
+    outline-offset: 5pt;
+}
+                </style>
+               
+                <form  data-lb-id="form-popup-headline" data-lb-name="Form Popup" data-lb="editable-opt-in-form editable-optional" id="form" class="editable form12" style="background-color: #ffffff;border-color: #ffffff;border-width: 1pt;border-style: solid;">
+               
+                
+                <div id="form-header">
+                    
+                        <img  data-lb-comment="Recommended image size 850 x 50  pixels" data-lb-name="Popup Status Bar" data-lb-id="status-image-pop" alt="" data-lb="editable-image max-image-size=850 editable-optional"  id="form-header-image" class="editable" src="{LOCAL_URL}leadbox_status_bar_gray3.gif" data-id="default">
+                    
+                     <div data-lb-name="Popup Status Text" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-status-text" id="form-header-text" class="editable" style="font-family: Helvetica, Arial, sans-serif; font-size: 10pt; letter-spacing: 0em;    margin-bottom: 36px;">
+                    Almost there! Please complete this form and click
+                    the button below to gain instant access.</div>
+                </div>
+                
+                <img ata-lb-comment="Recommended image size 256 x 256  pixels" data-lb-name="Popup Leadbox Bar" data-lb-id=";eadbox-image-pop" alt="" data-lb="editable-image max-image-size=256 editable-optional"  id="form-image" class="editable
+                    " src="{LOCAL_URL}leadbox-image-placeholder3.png
+                    " data-id="default">
+                <fieldset>
+                    <div data-lb-name="Popup Headline" data-lb="editable-rich-text editable-optional editable-optional" class="desc" data-lb-id="popup-headline"  id="form-title" class="editable" style="font-size:18pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <div style="text-align: center"><strong>Enter your email address below to be notified when we launch!</strong></div>
+                    </div>
+                    <ul id="form-fields" class="unstyled ui-sortable">
+                    <li class="control-group editable draggable" id="custom-field-LP-NONE"><div class="controls">
+                            <input  onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="text" placeholder="Name">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable required" id="custom-field-LP-NONE1"><div class="controls">
+                            <input onBlur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onFocus="if ($(this).val() == $(this).attr('title')) {
+                                            $(this).val('')
+                                        }"  type="email" placeholder="E-mail">
+                        
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li><li class="control-group editable draggable" id="custom-field-LP-NONE2"><div class="controls">
+                            <input type="text" placeholder="Phone Number" onFocus="if (jQuery(this).val() == jQuery(this).attr('title')) {
+                                    jQuery(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onBlur="if (jQuery(this).val() == '') {
+                                            jQuery(this).val(jQuery(this).attr('title'));
+                                        }" >
+                       
+                        </div><span class="error-container"></span><i class="icon-move"></i><i class="icon-remove"></i></li></ul>
+                    <button  data-lb-name="Popup Subscribe Button" data-lb="editable-button editable-optional" data-lb-id="button-pop" id="submit-button" type="submit" class="editable" style="width: 100%;font-size: 14pt; border: 0pt solid rgb(255, 180, 3); letter-spacing: 0em; font-family: Helvetica, Arial, sans-serif; text-shadow: rgb(18, 133, 221) 2px 2px 0px; background-color: rgb(255, 203, 1);text-align: center;">
+                        <div   style="">Join Now!</div>
+                    </button>
+                    <br>
+                    <div id="privacy-policy" class="editable" style="margin-top: 15px;font-size:12pt;font-family:Helvetica, Arial, sans-serif;letter-spacing:0em">
+                        <p data-lb-name="Popup Privacy Text" data-lb="editable-rich-text editable-optional editable-optional" class="reset privacy" data-lb-id="privacy-text"><strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe.</p>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+                
+                </body>
+</html>

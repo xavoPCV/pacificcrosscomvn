@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="mp-customizable-color" content="#ffffff; Background Color">
+        <meta name="mp-customizable-color" content="#fffff1; Box Background Color">
+        <meta name="mp-customizable-color" content="#fffff2; Line Color">
+
+        <meta name="mp-customizable-color" content="#ff6900; Button Background Start Color" button_id="button">
+        <meta name="mp-customizable-color" content="#c25000; Button Background End Color" button_id="button">
+        <meta name="mp-customizable-color" content="#ff6901; Button Border Top Color" button_id="button">
+        <meta name="mp-customizable-color" content="#c25001; Button Border Bottom Color" button_id="button">
+        <meta name="mp-customizable-color" content="#ff6903; Button Border Left Color" button_id="button">
+        <meta name="mp-customizable-color" content="#ff6904; Button Border Right Color" button_id="button">
+        <meta name="mp-customizable-color" content="#fffff5; Button Text Color" button_id="button">
+
+        <style type="text/css">
+
+            body, html {
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                font-size: 14px;
+                font-family:'Arial',sans-serif;
+                color: #333;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                background: #ffffff;
+            }
+
+            h1{
+                font-size: 28px;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            h2{
+                font-size: 20px;
+                margin: 0 0 10px;
+            }
+
+            h3{
+                font-size: 17px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            #container{
+                max-width: 650px;
+                margin: 0 auto;
+                width: 90%;
+            }
+
+            #box_wrap{
+                border: 1px solid #333;
+                padding: 15px;
+                margin: 20px 0;
+                background: #fffff1;
+            }
+
+            ul li{
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+            
+            hr{
+                border-color: #fffff2;
+            }
+
+            #checkbox_content{
+                margin: 10px 0;
+                display: block;
+                font-size: 16px;
+            }
+
+            .columns{
+                width: 48%;
+                margin: 1%;
+                float: left;
+            }
+
+            .columns label{
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .columns input{
+                display: block;
+                border: 1px solid #0076c2;
+                background: #f2f8fc;
+                width: 100%;
+                padding: 3px;
+                box-sizing: border-box;
+                outline: none;
+                transition: 0.4s all;
+            }
+
+            .columns input:focus,.columns input:active{
+                -webkit-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                -moz-box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+                box-shadow: 0 0 5px rgba(0, 136, 255, 0.8);
+            }
+            
+            label{
+                font-size: 12px;
+            }
+
+            label>span:first-child{
+                color: #c00;
+            }
+
+            .btn {
+                background: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 10px 0;
+                max-width: 100%;
+                width: 100%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+
+
+            .btn>span {
+                position: relative;
+                display: block;
+                padding: 10px 3%;
+                font-size: 20px;
+                line-height: 26px;
+
+                color: #fffff5;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                transition: 0.5s all;
+                margin-bottom: 4px;
+
+                border: solid 1px;
+                border-top-color: #ff6901;
+                border-bottom-color: #c25001;
+                border-left-color: #ff6903;
+                border-right-color: #ff6904;
+
+                background: -webkit-linear-gradient(#ff6900,#c25000);
+                background: -moz-linear-gradient(#ff6900,#c25000);
+                background: -o-linear-gradient(#ff6900,#c25000);
+                background: linear-gradient(#ff6900,#c25000);
+                background-size: 100%;
+            }
+
+            .btn>span:hover {
+                background-size: 200%;
+            }
+
+            p{
+                font-size: 12px;
+                color: #999;
+            }
+
+            #box_wrap p{
+                color: #333;
+            }
+
+            a{
+                display: block;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .clear{
+                clear: both;
+            }
+
+
+            @media only screen and (max-width: 640px){
+                .columns{
+                    margin: 1% 0;
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div id="container">
+            <h3 data-lb-id="smallheadline" data-lb="editable-rich-text editable-optional" data-lb-name="Small Headline">{First Last Name} Presents:</h3>
+            <h1 data-lb-id="headline" data-lb="editable-rich-text editable-optional" data-lb-name="HeadLine">PPC Secrets The Top 1% Earners Are Keeping From You</h1>
+            <hr/>
+            <div id="box_wrap">
+                <h2 data-lb-id="subheadline" data-lb="editable-rich-text editable-optional" data-lb-name="Sub Headline">Webinar Registration on Wednesday, August 12 at 9:00 PM</h2>
+                <span data-lb-id="content-1" data-lb="editable-rich-text editable-optional" data-lb-name="Content 1">On this webinar, you will discover ...</span>
+                <ul data-lb-name="Content List" data-lb="editable-rich-text editable-optional" data-lb-id="content-list">
+                    <li>What The <strong>Next Big Traffic Resource</strong> Will Be And How You Can Use This To Generate Unlimited Leads</li>
+                    <li>The Secret To Getting Up to 347 <b>Targeted Leads Every Day</b> With PPC Marketing Without Going Broke</li>
+                    <li>How To <em>Get Ready To Buy</em> Leads With <strong>YouTube PPC</strong> For Your Home Business</li>
+                    <li>Multiple Traffic Streams And <strong>49% Opt-In Rates On Your Capture Pages</strong><b>.</b></li>
+                </ul>
+                <span data-lb-id="content-2" data-lb="editable-rich-text editable-optional" data-lb-name="Content 2">Please register below before all seats are taken!</span>
+                <label id="checkbox_content"><input type="radio" checked  /> 
+                <span data-lb-id="check-content" data-lb="editable-rich-text editable-optional" data-lb-name="Checkbox Content">Wednesday, August 12 at 9:00 PM (Eastern)</span></label>
+                <form class="form_content" data-lb-name="Opt-in Form Integration" action="#" data-lb-id="opt-in" data-lb="editable-opt-in-form" method="post">
+                    <div class="columns" data-lb="opt-in-name-wrapper">
+                        <label for="name"><span>*</span> First Name</label>
+                        <input onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="name" title="Enter your first name here..." data-lb-id="opt-in-name" data-lb="editable-text-input opt-in-name" value="Enter your first name here..." class="inp-text" data-lb-name="Opt-in Name" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" type="text" id="name">
+                    </div>
+                    <div class="columns">
+                        <label for="email"><span>*</span> Email Address</label>
+                        <input onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" name="email" title="Enter a valid e-mail here..." data-lb-id="opt-in-email" data-lb="editable-text-input opt-in-mail" value="Enter a valid e-mail here..." class="inp-text" data-lb-name="Opt-in Email" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" type="text" id="email">
+                    </div>
+                    <div class="columns" data-lb="opt-in-phone-wrapper">
+                        <label for="phone">Mobile Phone</label>
+                        <input class="inp-text" onfocus="if ($(this).val() == $(this).attr('title')) {
+                                    $(this).val('')
+                                }" data-lb-name="Opt-In Phone Text" value="Enter Your Phone Here" data-lb="editable-text-input opt-in-phone" data-lb-id="opt-in-phone" title="Enter Your Phone Here" name="phone" onblur="if ($(this).val() == '') {
+                                    $(this).val($(this).attr('title'));
+                                }" type="text" id="phone">
+                    </div>
+                    <button type="submit" class="btn">
+                        <span data-lb-name="Submit Button" data-lb="editable-button editable-optional" data-lb-id="button">I Want In!</span>
+                    </button>
+                    <label><span>*</span> <span data-lb-id="indicate-text" data-lb="editable-rich-text editable-optional" data-lb-name="Indicate Text">Indicates a required field</span></label>
+                </form>
+                <p data-lb-name="Privacy Text 1" data-lb="editable-rich-text editable-optional" data-lb-id="privacy-text-1">By clicking the "Register Now" button you submit your information to the Webinar organizer, who will use it to communicate with you regarding this event and their other services.</p>
+            </div>
+            <p data-lb-name="Privacy Text 2" data-lb="editable-rich-text editable-optional" data-lb-id="privacy-text-2">
+                Your email address and personal information will be used by the Webinar organizer to communicate with you about this event and their other services. To review the Webinar organizer's privacy policy or opt out of their other communications, contact the Webinar organizer directly.<br/><br/>
+                Safeguarding your email address and Webinar registration information is taken seriously. Your information will never be shared for any reason.
+            </p>
+            <a href="#" data-lb-id="submit-copyright-1" data-lb="editable-link editable-optional" data-lb-name="Term of Service">Privacy Policy & Terms Of Use</a><br>
+        <a href="#">Copyright AdvisorLead 2015</a> </div>
+    </body>
+</html>
